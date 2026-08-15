@@ -39,6 +39,7 @@ main { max-width: 1440px; margin: auto; padding: 0 18px 70px; }
 .hero h1 { margin: 0; max-width: 920px; font-family: var(--mono); font-size: clamp(25px, 3vw, 38px); line-height: .94; font-weight: 520; letter-spacing: -.05em; }
 .hero h1 em { color: var(--green); font-style: normal; }
 .hero-copy { max-width: 760px; margin: 8px 0 0; color: var(--muted); font-size: 9px; line-height:1.25; }
+.company-state{max-width:960px;margin-top:8px;padding:6px 8px;display:grid;grid-template-columns:auto 1fr;gap:9px;align-items:start;background:var(--panel);border-left:2px solid var(--green);border-radius:2px}.company-state span{color:var(--green);font-size:7px;line-height:1.25;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap}.company-state p{margin:0;color:var(--text);font-size:8px;line-height:1.25}
 .date-card { min-height: 70px; padding: 10px; display: flex; flex-direction: column; justify-content: flex-end; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; }
 .date-card::before { content: "●  session.active"; margin-bottom: 6px; color: var(--green); font-size: 7px; }
 .date-card span { color: var(--muted); font-size: 9px; text-transform: uppercase; letter-spacing: .1em; }

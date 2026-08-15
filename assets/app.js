@@ -23,7 +23,18 @@ function render(){
   $("#displayDate").textContent=dateLabel(state.date||state.data.report.date);
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#summaryText").textContent=state.data.report.summary;
-  renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+}
+
+function renderCompanyState(rows){
+  const indicators=state.data.weekly_plan.indicators;
+  const progress=Math.round(indicators.reduce((sum,x)=>sum+Math.min(100,x.current/x.target*100),0)/indicators.length);
+  const activity=Object.entries(AREA).map(([key,value])=>({name:value.label,count:rows.filter(x=>x.area===key).length})).sort((a,b)=>b.count-a.count);
+  const high=state.data.alerts.filter(x=>x.level==="high").length;
+  const mood=progress>=90?"La compañía viene muy bien":progress>=75?"La compañía avanza a buen ritmo":"La compañía está avanzando, aunque todavía tiene trabajo por ordenar";
+  const focus=activity[0]?.count?`${activity[0].name} concentra hoy la mayor actividad (${activity[0].count})`:`Todavía no hay actividad para la selección actual`;
+  const attention=high?`Hay ${high} señal${high>1?"es":""} crítica${high>1?"s":""} que conviene resolver primero.`:"No aparecen señales críticas en este momento.";
+  $("#companyState").textContent=`${mood}: lleva un ${progress}% promedio de sus metas semanales. ${focus}. ${attention}`;
 }
 
 function renderKpis(rows){
