@@ -71,10 +71,12 @@
 
     <section id="semana" class="section">
       <div class="section-title"><div><p class="eyebrow">weekly target / current state</p><h2>Meta de la semana</h2></div><p id="weekRange">—</p></div>
-      <div class="week-goal-shell">
+      <div class="view-tabs goal-tabs" role="tablist" aria-label="Vista de metas"><button class="active" data-goal-view="current">Semana actual</button><button data-goal-view="history">Metas históricas</button></div>
+      <div id="currentGoals" class="week-goal-shell">
         <div class="week-goal-head"><span>Indicador</span><span>Meta</span><span>Actual</span><span>Avance</span><span>Estado</span></div>
         <div id="weeklyTargets"></div>
       </div>
+      <div id="historicalGoals" class="historical-goals" hidden></div>
     </section>
 
     <section id="objetivos" class="section">

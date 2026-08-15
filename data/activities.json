@@ -38,6 +38,11 @@
       {"name":"Bloqueos críticos resueltos","area":"Compañía","target":5,"current":2,"unit":"bloqueos"}
     ]
   },
+  "weekly_history": [
+    {"from":"2026-08-03","to":"2026-08-09","closed_at":"Cierre consolidado 09/08","score":91,"completed":5,"total":6,"indicators":[{"name":"Tickets resueltos","result":"37 / 35","progress":100},{"name":"Cumplimiento de SLA","result":"93 / 95 %","progress":98},{"name":"Hitos completados","result":"8 / 8","progress":100},{"name":"Seguimientos comerciales","result":"17 / 20","progress":85}]},
+    {"from":"2026-07-27","to":"2026-08-02","closed_at":"Cierre consolidado 02/08","score":78,"completed":3,"total":6,"indicators":[{"name":"Tickets resueltos","result":"29 / 35","progress":83},{"name":"Cumplimiento de SLA","result":"84 / 95 %","progress":88},{"name":"Hitos completados","result":"6 / 8","progress":75},{"name":"Seguimientos comerciales","result":"14 / 20","progress":70}]},
+    {"from":"2026-07-20","to":"2026-07-26","closed_at":"Cierre consolidado 26/07","score":66,"completed":2,"total":6,"indicators":[{"name":"Tickets resueltos","result":"24 / 35","progress":69},{"name":"Cumplimiento de SLA","result":"79 / 95 %","progress":83},{"name":"Hitos completados","result":"4 / 8","progress":50},{"name":"Seguimientos comerciales","result":"12 / 20","progress":60}]}
+  ],
   "goals": [
     {"title":"Tickets dentro de SLA","area":"soporte","current":87,"target":95,"unit":"%","progress":92,"note":"Faltan 8 puntos para la meta mensual."},
     {"title":"Hitos de proyecto completados","area":"proyectos","current":18,"target":24,"unit":"hitos","progress":75,"note":"Seis hitos pendientes en el período."},

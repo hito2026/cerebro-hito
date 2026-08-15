@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,search:"",area:"all",date:"",timelineView:"day"};
+const state={data:null,search:"",area:"all",date:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const dateLabel=d=>new Intl.DateTimeFormat("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/Argentina/Cordoba"}).format(new Date(`${d}T12:00:00`));
@@ -14,6 +14,7 @@ async function init(){
   $("#dateFilter").addEventListener("change",e=>{state.date=e.target.value;render()});
   $("#clearFilters").addEventListener("click",()=>{state.search="";state.area="all";state.date="";$("#searchInput").value="";$("#areaFilter").value="all";$("#dateFilter").value="";render()});
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
+  document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
   render();
 }
 
@@ -60,8 +61,10 @@ function renderGoals(){
 }
 function renderWeeklyTargets(){
   const week=state.data.weekly_plan;
-  $("#weekRange").textContent=`${dateLabel(week.from)} → ${dateLabel(week.to)} · datos demo`;
+  $("#currentGoals").hidden=state.goalView!=="current";$("#historicalGoals").hidden=state.goalView!=="history";
+  $("#weekRange").textContent=state.goalView==="current"?`${dateLabel(week.from)} → ${dateLabel(week.to)} · datos demo`:`${state.data.weekly_history.length} períodos cerrados · datos demo`;
   $("#weeklyTargets").innerHTML=week.indicators.map(x=>{const progress=Math.min(100,Math.round(x.current/x.target*100));const status=progress>=90?"green":progress>=65?"yellow":"red";return `<div class="week-goal-row"><div><strong>${x.name}</strong><small>${x.area}</small></div><span>${x.target} ${x.unit}</span><span>${x.current} ${x.unit}</span><div class="week-progress"><i style="width:${progress}%"></i><b>${progress}%</b></div><span class="state-label ${status}"><i></i>${status==="green"?"en objetivo":status==="yellow"?"en progreso":"requiere atención"}</span></div>`}).join("");
+  $("#historicalGoals").innerHTML=state.data.weekly_history.map((w,index)=>`<details class="history-week" ${index===0?"open":""}><summary><div><strong>${dateLabel(w.from)} → ${dateLabel(w.to)}</strong><small>${w.closed_at}</small></div><div class="history-summary"><span><b>${w.score}%</b> cumplimiento</span><span><b>${w.completed}</b> / ${w.total} metas</span><span class="state-label ${w.score>=90?"green":w.score>=70?"yellow":"red"}"><i></i>${w.score>=90?"objetivo alcanzado":w.score>=70?"cumplimiento parcial":"bajo objetivo"}</span></div></summary><div class="history-detail">${w.indicators.map(x=>`<div><span>${x.name}</span><span>${x.result}</span><b>${x.progress}%</b></div>`).join("")}</div></details>`).join("");
 }
 function renderProductivity(){
   const series=state.data.productivity.series; const max=100;
