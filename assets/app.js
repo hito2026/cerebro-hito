@@ -1,19 +1,21 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,search:"",area:"all",date:"",timelineView:"day",goalView:"current"};
+const state={data:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const dateLabel=d=>new Intl.DateTimeFormat("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/Argentina/Cordoba"}).format(new Date(`${d}T12:00:00`));
-const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area===state.area)&&(!state.date||a.date===state.date)&&(!state.search||clean([a.title,a.description,a.person,a.client,a.project,a.source].join(" ")).includes(clean(state.search))));
+const shiftDate=(date,days)=>{const value=new Date(`${date}T12:00:00`);value.setDate(value.getDate()+days);return value.toISOString().slice(0,10)};
+const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area===state.area)&&(!state.dateFrom||a.date>=state.dateFrom)&&(!state.dateTo||a.date<=state.dateTo)&&(!state.search||clean([a.title,a.description,a.person,a.client,a.project,a.source].join(" ")).includes(clean(state.search))));
 
 async function init(){
   const response=await fetch("data/activities.json"); state.data=await response.json();
   setupSectionAccordions();
-  state.date=state.data.report.date; $("#dateFilter").value=state.date;
+  state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
   $("#searchInput").addEventListener("input",e=>{state.search=e.target.value;render()});
   $("#areaFilter").addEventListener("change",e=>{state.area=e.target.value;render()});
-  $("#dateFilter").addEventListener("change",e=>{state.date=e.target.value;render()});
-  $("#clearFilters").addEventListener("click",()=>{state.search="";state.area="all";state.date="";$("#searchInput").value="";$("#areaFilter").value="all";$("#dateFilter").value="";render()});
+  $("#dateFrom").addEventListener("change",e=>{state.dateFrom=e.target.value;state.dateTo=shiftDate(state.dateFrom,5);$("#dateTo").value=state.dateTo;render()});
+  $("#dateTo").addEventListener("change",e=>{state.dateTo=e.target.value;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;render()});
+  $("#clearFilters").addEventListener("click",()=>{state.search="";state.area="all";state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#searchInput").value="";$("#areaFilter").value="all";$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;render()});
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
   document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
   render();
@@ -37,7 +39,7 @@ function setupSectionAccordions(){
 
 function render(){
   const rows=filtered();
-  $("#displayDate").textContent=dateLabel(state.date||state.data.report.date);
+  $("#displayDate").textContent=`Desde ${dateLabel(state.dateFrom)} · Hasta ${dateLabel(state.dateTo)}`;
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
