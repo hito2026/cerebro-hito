@@ -1,0 +1,10 @@
+[Unit]
+Description=Actualización diaria de Cerebro Hito en datos
+
+[Timer]
+OnCalendar=*-*-* 19:30:00 America/Argentina/Cordoba
+Persistent=true
+RandomizedDelaySec=120
+
+[Install]
+WantedBy=timers.target

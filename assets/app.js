@@ -39,6 +39,7 @@ function render(){
   const rows=filtered();
   $("#displayDate").textContent=dateLabel(state.date||state.data.report.date);
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
+  $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
   renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
