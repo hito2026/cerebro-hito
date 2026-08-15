@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Diario de actividades de HitoFusión">
+  <title>Cerebro · Diario HitoFusión</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">H</span>
+      <span><strong>Cerebro</strong><small>Diario HitoFusión</small></span>
+    </a>
+    <nav aria-label="Secciones">
+      <a href="#resumen">Resumen</a><a href="#actividad">Actividad</a><a href="#areas">Áreas</a>
+    </nav>
+    <span class="status"><i></i> Datos demostrativos</span>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">OBSERVATORIO CORPORATIVO</p>
+        <h1>Lo que está pasando<br><em>en HitoFusión.</em></h1>
+        <p class="hero-copy">Una lectura común de soporte, proyectos, comercial y desarrollo. Actividad verificable, contexto compartido y señales para decidir mejor.</p>
+      </div>
+      <div class="date-card">
+        <span>Jornada seleccionada</span>
+        <strong id="displayDate">—</strong>
+        <small id="lastUpdate">Cargando actividad…</small>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Filtros del diario">
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar persona, cliente, proyecto o actividad…"></label>
+      <label><span>Fecha</span><input id="dateFilter" type="date"></label>
+      <label><span>Área</span><select id="areaFilter"><option value="all">Todas las áreas</option></select></label>
+      <button id="clearFilters" type="button">Limpiar</button>
+    </section>
+
+    <section id="resumen" class="section">
+      <div class="section-title"><div><p class="eyebrow">PULSO DEL DÍA</p><h2>Resumen ejecutivo</h2></div><p id="summaryText">—</p></div>
+      <div id="kpiGrid" class="kpi-grid" aria-live="polite"></div>
+      <div class="insight-grid">
+        <article class="panel pulse-panel"><div class="panel-head"><div><p class="eyebrow">ACTIVIDAD POR ÁREA</p><h3>Distribución</h3></div><span id="totalEvents">0 eventos</span></div><div id="areaBars" class="bars"></div></article>
+        <article class="panel alerts-panel"><div class="panel-head"><div><p class="eyebrow">ATENCIÓN</p><h3>Señales del día</h3></div></div><div id="alertsList"></div></article>
+      </div>
+    </section>
+
+    <section id="actividad" class="section">
+      <div class="section-title"><div><p class="eyebrow">REGISTRO UNIFICADO</p><h2>Línea temporal</h2></div><p id="resultsCount">—</p></div>
+      <div id="timeline" class="timeline" aria-live="polite"></div>
+      <div id="emptyState" class="empty" hidden><strong>Sin resultados</strong><p>Probá otra fecha, área o término de búsqueda.</p></div>
+    </section>
+
+    <section id="areas" class="section">
+      <div class="section-title"><div><p class="eyebrow">VISTAS DE TRABAJO</p><h2>Detalle por área</h2></div><p>Abrí cada sección para explorar su actividad.</p></div>
+      <div id="areaAccordions" class="accordions"></div>
+    </section>
+  </main>
+
+  <footer><span>Cerebro · HitoFusión</span><span>Fuentes previstas: Odoo Helpdesk, Proyectos, CRM, GitHub y Daily Meetings.</span></footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
