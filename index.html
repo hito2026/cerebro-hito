@@ -14,7 +14,7 @@
       <span><strong>cerebro</strong><small>company activity</small></span>
     </a>
     <nav aria-label="Secciones">
-      <a href="#resumen">KPI</a><a href="#actividad">Timeline</a><a href="#personas">Personal</a><a href="#semana">Semana</a><a href="#objetivos">Objetivos</a>
+      <a href="#resumen">KPI</a><a href="#actividad">Timeline</a><a href="#personas">Personal</a><a href="#organigrama">Organigrama</a><a href="#semana">Semana</a><a href="#objetivos">Objetivos</a>
     </nav>
     <span class="status"><i></i> demo.mode</span>
   </header>
@@ -59,6 +59,14 @@
     <section id="personas" class="section">
       <div class="section-title"><div><p class="eyebrow">people / daily activity</p><h2>Qué está haciendo cada persona</h2></div><p>Ayer y hoy, consolidado por empleado.</p></div>
       <div id="peopleGrid" class="people-grid"></div>
+    </section>
+
+    <section id="organigrama" class="section">
+      <div class="section-title"><div><p class="eyebrow">people / organization activity</p><h2>Organigrama y nivel de actividad</h2></div><p id="orgScale">Escala relativa 1–10 · datos demo</p></div>
+      <div class="org-shell">
+        <div class="org-toolbar"><span>organization.people</span><span>actividad individual ÷ máxima actividad × 10</span></div>
+        <div id="orgChart" class="org-chart"></div>
+      </div>
     </section>
 
     <section id="mapa" class="section">

@@ -23,7 +23,7 @@ function render(){
   $("#displayDate").textContent=dateLabel(state.date||state.data.report.date);
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#summaryText").textContent=state.data.report.summary;
-  renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderKpis(rows){
@@ -48,6 +48,15 @@ function renderTimeline(rows){
 }
 function renderPeople(){
   $("#peopleGrid").innerHTML=state.data.people.map(p=>`<article class="person-card"><header><span class="avatar">${p.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</span><div><strong>${p.name}</strong><small>${p.role}</small></div><i class="traffic ${p.status}"></i></header><div class="day-split"><div><span>AYER</span><p>${p.yesterday}</p></div><div><span>HOY</span><p>${p.today}</p></div></div><footer><span>${p.area}</span><span>${p.active_tasks} tareas activas</span></footer></article>`).join("");
+}
+function renderOrganization(){
+  const people=state.data.organization;
+  const maximum=Math.max(...people.map(p=>p.activity_count));
+  const byManager=people.reduce((out,p)=>{const key=p.manager||"root";(out[key]??=[]).push(p);return out},{});
+  const card=p=>{const level=Math.max(1,p.activity_count/maximum*10);return `<article class="org-person"><header><span class="avatar">${p.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</span><div><strong>${p.name}</strong><small>${p.role}</small></div></header><div class="activity-score"><strong>${level.toFixed(1)}</strong><span>/ 10</span></div><div class="activity-track"><i style="width:${level*10}%"></i></div><footer><span>${p.area}</span><b>${p.activity_count} actividades</b></footer></article>`};
+  const branch=p=>`<div class="org-branch"><div class="org-node">${card(p)}</div>${byManager[p.id]?.length?`<div class="org-children">${byManager[p.id].map(branch).join("")}</div>`:""}</div>`;
+  $("#orgScale").textContent=`Máximo: ${maximum} actividades = 10,0/10 · datos demo`;
+  $("#orgChart").innerHTML=(byManager.root||[]).map(branch).join("");
 }
 function renderRelations(){
   const nodes=state.data.relations.nodes; const links=state.data.relations.links;

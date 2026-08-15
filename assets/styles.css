@@ -124,6 +124,8 @@ main { max-width: 1440px; margin: auto; padding: 0 18px 70px; }
 .day-split span { color: var(--muted); font-size: 8px; letter-spacing: .1em; }.day-split p{margin:7px 0 0;font-size:10px}
 .person-card > footer { padding: 8px 13px; display: flex; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-size: 8px; }
 
+.org-shell{background:var(--panel);border:1px solid var(--line);border-radius:5px;overflow:hidden}.org-toolbar{height:37px;padding:0 13px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);color:var(--muted);font-size:9px}.org-chart{padding:28px 20px 24px;overflow-x:auto}.org-branch{min-width:max-content;text-align:center}.org-node{display:flex;justify-content:center;position:relative}.org-children{padding-top:28px;display:flex;justify-content:center;gap:12px;position:relative}.org-children::before{content:"";position:absolute;top:0;left:50%;height:15px;border-left:1px solid var(--line-hot)}.org-children>.org-branch{padding-top:15px;position:relative}.org-children>.org-branch::before{content:"";position:absolute;top:0;left:0;right:0;border-top:1px solid var(--line-hot)}.org-children>.org-branch:first-child::before{left:50%}.org-children>.org-branch:last-child::before{right:50%}.org-children>.org-branch::after{content:"";position:absolute;top:0;left:50%;height:15px;border-left:1px solid var(--line-hot)}.org-person{width:210px;background:var(--bg);border:1px solid var(--line-hot);border-radius:4px;text-align:left;overflow:hidden}.org-person header{padding:9px;display:grid;grid-template-columns:30px 1fr;gap:9px;align-items:center}.org-person header strong,.org-person header small{display:block}.org-person header strong{font-size:9px}.org-person header small{color:var(--muted);font-size:8px}.activity-score{padding:0 9px;display:flex;align-items:baseline;gap:4px}.activity-score strong{color:var(--green);font-size:22px;font-weight:500;line-height:1}.activity-score span{color:var(--muted);font-size:8px}.activity-track{height:3px;margin:7px 9px 9px;background:#202526}.activity-track i{display:block;height:100%;background:var(--green)}.org-person footer{padding:6px 9px;display:flex;justify-content:space-between;border-top:1px solid var(--line);color:var(--muted);font-size:7px}.org-person footer b{color:var(--text);font-weight:500}
+
 .relation-shell,.chart-shell { background: var(--panel); border: 1px solid var(--line); border-radius: 5px; overflow: hidden; }
 .relation-toolbar,.chart-head { height: 37px; padding: 0 13px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 9px; }
 .relation-map { height: 430px; position: relative; overflow: hidden; background-image: radial-gradient(circle,#252a2c 1px,transparent 1px); background-size: 18px 18px; }
@@ -172,6 +174,7 @@ footer { padding: 22px 18px; display: flex; justify-content: space-between; bord
   .period-metrics { grid-template-columns: repeat(5,minmax(60px,1fr)); overflow-x: auto; }
   .week-goal-shell{overflow-x:auto}.week-goal-head,.week-goal-row{min-width:760px}
   .history-week>summary{grid-template-columns:1fr}.history-summary{justify-content:space-between;overflow-x:auto}
+  .org-chart{justify-content:flex-start}
 }
 
 @media (max-width: 540px) {

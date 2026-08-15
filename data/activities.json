@@ -11,6 +11,14 @@
     {"name":"Carla Proyectos","role":"Líder de proyecto","area":"Proyectos","status":"yellow","active_tasks":6,"yesterday":"Cerró un hito funcional y actualizó el plan del proyecto.","today":"Coordina validaciones; mantiene dos tareas con riesgo de atraso."},
     {"name":"Diego Comercial","role":"Ejecutivo comercial","area":"Comercial","status":"red","active_tasks":5,"yesterday":"Calificó dos oportunidades y preparó una propuesta.","today":"Realiza seguimientos; tiene cuatro oportunidades sin próxima actividad."}
   ],
+  "organization": [
+    {"id":"alejandro","name":"Alejandro Sartorio","role":"Dirección general","area":"Dirección","manager":null,"activity_count":31},
+    {"id":"carla","name":"Carla Proyectos","role":"Líder de proyecto","area":"Proyectos","manager":"alejandro","activity_count":26},
+    {"id":"diego","name":"Diego Comercial","role":"Ejecutivo comercial","area":"Comercial","manager":"alejandro","activity_count":19},
+    {"id":"ana","name":"Ana Soporte","role":"Especialista funcional","area":"Soporte","manager":"carla","activity_count":28},
+    {"id":"bruno","name":"Bruno Desarrollo","role":"Desarrollador Odoo","area":"Desarrollo","manager":"carla","activity_count":23},
+    {"id":"lucia","name":"Lucía Consultoría","role":"Consultora funcional","area":"Proyectos","manager":"carla","activity_count":14}
+  ],
   "relations": {
     "nodes": [
       {"id":"ml","label":"Integración ML","type":"topic","detail":"Tema activo"},
