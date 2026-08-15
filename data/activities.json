@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-15",
-    "updated_at": "15/08/2026 13:03 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 50 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "15/08/2026 13:06 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 54 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "50 eventos de desarrollo",
+      "title": "54 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -37,9 +37,9 @@
       "role": "Actividad registrada en Desarrollo",
       "area": "Desarrollo",
       "status": "yellow",
-      "active_tasks": 44,
+      "active_tasks": 48,
       "yesterday": "0 actividades registradas.",
-      "today": "16 actividades registradas."
+      "today": "20 actividades registradas."
     },
     {
       "name": "Valentin Markov",
@@ -147,7 +147,7 @@
       "role": "Usuario con actividad registrada",
       "area": "Desarrollo",
       "manager": null,
-      "activity_count": 44
+      "activity_count": 48
     },
     {
       "id": "person-3",
@@ -538,6 +538,54 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-17753646610",
+      "date": "2026-08-15",
+      "time": "16:05",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "DeleteEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17753643819",
+      "date": "2026-08-15",
+      "time": "16:05",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-13333592764",
+      "date": "2026-08-15",
+      "time": "16:05",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PullRequestEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17753638837",
+      "date": "2026-08-15",
+      "time": "16:05",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-17753459853",
       "date": "2026-08-15",
