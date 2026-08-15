@@ -7,6 +7,7 @@ const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area==
 
 async function init(){
   const response=await fetch("data/activities.json"); state.data=await response.json();
+  setupSectionAccordions();
   state.date=state.data.report.date; $("#dateFilter").value=state.date;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
   $("#searchInput").addEventListener("input",e=>{state.search=e.target.value;render()});
@@ -16,6 +17,22 @@ async function init(){
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
   document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
   render();
+}
+
+function setupSectionAccordions(){
+  document.querySelectorAll("main > section.section").forEach(section=>{
+    const title=section.querySelector(":scope > .section-title");
+    if(!title)return;
+    const open=section.id==="actividad";
+    section.classList.add("collapsible");
+    section.classList.toggle("collapsed",!open);
+    title.setAttribute("role","button");title.setAttribute("tabindex","0");title.setAttribute("aria-expanded",String(open));
+    title.insertAdjacentHTML("beforeend",`<span class="section-toggle" aria-hidden="true">${open?"−":"+"}</span>`);
+    const toggle=force=>{const expand=force??section.classList.contains("collapsed");section.classList.toggle("collapsed",!expand);title.setAttribute("aria-expanded",String(expand));title.querySelector(".section-toggle").textContent=expand?"−":"+"};
+    title.addEventListener("click",()=>toggle());
+    title.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle()}});
+    document.querySelectorAll(`.topbar a[href="#${section.id}"]`).forEach(link=>link.addEventListener("click",()=>toggle(true)));
+  });
 }
 
 function render(){
