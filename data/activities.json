@@ -5,6 +5,44 @@
     {"level":"medium","title":"2 tareas sin movimiento","detail":"No registran cambios en los últimos siete días."},
     {"level":"low","title":"4 oportunidades sin próxima actividad","detail":"Conviene programar el siguiente contacto comercial."}
   ],
+  "people": [
+    {"name":"Ana Soporte","role":"Especialista funcional","area":"Soporte","status":"green","active_tasks":4,"yesterday":"Resolvió 3 tickets y documentó un caso de conciliación.","today":"Analiza tickets prioritarios y valida una solución con el cliente."},
+    {"name":"Bruno Desarrollo","role":"Desarrollador Odoo","area":"Desarrollo","status":"green","active_tasks":3,"yesterday":"Preparó el fix de contactos duplicados y abrió una revisión.","today":"Completa pruebas del conector y atiende observaciones del equipo."},
+    {"name":"Carla Proyectos","role":"Líder de proyecto","area":"Proyectos","status":"yellow","active_tasks":6,"yesterday":"Cerró un hito funcional y actualizó el plan del proyecto.","today":"Coordina validaciones; mantiene dos tareas con riesgo de atraso."},
+    {"name":"Diego Comercial","role":"Ejecutivo comercial","area":"Comercial","status":"red","active_tasks":5,"yesterday":"Calificó dos oportunidades y preparó una propuesta.","today":"Realiza seguimientos; tiene cuatro oportunidades sin próxima actividad."}
+  ],
+  "relations": {
+    "nodes": [
+      {"id":"ml","label":"Integración ML","type":"topic","detail":"Tema activo"},
+      {"id":"sla","label":"SLA soporte","type":"topic","detail":"Tema activo"},
+      {"id":"fix","label":"Fix contactos","type":"task","detail":"Tarea de desarrollo"},
+      {"id":"validation","label":"Validación cliente","type":"task","detail":"Tarea de proyecto"},
+      {"id":"ana","label":"Ana","type":"person","detail":"Soporte"},
+      {"id":"bruno","label":"Bruno","type":"person","detail":"Desarrollo"},
+      {"id":"carla","label":"Carla","type":"person","detail":"Proyectos"},
+      {"id":"diego","label":"Diego","type":"person","detail":"Comercial"}
+    ],
+    "links": [
+      {"from":"ml","to":"fix"},{"from":"fix","to":"bruno"},{"from":"fix","to":"validation"},{"from":"validation","to":"carla"},{"from":"validation","to":"ana"},{"from":"sla","to":"ana"},{"from":"ml","to":"diego"}
+    ]
+  },
+  "goals": [
+    {"title":"Tickets dentro de SLA","area":"soporte","current":87,"target":95,"unit":"%","progress":92,"note":"Faltan 8 puntos para la meta mensual."},
+    {"title":"Hitos de proyecto completados","area":"proyectos","current":18,"target":24,"unit":"hitos","progress":75,"note":"Seis hitos pendientes en el período."},
+    {"title":"Oportunidades con próxima actividad","area":"comercial","current":31,"target":40,"unit":"oportunidades","progress":78,"note":"Nueve oportunidades requieren seguimiento."},
+    {"title":"Entregas validadas","area":"desarrollo","current":14,"target":16,"unit":"entregas","progress":88,"note":"Dos entregas están en validación."}
+  ],
+  "productivity": {
+    "definition":"Índice demostrativo sin definición corporativa definitiva.",
+    "series":[
+      {"week":"S28","soporte":62,"proyectos":58,"comercial":71,"desarrollo":64},
+      {"week":"S29","soporte":69,"proyectos":63,"comercial":67,"desarrollo":72},
+      {"week":"S30","soporte":74,"proyectos":68,"comercial":76,"desarrollo":70},
+      {"week":"S31","soporte":71,"proyectos":73,"comercial":74,"desarrollo":81},
+      {"week":"S32","soporte":82,"proyectos":76,"comercial":69,"desarrollo":84},
+      {"week":"S33","soporte":87,"proyectos":79,"comercial":75,"desarrollo":88}
+    ]
+  },
   "activities": [
     {"id":"demo-001","date":"2026-08-15","time":"17:42","area":"desarrollo","source":"GitHub","person":"Equipo Desarrollo","client":"JDM Import","project":"Integración ML","title":"Corrección preparada para unificación de contactos","description":"Se revisó el flujo de importación de pedidos y se documentó una corrección candidata. Registro demostrativo."},
     {"id":"demo-002","date":"2026-08-15","time":"16:25","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Ticket de conciliación pasó a resuelto","description":"Se verificaron los criterios de aceptación y se registró el diagnóstico. Registro demostrativo."},
@@ -14,6 +52,11 @@
     {"id":"demo-006","date":"2026-08-15","time":"11:20","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Primera respuesta enviada dentro del SLA","description":"El ticket fue clasificado y derivado al especialista correspondiente. Registro demostrativo."},
     {"id":"demo-007","date":"2026-08-15","time":"10:05","area":"proyectos","source":"Odoo Proyectos","person":"Consultoría","client":"Cliente demo","project":"Implementación","title":"Hito de configuración completado","description":"Se terminó la configuración prevista para la fase actual. Registro demostrativo."},
     {"id":"demo-008","date":"2026-08-15","time":"09:18","area":"comercial","source":"Odoo CRM","person":"Equipo Comercial","client":"Prospecto demo","project":"Venta","title":"Nueva oportunidad registrada","description":"La consulta fue calificada y asignada a un responsable comercial. Registro demostrativo."},
-    {"id":"demo-009","date":"2026-08-15","time":"08:47","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Ticket urgente priorizado","description":"Se detectó impacto operativo y se elevó su prioridad. Registro demostrativo."}
+    {"id":"demo-009","date":"2026-08-15","time":"08:47","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Ticket urgente priorizado","description":"Se detectó impacto operativo y se elevó su prioridad. Registro demostrativo."},
+    {"id":"demo-010","date":"2026-08-14","time":"17:20","area":"desarrollo","source":"GitHub","person":"Equipo Desarrollo","client":"JDM Import","project":"Integración ML","title":"Revisión técnica completada","description":"El equipo revisó el flujo de creación de contactos y dejó observaciones. Registro demostrativo."},
+    {"id":"demo-011","date":"2026-08-14","time":"14:05","area":"proyectos","source":"Odoo Proyectos","person":"Líder de Proyecto","client":"Cliente demo","project":"Mejora continua","title":"Plan semanal actualizado","description":"Se reordenaron prioridades y responsables de las tareas abiertas. Registro demostrativo."},
+    {"id":"demo-012","date":"2026-08-14","time":"10:40","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Antecedente localizado en la KB","description":"Se encontró una resolución previa aplicable al caso actual. Registro demostrativo."},
+    {"id":"demo-013","date":"2026-07-31","time":"16:10","area":"comercial","source":"Odoo CRM","person":"Equipo Comercial","client":"Prospecto demo","project":"Venta","title":"Revisión mensual del pipeline","description":"Se consolidaron oportunidades abiertas y próximos contactos. Registro demostrativo."},
+    {"id":"demo-014","date":"2026-07-31","time":"12:00","area":"desarrollo","source":"Daily Meeting","person":"Equipo Desarrollo","client":"Interno","project":"Daily","title":"Cierre mensual de compromisos","description":"Se revisaron entregas, bloqueos y temas pendientes del siguiente período. Registro demostrativo."}
   ]
 }

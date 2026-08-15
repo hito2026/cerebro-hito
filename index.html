@@ -14,7 +14,7 @@
       <span><strong>cerebro</strong><small>company activity</small></span>
     </a>
     <nav aria-label="Secciones">
-      <a href="#resumen">Resumen</a><a href="#actividad">Actividad</a><a href="#areas">Áreas</a>
+      <a href="#resumen">KPI</a><a href="#actividad">Timeline</a><a href="#personas">Personal</a><a href="#mapa">Mapa</a><a href="#objetivos">Objetivos</a>
     </nav>
     <span class="status"><i></i> demo.mode</span>
   </header>
@@ -50,9 +50,36 @@
     </section>
 
     <section id="actividad" class="section">
-      <div class="section-title"><div><p class="eyebrow">events / unified log</p><h2>Línea temporal</h2></div><p id="resultsCount">—</p></div>
-      <div id="timeline" class="timeline" aria-live="polite"></div>
+      <div class="section-title"><div><p class="eyebrow">events / unified log</p><h2>Timeline por período</h2></div><p id="resultsCount">—</p></div>
+      <div class="view-tabs" role="tablist" aria-label="Agrupar timeline"><button class="active" data-timeline-view="day">Días</button><button data-timeline-view="month">Meses</button></div>
+      <div id="periodTimeline" class="period-timeline" aria-live="polite"></div>
       <div id="emptyState" class="empty" hidden><strong>Sin resultados</strong><p>Probá otra fecha, área o término de búsqueda.</p></div>
+    </section>
+
+    <section id="personas" class="section">
+      <div class="section-title"><div><p class="eyebrow">people / daily activity</p><h2>Qué está haciendo cada persona</h2></div><p>Ayer y hoy, consolidado por empleado.</p></div>
+      <div id="peopleGrid" class="people-grid"></div>
+    </section>
+
+    <section id="mapa" class="section">
+      <div class="section-title"><div><p class="eyebrow">relations / live map</p><h2>Temas, tareas y personal</h2></div><p>Relaciones activas entre trabajo, responsables y áreas.</p></div>
+      <div class="relation-shell">
+        <div class="relation-toolbar"><span>graph.activity</span><span id="relationStats">—</span></div>
+        <div id="relationMap" class="relation-map"></div>
+      </div>
+    </section>
+
+    <section id="objetivos" class="section">
+      <div class="section-title"><div><p class="eyebrow">goals / progress</p><h2>Objetivos y avance</h2></div><p>Porcentajes calculados sobre metas demostrativas.</p></div>
+      <div id="goalsGrid" class="goals-grid"></div>
+    </section>
+
+    <section id="productividad" class="section">
+      <div class="section-title"><div><p class="eyebrow">weekly / productivity</p><h2>Productividad semanal</h2></div><p>Índice provisional hasta definir la medida oficial.</p></div>
+      <div class="chart-shell">
+        <div class="chart-head"><span>Índice compuesto · demo</span><div id="chartLegend" class="chart-legend"></div></div>
+        <div id="productivityChart" class="productivity-chart"></div>
+      </div>
     </section>
 
     <section id="areas" class="section">
