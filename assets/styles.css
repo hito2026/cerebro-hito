@@ -99,6 +99,7 @@ main { max-width: 1440px; margin: auto; padding: 0 18px 70px; }
 .event-title { overflow: hidden; font-size: 10px; font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
 .event-description { min-width: 0; overflow: hidden; color: var(--muted); font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
 .person { color: var(--muted); font-size: 9px; white-space: nowrap; }
+.event-users{max-width:240px;overflow:hidden;color:var(--muted);font-size:8px;text-overflow:ellipsis;white-space:nowrap}.event-users b{color:var(--green);font-weight:500}
 .empty { padding: 60px; border: 1px dashed var(--line-hot); color: var(--muted); text-align: center; }
 .empty strong { color: var(--text); font-size: 14px; }
 
