@@ -1,0 +1,19 @@
+{
+  "report": {"date":"2026-08-15","updated_at":"18:15 ART","summary":"Una jornada con foco en resolución de soporte, seguimiento de proyectos e integración Mercado Libre–Odoo."},
+  "alerts": [
+    {"level":"high","title":"3 tickets fuera de SLA","detail":"Requieren revisión del responsable de soporte."},
+    {"level":"medium","title":"2 tareas sin movimiento","detail":"No registran cambios en los últimos siete días."},
+    {"level":"low","title":"4 oportunidades sin próxima actividad","detail":"Conviene programar el siguiente contacto comercial."}
+  ],
+  "activities": [
+    {"id":"demo-001","date":"2026-08-15","time":"17:42","area":"desarrollo","source":"GitHub","person":"Equipo Desarrollo","client":"JDM Import","project":"Integración ML","title":"Corrección preparada para unificación de contactos","description":"Se revisó el flujo de importación de pedidos y se documentó una corrección candidata. Registro demostrativo."},
+    {"id":"demo-002","date":"2026-08-15","time":"16:25","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Ticket de conciliación pasó a resuelto","description":"Se verificaron los criterios de aceptación y se registró el diagnóstico. Registro demostrativo."},
+    {"id":"demo-003","date":"2026-08-15","time":"15:10","area":"comercial","source":"Odoo CRM","person":"Equipo Comercial","client":"Prospecto demo","project":"Implementación Odoo","title":"Oportunidad avanzó a propuesta","description":"Se completó el relevamiento inicial y quedó programada una próxima actividad. Registro demostrativo."},
+    {"id":"demo-004","date":"2026-08-15","time":"13:55","area":"proyectos","source":"Odoo Proyectos","person":"Líder de Proyecto","client":"Cliente demo","project":"Mejora continua","title":"Tarea funcional lista para validación","description":"La especificación fue completada y espera revisión del cliente. Registro demostrativo."},
+    {"id":"demo-005","date":"2026-08-15","time":"12:35","area":"desarrollo","source":"Daily Meeting","person":"Equipo Desarrollo","client":"Interno","project":"Daily","title":"Daily del equipo registrada","description":"Se consolidaron avances, compromisos y bloqueos de la jornada. Registro demostrativo."},
+    {"id":"demo-006","date":"2026-08-15","time":"11:20","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Primera respuesta enviada dentro del SLA","description":"El ticket fue clasificado y derivado al especialista correspondiente. Registro demostrativo."},
+    {"id":"demo-007","date":"2026-08-15","time":"10:05","area":"proyectos","source":"Odoo Proyectos","person":"Consultoría","client":"Cliente demo","project":"Implementación","title":"Hito de configuración completado","description":"Se terminó la configuración prevista para la fase actual. Registro demostrativo."},
+    {"id":"demo-008","date":"2026-08-15","time":"09:18","area":"comercial","source":"Odoo CRM","person":"Equipo Comercial","client":"Prospecto demo","project":"Venta","title":"Nueva oportunidad registrada","description":"La consulta fue calificada y asignada a un responsable comercial. Registro demostrativo."},
+    {"id":"demo-009","date":"2026-08-15","time":"08:47","area":"soporte","source":"Odoo Helpdesk","person":"Equipo Soporte","client":"Cliente demo","project":"Soporte","title":"Ticket urgente priorizado","description":"Se detectó impacto operativo y se elevó su prioridad. Registro demostrativo."}
+  ]
+}
