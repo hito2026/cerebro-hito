@@ -48,28 +48,33 @@ def main(publish=False):
     tickets = search("helpdesk.ticket", [["write_date", ">=", since]], ["id", "stage_id", "team_id", "user_id", "priority", "write_date", "close_date"])
     tasks = search("project.task", [["write_date", ">=", since]], ["id", "project_id", "user_ids", "stage_id", "priority", "write_date", "date_deadline"])
     projects = search("project.project", [["write_date", ">=", since]], ["id", "user_id", "stage_id", "task_count", "open_task_count", "write_date"])
-    user_ids=sorted({uid for task in tasks for uid in task.get("user_ids",[])})
-    user_names={user["id"]:user["name"] for user in search("res.users", [["id", "in", user_ids]], ["id", "name"], limit=100)} if user_ids else {}
+    internal_users=search("res.users", [["share", "=", False], ["active", "=", True]], ["id", "name", "login"], limit=100)
+    user_names={user["id"]:user["name"] for user in internal_users}
+    internal_names=set(user_names.values())
+    github_users={str(user.get("login","")).split("@",1)[0].lower():user["name"] for user in internal_users if user.get("login")}
     gh_events = github_events(since)
     activities = []
     people = Counter()
 
     for item in tickets:
         stamp=item["write_date"].replace(" ", "T")
-        person=relation_name(item.get("user_id"), "Equipo Soporte")
-        people[(person,"Soporte")]+=1
+        candidate=relation_name(item.get("user_id"), "")
+        person=candidate if candidate in internal_names else "Sin usuario interno asignado"
+        if person in internal_names:people[(person,"Soporte")]+=1
         activities.append({"id":f"odoo-ticket-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"soporte","source":"Odoo Helpdesk","person":person,"users":[person],"client":"Dato protegido","project":"Soporte","title":f"Ticket #{item['id']} actualizado","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')} · equipo: {relation_name(item.get('team_id'),'sin equipo')}."})
     for item in tasks:
         stamp=item["write_date"].replace(" ", "T")
-        users=[user_names[uid] for uid in item.get("user_ids",[]) if uid in user_names] or ["Equipo Proyectos"]
+        users=[user_names[uid] for uid in item.get("user_ids",[]) if uid in user_names] or ["Sin usuario interno asignado"]
         person=users[0]
-        for assigned in users:people[(assigned,"Proyectos")]+=1
+        for assigned in users:
+            if assigned in internal_names:people[(assigned,"Proyectos")]+=1
         activities.append({"id":f"odoo-task-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"proyectos","source":"Odoo Proyectos","person":person,"users":users,"client":"Dato protegido","project":f"Proyecto #{item.get('project_id',[item['id']])[0] if item.get('project_id') else item['id']}","title":f"Tarea #{item['id']} actualizada","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')}."})
     for event in gh_events:
         stamp=event.get("created_at","")
-        person=event.get("actor",{}).get("login","Equipo Desarrollo")
+        actor=event.get("actor",{}).get("login","")
+        person=github_users.get(actor.lower(),"Sin usuario interno vinculado")
         repo=event.get("repo",{}).get("name","repositorio").split("/")[-1]
-        people[(person,"Desarrollo")]+=1
+        if person in internal_names:people[(person,"Desarrollo")]+=1
         activities.append({"id":f"github-{event.get('id')}","date":stamp[:10],"time":stamp[11:16],"area":"desarrollo","source":"GitHub","person":person,"users":[person],"client":"Interno","project":repo,"title":f"{event.get('type','Actividad')} en {repo}","description":"Actividad técnica registrada en GitHub; contenido omitido en la vista pública."})
 
     activities.sort(key=lambda x:(x["date"],x["time"]), reverse=True)
