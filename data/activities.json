@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-15",
-    "updated_at": "15/08/2026 13:34 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 61 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "15/08/2026 13:44 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 64 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,14 +18,14 @@
     },
     {
       "level": "low",
-      "title": "61 eventos de desarrollo",
+      "title": "64 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
   "people": [
     {
       "name": "Valentin Markov",
-      "role": "Actividad registrada en Soporte",
+      "role": "Soporte Funcional",
       "area": "Soporte",
       "status": "green",
       "active_tasks": 30,
@@ -34,7 +34,7 @@
     },
     {
       "name": "Mateo Scozzina",
-      "role": "Actividad registrada en Soporte",
+      "role": "Soporte Funcional",
       "area": "Soporte",
       "status": "green",
       "active_tasks": 29,
@@ -43,16 +43,16 @@
     },
     {
       "name": "Nahiara Aylen Delgado",
-      "role": "Actividad registrada en Proyectos",
+      "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "green",
       "active_tasks": 22,
-      "yesterday": "0 actividades registradas.",
+      "yesterday": "16 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
       "name": "Carolina Monserrat",
-      "role": "Actividad registrada en Proyectos",
+      "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "yellow",
       "active_tasks": 20,
@@ -60,27 +60,36 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Maximiliano Alarcon",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
-      "status": "yellow",
-      "active_tasks": 15,
-      "yesterday": "9 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Ignacio Lera",
-      "role": "Actividad registrada en Soporte",
+      "role": "Líder de Soporte",
       "area": "Soporte",
       "status": "yellow",
-      "active_tasks": 13,
+      "active_tasks": 15,
       "yesterday": "7 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario interno Odoo",
+      "area": "Proyectos",
+      "status": "yellow",
+      "active_tasks": 15,
+      "yesterday": "15 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "status": "yellow",
+      "active_tasks": 12,
+      "yesterday": "4 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Pablo Marchionno",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 11,
       "yesterday": "3 actividades registradas.",
@@ -88,25 +97,16 @@
     },
     {
       "name": "Lucas Burgos",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
+      "role": "Director Comercial",
+      "area": "Comercial",
       "status": "red",
       "active_tasks": 9,
-      "yesterday": "8 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Nelson Tontarelli",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 7,
-      "yesterday": "3 actividades registradas.",
+      "yesterday": "9 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
       "name": "Ariadna Estebenet",
-      "role": "Actividad registrada en Proyectos",
+      "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 6,
@@ -115,8 +115,8 @@
     },
     {
       "name": "Matias Banega",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
+      "role": "Director de Proyectos",
+      "area": "Proyectos",
       "status": "red",
       "active_tasks": 5,
       "yesterday": "1 actividades registradas.",
@@ -124,7 +124,7 @@
     },
     {
       "name": "Jinzo",
-      "role": "Actividad registrada en Proyectos",
+      "role": "Usuario interno Odoo",
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 5,
@@ -132,17 +132,17 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Nelson Tontarelli",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
       "status": "red",
-      "active_tasks": 5,
-      "yesterday": "3 actividades registradas.",
+      "active_tasks": 4,
+      "yesterday": "2 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
       "name": "Ezequiel Montes",
-      "role": "Actividad registrada en Proyectos",
+      "role": "Líder de Proyectos",
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 3,
@@ -151,44 +151,17 @@
     },
     {
       "name": "Genaro García",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 2,
       "yesterday": "2 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Alejandro Sartorio",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 2,
-      "yesterday": "2 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Alejandro Sartorio",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 2,
-      "yesterday": "2 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ignacio Lera",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 2,
-      "yesterday": "7 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
       "name": "Francisco Fiorentino",
-      "role": "Actividad registrada en Soporte",
-      "area": "Soporte",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 1,
       "yesterday": "1 actividades registradas.",
@@ -196,17 +169,17 @@
     },
     {
       "name": "Lucia Centurion",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
+      "role": "Administración & Finanzas",
+      "area": "Administración",
       "status": "red",
       "active_tasks": 1,
-      "yesterday": "0 actividades registradas.",
+      "yesterday": "1 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
       "name": "Lanser Jose Ignacio",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
+      "role": "Comercial",
+      "area": "Comercial",
       "status": "red",
       "active_tasks": 1,
       "yesterday": "1 actividades registradas.",
@@ -215,172 +188,166 @@
   ],
   "organization": [
     {
-      "id": "person-1",
+      "id": "valentin-markov",
       "name": "Valentin Markov",
-      "role": "Usuario con actividad registrada",
+      "role": "Soporte Funcional",
       "area": "Soporte",
-      "manager": null,
-      "activity_count": 30
+      "manager": "ignacio-lera",
+      "activity_count": 30,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-2",
+      "id": "mateo-scozzina",
       "name": "Mateo Scozzina",
-      "role": "Usuario con actividad registrada",
+      "role": "Soporte Funcional",
       "area": "Soporte",
-      "manager": null,
-      "activity_count": 29
+      "manager": "ignacio-lera",
+      "activity_count": 29,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-3",
+      "id": "nahiara-delgado",
       "name": "Nahiara Aylen Delgado",
-      "role": "Usuario con actividad registrada",
+      "role": "Analista Funcional",
       "area": "Proyectos",
-      "manager": null,
-      "activity_count": 22
+      "manager": "matias-banega",
+      "activity_count": 22,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-4",
+      "id": "carolina-monserrat",
       "name": "Carolina Monserrat",
-      "role": "Usuario con actividad registrada",
+      "role": "Analista Funcional",
       "area": "Proyectos",
-      "manager": null,
-      "activity_count": 20
+      "manager": "matias-banega",
+      "activity_count": 20,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-5",
-      "name": "Maximiliano Alarcon",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 15
+      "id": "ignacio-lera",
+      "name": "Ignacio Lera",
+      "role": "Líder de Soporte",
+      "area": "Soporte",
+      "manager": "matias-banega",
+      "activity_count": 15,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "person-6",
-      "name": "Ignacio Lera",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 13
-    },
-    {
-      "id": "person-7",
-      "name": "Pablo Marchionno",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 11
-    },
-    {
-      "id": "person-8",
-      "name": "Lucas Burgos",
-      "role": "Usuario con actividad registrada",
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario interno Odoo · rol no publicado",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 9
+      "activity_count": 15,
+      "role_source": "Odoo"
     },
     {
-      "id": "person-9",
+      "id": "nelson-tontarelli",
       "name": "Nelson Tontarelli",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 7
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "manager": "matias-banega",
+      "activity_count": 12,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-10",
+      "id": "pablo-marchionno",
+      "name": "Pablo Marchionno",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
+      "activity_count": 11,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "lucas-burgos",
+      "name": "Lucas Burgos",
+      "role": "Director Comercial",
+      "area": "Comercial",
+      "manager": null,
+      "activity_count": 9,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "ariadna-estebenet",
       "name": "Ariadna Estebenet",
-      "role": "Usuario con actividad registrada",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 6,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "matias-banega",
+      "name": "Matias Banega",
+      "role": "Director de Proyectos",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 6
-    },
-    {
-      "id": "person-11",
-      "name": "Matias Banega",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 5
+      "activity_count": 5,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "person-12",
       "name": "Jinzo",
-      "role": "Usuario con actividad registrada",
+      "role": "Usuario interno Odoo · rol no publicado",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 5
+      "activity_count": 5,
+      "role_source": "Odoo"
     },
     {
-      "id": "person-13",
-      "name": "Nelson Tontarelli",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
+      "id": "alejandro-sartorio",
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
       "manager": null,
-      "activity_count": 5
+      "activity_count": 4,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-14",
+      "id": "ezequiel-montes",
       "name": "Ezequiel Montes",
-      "role": "Usuario con actividad registrada",
+      "role": "Líder de Proyectos",
       "area": "Proyectos",
-      "manager": null,
-      "activity_count": 3
+      "manager": "matias-banega",
+      "activity_count": 3,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-15",
+      "id": "genaro-garcia",
       "name": "Genaro García",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 2
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
+      "activity_count": 2,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-16",
-      "name": "Alejandro Sartorio",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 2
-    },
-    {
-      "id": "person-17",
-      "name": "Alejandro Sartorio",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 2
-    },
-    {
-      "id": "person-18",
-      "name": "Ignacio Lera",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 2
-    },
-    {
-      "id": "person-19",
+      "id": "francisco-fiorentino",
       "name": "Francisco Fiorentino",
-      "role": "Usuario con actividad registrada",
-      "area": "Soporte",
-      "manager": null,
-      "activity_count": 1
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
+      "activity_count": 1,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-20",
+      "id": "lucia-centurion",
       "name": "Lucia Centurion",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
+      "role": "Administración & Finanzas",
+      "area": "Administración",
       "manager": null,
-      "activity_count": 1
+      "activity_count": 1,
+      "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-21",
+      "id": "jose-ignacio-lanser",
       "name": "Lanser Jose Ignacio",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 1
+      "role": "Comercial",
+      "area": "Comercial",
+      "manager": "lucas-burgos",
+      "activity_count": 1,
+      "role_source": "hitofusion.com/jobs"
     }
   ],
   "relations": {
@@ -691,6 +658,51 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-17756304354",
+      "date": "2026-08-15",
+      "time": "16:44",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17756152723",
+      "date": "2026-08-15",
+      "time": "16:42",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17755698435",
+      "date": "2026-08-15",
+      "time": "16:35",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-17755688193",
       "date": "2026-08-15",
@@ -4639,5 +4651,9 @@
     "github": "online",
     "odoo_crm": "pendiente de habilitación",
     "privacy": "datos reales sanitizados para publicación pública"
+  },
+  "organization_meta": {
+    "roles_source": "https://www.hitofusion.com/jobs",
+    "structure_note": "Agrupación inferida por área y cargo; la fuente publica roles, no líneas formales de reporte."
   }
 }
