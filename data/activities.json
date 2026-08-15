@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-15",
-    "updated_at": "15/08/2026 13:30 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 59 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "15/08/2026 13:34 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 61 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,34 +18,16 @@
     },
     {
       "level": "low",
-      "title": "59 eventos de desarrollo",
+      "title": "61 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
   "people": [
     {
-      "name": "wsf",
-      "role": "Actividad registrada en Desarrollo",
-      "area": "Desarrollo",
-      "status": "green",
-      "active_tasks": 54,
-      "yesterday": "0 actividades registradas.",
-      "today": "26 actividades registradas."
-    },
-    {
-      "name": "Equipo Proyectos",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
-      "status": "yellow",
-      "active_tasks": 35,
-      "yesterday": "24 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Valentin Markov",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
-      "status": "yellow",
+      "status": "green",
       "active_tasks": 30,
       "yesterday": "5 actividades registradas.",
       "today": "3 actividades registradas."
@@ -54,7 +36,7 @@
       "name": "Mateo Scozzina",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
-      "status": "yellow",
+      "status": "green",
       "active_tasks": 29,
       "yesterday": "2 actividades registradas.",
       "today": "2 actividades registradas."
@@ -63,7 +45,7 @@
       "name": "Nahiara Aylen Delgado",
       "role": "Actividad registrada en Proyectos",
       "area": "Proyectos",
-      "status": "yellow",
+      "status": "green",
       "active_tasks": 22,
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -72,7 +54,7 @@
       "name": "Carolina Monserrat",
       "role": "Actividad registrada en Proyectos",
       "area": "Proyectos",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 20,
       "yesterday": "20 actividades registradas.",
       "today": "0 actividades registradas."
@@ -81,7 +63,7 @@
       "name": "Maximiliano Alarcon",
       "role": "Actividad registrada en Proyectos",
       "area": "Proyectos",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 15,
       "yesterday": "9 actividades registradas.",
       "today": "0 actividades registradas."
@@ -90,7 +72,7 @@
       "name": "Ignacio Lera",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 13,
       "yesterday": "7 actividades registradas.",
       "today": "0 actividades registradas."
@@ -156,15 +138,6 @@
       "status": "red",
       "active_tasks": 5,
       "yesterday": "3 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "MatiasBanega",
-      "role": "Actividad registrada en Desarrollo",
-      "area": "Desarrollo",
-      "status": "red",
-      "active_tasks": 5,
-      "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
@@ -243,22 +216,6 @@
   "organization": [
     {
       "id": "person-1",
-      "name": "wsf",
-      "role": "Usuario con actividad registrada",
-      "area": "Desarrollo",
-      "manager": null,
-      "activity_count": 54
-    },
-    {
-      "id": "person-2",
-      "name": "Equipo Proyectos",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 35
-    },
-    {
-      "id": "person-3",
       "name": "Valentin Markov",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -266,7 +223,7 @@
       "activity_count": 30
     },
     {
-      "id": "person-4",
+      "id": "person-2",
       "name": "Mateo Scozzina",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -274,7 +231,7 @@
       "activity_count": 29
     },
     {
-      "id": "person-5",
+      "id": "person-3",
       "name": "Nahiara Aylen Delgado",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -282,7 +239,7 @@
       "activity_count": 22
     },
     {
-      "id": "person-6",
+      "id": "person-4",
       "name": "Carolina Monserrat",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -290,7 +247,7 @@
       "activity_count": 20
     },
     {
-      "id": "person-7",
+      "id": "person-5",
       "name": "Maximiliano Alarcon",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -298,7 +255,7 @@
       "activity_count": 15
     },
     {
-      "id": "person-8",
+      "id": "person-6",
       "name": "Ignacio Lera",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -306,7 +263,7 @@
       "activity_count": 13
     },
     {
-      "id": "person-9",
+      "id": "person-7",
       "name": "Pablo Marchionno",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -314,7 +271,7 @@
       "activity_count": 11
     },
     {
-      "id": "person-10",
+      "id": "person-8",
       "name": "Lucas Burgos",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -322,7 +279,7 @@
       "activity_count": 9
     },
     {
-      "id": "person-11",
+      "id": "person-9",
       "name": "Nelson Tontarelli",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -330,7 +287,7 @@
       "activity_count": 7
     },
     {
-      "id": "person-12",
+      "id": "person-10",
       "name": "Ariadna Estebenet",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -338,7 +295,7 @@
       "activity_count": 6
     },
     {
-      "id": "person-13",
+      "id": "person-11",
       "name": "Matias Banega",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -346,7 +303,7 @@
       "activity_count": 5
     },
     {
-      "id": "person-14",
+      "id": "person-12",
       "name": "Jinzo",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -354,7 +311,7 @@
       "activity_count": 5
     },
     {
-      "id": "person-15",
+      "id": "person-13",
       "name": "Nelson Tontarelli",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -362,15 +319,7 @@
       "activity_count": 5
     },
     {
-      "id": "person-16",
-      "name": "MatiasBanega",
-      "role": "Usuario con actividad registrada",
-      "area": "Desarrollo",
-      "manager": null,
-      "activity_count": 5
-    },
-    {
-      "id": "person-17",
+      "id": "person-14",
       "name": "Ezequiel Montes",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -378,7 +327,7 @@
       "activity_count": 3
     },
     {
-      "id": "person-18",
+      "id": "person-15",
       "name": "Genaro García",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -386,7 +335,7 @@
       "activity_count": 2
     },
     {
-      "id": "person-19",
+      "id": "person-16",
       "name": "Alejandro Sartorio",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -394,7 +343,7 @@
       "activity_count": 2
     },
     {
-      "id": "person-20",
+      "id": "person-17",
       "name": "Alejandro Sartorio",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -402,7 +351,7 @@
       "activity_count": 2
     },
     {
-      "id": "person-21",
+      "id": "person-18",
       "name": "Ignacio Lera",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -410,7 +359,7 @@
       "activity_count": 2
     },
     {
-      "id": "person-22",
+      "id": "person-19",
       "name": "Francisco Fiorentino",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -418,7 +367,7 @@
       "activity_count": 1
     },
     {
-      "id": "person-23",
+      "id": "person-20",
       "name": "Lucia Centurion",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -426,7 +375,7 @@
       "activity_count": 1
     },
     {
-      "id": "person-24",
+      "id": "person-21",
       "name": "Lanser Jose Ignacio",
       "role": "Usuario con actividad registrada",
       "area": "Proyectos",
@@ -743,14 +692,59 @@
   },
   "activities": [
     {
+      "id": "github-17755688193",
+      "date": "2026-08-15",
+      "time": "16:34",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17755543919",
+      "date": "2026-08-15",
+      "time": "16:32",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17755437578",
+      "date": "2026-08-15",
+      "time": "16:31",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-17755368390",
       "date": "2026-08-15",
       "time": "16:30",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -763,9 +757,9 @@
       "time": "16:20",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -778,9 +772,9 @@
       "time": "16:19",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -793,9 +787,9 @@
       "time": "16:13",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -808,9 +802,9 @@
       "time": "16:11",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -823,9 +817,9 @@
       "time": "16:06",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -838,9 +832,9 @@
       "time": "16:05",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -853,9 +847,9 @@
       "time": "16:05",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -868,9 +862,9 @@
       "time": "16:05",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -883,9 +877,9 @@
       "time": "16:05",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -898,9 +892,9 @@
       "time": "16:03",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -913,9 +907,9 @@
       "time": "15:59",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -928,9 +922,9 @@
       "time": "15:58",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -943,9 +937,9 @@
       "time": "15:56",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -958,9 +952,9 @@
       "time": "15:55",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -973,9 +967,9 @@
       "time": "15:54",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -988,9 +982,9 @@
       "time": "15:53",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1003,9 +997,9 @@
       "time": "15:52",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1018,9 +1012,9 @@
       "time": "15:50",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1033,9 +1027,9 @@
       "time": "15:47",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1048,9 +1042,9 @@
       "time": "15:46",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1063,9 +1057,9 @@
       "time": "15:44",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1078,9 +1072,9 @@
       "time": "15:42",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1093,9 +1087,9 @@
       "time": "15:38",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1108,9 +1102,9 @@
       "time": "15:38",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1123,9 +1117,9 @@
       "time": "15:05",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "cerebro-hito",
@@ -1322,9 +1316,9 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
@@ -1382,9 +1376,9 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
@@ -1506,9 +1500,9 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
@@ -1536,9 +1530,9 @@
       "time": "21:49",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
@@ -1566,9 +1560,9 @@
       "time": "21:49",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
@@ -1581,9 +1575,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1675,9 +1669,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1690,9 +1684,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1721,9 +1715,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1752,9 +1746,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1829,9 +1823,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1844,9 +1838,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1874,9 +1868,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1905,9 +1899,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1920,9 +1914,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1951,9 +1945,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -1966,9 +1960,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -2028,9 +2022,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -2043,9 +2037,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -2058,9 +2052,9 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
@@ -2573,9 +2567,9 @@
       "time": "12:21",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
@@ -2588,9 +2582,9 @@
       "time": "12:21",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
@@ -2603,9 +2597,9 @@
       "time": "12:21",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
@@ -2618,9 +2612,9 @@
       "time": "12:21",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
@@ -2708,9 +2702,9 @@
       "time": "22:32",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #344",
@@ -2813,9 +2807,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2843,9 +2837,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2858,9 +2852,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2873,9 +2867,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2888,9 +2882,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2903,9 +2897,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -2918,9 +2912,9 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
@@ -3024,9 +3018,9 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
@@ -3054,9 +3048,9 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
@@ -3084,9 +3078,9 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Sin usuario interno asignado",
       "users": [
-        "Equipo Proyectos"
+        "Sin usuario interno asignado"
       ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
@@ -3774,9 +3768,9 @@
       "time": "01:07",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "account-financial-tools",
@@ -3789,9 +3783,9 @@
       "time": "01:07",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "account-financial-tools",
@@ -3804,9 +3798,9 @@
       "time": "01:07",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "account-financial-tools",
@@ -4209,9 +4203,9 @@
       "time": "12:45",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4224,9 +4218,9 @@
       "time": "12:45",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4239,9 +4233,9 @@
       "time": "12:44",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4254,9 +4248,9 @@
       "time": "12:44",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4269,9 +4263,9 @@
       "time": "12:32",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4284,9 +4278,9 @@
       "time": "12:32",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4299,9 +4293,9 @@
       "time": "12:31",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4314,9 +4308,9 @@
       "time": "12:31",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4329,9 +4323,9 @@
       "time": "02:33",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4344,9 +4338,9 @@
       "time": "02:33",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4359,9 +4353,9 @@
       "time": "02:33",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4374,9 +4368,9 @@
       "time": "02:32",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4389,9 +4383,9 @@
       "time": "23:51",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4404,9 +4398,9 @@
       "time": "23:50",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4419,9 +4413,9 @@
       "time": "23:50",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4434,9 +4428,9 @@
       "time": "23:50",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4449,9 +4443,9 @@
       "time": "23:27",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4464,9 +4458,9 @@
       "time": "23:27",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4479,9 +4473,9 @@
       "time": "23:26",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4494,9 +4488,9 @@
       "time": "23:26",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4509,9 +4503,9 @@
       "time": "23:12",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4524,9 +4518,9 @@
       "time": "23:12",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4539,9 +4533,9 @@
       "time": "23:11",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4554,9 +4548,9 @@
       "time": "23:11",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4569,9 +4563,9 @@
       "time": "23:03",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "wsf",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "wsf"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
@@ -4584,9 +4578,9 @@
       "time": "23:34",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "MatiasBanega",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "MatiasBanega"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
@@ -4599,9 +4593,9 @@
       "time": "23:34",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "MatiasBanega",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "MatiasBanega"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
@@ -4614,9 +4608,9 @@
       "time": "23:00",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "MatiasBanega",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "MatiasBanega"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
@@ -4629,24 +4623,9 @@
       "time": "21:30",
       "area": "desarrollo",
       "source": "GitHub",
-      "person": "MatiasBanega",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "MatiasBanega"
-      ],
-      "client": "Interno",
-      "project": "odoo_tienda_nube",
-      "title": "PushEvent en odoo_tienda_nube",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-16258373295",
-      "date": "2026-07-30",
-      "time": "21:48",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "MatiasBanega",
-      "users": [
-        "MatiasBanega"
+        "Sin usuario interno vinculado"
       ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
