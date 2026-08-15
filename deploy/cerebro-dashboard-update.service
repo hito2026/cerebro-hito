@@ -1,0 +1,9 @@
+[Unit]
+Description=Actualizar y publicar Cerebro Hito en datos
+After=network-online.target docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/asartorio/cerebro-hito
+ExecStart=/usr/bin/python3 /home/asartorio/cerebro-hito/scripts/update_dashboard.py --publish
+

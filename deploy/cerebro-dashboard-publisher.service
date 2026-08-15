@@ -1,0 +1,13 @@
+[Unit]
+Description=API local de publicación de Cerebro Hito en datos
+After=network-online.target docker.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/asartorio/cerebro-hito
+ExecStart=/usr/bin/python3 /home/asartorio/cerebro-hito/scripts/publisher_api.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
