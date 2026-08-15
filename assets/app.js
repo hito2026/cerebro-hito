@@ -112,4 +112,8 @@ function renderProductivity(){
 function renderAccordions(rows){
   $("#areaAccordions").innerHTML=Object.entries(AREA).map(([key,a])=>{const items=rows.filter(x=>x.area===key);return `<details class="accordion" style="--area:${a.color}" ${items.length?"":"disabled"}><summary><span class="area-icon">${a.icon}</span><span><strong>${a.label}</strong><small>${items.length} actividades en la selección</small></span></summary><div class="accordion-content">${items.length?items.map(x=>`<div class="mini-event"><time>${x.time}</time><strong>${x.title}</strong><span>${x.person}</span></div>`).join(""):"<p>Sin actividad para los filtros actuales.</p>"}</div></details>`}).join("");
 }
-init().catch(()=>{$("#timeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá el archivo data/activities.json.</p></div>"});
+const ACCESS_HASH="28e910d2c7fa4c4d175906f5d8d0b030c8ce593777eef446f222863341ab5d0f";
+async function digest(value){const bytes=new TextEncoder().encode(value);const hash=await crypto.subtle.digest("SHA-256",bytes);return [...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+function start(){document.body.classList.remove("locked");$("#accessGate").hidden=true;init().catch(()=>{$("#timeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá el archivo data/activities.json.</p></div>"})}
+if(sessionStorage.getItem("cerebro_access")==="granted")start();
+else $("#accessForm").addEventListener("submit",async e=>{e.preventDefault();const valid=await digest($("#accessKey").value)===ACCESS_HASH;if(valid){sessionStorage.setItem("cerebro_access","granted");start()}else{$("#accessError").textContent="Clave incorrecta";$("#accessKey").select()}});

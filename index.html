@@ -7,7 +7,18 @@
   <title>Cerebro Hito en datos</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="locked">
+  <div id="accessGate" class="access-gate" role="dialog" aria-modal="true" aria-labelledby="accessTitle">
+    <form id="accessForm" class="access-panel">
+      <span class="brand-mark">HF</span>
+      <p class="eyebrow">restricted / company data</p>
+      <h1 id="accessTitle">Cerebro Hito en datos_</h1>
+      <p>Ingresá la clave para acceder al tablero corporativo.</p>
+      <label><span>access_key</span><input id="accessKey" type="password" autocomplete="current-password" autofocus required></label>
+      <button type="submit">Entrar</button>
+      <small id="accessError" role="alert"></small>
+    </form>
+  </div>
   <header class="topbar">
     <a class="brand" href="#inicio" aria-label="Ir al inicio">
       <span class="brand-mark">HF</span>
