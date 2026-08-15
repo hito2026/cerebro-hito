@@ -22,7 +22,7 @@ function render(){
   $("#displayDate").textContent=dateLabel(state.date||state.data.report.date);
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#summaryText").textContent=state.data.report.summary;
-  renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderRelations();renderGoals();renderProductivity();renderAccordions(rows);
+  renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderKpis(rows){
@@ -57,6 +57,11 @@ function renderRelations(){
 }
 function renderGoals(){
   $("#goalsGrid").innerHTML=state.data.goals.map(g=>`<article class="goal"><div class="goal-top"><span class="pill" style="--area:${AREA[g.area].color}">${AREA[g.area].label}</span><strong>${g.progress}%</strong></div><h3>${g.title}</h3><p>${g.current} / ${g.target} ${g.unit}</p><div class="goal-track"><i style="width:${g.progress}%;--goal:${AREA[g.area].color}"></i></div><small>${g.note}</small></article>`).join("");
+}
+function renderWeeklyTargets(){
+  const week=state.data.weekly_plan;
+  $("#weekRange").textContent=`${dateLabel(week.from)} → ${dateLabel(week.to)} · datos demo`;
+  $("#weeklyTargets").innerHTML=week.indicators.map(x=>{const progress=Math.min(100,Math.round(x.current/x.target*100));const status=progress>=90?"green":progress>=65?"yellow":"red";return `<div class="week-goal-row"><div><strong>${x.name}</strong><small>${x.area}</small></div><span>${x.target} ${x.unit}</span><span>${x.current} ${x.unit}</span><div class="week-progress"><i style="width:${progress}%"></i><b>${progress}%</b></div><span class="state-label ${status}"><i></i>${status==="green"?"en objetivo":status==="yellow"?"en progreso":"requiere atención"}</span></div>`}).join("");
 }
 function renderProductivity(){
   const series=state.data.productivity.series; const max=100;

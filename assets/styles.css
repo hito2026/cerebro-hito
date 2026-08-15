@@ -133,6 +133,8 @@ main { max-width: 1440px; margin: auto; padding: 0 18px 70px; }
 
 .goals-grid { display:grid;grid-template-columns:repeat(2,1fr);gap:8px }.goal{padding:16px;background:var(--panel);border:1px solid var(--line);border-radius:5px}.goal-top{display:flex;justify-content:space-between;align-items:center}.goal-top strong{font-size:20px;font-weight:500}.goal h3{margin:15px 0 3px;font-size:11px}.goal p,.goal small{color:var(--muted);font-size:9px}.goal p{margin:0}.goal-track{height:4px;margin:14px 0 9px;background:#202526}.goal-track i{display:block;height:100%;background:var(--goal)}
 
+.week-goal-shell{background:var(--panel);border:1px solid var(--line);border-radius:5px;overflow:hidden}.week-goal-head,.week-goal-row{display:grid;grid-template-columns:minmax(220px,1.5fr) minmax(75px,.45fr) minmax(75px,.45fr) minmax(150px,.8fr) minmax(125px,.65fr);align-items:center;gap:16px}.week-goal-head{padding:8px 13px;border-bottom:1px solid var(--line);color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.08em}.week-goal-row{min-height:48px;padding:8px 13px;border-bottom:1px solid var(--line);font-size:9px}.week-goal-row:last-child{border:0}.week-goal-row>div:first-child strong,.week-goal-row>div:first-child small{display:block}.week-goal-row>div:first-child strong{font-size:10px}.week-goal-row>div:first-child small{color:var(--muted);font-size:8px}.week-goal-row>span{color:var(--muted)}.week-progress{height:3px;background:#202526;position:relative;margin-right:35px}.week-progress i{display:block;height:100%;background:var(--green)}.week-progress b{position:absolute;left:calc(100% + 7px);top:-5px;color:var(--text);font-size:8px;font-weight:500}.state-label{display:flex;align-items:center;gap:6px;font-size:8px;text-transform:uppercase}.state-label i{width:6px;height:6px;border-radius:50%}.state-label.green{color:var(--green)}.state-label.green i{background:var(--green)}.state-label.yellow{color:#f4cb5f}.state-label.yellow i{background:#f4cb5f}.state-label.red{color:var(--red)}.state-label.red i{background:var(--red)}
+
 .chart-legend{display:flex;gap:14px}.chart-legend span{display:flex;align-items:center;gap:5px}.chart-legend i{width:7px;height:7px;background:var(--c)}
 .productivity-chart{height:300px;padding:28px 24px 18px;display:flex;align-items:stretch;gap:clamp(14px,4vw,55px);background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(25% - 1px),var(--line) 25%)}
 .week{flex:1;min-width:35px;display:grid;grid-template-rows:1fr 20px;gap:8px}.week-bars{display:flex;align-items:end;justify-content:center;gap:3px}.week-bars i{width:min(10px,20%);min-height:2px;background:var(--c);opacity:.85}.week>span{text-align:center;color:var(--muted);font-size:8px}
@@ -167,6 +169,7 @@ footer { padding: 22px 18px; display: flex; justify-content: space-between; bord
   .event-card .source { display:none; }
   .period > summary { grid-template-columns: 1fr; gap: 7px; }
   .period-metrics { grid-template-columns: repeat(5,minmax(60px,1fr)); overflow-x: auto; }
+  .week-goal-shell{overflow-x:auto}.week-goal-head,.week-goal-row{min-width:760px}
 }
 
 @media (max-width: 540px) {

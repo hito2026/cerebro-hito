@@ -26,6 +26,18 @@
       {"from":"ml","to":"fix"},{"from":"fix","to":"bruno"},{"from":"fix","to":"validation"},{"from":"validation","to":"carla"},{"from":"validation","to":"ana"},{"from":"sla","to":"ana"},{"from":"ml","to":"diego"}
     ]
   },
+  "weekly_plan": {
+    "from":"2026-08-10",
+    "to":"2026-08-16",
+    "indicators":[
+      {"name":"Tickets resueltos","area":"Soporte","target":35,"current":31,"unit":"tickets"},
+      {"name":"Cumplimiento de SLA","area":"Soporte","target":95,"current":87,"unit":"%"},
+      {"name":"Hitos de proyecto completados","area":"Proyectos","target":8,"current":6,"unit":"hitos"},
+      {"name":"Oportunidades con seguimiento","area":"Comercial","target":20,"current":13,"unit":"oportunidades"},
+      {"name":"Entregas técnicas validadas","area":"Desarrollo","target":10,"current":9,"unit":"entregas"},
+      {"name":"Bloqueos críticos resueltos","area":"Compañía","target":5,"current":2,"unit":"bloqueos"}
+    ]
+  },
   "goals": [
     {"title":"Tickets dentro de SLA","area":"soporte","current":87,"target":95,"unit":"%","progress":92,"note":"Faltan 8 puntos para la meta mensual."},
     {"title":"Hitos de proyecto completados","area":"proyectos","current":18,"target":24,"unit":"hitos","progress":75,"note":"Seis hitos pendientes en el período."},
