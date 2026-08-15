@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-15",
-    "updated_at": "15/08/2026 13:06 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 54 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "15/08/2026 13:30 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 59 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,34 +18,34 @@
     },
     {
       "level": "low",
-      "title": "54 eventos de desarrollo",
+      "title": "59 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
   "people": [
     {
-      "name": "Equipo Proyectos",
-      "role": "Actividad registrada en Proyectos",
-      "area": "Proyectos",
-      "status": "green",
-      "active_tasks": 100,
-      "yesterday": "75 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "wsf",
       "role": "Actividad registrada en Desarrollo",
       "area": "Desarrollo",
-      "status": "yellow",
-      "active_tasks": 48,
+      "status": "green",
+      "active_tasks": 54,
       "yesterday": "0 actividades registradas.",
-      "today": "20 actividades registradas."
+      "today": "26 actividades registradas."
+    },
+    {
+      "name": "Equipo Proyectos",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "yellow",
+      "active_tasks": 35,
+      "yesterday": "24 actividades registradas.",
+      "today": "0 actividades registradas."
     },
     {
       "name": "Valentin Markov",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 30,
       "yesterday": "5 actividades registradas.",
       "today": "3 actividades registradas."
@@ -54,10 +54,37 @@
       "name": "Mateo Scozzina",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 29,
       "yesterday": "2 actividades registradas.",
       "today": "2 actividades registradas."
+    },
+    {
+      "name": "Nahiara Aylen Delgado",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "yellow",
+      "active_tasks": 22,
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Carolina Monserrat",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 20,
+      "yesterday": "20 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Maximiliano Alarcon",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 15,
+      "yesterday": "9 actividades registradas.",
+      "today": "0 actividades registradas."
     },
     {
       "name": "Ignacio Lera",
@@ -65,7 +92,7 @@
       "area": "Soporte",
       "status": "red",
       "active_tasks": 13,
-      "yesterday": "6 actividades registradas.",
+      "yesterday": "7 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
@@ -78,21 +105,30 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Lucas Burgos",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 9,
+      "yesterday": "8 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Nelson Tontarelli",
       "role": "Actividad registrada en Soporte",
       "area": "Soporte",
       "status": "red",
       "active_tasks": 7,
-      "yesterday": "2 actividades registradas.",
+      "yesterday": "3 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
-      "name": "MatiasBanega",
-      "role": "Actividad registrada en Desarrollo",
-      "area": "Desarrollo",
+      "name": "Ariadna Estebenet",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
       "status": "red",
       "active_tasks": 6,
-      "yesterday": "0 actividades registradas.",
+      "yesterday": "4 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
@@ -101,6 +137,42 @@
       "area": "Soporte",
       "status": "red",
       "active_tasks": 5,
+      "yesterday": "1 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Jinzo",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 5,
+      "yesterday": "5 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 5,
+      "yesterday": "3 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "MatiasBanega",
+      "role": "Actividad registrada en Desarrollo",
+      "area": "Desarrollo",
+      "status": "red",
+      "active_tasks": 5,
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ezequiel Montes",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 3,
       "yesterday": "1 actividades registradas.",
       "today": "0 actividades registradas."
     },
@@ -119,7 +191,25 @@
       "area": "Soporte",
       "status": "red",
       "active_tasks": 2,
-      "yesterday": "1 actividades registradas.",
+      "yesterday": "2 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Alejandro Sartorio",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 2,
+      "yesterday": "2 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ignacio Lera",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 2,
+      "yesterday": "7 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
@@ -130,24 +220,42 @@
       "active_tasks": 1,
       "yesterday": "1 actividades registradas.",
       "today": "0 actividades registradas."
+    },
+    {
+      "name": "Lucia Centurion",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 1,
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Lanser Jose Ignacio",
+      "role": "Actividad registrada en Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 1,
+      "yesterday": "1 actividades registradas.",
+      "today": "0 actividades registradas."
     }
   ],
   "organization": [
     {
       "id": "person-1",
-      "name": "Equipo Proyectos",
-      "role": "Usuario con actividad registrada",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 100
-    },
-    {
-      "id": "person-2",
       "name": "wsf",
       "role": "Usuario con actividad registrada",
       "area": "Desarrollo",
       "manager": null,
-      "activity_count": 48
+      "activity_count": 54
+    },
+    {
+      "id": "person-2",
+      "name": "Equipo Proyectos",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 35
     },
     {
       "id": "person-3",
@@ -167,6 +275,30 @@
     },
     {
       "id": "person-5",
+      "name": "Nahiara Aylen Delgado",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 22
+    },
+    {
+      "id": "person-6",
+      "name": "Carolina Monserrat",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 20
+    },
+    {
+      "id": "person-7",
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 15
+    },
+    {
+      "id": "person-8",
       "name": "Ignacio Lera",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -174,7 +306,7 @@
       "activity_count": 13
     },
     {
-      "id": "person-6",
+      "id": "person-9",
       "name": "Pablo Marchionno",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -182,7 +314,15 @@
       "activity_count": 11
     },
     {
-      "id": "person-7",
+      "id": "person-10",
+      "name": "Lucas Burgos",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 9
+    },
+    {
+      "id": "person-11",
       "name": "Nelson Tontarelli",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -190,15 +330,15 @@
       "activity_count": 7
     },
     {
-      "id": "person-8",
-      "name": "MatiasBanega",
+      "id": "person-12",
+      "name": "Ariadna Estebenet",
       "role": "Usuario con actividad registrada",
-      "area": "Desarrollo",
+      "area": "Proyectos",
       "manager": null,
       "activity_count": 6
     },
     {
-      "id": "person-9",
+      "id": "person-13",
       "name": "Matias Banega",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -206,7 +346,39 @@
       "activity_count": 5
     },
     {
-      "id": "person-10",
+      "id": "person-14",
+      "name": "Jinzo",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 5
+    },
+    {
+      "id": "person-15",
+      "name": "Nelson Tontarelli",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 5
+    },
+    {
+      "id": "person-16",
+      "name": "MatiasBanega",
+      "role": "Usuario con actividad registrada",
+      "area": "Desarrollo",
+      "manager": null,
+      "activity_count": 5
+    },
+    {
+      "id": "person-17",
+      "name": "Ezequiel Montes",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 3
+    },
+    {
+      "id": "person-18",
       "name": "Genaro García",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -214,7 +386,7 @@
       "activity_count": 2
     },
     {
-      "id": "person-11",
+      "id": "person-19",
       "name": "Alejandro Sartorio",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
@@ -222,10 +394,42 @@
       "activity_count": 2
     },
     {
-      "id": "person-12",
+      "id": "person-20",
+      "name": "Alejandro Sartorio",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 2
+    },
+    {
+      "id": "person-21",
+      "name": "Ignacio Lera",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 2
+    },
+    {
+      "id": "person-22",
       "name": "Francisco Fiorentino",
       "role": "Usuario con actividad registrada",
       "area": "Soporte",
+      "manager": null,
+      "activity_count": 1
+    },
+    {
+      "id": "person-23",
+      "name": "Lucia Centurion",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 1
+    },
+    {
+      "id": "person-24",
+      "name": "Lanser Jose Ignacio",
+      "role": "Usuario con actividad registrada",
+      "area": "Proyectos",
       "manager": null,
       "activity_count": 1
     }
@@ -539,12 +743,105 @@
   },
   "activities": [
     {
+      "id": "github-17755368390",
+      "date": "2026-08-15",
+      "time": "16:30",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17754692641",
+      "date": "2026-08-15",
+      "time": "16:20",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17754660401",
+      "date": "2026-08-15",
+      "time": "16:19",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17754230547",
+      "date": "2026-08-15",
+      "time": "16:13",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17754046943",
+      "date": "2026-08-15",
+      "time": "16:11",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-17753724383",
+      "date": "2026-08-15",
+      "time": "16:06",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "wsf",
+      "users": [
+        "wsf"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-17753646610",
       "date": "2026-08-15",
       "time": "16:05",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "DeleteEvent en cerebro-hito",
@@ -557,6 +854,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -569,6 +869,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PullRequestEvent en cerebro-hito",
@@ -581,6 +884,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -593,6 +899,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -605,6 +914,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -617,6 +929,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -629,6 +944,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -641,6 +959,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -653,6 +974,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -665,6 +989,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -677,6 +1004,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -689,6 +1019,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -701,6 +1034,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -713,6 +1049,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -725,6 +1064,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -737,6 +1079,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
@@ -749,6 +1094,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PullRequestEvent en cerebro-hito",
@@ -761,6 +1109,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "CreateEvent en cerebro-hito",
@@ -773,6 +1124,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PublicEvent en cerebro-hito",
@@ -785,6 +1139,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4862 actualizado",
@@ -797,6 +1154,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4874 actualizado",
@@ -809,6 +1169,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4812 actualizado",
@@ -821,6 +1184,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4806 actualizado",
@@ -833,6 +1199,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4818 actualizado",
@@ -844,7 +1213,11 @@
       "time": "21:57",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Lucia Centurion"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #345",
       "title": "Tarea #35300 actualizada",
@@ -856,7 +1229,12 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lanser Jose Ignacio",
+      "users": [
+        "Lanser Jose Ignacio",
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35285 actualizada",
@@ -868,7 +1246,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35226 actualizada",
@@ -880,7 +1261,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35281 actualizada",
@@ -892,7 +1276,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35284 actualizada",
@@ -904,7 +1291,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35228 actualizada",
@@ -916,7 +1306,11 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35283 actualizada",
@@ -929,6 +1323,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35289 actualizada",
@@ -940,7 +1337,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35292 actualizada",
@@ -952,7 +1352,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35290 actualizada",
@@ -964,7 +1367,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35295 actualizada",
@@ -977,6 +1383,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35291 actualizada",
@@ -988,7 +1397,11 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35224 actualizada",
@@ -1000,7 +1413,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35286 actualizada",
@@ -1012,7 +1428,11 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35298 actualizada",
@@ -1024,7 +1444,11 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35288 actualizada",
@@ -1036,7 +1460,11 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos",
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35227 actualizada",
@@ -1048,7 +1476,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35294 actualizada",
@@ -1060,7 +1491,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35293 actualizada",
@@ -1073,6 +1507,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35282 actualizada",
@@ -1084,7 +1521,10 @@
       "time": "21:52",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Maximiliano Alarcon",
+      "users": [
+        "Maximiliano Alarcon"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #343",
       "title": "Tarea #35287 actualizada",
@@ -1097,6 +1537,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
       "title": "Tarea #30757 actualizada",
@@ -1108,7 +1551,10 @@
       "time": "21:49",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
       "title": "Tarea #35196 actualizada",
@@ -1121,6 +1567,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
       "title": "Tarea #31269 actualizada",
@@ -1133,6 +1582,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33376 actualizada",
@@ -1144,7 +1596,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #34267 actualizada",
@@ -1156,7 +1612,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33626 actualizada",
@@ -1168,7 +1628,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33630 actualizada",
@@ -1180,7 +1644,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33605 actualizada",
@@ -1192,7 +1659,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33625 actualizada",
@@ -1205,6 +1676,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33374 actualizada",
@@ -1217,6 +1691,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33381 actualizada",
@@ -1228,7 +1705,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33628 actualizada",
@@ -1241,6 +1722,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33384 actualizada",
@@ -1252,7 +1736,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33629 actualizada",
@@ -1265,6 +1753,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33429 actualizada",
@@ -1276,7 +1767,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33378 actualizada",
@@ -1288,7 +1782,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33373 actualizada",
@@ -1300,7 +1798,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33607 actualizada",
@@ -1312,7 +1813,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #34437 actualizada",
@@ -1325,6 +1830,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33427 actualizada",
@@ -1337,6 +1845,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33418 actualizada",
@@ -1348,7 +1859,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #34612 actualizada",
@@ -1361,6 +1875,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33414 actualizada",
@@ -1372,7 +1889,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33635 actualizada",
@@ -1385,6 +1906,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33413 actualizada",
@@ -1397,6 +1921,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33377 actualizada",
@@ -1408,7 +1935,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33627 actualizada",
@@ -1421,6 +1952,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33420 actualizada",
@@ -1433,6 +1967,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33375 actualizada",
@@ -1444,7 +1981,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33382 actualizada",
@@ -1456,7 +1997,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33379 actualizada",
@@ -1468,7 +2013,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33608 actualizada",
@@ -1481,6 +2029,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33423 actualizada",
@@ -1493,6 +2044,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33380 actualizada",
@@ -1505,6 +2059,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33385 actualizada",
@@ -1516,7 +2073,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33637 actualizada",
@@ -1528,7 +2089,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33634 actualizada",
@@ -1540,7 +2105,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33639 actualizada",
@@ -1552,7 +2121,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33604 actualizada",
@@ -1564,7 +2136,11 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33606 actualizada",
@@ -1576,7 +2152,10 @@
       "time": "20:48",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #323",
       "title": "Tarea #33609 actualizada",
@@ -1588,7 +2167,10 @@
       "time": "20:30",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #342",
       "title": "Tarea #35233 actualizada",
@@ -1600,7 +2182,10 @@
       "time": "20:30",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #342",
       "title": "Tarea #35299 actualizada",
@@ -1613,6 +2198,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4876 actualizado",
@@ -1625,6 +2213,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4688 actualizado",
@@ -1637,6 +2228,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4873 actualizado",
@@ -1649,6 +2243,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4870 actualizado",
@@ -1661,6 +2258,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4829 actualizado",
@@ -1673,6 +2273,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Genaro García",
+      "users": [
+        "Genaro García"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4875 actualizado",
@@ -1685,6 +2288,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Genaro García",
+      "users": [
+        "Genaro García"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4872 actualizado",
@@ -1697,6 +2303,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4856 actualizado",
@@ -1709,6 +2318,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4871 actualizado",
@@ -1721,6 +2333,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4790 actualizado",
@@ -1733,6 +2348,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4814 actualizado",
@@ -1744,7 +2362,10 @@
       "time": "14:36",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #286",
       "title": "Tarea #28383 actualizada",
@@ -1756,7 +2377,11 @@
       "time": "14:34",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #284",
       "title": "Tarea #34432 actualizada",
@@ -1769,6 +2394,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4826 actualizado",
@@ -1781,6 +2409,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4866 actualizado",
@@ -1793,6 +2424,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4867 actualizado",
@@ -1805,6 +2439,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4865 actualizado",
@@ -1817,6 +2454,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4838 actualizado",
@@ -1829,6 +2469,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4208 actualizado",
@@ -1841,6 +2484,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4863 actualizado",
@@ -1853,6 +2499,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4833 actualizado",
@@ -1864,7 +2513,10 @@
       "time": "13:17",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #321",
       "title": "Tarea #35297 actualizada",
@@ -1877,6 +2529,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4808 actualizado",
@@ -1888,7 +2543,10 @@
       "time": "12:46",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #309",
       "title": "Tarea #34863 actualizada",
@@ -1900,7 +2558,10 @@
       "time": "12:36",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #321",
       "title": "Tarea #34833 actualizada",
@@ -1913,6 +2574,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
       "title": "Tarea #29000 actualizada",
@@ -1925,6 +2589,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
       "title": "Tarea #28957 actualizada",
@@ -1937,6 +2604,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
       "title": "Tarea #29043 actualizada",
@@ -1949,6 +2619,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #287",
       "title": "Tarea #28995 actualizada",
@@ -1960,7 +2633,10 @@
       "time": "12:11",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #222",
       "title": "Tarea #35189 actualizada",
@@ -1972,7 +2648,10 @@
       "time": "12:11",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #222",
       "title": "Tarea #35296 actualizada",
@@ -1985,6 +2664,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Francisco Fiorentino",
+      "users": [
+        "Francisco Fiorentino"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4868 actualizado",
@@ -1997,6 +2679,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4804 actualizado",
@@ -2009,6 +2694,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4811 actualizado",
@@ -2021,6 +2709,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #344",
       "title": "Tarea #35235 actualizada",
@@ -2032,7 +2723,10 @@
       "time": "21:11",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #339",
       "title": "Tarea #34812 actualizada",
@@ -2044,7 +2738,10 @@
       "time": "21:10",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #339",
       "title": "Tarea #34811 actualizada",
@@ -2056,7 +2753,10 @@
       "time": "21:10",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #339",
       "title": "Tarea #34813 actualizada",
@@ -2068,7 +2768,10 @@
       "time": "20:28",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #222",
       "title": "Tarea #26059 actualizada",
@@ -2081,6 +2784,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4869 actualizado",
@@ -2092,7 +2798,10 @@
       "time": "20:12",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #321",
       "title": "Tarea #35218 actualizada",
@@ -2105,6 +2814,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35036 actualizada",
@@ -2116,7 +2828,10 @@
       "time": "20:05",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35220 actualizada",
@@ -2129,6 +2844,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35033 actualizada",
@@ -2141,6 +2859,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35037 actualizada",
@@ -2153,6 +2874,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35035 actualizada",
@@ -2165,6 +2889,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35034 actualizada",
@@ -2177,6 +2904,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #33498 actualizada",
@@ -2189,6 +2919,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #325",
       "title": "Tarea #35032 actualizada",
@@ -2200,7 +2933,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #35232 actualizada",
@@ -2212,7 +2948,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #35234 actualizada",
@@ -2224,7 +2963,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30976 actualizada",
@@ -2236,7 +2978,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30964 actualizada",
@@ -2248,7 +2993,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30973 actualizada",
@@ -2260,7 +3008,11 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio",
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30934 actualizada",
@@ -2273,6 +3025,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30940 actualizada",
@@ -2284,7 +3039,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30960 actualizada",
@@ -2297,6 +3055,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30978 actualizada",
@@ -2308,7 +3069,10 @@
       "time": "19:29",
       "area": "proyectos",
       "source": "Odoo Proyectos",
-      "person": "Equipo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #31338 actualizada",
@@ -2321,6 +3085,9 @@
       "area": "proyectos",
       "source": "Odoo Proyectos",
       "person": "Equipo Proyectos",
+      "users": [
+        "Equipo Proyectos"
+      ],
       "client": "Dato protegido",
       "project": "Proyecto #302",
       "title": "Tarea #30941 actualizada",
@@ -2333,6 +3100,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4813 actualizado",
@@ -2345,6 +3115,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4586 actualizado",
@@ -2357,6 +3130,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4857 actualizado",
@@ -2369,6 +3145,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4852 actualizado",
@@ -2381,6 +3160,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4831 actualizado",
@@ -2393,6 +3175,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4860 actualizado",
@@ -2405,6 +3190,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4371 actualizado",
@@ -2417,6 +3205,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4827 actualizado",
@@ -2429,6 +3220,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4466 actualizado",
@@ -2441,6 +3235,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4849 actualizado",
@@ -2453,6 +3250,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4820 actualizado",
@@ -2465,6 +3265,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4859 actualizado",
@@ -2477,6 +3280,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4850 actualizado",
@@ -2489,6 +3295,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4861 actualizado",
@@ -2501,6 +3310,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4843 actualizado",
@@ -2513,6 +3325,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4858 actualizado",
@@ -2525,6 +3340,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4854 actualizado",
@@ -2537,6 +3355,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4851 actualizado",
@@ -2549,6 +3370,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4853 actualizado",
@@ -2561,6 +3385,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4855 actualizado",
@@ -2573,6 +3400,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #3230 actualizado",
@@ -2585,6 +3415,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4745 actualizado",
@@ -2597,6 +3430,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4835 actualizado",
@@ -2609,6 +3445,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4797 actualizado",
@@ -2621,6 +3460,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4848 actualizado",
@@ -2633,6 +3475,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4839 actualizado",
@@ -2645,6 +3490,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4821 actualizado",
@@ -2657,6 +3505,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4836 actualizado",
@@ -2669,6 +3520,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4590 actualizado",
@@ -2681,6 +3535,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4834 actualizado",
@@ -2693,6 +3550,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4672 actualizado",
@@ -2705,6 +3565,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4643 actualizado",
@@ -2717,6 +3580,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4847 actualizado",
@@ -2729,6 +3595,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4815 actualizado",
@@ -2741,6 +3610,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4844 actualizado",
@@ -2753,6 +3625,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4846 actualizado",
@@ -2765,6 +3640,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4845 actualizado",
@@ -2777,6 +3655,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4502 actualizado",
@@ -2789,6 +3670,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4704 actualizado",
@@ -2801,6 +3685,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4749 actualizado",
@@ -2813,6 +3700,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4840 actualizado",
@@ -2825,6 +3715,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4771 actualizado",
@@ -2837,6 +3730,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4822 actualizado",
@@ -2849,6 +3745,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4837 actualizado",
@@ -2861,6 +3760,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4828 actualizado",
@@ -2873,6 +3775,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "account-financial-tools",
       "title": "CreateEvent en account-financial-tools",
@@ -2885,6 +3790,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "account-financial-tools",
       "title": "CreateEvent en account-financial-tools",
@@ -2897,6 +3805,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "account-financial-tools",
       "title": "ForkEvent en account-financial-tools",
@@ -2909,6 +3820,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4772 actualizado",
@@ -2921,6 +3835,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4805 actualizado",
@@ -2933,6 +3850,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4794 actualizado",
@@ -2945,6 +3865,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4830 actualizado",
@@ -2957,6 +3880,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4803 actualizado",
@@ -2969,6 +3895,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4832 actualizado",
@@ -2981,6 +3910,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4785 actualizado",
@@ -2993,6 +3925,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4819 actualizado",
@@ -3005,6 +3940,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4591 actualizado",
@@ -3017,6 +3955,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4743 actualizado",
@@ -3029,6 +3970,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4741 actualizado",
@@ -3041,6 +3985,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4783 actualizado",
@@ -3053,6 +4000,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4779 actualizado",
@@ -3065,6 +4015,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #3051 actualizado",
@@ -3077,6 +4030,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4776 actualizado",
@@ -3089,6 +4045,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4773 actualizado",
@@ -3101,6 +4060,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4716 actualizado",
@@ -3113,6 +4075,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4302 actualizado",
@@ -3125,6 +4090,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4825 actualizado",
@@ -3137,6 +4105,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4824 actualizado",
@@ -3149,6 +4120,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4721 actualizado",
@@ -3161,6 +4135,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4817 actualizado",
@@ -3173,6 +4150,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4710 actualizado",
@@ -3185,6 +4165,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4753 actualizado",
@@ -3197,6 +4180,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Nelson Tontarelli",
+      "users": [
+        "Nelson Tontarelli"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4816 actualizado",
@@ -3209,6 +4195,9 @@
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4072 actualizado",
@@ -3221,6 +4210,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3233,6 +4225,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3245,6 +4240,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3257,6 +4255,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3269,6 +4270,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3281,6 +4285,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3293,6 +4300,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3305,6 +4315,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3317,6 +4330,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3329,6 +4345,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3341,6 +4360,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3353,6 +4375,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3365,6 +4390,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3377,6 +4405,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3389,6 +4420,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3401,6 +4435,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3413,6 +4450,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3425,6 +4465,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3437,6 +4480,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3449,6 +4495,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3461,6 +4510,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PushEvent en hito-gemelos-ia",
@@ -3473,6 +4525,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3485,6 +4540,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "PullRequestEvent en hito-gemelos-ia",
@@ -3497,6 +4555,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3509,6 +4570,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "wsf",
+      "users": [
+        "wsf"
+      ],
       "client": "Interno",
       "project": "hito-gemelos-ia",
       "title": "CreateEvent en hito-gemelos-ia",
@@ -3521,6 +4585,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "MatiasBanega",
+      "users": [
+        "MatiasBanega"
+      ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PushEvent en odoo_tienda_nube",
@@ -3533,6 +4600,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "MatiasBanega",
+      "users": [
+        "MatiasBanega"
+      ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PushEvent en odoo_tienda_nube",
@@ -3545,6 +4615,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "MatiasBanega",
+      "users": [
+        "MatiasBanega"
+      ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PushEvent en odoo_tienda_nube",
@@ -3557,6 +4630,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "MatiasBanega",
+      "users": [
+        "MatiasBanega"
+      ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PushEvent en odoo_tienda_nube",
@@ -3569,18 +4645,9 @@
       "area": "desarrollo",
       "source": "GitHub",
       "person": "MatiasBanega",
-      "client": "Interno",
-      "project": "odoo_tienda_nube",
-      "title": "PushEvent en odoo_tienda_nube",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-16256807322",
-      "date": "2026-07-30",
-      "time": "21:16",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "MatiasBanega",
+      "users": [
+        "MatiasBanega"
+      ],
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PushEvent en odoo_tienda_nube",
