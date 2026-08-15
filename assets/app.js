@@ -91,7 +91,7 @@ function renderOrganization(){
   const byManager=people.reduce((out,p)=>{const key=p.manager||"root";(out[key]??=[]).push(p);return out},{});
   const card=p=>{const level=Math.max(1,p.activity_count/maximum*10);return `<article class="org-person"><header><span class="avatar">${p.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</span><div><strong>${p.name}</strong><small>${p.role}</small></div></header><div class="activity-score"><strong>${level.toFixed(1)}</strong><span>/ 10</span></div><div class="activity-track"><i style="width:${level*10}%"></i></div><footer><span>${p.area}</span><b>${p.activity_count} actividades</b></footer></article>`};
   const branch=p=>`<div class="org-branch"><div class="org-node">${card(p)}</div>${byManager[p.id]?.length?`<div class="org-children">${byManager[p.id].map(branch).join("")}</div>`:""}</div>`;
-  $("#orgScale").textContent=`Máximo: ${maximum} actividades = 10,0/10 · datos demo`;
+  $("#orgScale").textContent=`Máximo: ${maximum} actividades = 10,0/10 · roles: hitofusion.com/jobs`;
   $("#orgChart").innerHTML=(byManager.root||[]).map(branch).join("");
 }
 function renderRelations(){
