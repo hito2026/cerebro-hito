@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-16",
-    "updated_at": "16/08/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 66 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "16/08/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 67 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "66 eventos de desarrollo",
+      "title": "67 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -29,8 +29,8 @@
       "area": "Soporte",
       "status": "green",
       "active_tasks": 30,
-      "yesterday": "3 actividades registradas.",
-      "today": "1 actividades registradas."
+      "yesterday": "1 actividades registradas.",
+      "today": "3 actividades registradas."
     },
     {
       "name": "Mateo Scozzina",
@@ -659,19 +659,49 @@
   },
   "activities": [
     {
-      "id": "odoo-ticket-4873",
+      "id": "odoo-ticket-4874",
       "date": "2026-08-16",
-      "time": "14:24",
+      "time": "18:23",
       "area": "soporte",
       "source": "Odoo Helpdesk",
-      "person": "Matias Banega",
+      "person": "Valentin Markov",
       "users": [
-        "Matias Banega"
+        "Valentin Markov"
       ],
       "client": "Dato protegido",
       "project": "Soporte",
-      "title": "Ticket #4873 actualizado",
+      "title": "Ticket #4874 actualizado",
+      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4865",
+      "date": "2026-08-16",
+      "time": "18:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4865 actualizado",
       "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "github-17845429047",
+      "date": "2026-08-16",
+      "time": "16:00",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
       "id": "odoo-ticket-4870",
@@ -689,6 +719,21 @@
       "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
     },
     {
+      "id": "odoo-ticket-4873",
+      "date": "2026-08-16",
+      "time": "14:24",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4873 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
       "id": "odoo-ticket-4862",
       "date": "2026-08-16",
       "time": "14:24",
@@ -702,21 +747,6 @@
       "project": "Soporte",
       "title": "Ticket #4862 actualizado",
       "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4866",
-      "date": "2026-08-15",
-      "time": "22:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4866 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4867",
@@ -734,6 +764,21 @@
       "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
+      "id": "odoo-ticket-4866",
+      "date": "2026-08-15",
+      "time": "22:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4866 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
       "id": "github-17775629514",
       "date": "2026-08-15",
       "time": "22:00",
@@ -747,21 +792,6 @@
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "odoo-ticket-4865",
-      "date": "2026-08-15",
-      "time": "18:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4865 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
       "id": "github-17756315147",
@@ -1257,21 +1287,6 @@
       "project": "cerebro-hito",
       "title": "PublicEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "odoo-ticket-4874",
-      "date": "2026-08-15",
-      "time": "11:42",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4874 actualizado",
-      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4812",
