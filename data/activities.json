@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-17",
-    "updated_at": "17/08/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 68 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "17/08/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 69 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "68 eventos de desarrollo",
+      "title": "69 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -29,8 +29,8 @@
       "area": "Soporte",
       "status": "green",
       "active_tasks": 30,
-      "yesterday": "3 actividades registradas.",
-      "today": "0 actividades registradas."
+      "yesterday": "2 actividades registradas.",
+      "today": "1 actividades registradas."
     },
     {
       "name": "Mateo Scozzina",
@@ -659,6 +659,36 @@
   },
   "activities": [
     {
+      "id": "odoo-ticket-4874",
+      "date": "2026-08-17",
+      "time": "18:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4874 actualizado",
+      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "github-17943815109",
+      "date": "2026-08-17",
+      "time": "16:00",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "odoo-ticket-4873",
       "date": "2026-08-17",
       "time": "14:23",
@@ -689,21 +719,6 @@
       "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-ticket-4867",
-      "date": "2026-08-16",
-      "time": "22:22",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4867 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4866",
       "date": "2026-08-16",
       "time": "22:22",
@@ -716,6 +731,21 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4866 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4867",
+      "date": "2026-08-16",
+      "time": "22:22",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4867 actualizado",
       "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
@@ -732,21 +762,6 @@
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "odoo-ticket-4874",
-      "date": "2026-08-16",
-      "time": "18:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4874 actualizado",
-      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4865",
