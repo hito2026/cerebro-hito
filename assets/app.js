@@ -20,6 +20,7 @@ async function init(){
   $("#clearFilters").addEventListener("click",()=>{state.search="";state.area="all";state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#searchInput").value="";$("#areaFilter").value="all";$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;render()});
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
   document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
+  $("#printRecurrenceReport").addEventListener("click",()=>window.print());
   render();
 }
 
@@ -50,7 +51,8 @@ function render(){
 
 function renderRecurrences(){
   const report=state.recurrences;
-  if(!report){$("#recurrenceUpdated").textContent="Datos del radar no disponibles";$("#recurrenceKpis").innerHTML="<article class='empty'><strong>Radar sin datos</strong><p>El resto del tablero continúa disponible.</p></article>";$("#recurrenceClusters").textContent="";return}
+  if(!report){$("#recurrenceUpdated").textContent="Datos del radar no disponibles";$("#recurrenceKpis").innerHTML="<article class='empty'><strong>Radar sin datos</strong><p>El resto del tablero continúa disponible.</p></article>";$("#recurrenceClusters").textContent="";$("#printRecurrenceReport").disabled=true;return}
+  $("#printRecurrenceReport").disabled=false;
   $("#recurrenceUpdated").textContent=`${report.report.status} · ${report.report.updated_at}`;
   $("#recurrenceThreshold").textContent=`${report.threshold} / 100`;
   const tones=new Set(["orange","blue","green","purple"]);
@@ -58,6 +60,19 @@ function renderRecurrences(){
   $("#recurrenceCount").textContent=`${report.clusters.length} clusters observados`;
   $("#recurrenceSteps").innerHTML=report.steps.map(step=>`<li>${esc(step)}</li>`).join("");
   $("#recurrenceClusters").innerHTML=report.clusters.map(cluster=>`<article class="recurrence-row"><div class="recurrence-score ${cluster.score>=85?"high":cluster.score>=70?"medium":"low"}" title="${esc(cluster.score_basis)}"><strong>${esc(cluster.score)}</strong><span>/100*</span></div><div class="recurrence-main"><header><span>${esc(cluster.client)}</span><strong>${esc(cluster.family)}</strong><i>${esc(cluster.status)}</i></header><p>${esc(cluster.reason)}</p><div class="recurrence-meta"><span>${esc(cluster.episodes)} episodios</span><span>${esc(cluster.window)}</span><span>${esc(cluster.evidence)}</span><span>${esc(cluster.score_basis)}</span></div></div></article>`).join("");
+  renderRecurrencePrintReport(report);
+}
+
+function renderRecurrencePrintReport(report){
+  const ordered=[...report.clusters].sort((a,b)=>b.score-a.score);
+  const configuredThreshold=Number(report.threshold);
+  const threshold=Number.isFinite(configuredThreshold)&&configuredThreshold>=0&&configuredThreshold<=100?configuredThreshold:70;
+  const probable=ordered.filter(cluster=>(Number(cluster.score)||0)>=threshold);
+  const clients=[...new Set(ordered.map(cluster=>cluster.client))];
+  const episodes=ordered.reduce((sum,cluster)=>sum+(Number(cluster.episodes)||0),0);
+  const top=ordered[0];
+  const finding=top?`El hallazgo de mayor prioridad preliminar es <b>${esc(top.family)}</b> en ${esc(top.client)}, con ${esc(Number(top.episodes)||0)} episodios observados.`:"Todavía no hay clusters candidatos para priorizar.";
+  $("#recurrencePrintReport").innerHTML=`<header><div><span>HitoFusión · Cerebro</span><h1>Informe ejecutivo de problemas repetidos</h1><p>Radar de soporte · ${esc(report.report.updated_at)}</p></div><strong>PILOTO</strong></header><section class="print-summary"><h2>Resumen ejecutivo</h2><p>El radar observa <b>${esc(ordered.length)} clusters preliminares</b>, que reúnen <b>${esc(episodes)} episodios</b> en ${esc(clients.length)} clientes piloto. ${esc(probable.length)} clusters superan el umbral manual de revisión de ${esc(threshold)}/100. ${finding}</p><aside>Estos resultados sirven para detectar y priorizar posibles repeticiones. No confirman una causa raíz. Los puntajes actuales son manuales y deben recalibrarse con tickets y chatter completos.</aside></section><section><h2>Indicadores</h2><div class="print-metrics">${report.metrics.map(metric=>`<div><span>${esc(metric.label)}</span><strong>${esc(metric.value)}${esc(metric.suffix)}</strong><small>${esc(metric.note)}</small></div>`).join("")}</div></section><section class="print-findings"><h2>Hallazgos priorizados</h2>${ordered.length?`<table><thead><tr><th>Prioridad*</th><th>Cliente y familia</th><th>Episodios</th><th>Ventana</th><th>Señal observada</th><th>Evidencia</th></tr></thead><tbody>${ordered.map(cluster=>`<tr><td><b>${esc(cluster.score)}/100</b><small>${esc(cluster.status)}</small></td><td><b>${esc(cluster.client)}</b><span>${esc(cluster.family)}</span></td><td>${esc(Number(cluster.episodes)||0)}</td><td>${esc(cluster.window)}</td><td>${esc(cluster.reason)}</td><td>${esc(cluster.evidence)}</td></tr>`).join("")}</tbody></table>`:"<p>Sin candidatos en el período analizado.</p>"}</section><section class="print-two-columns"><div><h2>Procedimiento de detección</h2><ol>${report.steps.map(step=>`<li>${esc(step)}</li>`).join("")}</ol></div><div><h2>Próximas acciones</h2><ol><li>Completar tickets y chatter de los clusters piloto.</li><li>Validar cada candidato con soporte: repetido, relacionado o distinto.</li><li>Medir precisión del ranking antes de automatizar alertas.</li><li>Escalar el radar a otros clientes y módulos.</li></ol></div></section><footer><span>Generado desde Cerebro Hito · Radar de problemas repetidos</span><span>* Puntajes manuales de calibración, no diagnósticos automáticos.</span></footer>`;
 }
 
 function renderCompanyState(rows){

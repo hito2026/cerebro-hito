@@ -46,7 +46,8 @@
     </section>
 
     <section id="recurrencias" class="section recurrence-section">
-      <div class="section-title"><div><p class="eyebrow">support / recurrence radar</p><h2>Radar de problemas repetidos</h2></div><p id="recurrenceUpdated">Piloto en preparación</p></div>
+      <div class="section-title"><div><p class="eyebrow">support / recurrence radar</p><h2>Radar de problemas repetidos</h2></div></div>
+      <div class="recurrence-actions"><p id="recurrenceUpdated">Piloto en preparación</p><button id="printRecurrenceReport" type="button">Imprimir informe ejecutivo</button></div>
       <div id="recurrenceKpis" class="recurrence-kpis" aria-live="polite"></div>
       <div class="recurrence-layout">
         <article class="panel recurrence-clusters">
@@ -59,6 +60,7 @@
           <div class="recurrence-threshold"><span>umbral de revisión</span><strong id="recurrenceThreshold">70 / 100</strong><small>Nunca confirma causa raíz automáticamente.</small></div>
         </aside>
       </div>
+      <article id="recurrencePrintReport" class="recurrence-print-report"></article>
     </section>
 
     <section class="controls" aria-label="Filtros del diario">
