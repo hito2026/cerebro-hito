@@ -165,6 +165,10 @@ main { max-width: 1440px; margin: auto; padding: 0 18px 70px; }
 .mini-event:last-child { border: 0; }
 .mini-event time, .mini-event span { color: var(--muted); }
 
+.recurrence-kpis{margin-bottom:8px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.recurrence-kpi{min-height:72px;padding:11px 12px;background:var(--panel);border:1px solid var(--line);border-top-color:var(--tone);border-radius:4px}.recurrence-kpi.orange{--tone:var(--orange)}.recurrence-kpi.blue{--tone:var(--blue)}.recurrence-kpi.green{--tone:var(--green)}.recurrence-kpi.purple{--tone:var(--purple)}.recurrence-kpi span,.recurrence-kpi small{display:block;color:var(--muted);font-size:8px}.recurrence-kpi span{text-transform:uppercase;letter-spacing:.08em}.recurrence-kpi strong{display:block;margin:5px 0 3px;font-size:18px;font-weight:520}.recurrence-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.45fr);gap:8px}.recurrence-clusters{padding-bottom:4px}.recurrence-row{display:grid;grid-template-columns:62px 1fr;gap:12px;padding:11px 0;border-top:1px solid var(--line)}.recurrence-row:first-child{margin-top:7px}.recurrence-score{height:48px;display:flex;align-items:baseline;justify-content:center;padding-top:10px;border:1px solid var(--line);border-radius:3px;background:var(--bg)}.recurrence-score.high{border-color:color-mix(in srgb,var(--red) 48%,var(--line));color:var(--red)}.recurrence-score.medium{border-color:color-mix(in srgb,var(--orange) 48%,var(--line));color:var(--orange)}.recurrence-score.low{color:var(--muted)}.recurrence-score strong{font-size:17px;font-weight:540}.recurrence-score span{font-size:7px}.recurrence-main header{display:flex;align-items:center;gap:8px;min-width:0}.recurrence-main header>span{color:var(--green);font-size:8px;text-transform:uppercase}.recurrence-main header strong{overflow:hidden;font-size:10px;text-overflow:ellipsis;white-space:nowrap}.recurrence-main header i{margin-left:auto;padding:2px 5px;border:1px solid var(--line);border-radius:3px;color:var(--muted);font-size:7px;font-style:normal;text-transform:uppercase;white-space:nowrap}.recurrence-main p{margin:5px 0;color:var(--muted);font-size:8px}.recurrence-main footer{display:flex;flex-wrap:wrap;gap:4px}.recurrence-main footer span{padding:2px 5px;background:var(--bg);border:1px solid var(--line);border-radius:2px;color:var(--muted);font-size:7px}.recurrence-method ol{margin:13px 0 16px;padding:0;list-style:none;counter-reset:steps}.recurrence-method li{counter-increment:steps;padding:9px 0 9px 31px;border-top:1px solid var(--line);color:var(--muted);font-size:8px;position:relative}.recurrence-method li::before{content:counter(steps);position:absolute;left:0;top:7px;width:19px;height:19px;display:grid;place-items:center;border:1px solid var(--line-hot);border-radius:50%;color:var(--green);font-size:7px}.recurrence-threshold{padding:10px;background:var(--bg);border-left:2px solid var(--green)}.recurrence-threshold span,.recurrence-threshold small{display:block;color:var(--muted);font-size:7px}.recurrence-threshold span{text-transform:uppercase}.recurrence-threshold strong{display:block;margin:3px 0;font-size:15px;font-weight:520}
+
+.recurrence-meta{display:flex;flex-wrap:wrap;gap:4px}.recurrence-meta span{padding:2px 5px;background:var(--bg);border:1px solid var(--line);border-radius:2px;color:var(--muted);font-size:7px}
+
 footer { padding: 22px 18px; display: flex; justify-content: space-between; border-top: 1px solid var(--line); color: var(--muted); font-family: var(--mono); font-size: 9px; }
 
 @media (max-width: 850px) {
@@ -175,6 +179,7 @@ footer { padding: 22px 18px; display: flex; justify-content: space-between; bord
   .controls .search { grid-column: 1 / -1; }
   .kpi-grid { grid-template-columns: repeat(4, minmax(110px, 1fr)); overflow-x: auto; }
   .insight-grid { grid-template-columns: 1fr; }
+  .recurrence-layout{grid-template-columns:1fr}.recurrence-kpis{grid-template-columns:repeat(2,1fr)}
   .people-grid,.people-columns,.goals-grid { grid-template-columns:1fr; }
   .event-card { grid-template-columns: auto minmax(110px,auto) minmax(80px,1fr) auto; }
   .event-card .source { display:none; }
@@ -194,6 +199,7 @@ footer { padding: 22px 18px; display: flex; justify-content: space-between; bord
   .controls { grid-template-columns: 1fr; }
   .controls .search { grid-column: auto; }
   .kpi-grid { grid-template-columns: repeat(2, minmax(110px, 1fr)); overflow: visible; }
+  .recurrence-kpis{grid-template-columns:1fr 1fr}.recurrence-row{grid-template-columns:48px 1fr}.recurrence-score{height:42px;padding-top:8px}.recurrence-main header{align-items:flex-start;flex-wrap:wrap}.recurrence-main header i{margin-left:0}.recurrence-main footer span:last-child{display:none}
   .section-title { display: block; }
   .section-title > p { margin-top: 6px; text-align: left; }
   .section-toggle{position:absolute;right:0;top:7px}.collapsible>.section-title{position:relative;padding-right:34px}
@@ -205,6 +211,7 @@ footer { padding: 22px 18px; display: flex; justify-content: space-between; bord
   .mini-event span { display: none; }
   .relation-map{height:360px}.graph-node{min-width:57px;padding:5px}.productivity-chart{gap:8px;padding-inline:10px}.chart-legend{display:none}
   .period-metrics { grid-template-columns: repeat(5,67px); }
+  .recurrence-meta span:last-child{display:none}
   footer { display: block; }
   footer span { display: block; margin-bottom: 6px; }
 }
