@@ -1,13 +1,15 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
 const dateLabel=d=>new Intl.DateTimeFormat("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/Argentina/Cordoba"}).format(new Date(`${d}T12:00:00`));
 const shiftDate=(date,days)=>{const value=new Date(`${date}T12:00:00`);value.setDate(value.getDate()+days);return value.toISOString().slice(0,10)};
 const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area===state.area)&&(!state.dateFrom||a.date>=state.dateFrom)&&(!state.dateTo||a.date<=state.dateTo)&&(!state.search||clean([a.title,a.description,a.person,a.client,a.project,a.source].join(" ")).includes(clean(state.search))));
 
 async function init(){
-  const response=await fetch("data/activities.json"); state.data=await response.json();
+  const activityResponse=await fetch("data/activities.json");state.data=await activityResponse.json();
+  state.recurrences=await fetch("data/recurrences.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
@@ -43,7 +45,19 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+}
+
+function renderRecurrences(){
+  const report=state.recurrences;
+  if(!report){$("#recurrenceUpdated").textContent="Datos del radar no disponibles";$("#recurrenceKpis").innerHTML="<article class='empty'><strong>Radar sin datos</strong><p>El resto del tablero continúa disponible.</p></article>";$("#recurrenceClusters").textContent="";return}
+  $("#recurrenceUpdated").textContent=`${report.report.status} · ${report.report.updated_at}`;
+  $("#recurrenceThreshold").textContent=`${report.threshold} / 100`;
+  const tones=new Set(["orange","blue","green","purple"]);
+  $("#recurrenceKpis").innerHTML=report.metrics.map(metric=>`<article class="recurrence-kpi ${tones.has(metric.tone)?metric.tone:"green"}"><span>${esc(metric.label)}</span><strong>${esc(metric.value)}${esc(metric.suffix)}</strong><small>${esc(metric.note)}</small></article>`).join("");
+  $("#recurrenceCount").textContent=`${report.clusters.length} clusters observados`;
+  $("#recurrenceSteps").innerHTML=report.steps.map(step=>`<li>${esc(step)}</li>`).join("");
+  $("#recurrenceClusters").innerHTML=report.clusters.map(cluster=>`<article class="recurrence-row"><div class="recurrence-score ${cluster.score>=85?"high":cluster.score>=70?"medium":"low"}" title="${esc(cluster.score_basis)}"><strong>${esc(cluster.score)}</strong><span>/100*</span></div><div class="recurrence-main"><header><span>${esc(cluster.client)}</span><strong>${esc(cluster.family)}</strong><i>${esc(cluster.status)}</i></header><p>${esc(cluster.reason)}</p><div class="recurrence-meta"><span>${esc(cluster.episodes)} episodios</span><span>${esc(cluster.window)}</span><span>${esc(cluster.evidence)}</span><span>${esc(cluster.score_basis)}</span></div></div></article>`).join("");
 }
 
 function renderCompanyState(rows){
@@ -121,6 +135,6 @@ function renderAccordions(rows){
 }
 const ACCESS_HASH="28e910d2c7fa4c4d175906f5d8d0b030c8ce593777eef446f222863341ab5d0f";
 async function digest(value){const bytes=new TextEncoder().encode(value);const hash=await crypto.subtle.digest("SHA-256",bytes);return [...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,"0")).join("")}
-function start(){document.body.classList.remove("locked");$("#accessGate").hidden=true;init().catch(()=>{$("#timeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá el archivo data/activities.json.</p></div>"})}
+function start(){document.body.classList.remove("locked");$("#accessGate").hidden=true;init().catch(()=>{$("#periodTimeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá el archivo data/activities.json.</p></div>"})}
 if(sessionStorage.getItem("cerebro_access")==="granted")start();
 else $("#accessForm").addEventListener("submit",async e=>{e.preventDefault();const valid=await digest($("#accessKey").value)===ACCESS_HASH;if(valid){sessionStorage.setItem("cerebro_access","granted");start()}else{$("#accessError").textContent="Clave incorrecta";$("#accessKey").select()}});

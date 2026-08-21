@@ -1,0 +1,18 @@
+{
+  "report": {"updated_at": "21/08/2026 12:00 -03", "mode": "pilot", "status": "Hipótesis preliminares · no son resultados del detector"},
+  "metrics": [
+    {"label": "Clusters preliminares", "value": 5, "note": "pendientes de validación humana", "tone": "orange"},
+    {"label": "Clientes piloto", "value": 2, "note": "JDM y SmartTrack", "tone": "blue"},
+    {"label": "Umbral de revisión", "value": 70, "suffix": "/100", "note": "recurrencia probable", "tone": "green"},
+    {"label": "Fuente chatter", "value": "pendiente", "note": "validando acceso Odoo", "tone": "purple"}
+  ],
+  "threshold": 70,
+  "steps": ["Normalizar el ticket y su conversación.", "Buscar antecedentes del cliente y transversales.", "Puntuar similitud y explicar cada coincidencia.", "Soporte valida: repetido, relacionado o distinto."],
+  "clusters": [
+    {"client": "JDM", "family": "Factura · pago · NC · conciliación", "status": "prioridad preliminar", "score": 91, "score_basis": "Puntaje manual de calibración", "episodes": 5, "window": "29/06 → 21/08", "reason": "Reaparición post-fix, pagos descalzados y conciliaciones manuales.", "evidence": "Minutas DM; chatter pendiente"},
+    {"client": "JDM", "family": "Entrega · stock · devolución Meli", "status": "hipótesis", "score": 86, "score_basis": "Puntaje manual de calibración", "episodes": 5, "window": "24/06 → 07/08", "reason": "Misma secuencia operativa y cobertura parcial de un fix previo.", "evidence": "Minutas DM; chatter pendiente"},
+    {"client": "JDM", "family": "Contactos · empresa · facturación", "status": "hipótesis", "score": 82, "score_basis": "Puntaje manual de calibración", "episodes": 4, "window": "29/06 → 21/08", "reason": "Variantes del mismo flujo multiempresa en componentes Meli.", "evidence": "Minutas DM; chatter pendiente"},
+    {"client": "SmartTrack", "family": "Ventas Flex no sincronizadas", "status": "en validación", "score": 78, "score_basis": "Puntaje manual de calibración", "episodes": 2, "window": "19/08 → 21/08", "reason": "La importación manual recuperó operaciones ausentes del cron.", "evidence": "Minutas DM; tickets pendientes"},
+    {"client": "JDM", "family": "Importación incompleta o tardía", "status": "relación posible", "score": 64, "score_basis": "Puntaje manual de calibración", "episodes": 3, "window": "06/07 → 19/08", "reason": "Síntomas cercanos, pero aún no hay mecanismo técnico común confirmado.", "evidence": "Minutas DM; requiere revisión funcional"}
+  ]
+}
