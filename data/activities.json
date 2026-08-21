@@ -1,54 +1,54 @@
 {
   "report": {
     "date": "2026-08-21",
-    "updated_at": "21/08/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 70 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "21/08/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 76 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "27 tickets prioritarios",
+      "title": "23 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "37 tareas vencidas",
+      "title": "43 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "70 eventos de desarrollo",
+      "title": "76 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
   "people": [
     {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "green",
-      "active_tasks": 34,
-      "yesterday": "12 actividades registradas.",
-      "today": "6 actividades registradas."
-    },
-    {
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "status": "green",
-      "active_tasks": 24,
-      "yesterday": "24 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Nahiara Aylen Delgado",
       "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "green",
-      "active_tasks": 24,
-      "yesterday": "24 actividades registradas.",
-      "today": "0 actividades registradas."
+      "active_tasks": 38,
+      "yesterday": "0 actividades registradas.",
+      "today": "38 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "green",
+      "active_tasks": 35,
+      "yesterday": "11 actividades registradas.",
+      "today": "10 actividades registradas."
+    },
+    {
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "green",
+      "active_tasks": 31,
+      "yesterday": "0 actividades registradas.",
+      "today": "31 actividades registradas."
     },
     {
       "name": "Valentin Markov",
@@ -57,75 +57,84 @@
       "status": "yellow",
       "active_tasks": 23,
       "yesterday": "4 actividades registradas.",
-      "today": "4 actividades registradas."
+      "today": "6 actividades registradas."
+    },
+    {
+      "name": "Carolina Monserrat",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "yellow",
+      "active_tasks": 17,
+      "yesterday": "0 actividades registradas.",
+      "today": "17 actividades registradas."
     },
     {
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
       "area": "Soporte",
-      "status": "yellow",
-      "active_tasks": 16,
+      "status": "red",
+      "active_tasks": 15,
       "yesterday": "4 actividades registradas.",
-      "today": "2 actividades registradas."
+      "today": "4 actividades registradas."
     },
     {
       "name": "Pablo Marchionno",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "status": "red",
-      "active_tasks": 13,
-      "yesterday": "5 actividades registradas.",
-      "today": "2 actividades registradas."
-    },
-    {
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "status": "red",
-      "active_tasks": 7,
-      "yesterday": "4 actividades registradas.",
-      "today": "1 actividades registradas."
+      "active_tasks": 9,
+      "yesterday": "3 actividades registradas.",
+      "today": "3 actividades registradas."
     },
     {
       "name": "Matias Banega",
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 5,
+      "active_tasks": 7,
+      "yesterday": "2 actividades registradas.",
+      "today": "4 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "status": "red",
+      "active_tasks": 6,
       "yesterday": "2 actividades registradas.",
       "today": "2 actividades registradas."
     },
     {
-      "name": "Matias Marziali",
+      "name": "Jinzo",
       "role": "Usuario interno Odoo",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 4,
-      "yesterday": "4 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Samuel Marcano",
-      "role": "Usuario interno Odoo",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 4,
-      "yesterday": "4 actividades registradas.",
-      "today": "0 actividades registradas."
+      "active_tasks": 5,
+      "yesterday": "0 actividades registradas.",
+      "today": "5 actividades registradas."
     },
     {
       "name": "Alejandro Sartorio",
       "role": "Director Técnico & I+D",
       "area": "Tecnología e I+D",
       "status": "red",
-      "active_tasks": 3,
+      "active_tasks": 4,
       "yesterday": "1 actividades registradas.",
-      "today": "1 actividades registradas."
+      "today": "2 actividades registradas."
     },
     {
       "name": "Francisco Fiorentino",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 3,
+      "yesterday": "1 actividades registradas.",
+      "today": "2 actividades registradas."
+    },
+    {
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
       "status": "red",
       "active_tasks": 2,
       "yesterday": "1 actividades registradas.",
@@ -148,52 +157,34 @@
       "active_tasks": 1,
       "yesterday": "0 actividades registradas.",
       "today": "1 actividades registradas."
-    },
-    {
-      "name": "Carolina Monserrat",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 1,
-      "yesterday": "1 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Andrés Salguero",
-      "role": "Usuario interno Odoo",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 1,
-      "yesterday": "1 actividades registradas.",
-      "today": "0 actividades registradas."
     }
   ],
   "organization": [
-    {
-      "id": "mateo-scozzina",
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
-      "activity_count": 34,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "ezequiel-montes",
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 24,
-      "role_source": "hitofusion.com/jobs"
-    },
     {
       "id": "nahiara-delgado",
       "name": "Nahiara Aylen Delgado",
       "role": "Analista Funcional",
       "area": "Proyectos",
       "manager": "matias-banega",
-      "activity_count": 24,
+      "activity_count": 38,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "mateo-scozzina",
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
+      "activity_count": 35,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "ariadna-estebenet",
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 31,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -206,12 +197,21 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "carolina-monserrat",
+      "name": "Carolina Monserrat",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 17,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "ignacio-lera",
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
       "area": "Soporte",
       "manager": "matias-banega",
-      "activity_count": 16,
+      "activity_count": 15,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -220,16 +220,7 @@
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "manager": "alejandro-sartorio",
-      "activity_count": 13,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "nelson-tontarelli",
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "manager": "matias-banega",
-      "activity_count": 7,
+      "activity_count": 9,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -238,25 +229,25 @@
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 5,
+      "activity_count": 7,
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-9",
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 4,
-      "role_source": "Odoo"
+      "id": "nelson-tontarelli",
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "manager": "matias-banega",
+      "activity_count": 6,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "person-10",
-      "name": "Samuel Marcano",
+      "name": "Jinzo",
       "role": "Usuario interno Odoo · rol no publicado",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 4,
+      "activity_count": 5,
       "role_source": "Odoo"
     },
     {
@@ -265,7 +256,7 @@
       "role": "Director Técnico & I+D",
       "area": "Tecnología e I+D",
       "manager": null,
-      "activity_count": 3,
+      "activity_count": 4,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -274,6 +265,15 @@
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "manager": "alejandro-sartorio",
+      "activity_count": 3,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "ezequiel-montes",
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "manager": "matias-banega",
       "activity_count": 2,
       "role_source": "hitofusion.com/jobs"
     },
@@ -294,24 +294,6 @@
       "manager": null,
       "activity_count": 1,
       "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "carolina-monserrat",
-      "name": "Carolina Monserrat",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 1,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "person-16",
-      "name": "Andrés Salguero",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 1,
-      "role_source": "Odoo"
     }
   ],
   "relations": {
@@ -404,7 +386,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 34,
+        "current": 35,
         "unit": "tickets"
       },
       {
@@ -625,7 +607,7 @@
     {
       "id": "odoo-ticket-4856",
       "date": "2026-08-21",
-      "time": "15:48",
+      "time": "21:01",
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Mateo Scozzina",
@@ -635,12 +617,1787 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4856 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4895",
+      "date": "2026-08-21",
+      "time": "20:59",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4895 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4896",
+      "date": "2026-08-21",
+      "time": "20:43",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4896 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4881",
+      "date": "2026-08-21",
+      "time": "20:20",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4881 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-task-30980",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30980 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30969",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30969 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30965",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30965 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30981",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30981 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-30972",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30972 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-32218",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #32218 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-30975",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30975 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30971",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30971 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30979",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30979 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33504",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #33504 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-30973",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30973 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30978",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30978 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30976",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30976 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30983",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30983 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30970",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30970 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30984",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30984 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-30967",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30967 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30966",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30966 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-30982",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado",
+        "Nelson Tontarelli"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30982 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-32217",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #32217 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-30968",
+      "date": "2026-08-21",
+      "time": "20:14",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30968 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-ticket-4827",
+      "date": "2026-08-21",
+      "time": "20:03",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4827 actualizado",
+      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-task-34620",
+      "date": "2026-08-21",
+      "time": "19:46",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #34620 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-30956",
+      "date": "2026-08-21",
+      "time": "19:46",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30956 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-30957",
+      "date": "2026-08-21",
+      "time": "19:46",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #302",
+      "title": "Tarea #30957 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-35431",
+      "date": "2026-08-21",
+      "time": "19:34",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #35431 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-ticket-4907",
+      "date": "2026-08-21",
+      "time": "19:33",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4907 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-task-32369",
+      "date": "2026-08-21",
+      "time": "19:26",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Francisco Fiorentino",
+      "users": [
+        "Francisco Fiorentino"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #312",
+      "title": "Tarea #32369 actualizada",
+      "description": "Estado: En Proceso."
+    },
+    {
+      "id": "odoo-task-35390",
+      "date": "2026-08-21",
+      "time": "19:22",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Francisco Fiorentino",
+      "users": [
+        "Francisco Fiorentino"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #320",
+      "title": "Tarea #35390 actualizada",
+      "description": "Estado: En Proceso."
+    },
+    {
+      "id": "odoo-ticket-4898",
+      "date": "2026-08-21",
+      "time": "19:11",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4898 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-task-35399",
+      "date": "2026-08-21",
+      "time": "19:10",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Lucas Burgos",
+      "users": [
+        "Lucas Burgos"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #320",
+      "title": "Tarea #35399 actualizada",
+      "description": "Estado: En Proceso."
+    },
+    {
+      "id": "odoo-ticket-4906",
+      "date": "2026-08-21",
+      "time": "19:02",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4906 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4901",
+      "date": "2026-08-21",
+      "time": "19:00",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4901 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-task-33608",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33608 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33380",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33380 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33627",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33627 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33413",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33413 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33625",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33625 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33377",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33377 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33628",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33628 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33626",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33626 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33604",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33604 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33637",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33637 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33639",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33639 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33629",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33629 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33605",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33605 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33630",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33630 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33420",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33420 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-34267",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34267 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33378",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33378 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33384",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33384 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33423",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33423 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33635",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33635 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33634",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33634 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33607",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33607 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33373",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33373 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33376",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33376 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33427",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33427 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33375",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33375 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33429",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33429 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33418",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33418 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33381",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33381 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33385",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33385 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-33382",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33382 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33609",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33609 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33379",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33379 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33374",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33374 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-34437",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34437 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-34612",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34612 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33414",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33414 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33606",
+      "date": "2026-08-21",
+      "time": "18:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33606 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-35192",
+      "date": "2026-08-21",
+      "time": "18:54",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #35192 actualizada",
+      "description": "Estado: En proceso."
+    },
+    {
+      "id": "odoo-task-21856",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21856 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21908",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21908 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21910",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21910 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21823",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21823 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21822",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21822 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21879",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21879 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21915",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21915 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21821",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21821 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21855",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21855 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21907",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21907 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21880",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21880 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21864",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21864 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21881",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21881 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21917",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21917 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21920",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21920 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21873",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21873 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21820",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21820 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21874",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21874 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21819",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21819 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-21818",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21818 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-21904",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21904 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21905",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21905 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21817",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21817 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-21860",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21860 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21909",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21909 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-21840",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21840 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-21869",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21869 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21854",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21854 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-35189",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #35189 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21858",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21858 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-21857",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet",
+        "Nelson Tontarelli"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21857 actualizada",
+      "description": "Estado: Demo."
+    },
+    {
+      "id": "odoo-task-21816",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21816 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-21906",
+      "date": "2026-08-21",
+      "time": "18:36",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ariadna Estebenet",
+      "users": [
+        "Ariadna Estebenet"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #222",
+      "title": "Tarea #21906 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-ticket-4097",
+      "date": "2026-08-21",
+      "time": "18:33",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4097 actualizado",
       "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4903",
+      "date": "2026-08-21",
+      "time": "18:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4903 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4902",
+      "date": "2026-08-21",
+      "time": "18:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4902 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4889",
+      "date": "2026-08-21",
+      "time": "18:23",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4889 actualizado",
+      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4905",
+      "date": "2026-08-21",
+      "time": "18:18",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4905 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4826",
+      "date": "2026-08-21",
+      "time": "18:10",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4826 actualizado",
+      "description": "Estado: Validación funcional · equipo: Desarrollo soporte."
+    },
+    {
+      "id": "odoo-ticket-4857",
+      "date": "2026-08-21",
+      "time": "18:07",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4857 actualizado",
+      "description": "Estado: Respuesta cliente · equipo: Desarrollo soporte."
+    },
+    {
+      "id": "odoo-ticket-4371",
+      "date": "2026-08-21",
+      "time": "17:30",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4371 actualizado",
+      "description": "Estado: Solved · equipo: Desarrollo soporte."
+    },
+    {
+      "id": "odoo-ticket-4904",
+      "date": "2026-08-21",
+      "time": "17:25",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4904 actualizado",
+      "description": "Estado: Interconsulta · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4745",
       "date": "2026-08-21",
-      "time": "15:35",
+      "time": "17:04",
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Valentin Markov",
@@ -650,7 +2407,67 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4745 actualizado",
-      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4665",
+      "date": "2026-08-21",
+      "time": "16:55",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4665 actualizado",
+      "description": "Estado: Canceled · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4706",
+      "date": "2026-08-21",
+      "time": "16:55",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Matias Banega",
+      "users": [
+        "Matias Banega"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4706 actualizado",
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "github-18427174266",
+      "date": "2026-08-21",
+      "time": "15:06",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-18420732921",
+      "date": "2026-08-21",
+      "time": "15:06",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "DeleteEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
       "id": "github-13652513355",
@@ -698,6 +2515,36 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
+      "id": "github-18422522390",
+      "date": "2026-08-21",
+      "time": "14:56",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "DeleteEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-18416084941",
+      "date": "2026-08-21",
+      "time": "14:56",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-13651992432",
       "date": "2026-08-21",
       "time": "14:56",
@@ -728,64 +2575,34 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "odoo-ticket-4827",
+      "id": "github-18425129298",
       "date": "2026-08-21",
-      "time": "14:43",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Matias Banega",
+      "time": "14:55",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "Matias Banega"
+        "Sin usuario interno vinculado"
       ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4827 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "CreateEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "odoo-ticket-4898",
+      "id": "github-18424399837",
       "date": "2026-08-21",
-      "time": "14:24",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
+      "time": "14:46",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
       "users": [
-        "Mateo Scozzina"
+        "Sin usuario interno vinculado"
       ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4898 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-task-32371",
-      "date": "2026-08-21",
-      "time": "14:21",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Francisco Fiorentino",
-      "users": [
-        "Francisco Fiorentino"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #312",
-      "title": "Tarea #32371 actualizada",
-      "description": "Estado: En Proceso."
-    },
-    {
-      "id": "odoo-ticket-4857",
-      "date": "2026-08-21",
-      "time": "14:19",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4857 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Desarrollo soporte."
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
       "id": "odoo-ticket-3847",
@@ -803,67 +2620,6 @@
       "description": "Estado: New · equipo: Meli."
     },
     {
-      "id": "odoo-task-33541",
-      "date": "2026-08-21",
-      "time": "14:00",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera",
-        "Nelson Tontarelli"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #309",
-      "title": "Tarea #33541 actualizada",
-      "description": "Estado: Desarrollo."
-    },
-    {
-      "id": "odoo-ticket-4903",
-      "date": "2026-08-21",
-      "time": "13:57",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4903 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4902",
-      "date": "2026-08-21",
-      "time": "13:44",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4902 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-task-35427",
-      "date": "2026-08-21",
-      "time": "13:33",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Lucas Burgos",
-      "users": [
-        "Lucas Burgos"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #319",
-      "title": "Tarea #35427 actualizada",
-      "description": "Estado: Pruebas y Validación."
-    },
-    {
       "id": "odoo-ticket-4900",
       "date": "2026-08-21",
       "time": "13:13",
@@ -877,21 +2633,6 @@
       "project": "Soporte",
       "title": "Ticket #4900 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4901",
-      "date": "2026-08-21",
-      "time": "12:57",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4901 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4813",
@@ -922,21 +2663,6 @@
       "project": "Soporte",
       "title": "Ticket #4888 actualizado",
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4896",
-      "date": "2026-08-21",
-      "time": "12:19",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4896 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4838",
@@ -1029,397 +2755,6 @@
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-task-35423",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35423 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34657",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34657 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34655",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34655 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34577",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34577 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-35425",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35425 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34631",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34631 actualizada",
-      "description": "Estado: QA."
-    },
-    {
-      "id": "odoo-task-34627",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34627 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-34540",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34540 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-35421",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35421 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34658",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34658 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35422",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35422 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35424",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35424 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34578",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34578 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-34625",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34625 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34653",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado",
-        "Nelson Tontarelli"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34653 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34632",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34632 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-34624",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34624 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34626",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34626 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34629",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34629 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-34553",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34553 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-34656",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34656 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34654",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34654 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34623",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34623 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-34630",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34630 actualizada",
-      "description": "Estado: QA."
-    },
-    {
-      "id": "odoo-task-35426",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #35426 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34628",
-      "date": "2026-08-20",
-      "time": "20:43",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #335",
-      "title": "Tarea #34628 actualizada",
-      "description": "Estado: Implementado en staging."
-    },
-    {
       "id": "odoo-ticket-4890",
       "date": "2026-08-20",
       "time": "20:27",
@@ -1450,23 +2785,6 @@
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-task-35180",
-      "date": "2026-08-20",
-      "time": "19:56",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Carolina Monserrat",
-      "users": [
-        "Carolina Monserrat",
-        "Matias Marziali",
-        "Nelson Tontarelli"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #341",
-      "title": "Tarea #35180 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
       "id": "odoo-ticket-4887",
       "date": "2026-08-20",
       "time": "19:55",
@@ -1482,38 +2800,6 @@
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-task-20407",
-      "date": "2026-08-20",
-      "time": "19:52",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Matias Marziali",
-      "users": [
-        "Matias Marziali",
-        "Pablo Marchionno",
-        "Samuel Marcano"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #199",
-      "title": "Tarea #20407 actualizada",
-      "description": "Estado: En proceso."
-    },
-    {
-      "id": "odoo-task-35420",
-      "date": "2026-08-20",
-      "time": "19:51",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #306",
-      "title": "Tarea #35420 actualizada",
-      "description": "Estado: Backlog."
-    },
-    {
       "id": "odoo-ticket-4873",
       "date": "2026-08-20",
       "time": "19:42",
@@ -1526,1042 +2812,6 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4873 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-task-28639",
-      "date": "2026-08-20",
-      "time": "19:42",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28639 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-33940",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #33940 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28652",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28652 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-32980",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes",
-        "Matias Marziali"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #32980 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29097",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29097 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-27579",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Samuel Marcano",
-      "users": [
-        "Samuel Marcano"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #27579 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-29330",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29330 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29333",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29333 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-32225",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Matias Marziali",
-      "users": [
-        "Matias Marziali"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #32225 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-27880",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #27880 actualizada",
-      "description": "Estado: Demo."
-    },
-    {
-      "id": "odoo-task-28644",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28644 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-29094",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29094 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28643",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28643 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28647",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28647 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28642",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28642 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29095",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29095 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28669",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28669 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-31562",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #31562 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28645",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28645 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-30570",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #30570 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29096",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29096 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28651",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28651 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-29385",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29385 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28653",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28653 actualizada",
-      "description": "Estado: Tareas padre."
-    },
-    {
-      "id": "odoo-task-28635",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28635 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28691",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28691 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28827",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28827 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28656",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28656 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28662",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28662 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28660",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28660 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28678",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28678 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-29087",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29087 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28667",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28667 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28666",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28666 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28668",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28668 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-29088",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29088 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28657",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28657 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28655",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28655 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28661",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28661 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28649",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28649 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-28648",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28648 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28650",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28650 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28664",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28664 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-29089",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29089 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-27544",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Samuel Marcano",
-      "users": [
-        "Samuel Marcano"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #27544 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-31561",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #31561 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28646",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28646 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29617",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29617 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29332",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29332 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28634",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Samuel Marcano",
-      "users": [
-        "Samuel Marcano"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28634 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29618",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29618 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28654",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28654 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-29334",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29334 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31726",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #31726 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29331",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29331 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28665",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28665 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-33934",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #33934 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-31560",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #31560 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-32984",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #32984 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-30572",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Andrés Salguero",
-      "users": [
-        "Andrés Salguero"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #30572 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-29098",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29098 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28692",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28692 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-29329",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #29329 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28674",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28674 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33935",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #33935 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-28636",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28636 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-27878",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #27878 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-28658",
-      "date": "2026-08-20",
-      "time": "19:40",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #266",
-      "title": "Tarea #28658 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-ticket-4895",
-      "date": "2026-08-20",
-      "time": "19:18",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4895 actualizado",
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
@@ -2773,21 +3023,6 @@
       "project": "Soporte",
       "title": "Ticket #4586 actualizado",
       "description": "Estado: Verificación del cliente · equipo: Desarrollo soporte."
-    },
-    {
-      "id": "odoo-ticket-4826",
-      "date": "2026-08-20",
-      "time": "13:52",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4826 actualizado",
-      "description": "Estado: In Progress · equipo: Desarrollo soporte."
     },
     {
       "id": "odoo-ticket-4897",
@@ -3060,21 +3295,6 @@
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-ticket-4881",
-      "date": "2026-08-19",
-      "time": "20:18",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4881 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4867",
       "date": "2026-08-19",
       "time": "19:27",
@@ -3088,36 +3308,6 @@
       "project": "Soporte",
       "title": "Ticket #4867 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4371",
-      "date": "2026-08-19",
-      "time": "19:07",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4371 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Desarrollo soporte."
-    },
-    {
-      "id": "odoo-ticket-4889",
-      "date": "2026-08-19",
-      "time": "18:24",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4889 actualizado",
-      "description": "Estado: Respuesta cliente · equipo: Atención al cliente Odoo."
     },
     {
       "id": "github-18181863189",
@@ -3225,21 +3415,6 @@
       "description": "Estado: Solved · equipo: Desarrollo soporte."
     },
     {
-      "id": "odoo-ticket-4848",
-      "date": "2026-08-19",
-      "time": "01:02",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4848 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4836",
       "date": "2026-08-19",
       "time": "01:02",
@@ -3267,6 +3442,21 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4502 actualizado",
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4848",
+      "date": "2026-08-19",
+      "time": "01:02",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4848 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
@@ -3403,21 +3593,6 @@
       "project": "Soporte",
       "title": "Ticket #4874 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4097",
-      "date": "2026-08-18",
-      "time": "13:33",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4097 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4634",
@@ -4035,21 +4210,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "odoo-ticket-4818",
-      "date": "2026-08-15",
-      "time": "01:00",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4818 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4806",
       "date": "2026-08-15",
       "time": "01:00",
@@ -4062,6 +4222,21 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4806 actualizado",
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4818",
+      "date": "2026-08-15",
+      "time": "01:00",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4818 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
@@ -4155,21 +4330,6 @@
       "description": "Estado: Solved · equipo: Desarrollo soporte."
     },
     {
-      "id": "odoo-ticket-4811",
-      "date": "2026-08-14",
-      "time": "01:01",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4811 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4804",
       "date": "2026-08-14",
       "time": "01:01",
@@ -4182,6 +4342,21 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4804 actualizado",
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4811",
+      "date": "2026-08-14",
+      "time": "01:01",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4811 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
@@ -4362,96 +4537,6 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4797 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4839",
-      "date": "2026-08-11",
-      "time": "20:33",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4839 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4590",
-      "date": "2026-08-11",
-      "time": "19:54",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4590 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Desarrollo soporte."
-    },
-    {
-      "id": "odoo-ticket-4672",
-      "date": "2026-08-11",
-      "time": "19:37",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4672 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Desarrollo soporte."
-    },
-    {
-      "id": "odoo-ticket-4643",
-      "date": "2026-08-11",
-      "time": "19:30",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4643 actualizado",
-      "description": "Estado: Solved · equipo: Desarrollo soporte."
-    },
-    {
-      "id": "odoo-ticket-4847",
-      "date": "2026-08-11",
-      "time": "18:47",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4847 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4815",
-      "date": "2026-08-11",
-      "time": "17:49",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4815 actualizado",
       "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
