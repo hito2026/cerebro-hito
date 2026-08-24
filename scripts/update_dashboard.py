@@ -158,8 +158,13 @@ def main(publish=False):
             indicator["current"]=sum(1 for x in tickets if x.get("close_date") and x["close_date"][:10]>=week_start.isoformat())
     DATA_FILE.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n")
     json.loads(DATA_FILE.read_text())
+    subprocess.run(
+        ["/usr/bin/python3", str(ROOT / "scripts" / "generate_recurrences.py")],
+        cwd=ROOT,
+        check=True,
+    )
     if publish:
-        git("add", "data/activities.json")
+        git("add", "data/activities.json", "data/recurrences.json")
         changed = git("diff", "--cached", "--quiet", check=False).returncode != 0
         if changed:
             commit_activity_update(today)

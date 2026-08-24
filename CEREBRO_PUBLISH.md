@@ -8,4 +8,6 @@ Con confirmación, ejecutá:
 curl -fsS -X POST http://127.0.0.1:18766/v1/publish
 ```
 
-Informá el número de actividades y personas devuelto. El servicio consulta Odoo y GitHub, actualiza el JSON, valida, crea un commit y publica `main`. Nunca edites el JSON manualmente ni busques credenciales.
+El servicio consulta Odoo y GitHub, actualiza `data/activities.json`, regenera `data/recurrences.json`, valida, crea un commit y publica `main`. El radar utiliza la KB histórica configurada en `CEREBRO_RECURRENCE_KB` y el gateway indicado por `CEREBRO_ODOO_GATEWAY`; si cualquiera de esas fuentes falla, la publicación debe fallar de forma visible en lugar de conservar silenciosamente un radar obsoleto.
+
+Después de publicar, verificá que la respuesta sea exitosa, que ambos JSON sean válidos y que GitHub Pages muestre la nueva fecha del radar. Informá por separado actividades, tickets recientes analizados y candidatos recurrentes. Nunca edites los JSON manualmente ni busques credenciales.
