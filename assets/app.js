@@ -83,7 +83,7 @@ function renderCompanyState(rows){
   const mood=progress>=90?"La compañía viene muy bien":progress>=75?"La compañía avanza a buen ritmo":"La compañía está avanzando, aunque todavía tiene trabajo por ordenar";
   const focus=activity[0]?.count?`${activity[0].name} concentra hoy la mayor actividad (${activity[0].count})`:`Todavía no hay actividad para la selección actual`;
   const attention=high?`Hay ${high} señal${high>1?"es":""} crítica${high>1?"s":""} que conviene resolver primero.`:"No aparecen señales críticas en este momento.";
-  $("#companyState").textContent=`${mood}: lleva un ${progress}% promedio de sus metas semanales. ${focus}. ${attention}`;
+  $("#companyState").textContent=`${mood}: lleva un ${progress}% promedio de sus metas semanales. ${focus}. ${attention} Última actualización de esta página: ${state.data.report.updated_at}.`;
 }
 
 function renderKpis(rows){
