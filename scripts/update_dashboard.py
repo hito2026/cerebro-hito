@@ -34,6 +34,10 @@ ROLE_DIRECTORY = {
     "jose ignacio lanser": {"id":"jose-ignacio-lanser","role":"Comercial","area":"Comercial","manager":"lucas-burgos"},
     "lanser jose ignacio": {"id":"jose-ignacio-lanser","role":"Comercial","area":"Comercial","manager":"lucas-burgos"},
 }
+CLOSED_STAGE_MARKERS = (
+    "solved", "cancel", "done", "hecho", "cerrad", "finaliz", "completad",
+    "terminad", "descartad", "listo", "implementado en produccion", "tareas padre",
+)
 
 
 def git(*args, capture_output=False, check=True):
@@ -78,8 +82,49 @@ def search(model, domain, fields, limit=100):
     return request("/v1/search-read", {"model": model, "domain": domain, "fields": fields, "limit": limit, "order": "write_date desc"})["records"]
 
 
+def search_all(model, domain, fields, page_size=100):
+    records = []
+    offset = 0
+    while True:
+        page = request(
+            "/v1/search-read",
+            {"model": model, "domain": domain, "fields": fields, "limit": page_size, "offset": offset, "order": "write_date desc"},
+        )["records"]
+        records.extend(page)
+        if len(page) < page_size:
+            return records
+        offset += len(page)
+
+
 def relation_name(value, fallback):
     return value[1] if isinstance(value, list) and len(value) > 1 else fallback
+
+
+def stage_is_open(value):
+    stage = normalized(relation_name(value, ""))
+    return not any(marker in stage for marker in CLOSED_STAGE_MARKERS)
+
+
+def backlog_by_person(tickets, tasks, user_names):
+    backlog = {}
+
+    def add(name, kind):
+        if not name:
+            return
+        counts = backlog.setdefault(name, {"tickets": 0, "tasks": 0})
+        counts[kind] += 1
+
+    for ticket in tickets:
+        if not ticket.get("close_date") and stage_is_open(ticket.get("stage_id")):
+            user = ticket.get("user_id")
+            add(user_names.get(user[0]) if isinstance(user, list) and user else None, "tickets")
+    for task in tasks:
+        if stage_is_open(task.get("stage_id")):
+            for user_id in task.get("user_ids", []):
+                add(user_names.get(user_id), "tasks")
+    for counts in backlog.values():
+        counts["total"] = counts["tickets"] + counts["tasks"]
+    return backlog
 
 
 def github_events(since):
@@ -106,6 +151,9 @@ def main(publish=False):
     user_names={user["id"]:user["name"] for user in internal_users}
     internal_names=set(user_names.values())
     github_users={str(user.get("login","")).split("@",1)[0].lower():user["name"] for user in internal_users if user.get("login")}
+    open_tickets = search_all("helpdesk.ticket", [["close_date", "=", False]], ["id", "stage_id", "user_id", "close_date", "write_date"])
+    assigned_tasks = search_all("project.task", [["user_ids", "!=", False]], ["id", "stage_id", "user_ids", "write_date"])
+    backlog = backlog_by_person(open_tickets, assigned_tasks, user_names)
     gh_events = github_events(since)
     activities = []
     people = Counter()
@@ -138,7 +186,8 @@ def main(publish=False):
         if name not in person_areas or count>person_areas[name][1]:person_areas[name]=(area,count)
     maximum=max(person_totals.values(), default=1)
     data["activities"]=activities
-    data["people"]=[{"name":name,"role":ROLE_DIRECTORY.get(normalized(name),{}).get("role","Usuario interno Odoo"),"area":ROLE_DIRECTORY.get(normalized(name),{}).get("area",person_areas[name][0]),"status":"green" if count/maximum>=.7 else "yellow" if count/maximum>=.4 else "red","active_tasks":count,"yesterday":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==recent)} actividades registradas.","today":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==today.isoformat())} actividades registradas."} for name,count in person_totals.most_common()]
+    people_names=sorted(set(person_totals)|set(backlog), key=lambda name:(-backlog.get(name,{}).get("total",0), -person_totals.get(name,0), name))
+    data["people"]=[{"name":name,"role":ROLE_DIRECTORY.get(normalized(name),{}).get("role","Usuario interno Odoo"),"area":ROLE_DIRECTORY.get(normalized(name),{}).get("area",person_areas.get(name,("Sin área",0))[0]),"status":"green" if person_totals.get(name,0)/maximum>=.7 else "yellow" if person_totals.get(name,0)/maximum>=.4 else "red","active_tasks":person_totals.get(name,0),"backlog":backlog.get(name,{"tickets":0,"tasks":0,"total":0}),"yesterday":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==recent)} actividades registradas.","today":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==today.isoformat())} actividades registradas."} for name in people_names]
     raw_org=[]
     for i,(name,count) in enumerate(person_totals.most_common(),1):
         official=ROLE_DIRECTORY.get(normalized(name),{})
@@ -148,7 +197,7 @@ def main(publish=False):
         if person["manager"] not in available:person["manager"]=None
     data["organization"]=raw_org
     data["organization_meta"]={"roles_source":"https://www.hitofusion.com/jobs","structure_note":"Agrupación inferida por área y cargo; la fuente publica roles, no líneas formales de reporte."}
-    data["report"]={"date":today.isoformat(),"updated_at":now.strftime("%d/%m/%Y %H:%M %Z"),"summary":f"Datos reales sanitizados: {len(tickets)} movimientos de soporte, {len(tasks)} tareas de proyecto y {len(gh_events)} eventos de GitHub en los últimos 30 días.","mode":"real-sanitized"}
+    data["report"]={"date":today.isoformat(),"updated_at":now.strftime("%d/%m/%Y %H:%M %Z"),"summary":f"Datos reales sanitizados: {len(tickets)} movimientos de soporte, {len(tasks)} tareas de proyecto y {len(gh_events)} eventos de GitHub en los últimos 30 días. Backlog actual: {sum(item['tickets'] for item in backlog.values())} tickets y {sum(item['tasks'] for item in backlog.values())} tareas asignadas sin finalizar.","mode":"real-sanitized"}
     data["source_status"]={"odoo_helpdesk":"online","odoo_projects":"online","github":"online" if gh_events else "sin eventos o no disponible","odoo_crm":"pendiente de habilitación","privacy":"datos reales sanitizados para publicación pública"}
     data["alerts"]=[{"level":"high" if sum(1 for x in tickets if x.get("priority") in ("2","3")) else "low","title":f"{sum(1 for x in tickets if x.get('priority') in ('2','3'))} tickets prioritarios","detail":"Calculado desde Odoo Helpdesk."},{"level":"medium","title":f"{sum(1 for x in tasks if x.get('date_deadline') and x['date_deadline'] < today.isoformat())} tareas vencidas","detail":"Calculado desde Odoo Proyectos."},{"level":"low","title":f"{len(gh_events)} eventos de desarrollo","detail":"Actividad observada en GitHub durante los últimos 30 días."}]
     week_start=today-dt.timedelta(days=today.weekday());week_end=week_start+dt.timedelta(days=6)
