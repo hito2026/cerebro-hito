@@ -20,6 +20,7 @@ DEFAULT_KB = Path(
     )
 )
 DEFAULT_GATEWAY = os.getenv("CEREBRO_ODOO_GATEWAY", "http://127.0.0.1:18765")
+DEFAULT_CHATTER_LIMIT = int(os.getenv("CEREBRO_CHATTER_MAX_MESSAGES", "5000"))
 DEFAULT_OUTPUT = ROOT / "data" / "recurrences.json"
 ISSUE_TYPES = {"BUG", "CONFIG", "INTEGRATION"}
 TEST_MARKERS = {"prueba", "test", "solicitud de meet", "reunion de prueba"}
@@ -59,6 +60,25 @@ def tokens(value):
     }
 
 
+def sanitize_chatter(value):
+    text = plain_text(value)
+    text = re.sub(r"\b[\w.+-]+@[\w.-]+\.[a-z]{2,}\b", " [correo] ", text, flags=re.IGNORECASE)
+    text = re.sub(r"https?://\S+|www\.\S+", " [url] ", text, flags=re.IGNORECASE)
+    text = re.sub(r"(?<!\d)(?:\+?\d[\d\s().-]{7,}\d)(?!\d)", " [teléfono] ", text)
+    text = re.sub(r"\b(?:password|contrase(?:ñ|n)a|api[-_ ]?key|token)\s*[:=]\s*\S+", " [credencial] ", text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def gateway_search(gateway, payload):
+    req = urllib.request.Request(
+        gateway.rstrip("/") + "/v1/search-read",
+        data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(req, timeout=60) as response:
+        return json.load(response)["records"]
+
+
 def request_records(gateway, since):
     rows = []
     offset = 0
@@ -74,17 +94,61 @@ def request_records(gateway, since):
             "offset": offset,
             "order": "write_date desc",
         }
-        req = urllib.request.Request(
-            gateway.rstrip("/") + "/v1/search-read",
-            data=json.dumps(payload).encode(),
-            headers={"Content-Type": "application/json"},
-        )
-        with urllib.request.urlopen(req, timeout=60) as response:
-            page = json.load(response)["records"]
+        page = gateway_search(gateway, payload)
         rows.extend(page)
         if len(page) < 100:
             return rows
         offset += len(page)
+
+
+def request_messages(gateway, tickets, since, max_messages=DEFAULT_CHATTER_LIMIT):
+    ticket_ids = list(dict.fromkeys(int(ticket["id"]) for ticket in tickets if ticket.get("id")))
+    messages = []
+    truncated = False
+    for start in range(0, len(ticket_ids), 100):
+        ids = ticket_ids[start:start + 100]
+        offset = 0
+        while len(messages) < max_messages:
+            page = gateway_search(
+                gateway,
+                {
+                    "model": "mail.message",
+                    "domain": [
+                        ["model", "=", "helpdesk.ticket"],
+                        ["res_id", "in", ids],
+                        ["date", ">=", since],
+                        ["message_type", "in", ["comment", "email"]],
+                    ],
+                    "fields": ["id", "res_id", "date", "author_id", "message_type", "subtype_id", "body"],
+                    "limit": min(100, max_messages - len(messages)),
+                    "offset": offset,
+                    "order": "date desc",
+                },
+            )
+            messages.extend(page)
+            if len(page) < 100:
+                break
+            offset += len(page)
+        if len(messages) >= max_messages:
+            truncated = True
+            break
+    return messages, truncated
+
+
+def attach_chatter(tickets, messages):
+    by_ticket = {}
+    for message in messages:
+        text = sanitize_chatter(message.get("body", ""))
+        if text:
+            by_ticket.setdefault(message.get("res_id"), []).append(text)
+    enriched = []
+    for ticket in tickets:
+        bodies = by_ticket.get(ticket.get("id"), [])
+        item = dict(ticket)
+        item["_chatter_text"] = " ".join(bodies)
+        item["_chatter_count"] = len(bodies)
+        enriched.append(item)
+    return enriched
 
 
 def cluster_dates(cluster):
@@ -115,17 +179,23 @@ def match_recent_tickets(clusters, tickets):
     matches = {cluster["cluster_id"]: [] for cluster in clusters}
     for ticket in tickets:
         ticket_tokens = tokens(f"{ticket.get('name', '')} {ticket.get('description', '')}")
-        if len(ticket_tokens) < 2:
+        chatter_tokens = tokens(ticket.get("_chatter_text", ""))
+        if len(ticket_tokens | chatter_tokens) < 2:
             continue
         best = None
         for cluster, reference in prepared:
-            overlap = len(ticket_tokens & reference)
-            if overlap < 2:
+            ticket_overlap = len(ticket_tokens & reference)
+            chatter_overlap = len(chatter_tokens & reference)
+            ticket_similarity = ticket_overlap / max(1, len(ticket_tokens | reference))
+            chatter_coverage = chatter_overlap / max(1, len(reference))
+            ticket_signal = ticket_overlap >= 2 and ticket_similarity >= 0.16
+            chatter_signal = chatter_overlap >= 3 and chatter_coverage >= 0.5
+            if not ticket_signal and not chatter_signal:
                 continue
-            similarity = overlap / max(1, len(ticket_tokens | reference))
-            if best is None or similarity > best[0]:
-                best = (similarity, cluster)
-        if best and best[0] >= 0.16:
+            strength = max(ticket_similarity / 0.16 if ticket_signal else 0, chatter_coverage / 0.5 if chatter_signal else 0)
+            if best is None or strength > best[0]:
+                best = (strength, cluster)
+        if best and best[0] >= 1:
             matches[best[1]["cluster_id"]].append(ticket)
     return matches
 
@@ -149,6 +219,7 @@ def public_topic(cluster):
             if company_words:
                 topic = re.sub(r"\b" + r"\W+".join(map(re.escape, company_words)) + r"\b", "", topic, flags=re.IGNORECASE)
     topic = re.sub(r"\b[\w.+-]+@[\w.-]+\.[a-z]{2,}\b", "", topic, flags=re.IGNORECASE)
+    topic = re.sub(r"\b(?:cliente|empresa|contacto)\s+[^()·:–—-]{2,60}(?=\s*[()·:–—-]|$)", "", topic, flags=re.IGNORECASE)
     topic = re.sub(
         r"\b(?:usuario|contacto)\s+.+?(\s+(?:error|falla|problema|configuraci[oó]n)\b)",
         r"\1",
@@ -168,12 +239,13 @@ def public_family(cluster):
     return f"{MODULE_LABELS.get(module, MODULE_LABELS['unknown'])} · {public_topic(cluster)}"
 
 
-def build_report(kb, tickets, now):
+def build_report(kb, tickets, now, chatter_total=0, chatter_truncated=False):
     candidates = [cluster for cluster in kb if eligible(cluster)]
     matches = match_recent_tickets(candidates, tickets)
     ranked = []
     for cluster in candidates:
         recent = matches[cluster["cluster_id"]]
+        chatter_matches = sum(int(ticket.get("_chatter_count", 0)) for ticket in recent)
         score = recurrence_score(cluster, len(recent))
         dates = cluster_dates(cluster) + [str(ticket.get("write_date", ""))[:10] for ticket in recent]
         dates = [date for date in dates if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date)]
@@ -196,7 +268,7 @@ def build_report(kb, tickets, now):
                     f"{int(cluster.get('size', 0))} episodios históricos en la familia; "
                     f"{len(recent)} coincidencias en Helpdesk reciente."
                 ),
-                "evidence": "KB histórica + metadatos Helpdesk; chatter pendiente",
+                "evidence": f"KB histórica + Helpdesk + {chatter_matches} mensajes sanitizados de chatter",
                 "module": cluster.get("module", "unknown"),
                 "issue_type": cluster.get("issue_type", "UNKNOWN"),
                 "cluster_id": cluster.get("cluster_id"),
@@ -213,17 +285,18 @@ def build_report(kb, tickets, now):
             "mode": "automatic-sanitized",
             "status": "Detector automático · requiere validación humana",
             "corpus": f"{len(kb)} clusters históricos y {len(tickets)} tickets recientes",
+            "chatter": f"{chatter_total} mensajes sanitizados" + (" (límite operativo alcanzado)" if chatter_truncated else ""),
         },
         "metrics": [
             {"label": "Clusters analizados", "value": len(candidates), "note": "bugs, configuración e integraciones", "tone": "orange"},
             {"label": "Candidatos publicados", "value": len(clusters), "note": f"{modules} módulos representados", "tone": "blue"},
             {"label": "Sobre el umbral", "value": probable, "note": "requieren revisión humana", "tone": "green"},
-            {"label": "Fuente chatter", "value": "pendiente", "note": "radar parcial y explícito", "tone": "purple"},
+            {"label": "Fuente chatter", "value": "activa", "note": f"{chatter_total} mensajes sanitizados", "tone": "purple"},
         ],
         "threshold": 70,
         "steps": [
             "Filtrar clusters históricos de bug, configuración e integración.",
-            "Comparar títulos y descripciones sanitizadas de Helpdesk reciente.",
+            "Comparar títulos, descripciones y chatter sanitizado de Helpdesk reciente.",
             "Puntuar frecuencia, reutilización, alcance y coincidencias recientes.",
             "Soporte valida cada candidato: repetido, relacionado o distinto.",
         ],
@@ -237,15 +310,18 @@ def main():
     parser.add_argument("--gateway", default=DEFAULT_GATEWAY)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     parser.add_argument("--days", type=int, default=120)
+    parser.add_argument("--max-chatter-messages", type=int, default=DEFAULT_CHATTER_LIMIT)
     args = parser.parse_args()
     now = dt.datetime.now().astimezone()
     since = (now.date() - dt.timedelta(days=max(1, args.days))).isoformat()
     kb = json.loads(args.kb.read_text())
     tickets = request_records(args.gateway, since)
-    report = build_report(kb, tickets, now)
+    messages, chatter_truncated = request_messages(args.gateway, tickets, since, max(1, args.max_chatter_messages))
+    tickets = attach_chatter(tickets, messages)
+    report = build_report(kb, tickets, now, len(messages), chatter_truncated)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({"ok": True, "clusters": len(report["clusters"]), "tickets": len(tickets), "updated_at": report["report"]["updated_at"]}, ensure_ascii=False))
+    print(json.dumps({"ok": True, "clusters": len(report["clusters"]), "tickets": len(tickets), "chatter_messages": len(messages), "chatter_truncated": chatter_truncated, "updated_at": report["report"]["updated_at"]}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
