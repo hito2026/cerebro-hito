@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-24",
-    "updated_at": "24/08/2026 12:41 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 83 eventos de GitHub en los últimos 30 días. Backlog actual: 65 tickets y 808 tareas asignadas sin finalizar.",
+    "updated_at": "24/08/2026 13:00 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 84 eventos de GitHub en los últimos 30 días. Backlog actual: 65 tickets y 806 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -13,12 +13,12 @@
     },
     {
       "level": "medium",
-      "title": "16 tareas vencidas",
+      "title": "33 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "83 eventos de desarrollo",
+      "title": "84 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -27,15 +27,15 @@
       "name": "Carolina Monserrat",
       "role": "Analista Funcional",
       "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
+      "status": "yellow",
+      "active_tasks": 17,
       "backlog": {
         "tickets": 0,
-        "tasks": 126,
-        "total": 126
+        "tasks": 125,
+        "total": 125
       },
       "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
+      "today": "17 actividades registradas."
     },
     {
       "name": "Samuel Marcano",
@@ -66,32 +66,32 @@
       "today": "1 actividades registradas."
     },
     {
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 6,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 68,
-        "total": 68
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "6 actividades registradas."
-    },
-    {
       "name": "Ezequiel Montes",
       "role": "Líder de Proyectos",
       "area": "Proyectos",
       "status": "green",
-      "active_tasks": 53,
+      "active_tasks": 35,
       "backlog": {
         "tickets": 1,
         "tasks": 66,
         "total": 67
       },
       "yesterday": "0 actividades registradas.",
-      "today": "52 actividades registradas."
+      "today": "34 actividades registradas."
+    },
+    {
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "yellow",
+      "active_tasks": 22,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 67,
+        "total": 67
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "22 actividades registradas."
     },
     {
       "name": "Julian Morabito",
@@ -125,7 +125,7 @@
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
       "area": "Soporte",
-      "status": "red",
+      "status": "yellow",
       "active_tasks": 16,
       "backlog": {
         "tickets": 13,
@@ -154,14 +154,14 @@
       "role": "Director Técnico & I+D",
       "area": "Tecnología e I+D",
       "status": "red",
-      "active_tasks": 4,
+      "active_tasks": 5,
       "backlog": {
         "tickets": 9,
         "tasks": 23,
         "total": 32
       },
       "yesterday": "0 actividades registradas.",
-      "today": "1 actividades registradas."
+      "today": "2 actividades registradas."
     },
     {
       "name": "Maximiliano Alarcon",
@@ -196,48 +196,48 @@
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 9,
+      "active_tasks": 7,
       "backlog": {
         "tickets": 5,
         "tasks": 13,
         "total": 18
       },
       "yesterday": "0 actividades registradas.",
-      "today": "3 actividades registradas."
+      "today": "1 actividades registradas."
     },
     {
       "name": "Nelson Tontarelli",
       "role": "Líder de Post-venta",
       "area": "Post-venta",
       "status": "red",
-      "active_tasks": 5,
+      "active_tasks": 4,
       "backlog": {
         "tickets": 3,
         "tasks": 13,
         "total": 16
       },
       "yesterday": "0 actividades registradas.",
-      "today": "1 actividades registradas."
+      "today": "0 actividades registradas."
     },
     {
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 2,
+      "active_tasks": 1,
       "backlog": {
         "tickets": 1,
         "tasks": 15,
         "total": 16
       },
       "yesterday": "0 actividades registradas.",
-      "today": "2 actividades registradas."
+      "today": "1 actividades registradas."
     },
     {
       "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
       "area": "Soporte",
-      "status": "yellow",
+      "status": "green",
       "active_tasks": 36,
       "backlog": {
         "tickets": 12,
@@ -252,14 +252,14 @@
       "role": "Usuario interno Odoo",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 1,
+      "active_tasks": 6,
       "backlog": {
         "tickets": 0,
         "tasks": 12,
         "total": 12
       },
       "yesterday": "0 actividades registradas.",
-      "today": "1 actividades registradas."
+      "today": "6 actividades registradas."
     },
     {
       "name": "Valentin Markov",
@@ -334,15 +334,6 @@
   ],
   "organization": [
     {
-      "id": "ezequiel-montes",
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 53,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "mateo-scozzina",
       "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
@@ -352,12 +343,39 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "ezequiel-montes",
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 35,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "valentin-markov",
       "name": "Valentin Markov",
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
       "activity_count": 23,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "nahiara-delgado",
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 22,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "carolina-monserrat",
+      "name": "Carolina Monserrat",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 17,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -384,16 +402,25 @@
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "manager": null,
-      "activity_count": 9,
+      "activity_count": 7,
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "nahiara-delgado",
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
+      "id": "person-9",
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo · rol no publicado",
       "area": "Proyectos",
-      "manager": "matias-banega",
+      "manager": null,
       "activity_count": 6,
+      "role_source": "Odoo"
+    },
+    {
+      "id": "alejandro-sartorio",
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
+      "manager": null,
+      "activity_count": 5,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -402,15 +429,6 @@
       "role": "Líder de Post-venta",
       "area": "Post-venta",
       "manager": "matias-banega",
-      "activity_count": 5,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "alejandro-sartorio",
-      "name": "Alejandro Sartorio",
-      "role": "Director Técnico & I+D",
-      "area": "Tecnología e I+D",
-      "manager": null,
       "activity_count": 4,
       "role_source": "hitofusion.com/jobs"
     },
@@ -422,15 +440,6 @@
       "manager": "alejandro-sartorio",
       "activity_count": 2,
       "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "person-11",
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Proyectos",
-      "manager": null,
-      "activity_count": 2,
-      "role_source": "Odoo"
     },
     {
       "id": "francisco-fiorentino",
@@ -451,8 +460,8 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-14",
-      "name": "Jinzo",
+      "id": "person-15",
+      "name": "Matias Marziali",
       "role": "Usuario interno Odoo · rol no publicado",
       "area": "Proyectos",
       "manager": null,
@@ -769,6 +778,622 @@
   },
   "activities": [
     {
+      "id": "odoo-task-33637",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33637 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33606",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33606 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-34437",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34437 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33373",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33373 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33423",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33423 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33381",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33381 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33625",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33625 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33384",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33384 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33376",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33376 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-34267",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34267 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33382",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33382 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33605",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33605 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33609",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33609 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33626",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33626 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33635",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33635 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33413",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33413 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33379",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33379 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33385",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33385 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-33628",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33628 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33414",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33414 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33639",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33639 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33608",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33608 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33374",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33374 actualizada",
+      "description": "Estado: Tareas padre."
+    },
+    {
+      "id": "odoo-task-33378",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33378 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33377",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33377 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33418",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33418 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33627",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33627 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33375",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33375 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33380",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33380 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-34612",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #34612 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33420",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33420 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33604",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33604 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-33429",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33429 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33427",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33427 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33607",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Jinzo",
+      "users": [
+        "Jinzo"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33607 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33634",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33634 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33630",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33630 actualizada",
+      "description": "Estado: Pendiente."
+    },
+    {
+      "id": "odoo-task-33629",
+      "date": "2026-08-24",
+      "time": "16:00",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Carolina Monserrat",
+      "users": [
+        "Carolina Monserrat",
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #323",
+      "title": "Tarea #33629 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-35467",
+      "date": "2026-08-24",
+      "time": "15:56",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #35467 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "github-18731941984",
+      "date": "2026-08-24",
+      "time": "15:40",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-18731229936",
       "date": "2026-08-24",
       "time": "15:36",
@@ -964,21 +1589,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "odoo-task-35467",
-      "date": "2026-08-24",
-      "time": "15:17",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35467 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
       "id": "odoo-task-35466",
       "date": "2026-08-24",
       "time": "15:15",
@@ -1039,21 +1649,6 @@
       "description": "Estado: Actividad del cliente."
     },
     {
-      "id": "odoo-task-35474",
-      "date": "2026-08-24",
-      "time": "15:11",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nahiara Aylen Delgado",
-      "users": [
-        "Nahiara Aylen Delgado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #333",
-      "title": "Tarea #35474 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
       "id": "odoo-task-35473",
       "date": "2026-08-24",
       "time": "15:11",
@@ -1066,6 +1661,21 @@
       "client": "Dato protegido",
       "project": "Proyecto #333",
       "title": "Tarea #35473 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-35474",
+      "date": "2026-08-24",
+      "time": "15:11",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Nahiara Aylen Delgado",
+      "users": [
+        "Nahiara Aylen Delgado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #333",
+      "title": "Tarea #35474 actualizada",
       "description": "Estado: Actividad del cliente."
     },
     {
@@ -1654,7 +2264,24 @@
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-task-31308",
+      "id": "odoo-task-33550",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes",
+        "Matias Banega",
+        "Matias Marziali"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #33550 actualizada",
+      "description": "Estado: Demo."
+    },
+    {
+      "id": "odoo-task-31262",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1665,11 +2292,71 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #31308 actualizada",
+      "title": "Tarea #31262 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-35198",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #35198 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33518",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #33518 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-31312",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #31312 actualizada",
       "description": "Estado: Pendiente."
     },
     {
-      "id": "odoo-task-31309",
+      "id": "odoo-task-35197",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #35197 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-31311",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1680,86 +2367,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #31309 actualizada",
-      "description": "Estado: Tareas padre."
+      "title": "Tarea #31311 actualizada",
+      "description": "Estado: Pendiente."
     },
     {
-      "id": "odoo-task-35212",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35212 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35200",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35200 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35214",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35214 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-34269",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #34269 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33543",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33543 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33501",
+      "id": "odoo-task-33963",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1770,11 +2382,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33501 actualizada",
+      "title": "Tarea #33963 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-33589",
+      "id": "odoo-task-34423",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1785,7 +2397,53 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33589 actualizada",
+      "title": "Tarea #34423 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-34429",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #34429 actualizada",
+      "description": "Estado: Actividad HitoFusion."
+    },
+    {
+      "id": "odoo-task-33966",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Sin usuario interno asignado",
+      "users": [
+        "Sin usuario interno asignado"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #33966 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-31528",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Alejandro Sartorio",
+      "users": [
+        "Alejandro Sartorio",
+        "Pablo Marchionno"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #31528 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
@@ -1804,7 +2462,7 @@
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-33473",
+      "id": "odoo-task-35214",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1815,11 +2473,41 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33473 actualizada",
+      "title": "Tarea #35214 actualizada",
+      "description": "Estado: Actividad del cliente."
+    },
+    {
+      "id": "odoo-task-35206",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #35206 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-35202",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #35202 actualizada",
       "description": "Estado: Actividad HitoFusion."
     },
     {
-      "id": "odoo-task-33175",
+      "id": "odoo-task-35212",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1830,52 +2518,7 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33175 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33506",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33506 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33962",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33962 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33979",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33979 actualizada",
+      "title": "Tarea #35212 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
@@ -1909,7 +2552,7 @@
       "description": "Estado: Actividad HitoFusion."
     },
     {
-      "id": "odoo-task-35202",
+      "id": "odoo-task-35200",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1920,41 +2563,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #35202 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-35206",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35206 actualizada",
+      "title": "Tarea #35200 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-33474",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33474 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31522",
+      "id": "odoo-task-33979",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1965,11 +2578,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #31522 actualizada",
+      "title": "Tarea #33979 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-33475",
+      "id": "odoo-task-33962",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1980,11 +2593,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33475 actualizada",
-      "description": "Estado: Actividad HitoFusion."
+      "title": "Tarea #33962 actualizada",
+      "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-35199",
+      "id": "odoo-task-34269",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -1995,26 +2608,11 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #35199 actualizada",
+      "title": "Tarea #34269 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-task-35222",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35222 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-35201",
+      "id": "odoo-task-33506",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -2025,566 +2623,8 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #35201 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-31266",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31266 actualizada",
-      "description": "Estado: Tareas padre."
-    },
-    {
-      "id": "odoo-task-35194",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35194 actualizada",
+      "title": "Tarea #33506 actualizada",
       "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33590",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33590 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-30757",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #30757 actualizada",
-      "description": "Estado: Tareas padre."
-    },
-    {
-      "id": "odoo-task-33489",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33489 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35195",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35195 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35393",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35393 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33550",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes",
-        "Matias Banega",
-        "Matias Marziali"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33550 actualizada",
-      "description": "Estado: Demo."
-    },
-    {
-      "id": "odoo-task-35197",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35197 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33963",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33963 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31311",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31311 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-31312",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31312 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-34429",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #34429 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-34423",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #34423 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-33518",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33518 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31310",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Matias Banega",
-      "users": [
-        "Matias Banega"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31310 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-35198",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35198 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31262",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31262 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33966",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33966 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31270",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31270 actualizada",
-      "description": "Estado: Tareas padre."
-    },
-    {
-      "id": "odoo-task-35216",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35216 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31271",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Matias Marziali",
-      "users": [
-        "Matias Marziali"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31271 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-31261",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31261 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-30875",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #30875 actualizada",
-      "description": "Estado: Tareas padre."
-    },
-    {
-      "id": "odoo-task-31263",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31263 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33514",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33514 actualizada",
-      "description": "Estado: Actividad del cliente."
-    },
-    {
-      "id": "odoo-task-31272",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31272 actualizada",
-      "description": "Estado: Pendiente."
-    },
-    {
-      "id": "odoo-task-31529",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31529 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35208",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Nelson Tontarelli",
-      "users": [
-        "Nelson Tontarelli"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35208 actualizada",
-      "description": "Estado: En proceso."
-    },
-    {
-      "id": "odoo-task-31274",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31274 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-31533",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31533 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-32208",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #32208 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33470",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33470 actualizada",
-      "description": "Estado: Actividad HitoFusion."
-    },
-    {
-      "id": "odoo-task-33472",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes",
-        "Matias Banega"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #33472 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35203",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35203 actualizada",
-      "description": "Estado: En proceso."
-    },
-    {
-      "id": "odoo-task-35190",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Sin usuario interno asignado",
-      "users": [
-        "Sin usuario interno asignado"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35190 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-35207",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Ezequiel Montes",
-      "users": [
-        "Ezequiel Montes"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #35207 actualizada",
-      "description": "Estado: Actividad HitoFusion."
     },
     {
       "id": "odoo-task-33515",
@@ -2602,23 +2642,7 @@
       "description": "Estado: Actividad del cliente."
     },
     {
-      "id": "odoo-task-31528",
-      "date": "2026-08-24",
-      "time": "13:45",
-      "area": "proyectos",
-      "source": "Odoo Proyectos",
-      "person": "Alejandro Sartorio",
-      "users": [
-        "Alejandro Sartorio",
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Proyecto #301",
-      "title": "Tarea #31528 actualizada",
-      "description": "Estado: Implementado en produccion."
-    },
-    {
-      "id": "odoo-task-33496",
+      "id": "odoo-task-33501",
       "date": "2026-08-24",
       "time": "13:45",
       "area": "proyectos",
@@ -2629,7 +2653,22 @@
       ],
       "client": "Dato protegido",
       "project": "Proyecto #301",
-      "title": "Tarea #33496 actualizada",
+      "title": "Tarea #33501 actualizada",
+      "description": "Estado: Implementado en produccion."
+    },
+    {
+      "id": "odoo-task-33491",
+      "date": "2026-08-24",
+      "time": "13:45",
+      "area": "proyectos",
+      "source": "Odoo Proyectos",
+      "person": "Ezequiel Montes",
+      "users": [
+        "Ezequiel Montes"
+      ],
+      "client": "Dato protegido",
+      "project": "Proyecto #301",
+      "title": "Tarea #33491 actualizada",
       "description": "Estado: Implementado en produccion."
     },
     {
