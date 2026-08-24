@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-24",
-    "updated_at": "24/08/2026 12:22 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 79 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "24/08/2026 12:41 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 83 eventos de GitHub en los últimos 30 días. Backlog actual: 65 tickets y 808 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,116 +18,36 @@
     },
     {
       "level": "low",
-      "title": "79 eventos de desarrollo",
+      "title": "83 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
   "people": [
     {
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "status": "green",
-      "active_tasks": 53,
-      "yesterday": "0 actividades registradas.",
-      "today": "52 actividades registradas."
-    },
-    {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "yellow",
-      "active_tasks": 35,
-      "yesterday": "0 actividades registradas.",
-      "today": "8 actividades registradas."
-    },
-    {
-      "name": "Valentin Markov",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "yellow",
-      "active_tasks": 22,
-      "yesterday": "0 actividades registradas.",
-      "today": "5 actividades registradas."
-    },
-    {
-      "name": "Ignacio Lera",
-      "role": "Líder de Soporte",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 18,
-      "yesterday": "0 actividades registradas.",
-      "today": "9 actividades registradas."
-    },
-    {
-      "name": "Pablo Marchionno",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 9,
-      "yesterday": "0 actividades registradas.",
-      "today": "4 actividades registradas."
-    },
-    {
-      "name": "Matias Banega",
-      "role": "Director de Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 9,
-      "yesterday": "0 actividades registradas.",
-      "today": "3 actividades registradas."
-    },
-    {
-      "name": "Nahiara Aylen Delgado",
+      "name": "Carolina Monserrat",
       "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "red",
-      "active_tasks": 6,
-      "yesterday": "0 actividades registradas.",
-      "today": "6 actividades registradas."
-    },
-    {
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "status": "red",
-      "active_tasks": 5,
-      "yesterday": "0 actividades registradas.",
-      "today": "1 actividades registradas."
-    },
-    {
-      "name": "Alejandro Sartorio",
-      "role": "Director Técnico & I+D",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 4,
-      "yesterday": "0 actividades registradas.",
-      "today": "1 actividades registradas."
-    },
-    {
-      "name": "Genaro García",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 2,
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 126,
+        "total": 126
+      },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
-      "name": "Matias Marziali",
+      "name": "Samuel Marcano",
       "role": "Usuario interno Odoo",
-      "area": "Proyectos",
+      "area": "Sin área",
       "status": "red",
-      "active_tasks": 2,
-      "yesterday": "0 actividades registradas.",
-      "today": "2 actividades registradas."
-    },
-    {
-      "name": "Francisco Fiorentino",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 1,
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 125,
+        "total": 125
+      },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
     },
@@ -137,8 +57,195 @@
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 1,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 95,
+        "total": 95
+      },
       "yesterday": "0 actividades registradas.",
       "today": "1 actividades registradas."
+    },
+    {
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 6,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 68,
+        "total": 68
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "6 actividades registradas."
+    },
+    {
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "status": "green",
+      "active_tasks": 53,
+      "backlog": {
+        "tickets": 1,
+        "tasks": 66,
+        "total": 67
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "52 actividades registradas."
+    },
+    {
+      "name": "Julian Morabito",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 63,
+        "total": 63
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 1,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 58,
+        "total": 58
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ignacio Lera",
+      "role": "Líder de Soporte",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 16,
+      "backlog": {
+        "tickets": 13,
+        "tasks": 44,
+        "total": 57
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "7 actividades registradas."
+    },
+    {
+      "name": "Lucas Burgos",
+      "role": "Director Comercial",
+      "area": "Comercial",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 39,
+        "total": 39
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 4,
+      "backlog": {
+        "tickets": 9,
+        "tasks": 23,
+        "total": 32
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "1 actividades registradas."
+    },
+    {
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 23,
+        "total": 23
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Genaro García",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 2,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 21,
+        "total": 21
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Matias Banega",
+      "role": "Director de Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 9,
+      "backlog": {
+        "tickets": 5,
+        "tasks": 13,
+        "total": 18
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "3 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "status": "red",
+      "active_tasks": 5,
+      "backlog": {
+        "tickets": 3,
+        "tasks": 13,
+        "total": 16
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "1 actividades registradas."
+    },
+    {
+      "name": "Matias Marziali",
+      "role": "Usuario interno Odoo",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 2,
+      "backlog": {
+        "tickets": 1,
+        "tasks": 15,
+        "total": 16
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "2 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "yellow",
+      "active_tasks": 36,
+      "backlog": {
+        "tickets": 12,
+        "tasks": 0,
+        "total": 12
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "9 actividades registradas."
     },
     {
       "name": "Jinzo",
@@ -146,8 +253,83 @@
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 1,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 12,
+        "total": 12
+      },
       "yesterday": "0 actividades registradas.",
       "today": "1 actividades registradas."
+    },
+    {
+      "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "yellow",
+      "active_tasks": 23,
+      "backlog": {
+        "tickets": 11,
+        "tasks": 0,
+        "total": 11
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "6 actividades registradas."
+    },
+    {
+      "name": "Pablo Marchionno",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 9,
+      "backlog": {
+        "tickets": 10,
+        "tasks": 1,
+        "total": 11
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "4 actividades registradas."
+    },
+    {
+      "name": "Andrés Salguero",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 1,
+        "total": 1
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Lanser Jose Ignacio",
+      "role": "Comercial",
+      "area": "Comercial",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 1,
+        "total": 1
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Lucia Centurion",
+      "role": "Administración & Finanzas",
+      "area": "Administración",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 1,
+        "total": 1
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
     }
   ],
   "organization": [
@@ -166,7 +348,7 @@
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
-      "activity_count": 35,
+      "activity_count": 36,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -175,7 +357,7 @@
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
-      "activity_count": 22,
+      "activity_count": 23,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -184,7 +366,7 @@
       "role": "Líder de Soporte",
       "area": "Soporte",
       "manager": "matias-banega",
-      "activity_count": 18,
+      "activity_count": 16,
       "role_source": "hitofusion.com/jobs"
     },
     {
@@ -368,7 +550,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 3,
+        "current": 5,
         "unit": "tickets"
       },
       {
@@ -587,9 +769,144 @@
   },
   "activities": [
     {
+      "id": "github-18731229936",
+      "date": "2026-08-24",
+      "time": "15:36",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "CreateEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "odoo-ticket-4829",
+      "date": "2026-08-24",
+      "time": "15:34",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Pablo Marchionno",
+      "users": [
+        "Pablo Marchionno"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4829 actualizado",
+      "description": "Estado: In Progress · equipo: Desarrollo soporte."
+    },
+    {
+      "id": "odoo-ticket-4907",
+      "date": "2026-08-24",
+      "time": "15:34",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4907 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4905",
+      "date": "2026-08-24",
+      "time": "15:34",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4905 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4912",
+      "date": "2026-08-24",
+      "time": "15:33",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4912 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4910",
+      "date": "2026-08-24",
+      "time": "15:33",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4910 actualizado",
+      "description": "Estado: Canceled · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4913",
+      "date": "2026-08-24",
+      "time": "15:32",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4913 actualizado",
+      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4906",
+      "date": "2026-08-24",
+      "time": "15:32",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4906 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4903",
+      "date": "2026-08-24",
+      "time": "15:31",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4903 actualizado",
+      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+    },
+    {
       "id": "odoo-ticket-4821",
       "date": "2026-08-24",
-      "time": "15:19",
+      "time": "15:26",
       "area": "soporte",
       "source": "Odoo Helpdesk",
       "person": "Ignacio Lera",
@@ -599,7 +916,52 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4821 actualizado",
-      "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "github-18730215757",
+      "date": "2026-08-24",
+      "time": "15:23",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-18730143276",
+      "date": "2026-08-24",
+      "time": "15:22",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-18729847660",
+      "date": "2026-08-24",
+      "time": "15:19",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
       "id": "odoo-task-35467",
@@ -767,21 +1129,6 @@
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-ticket-4829",
-      "date": "2026-08-24",
-      "time": "14:47",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Pablo Marchionno",
-      "users": [
-        "Pablo Marchionno"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4829 actualizado",
-      "description": "Estado: In Progress · equipo: Desarrollo soporte."
-    },
-    {
       "id": "odoo-task-35469",
       "date": "2026-08-24",
       "time": "14:35",
@@ -842,96 +1189,6 @@
       "description": "Estado: Verificación del cliente · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-ticket-4912",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4912 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4905",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4905 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4906",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4906 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4913",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4913 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4907",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4907 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4910",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4910 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4904",
       "date": "2026-08-24",
       "time": "14:23",
@@ -959,21 +1216,6 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4911 actualizado",
-      "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
-    },
-    {
-      "id": "odoo-ticket-4903",
-      "date": "2026-08-24",
-      "time": "14:23",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4903 actualizado",
       "description": "Estado: In Progress · equipo: Atención al cliente Odoo."
     },
     {
