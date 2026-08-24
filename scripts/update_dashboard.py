@@ -36,6 +36,33 @@ ROLE_DIRECTORY = {
 }
 
 
+def git(*args, capture_output=False, check=True):
+    return subprocess.run(
+        ["git", *args],
+        cwd=ROOT,
+        check=check,
+        capture_output=capture_output,
+        text=True,
+    )
+
+
+def sync_with_origin():
+    dirty = git("status", "--porcelain", capture_output=True).stdout.strip()
+    if dirty:
+        raise RuntimeError("repository has uncommitted changes; refusing to rebase")
+    git("fetch", "--prune", "origin")
+    git("rebase", "origin/main")
+
+
+def commit_activity_update(today):
+    name = git("config", "user.name", capture_output=True).stdout.strip()
+    email = git("config", "user.email", capture_output=True).stdout.strip()
+    if not name or not email:
+        raise RuntimeError("git user.name and user.email are required for commit trailers")
+    trailers = f"Co-authored-by: {name} <{email}>\nSigned-off-by: {name} <{email}>"
+    git("commit", "-m", f"Update real activity data {today.isoformat()}", "-m", trailers)
+
+
 def normalized(value):
     return " ".join(unicodedata.normalize("NFD", value.lower()).encode("ascii", "ignore").decode().split())
 
@@ -65,6 +92,8 @@ def github_events(since):
 
 
 def main(publish=False):
+    if publish:
+        sync_with_origin()
     now = dt.datetime.now().astimezone()
     today = now.date()
     since = (today - dt.timedelta(days=30)).isoformat()
@@ -130,11 +159,15 @@ def main(publish=False):
     DATA_FILE.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n")
     json.loads(DATA_FILE.read_text())
     if publish:
-        subprocess.run(["git","add","data/activities.json"],cwd=ROOT,check=True)
-        changed=subprocess.run(["git","diff","--cached","--quiet"],cwd=ROOT).returncode!=0
+        git("add", "data/activities.json")
+        changed = git("diff", "--cached", "--quiet", check=False).returncode != 0
         if changed:
-            subprocess.run(["git","commit","-m",f"Update real activity data {today.isoformat()}"],cwd=ROOT,check=True)
-            subprocess.run(["git","push","origin","main"],cwd=ROOT,check=True)
+            commit_activity_update(today)
+            # Close the race between the initial sync and publication. If another
+            # writer updated main while data was collected, replay this commit on
+            # top of the new remote head before pushing.
+            sync_with_origin()
+            git("push", "origin", "HEAD:main")
     print(json.dumps({"ok":True,"activities":len(activities),"people":len(people),"published":bool(publish and changed),"updated_at":data["report"]["updated_at"]},ensure_ascii=False))
 
 
