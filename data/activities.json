@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-23",
-    "updated_at": "23/08/2026 19:00 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 76 eventos de GitHub en los últimos 30 días.",
+    "updated_at": "23/08/2026 21:52 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 77 eventos de GitHub en los últimos 30 días.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "76 eventos de desarrollo",
+      "title": "77 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -75,7 +75,7 @@
       "status": "yellow",
       "active_tasks": 16,
       "yesterday": "4 actividades registradas.",
-      "today": "1 actividades registradas."
+      "today": "3 actividades registradas."
     },
     {
       "name": "Pablo Marchionno",
@@ -605,6 +605,51 @@
   },
   "activities": [
     {
+      "id": "github-18658718869",
+      "date": "2026-08-24",
+      "time": "00:52",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "odoo-ticket-4907",
+      "date": "2026-08-23",
+      "time": "22:22",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4907 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4906",
+      "date": "2026-08-23",
+      "time": "22:22",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Ignacio Lera",
+      "users": [
+        "Ignacio Lera"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4906 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
       "id": "odoo-ticket-4905",
       "date": "2026-08-23",
       "time": "18:23",
@@ -635,21 +680,6 @@
       "description": "Estado: Interconsulta · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-ticket-4903",
-      "date": "2026-08-23",
-      "time": "14:22",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Mateo Scozzina",
-      "users": [
-        "Mateo Scozzina"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4903 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4902",
       "date": "2026-08-23",
       "time": "14:22",
@@ -662,6 +692,21 @@
       "client": "Dato protegido",
       "project": "Soporte",
       "title": "Ticket #4902 actualizado",
+      "description": "Estado: New · equipo: Atención al cliente Odoo."
+    },
+    {
+      "id": "odoo-ticket-4903",
+      "date": "2026-08-23",
+      "time": "14:22",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Mateo Scozzina",
+      "users": [
+        "Mateo Scozzina"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4903 actualizado",
       "description": "Estado: New · equipo: Atención al cliente Odoo."
     },
     {
@@ -770,21 +815,6 @@
       "description": "Estado: New · equipo: Atención al cliente Odoo."
     },
     {
-      "id": "odoo-ticket-4790",
-      "date": "2026-08-22",
-      "time": "01:01",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Valentin Markov",
-      "users": [
-        "Valentin Markov"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4790 actualizado",
-      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-ticket-4863",
       "date": "2026-08-22",
       "time": "01:01",
@@ -798,6 +828,21 @@
       "project": "Soporte",
       "title": "Ticket #4863 actualizado",
       "description": "Estado: Solved · equipo: Soporte IA."
+    },
+    {
+      "id": "odoo-ticket-4790",
+      "date": "2026-08-22",
+      "time": "01:01",
+      "area": "soporte",
+      "source": "Odoo Helpdesk",
+      "person": "Valentin Markov",
+      "users": [
+        "Valentin Markov"
+      ],
+      "client": "Dato protegido",
+      "project": "Soporte",
+      "title": "Ticket #4790 actualizado",
+      "description": "Estado: Solved · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4856",
@@ -1252,21 +1297,6 @@
       "description": "Estado: Implementado en produccion."
     },
     {
-      "id": "odoo-ticket-4907",
-      "date": "2026-08-21",
-      "time": "19:33",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4907 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
-    },
-    {
       "id": "odoo-task-32369",
       "date": "2026-08-21",
       "time": "19:26",
@@ -1325,21 +1355,6 @@
       "project": "Proyecto #320",
       "title": "Tarea #35399 actualizada",
       "description": "Estado: En Proceso."
-    },
-    {
-      "id": "odoo-ticket-4906",
-      "date": "2026-08-21",
-      "time": "19:02",
-      "area": "soporte",
-      "source": "Odoo Helpdesk",
-      "person": "Ignacio Lera",
-      "users": [
-        "Ignacio Lera"
-      ],
-      "client": "Dato protegido",
-      "project": "Soporte",
-      "title": "Ticket #4906 actualizado",
-      "description": "Estado: New · equipo: Atención al cliente Odoo."
     },
     {
       "id": "odoo-ticket-4901",
