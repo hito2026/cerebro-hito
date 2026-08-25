@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,recurrences:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,planning:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -10,6 +10,7 @@ const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area==
 async function init(){
   const activityResponse=await fetch("data/activities.json");state.data=await activityResponse.json();
   state.recurrences=await fetch("data/recurrences.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
+  state.planning=await fetch("data/daily_planning.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},rows:[]}));
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
@@ -46,7 +47,7 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderPlanning();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderRecurrences(){
@@ -115,6 +116,15 @@ function renderPeople(){
   const midpoint=Math.ceil(people.length/2),table=rows=>`<div class="people-table-shell"><table class="people-table"><thead><tr><th>Persona</th><th>Backlog actual</th><th>Ayer</th><th>Hoy</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
   $("#peopleGrid").innerHTML=table(people.slice(0,midpoint))+table(people.slice(midpoint));
 }
+function renderPlanning(){
+  const plan=state.planning;
+  if(!plan?.rows?.length){$("#planningMatrix").innerHTML="<div class='empty'><strong>Sin planificación</strong><p>No se pudo cargar la matriz diaria aprobada.</p></div>";return}
+  const rows=plan.rows;
+  const approved=rows.filter(x=>clean(x.estado_aprobacion).includes("aprobado")).length;
+  $("#planningSummary").textContent=`${rows.length} filas demo · ${approved} con aprobación · ${plan.report?.updated_at||"sin actualización"}`;
+  const list=items=>items?.length?`<ul>${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
+  $("#planningMatrix").innerHTML=`<div class="planning-table-shell"><table class="planning-table"><thead><tr><th>Persona</th><th>Objetivo del día</th><th>Tickets/Tareas</th><th>Bloqueos</th><th>Interconsultas</th><th>Estado aprobación</th><th>Evidencia</th></tr></thead><tbody>${rows.map(row=>{const status=clean(row.estado_aprobacion).includes("pendiente")?"pending":clean(row.estado_aprobacion).includes("seguimiento")?"watch":"approved";return `<tr><td><strong>${esc(row.persona)}</strong><small>${esc(row.area)}</small></td><td>${esc(row.objetivo_del_dia)}</td><td>${list(row.tickets_tareas)}</td><td>${list(row.bloqueos)}</td><td>${list(row.interconsultas)}</td><td><span class="approval ${status}"><i></i>${esc(row.estado_aprobacion)}</span></td><td><details class="planning-detail"><summary>${esc(row.evidencia?.tipo||"evidencia")}</summary><p>${esc(row.evidencia?.referencia)}</p><p>${esc(row.detalle)}</p></details></td></tr>`}).join("")}</tbody></table></div>`;
+}
 function renderOrganization(){
   const people=state.data.organization;
   const maximum=Math.max(...people.map(p=>p.activity_count));
@@ -151,6 +161,6 @@ function renderAccordions(rows){
 }
 const ACCESS_HASH="28e910d2c7fa4c4d175906f5d8d0b030c8ce593777eef446f222863341ab5d0f";
 async function digest(value){const bytes=new TextEncoder().encode(value);const hash=await crypto.subtle.digest("SHA-256",bytes);return [...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,"0")).join("")}
-function start(){document.body.classList.remove("locked");$("#accessGate").hidden=true;init().catch(()=>{$("#periodTimeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá el archivo data/activities.json.</p></div>"})}
+function start(){document.body.classList.remove("locked");$("#accessGate").hidden=true;init().catch(()=>{$("#periodTimeline").innerHTML="<div class='empty'><strong>No se pudieron cargar los datos</strong><p>Revisá los archivos data/activities.json, data/recurrences.json y data/daily_planning.json.</p></div>"})}
 if(sessionStorage.getItem("cerebro_access")==="granted")start();
 else $("#accessForm").addEventListener("submit",async e=>{e.preventDefault();const valid=await digest($("#accessKey").value)===ACCESS_HASH;if(valid){sessionStorage.setItem("cerebro_access","granted");start()}else{$("#accessError").textContent="Clave incorrecta";$("#accessKey").select()}});

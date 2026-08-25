@@ -1,0 +1,99 @@
+{
+  "report": {
+    "date": "2026-08-21",
+    "updated_at": "21/08/2026 08:30 -03",
+    "mode": "demo-sanitized",
+    "summary": "Matriz demostrativa aprobada para planificar el día sin exponer datos privados, clientes reales ni identificadores internos."
+  },
+  "schema_version": "1.0",
+  "rows": [
+    {
+      "id": "plan-demo-001",
+      "persona": "Persona A",
+      "area": "Soporte",
+      "objetivo_del_dia": "Reducir la cola de tickets priorizados y dejar criterios de escalamiento claros para el turno siguiente.",
+      "tickets_tareas": [
+        "Ticket demo SOP-001 · clasificar prioridad y respuesta inicial",
+        "Ticket demo SOP-002 · validar solución documentada",
+        "Tarea demo KB-003 · actualizar artículo de base de conocimiento"
+      ],
+      "bloqueos": [
+        "Esperando confirmación de ambiente de prueba genérico"
+      ],
+      "interconsultas": [
+        "Revisar criterio funcional con Persona C"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "evidencia": {
+        "tipo": "checklist",
+        "referencia": "Evidencia demo sanitizada · sin enlaces privados"
+      },
+      "detalle": "Plan enfocado en tickets de ejemplo. No contiene clientes, URLs internas, números reales ni conversaciones privadas."
+    },
+    {
+      "id": "plan-demo-002",
+      "persona": "Persona B",
+      "area": "Proyectos",
+      "objetivo_del_dia": "Cerrar definición funcional de una mejora demostrativa y preparar próximos pasos para revisión.",
+      "tickets_tareas": [
+        "Tarea demo PRJ-011 · ordenar alcance",
+        "Tarea demo PRJ-012 · redactar criterios de aceptación",
+        "Tarea demo PRJ-013 · preparar minuta sanitizada"
+      ],
+      "bloqueos": [],
+      "interconsultas": [
+        "Confirmar viabilidad técnica con Persona D"
+      ],
+      "estado_aprobacion": "Aprobado con seguimiento",
+      "evidencia": {
+        "tipo": "minuta",
+        "referencia": "Minuta demo aprobada"
+      },
+      "detalle": "La revisión usa nombres genéricos y tareas ficticias para mostrar el flujo de planificación diaria."
+    },
+    {
+      "id": "plan-demo-003",
+      "persona": "Persona C",
+      "area": "Comercial",
+      "objetivo_del_dia": "Priorizar oportunidades demostrativas y coordinar respuestas con áreas operativas.",
+      "tickets_tareas": [
+        "Tarea demo CRM-021 · segmentar oportunidades por estado",
+        "Tarea demo CRM-022 · preparar respuesta estándar"
+      ],
+      "bloqueos": [
+        "Falta definir responsable final de una oportunidad ficticia"
+      ],
+      "interconsultas": [
+        "Validar capacidad de entrega con Persona B",
+        "Consultar ventana de soporte con Persona A"
+      ],
+      "estado_aprobacion": "Pendiente de aprobación",
+      "evidencia": {
+        "tipo": "tablero",
+        "referencia": "Vista demo sin datos comerciales reales"
+      },
+      "detalle": "Fila intencionalmente pendiente para demostrar estados de aprobación sin revelar pipeline real."
+    },
+    {
+      "id": "plan-demo-004",
+      "persona": "Persona D",
+      "area": "Desarrollo",
+      "objetivo_del_dia": "Entregar una mejora técnica demostrativa y documentar riesgos antes de integrar.",
+      "tickets_tareas": [
+        "Tarea demo DEV-031 · revisión de implementación",
+        "Tarea demo DEV-032 · prueba estática local",
+        "Tarea demo DEV-033 · nota técnica sanitizada"
+      ],
+      "bloqueos": [],
+      "interconsultas": [
+        "Alinear criterios con Persona B"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "evidencia": {
+        "tipo": "registro",
+        "referencia": "Registro demo de validación local"
+      },
+      "detalle": "La evidencia describe actividades genéricas; no incluye repositorios privados, ramas, commits ni credenciales."
+    }
+  ]
+}
