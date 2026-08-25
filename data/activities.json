@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-08-24",
-    "updated_at": "24/08/2026 21:36 -03",
-    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 95 eventos de GitHub en los últimos 30 días. Backlog actual: 65 tickets y 808 tareas asignadas sin finalizar.",
+    "updated_at": "24/08/2026 21:39 -03",
+    "summary": "Datos reales sanitizados: 100 movimientos de soporte, 100 tareas de proyecto y 96 eventos de GitHub en los últimos 30 días. Backlog actual: 65 tickets y 808 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "95 eventos de desarrollo",
+      "title": "96 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -759,6 +759,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-18775857636",
+      "date": "2026-08-25",
+      "time": "00:38",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-18775628159",
       "date": "2026-08-25",
@@ -3014,21 +3029,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-18658718869",
-      "date": "2026-08-24",
-      "time": "00:52",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "odoo-ticket-4894",
       "date": "2026-08-22",
       "time": "22:23",
@@ -3300,21 +3300,6 @@
     },
     {
       "id": "github-13651992432",
-      "date": "2026-08-21",
-      "time": "14:56",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PullRequestEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-13651982131",
       "date": "2026-08-21",
       "time": "14:56",
       "area": "desarrollo",
@@ -4364,21 +4349,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-17756304354",
-      "date": "2026-08-15",
-      "time": "16:44",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-17756152723",
       "date": "2026-08-15",
       "time": "16:42",
@@ -4586,21 +4556,6 @@
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PullRequestEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-17753638837",
-      "date": "2026-08-15",
-      "time": "16:05",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -4979,21 +4934,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-17348398521",
-      "date": "2026-08-11",
-      "time": "01:07",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "account-financial-tools",
-      "title": "CreateEvent en account-financial-tools",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-13077046086",
       "date": "2026-08-11",
       "time": "01:07",
@@ -5084,37 +5024,7 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-12645443108",
-      "date": "2026-08-02",
-      "time": "02:33",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hito-gemelos-ia",
-      "title": "PullRequestEvent en hito-gemelos-ia",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-12642633688",
-      "date": "2026-08-01",
-      "time": "23:50",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hito-gemelos-ia",
-      "title": "PullRequestEvent en hito-gemelos-ia",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-12642630811",
       "date": "2026-08-01",
       "time": "23:50",
       "area": "desarrollo",
