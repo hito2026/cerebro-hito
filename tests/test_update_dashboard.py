@@ -33,5 +33,34 @@ class UpdateDashboardBacklogTests(unittest.TestCase):
         self.assertEqual(backlog["Bruno"], {"tickets": 0, "tasks": 1, "total": 1})
 
 
+class UpdateDashboardDeduplicationTests(unittest.TestCase):
+    def test_removes_rows_that_are_identical_in_the_public_tracking(self):
+        visible = {
+            "date": "2026-08-24",
+            "time": "00:52",
+            "area": "desarrollo",
+            "source": "GitHub",
+            "person": "Sin usuario interno vinculado",
+            "users": ["Sin usuario interno vinculado"],
+            "client": "Interno",
+            "project": "cerebro-hito",
+            "title": "PushEvent en cerebro-hito",
+            "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública.",
+        }
+        rows = [dict(visible, id="github-1"), dict(visible, id="github-2")]
+
+        unique = MODULE.deduplicate_activities(rows)
+
+        self.assertEqual([row["id"] for row in unique], ["github-1"])
+
+    def test_keeps_events_that_differ_in_a_visible_field(self):
+        rows = [
+            {"id": "github-1", "date": "2026-08-24", "time": "00:52", "source": "GitHub", "person": "Ana", "users": ["Ana"], "project": "repo-a", "title": "PushEvent", "description": "Actividad"},
+            {"id": "github-2", "date": "2026-08-24", "time": "00:52", "source": "GitHub", "person": "Ana", "users": ["Ana"], "project": "repo-b", "title": "PushEvent", "description": "Actividad"},
+        ]
+
+        self.assertEqual(MODULE.deduplicate_activities(rows), rows)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -127,6 +127,30 @@ def backlog_by_person(tickets, tasks, user_names):
     return backlog
 
 
+def deduplicate_activities(activities):
+    """Keep one row when multiple source events render as the same activity."""
+    seen = set()
+    unique = []
+    for activity in activities:
+        identity = (
+            activity.get("date"),
+            activity.get("time"),
+            activity.get("area"),
+            activity.get("source"),
+            activity.get("person"),
+            tuple(activity.get("users", [])),
+            activity.get("client"),
+            activity.get("project"),
+            activity.get("title"),
+            activity.get("description"),
+        )
+        if identity in seen:
+            continue
+        seen.add(identity)
+        unique.append(activity)
+    return unique
+
+
 def github_events(since):
     try:
         raw = subprocess.run(["/home/asartorio/.local/bin/gh", "api", f"/orgs/{ORG}/events?per_page=100"], check=True, capture_output=True, text=True).stdout
@@ -162,23 +186,25 @@ def main(publish=False):
         stamp=item["write_date"].replace(" ", "T")
         candidate=relation_name(item.get("user_id"), "")
         person=candidate if candidate in internal_names else "Sin usuario interno asignado"
-        if person in internal_names:people[(person,"Soporte")]+=1
         activities.append({"id":f"odoo-ticket-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"soporte","source":"Odoo Helpdesk","person":person,"users":[person],"client":"Dato protegido","project":"Soporte","title":f"Ticket #{item['id']} actualizado","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')} · equipo: {relation_name(item.get('team_id'),'sin equipo')}."})
     for item in tasks:
         stamp=item["write_date"].replace(" ", "T")
         users=[user_names[uid] for uid in item.get("user_ids",[]) if uid in user_names] or ["Sin usuario interno asignado"]
         person=users[0]
-        for assigned in users:
-            if assigned in internal_names:people[(assigned,"Proyectos")]+=1
         activities.append({"id":f"odoo-task-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"proyectos","source":"Odoo Proyectos","person":person,"users":users,"client":"Dato protegido","project":f"Proyecto #{item.get('project_id',[item['id']])[0] if item.get('project_id') else item['id']}","title":f"Tarea #{item['id']} actualizada","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')}."})
     for event in gh_events:
         stamp=event.get("created_at","")
         actor=event.get("actor",{}).get("login","")
         person=github_users.get(actor.lower(),"Sin usuario interno vinculado")
         repo=event.get("repo",{}).get("name","repositorio").split("/")[-1]
-        if person in internal_names:people[(person,"Desarrollo")]+=1
         activities.append({"id":f"github-{event.get('id')}","date":stamp[:10],"time":stamp[11:16],"area":"desarrollo","source":"GitHub","person":person,"users":[person],"client":"Interno","project":repo,"title":f"{event.get('type','Actividad')} en {repo}","description":"Actividad técnica registrada en GitHub; contenido omitido en la vista pública."})
 
+    activities = deduplicate_activities(activities)
+    area_labels = {"soporte": "Soporte", "proyectos": "Proyectos", "desarrollo": "Desarrollo"}
+    for activity in activities:
+        for assigned in activity.get("users", [activity["person"]]):
+            if assigned in internal_names:
+                people[(assigned, area_labels[activity["area"]])] += 1
     activities.sort(key=lambda x:(x["date"],x["time"]), reverse=True)
     person_totals=Counter();person_areas={}
     for (name,area),count in people.items():
