@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,recurrences:null,planning:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,planning:null,planningEvolution:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -11,6 +11,7 @@ async function init(){
   const activityResponse=await fetch("data/activities.json");state.data=await activityResponse.json();
   state.recurrences=await fetch("data/recurrences.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   state.planning=await fetch("data/daily_planning.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},rows:[]}));
+  state.planningEvolution=await fetch("data/planning_evolution.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
@@ -47,7 +48,7 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderPlanning();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderRecurrences(){
@@ -125,6 +126,26 @@ function renderPlanning(){
   const list=items=>items?.length?`<ul>${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
   $("#planningMatrix").innerHTML=`<div class="planning-table-shell"><table class="planning-table"><thead><tr><th>Persona</th><th>Objetivo del día</th><th>Tickets/Tareas</th><th>Bloqueos</th><th>Interconsultas</th><th>Estado aprobación</th><th>Evidencia</th></tr></thead><tbody>${rows.map(row=>{const status=clean(row.estado_aprobacion).includes("pendiente")?"pending":clean(row.estado_aprobacion).includes("seguimiento")?"watch":"approved";return `<tr><td><strong>${esc(row.persona)}</strong><small>${esc(row.area)}</small></td><td>${esc(row.objetivo_del_dia)}</td><td>${list(row.tickets_tareas)}</td><td>${list(row.bloqueos)}</td><td>${list(row.interconsultas)}</td><td><span class="approval ${status}"><i></i>${esc(row.estado_aprobacion)}</span></td><td><details class="planning-detail"><summary>${esc(row.evidencia?.tipo||"evidencia")}</summary><p>${esc(row.evidencia?.referencia)}</p><p>${esc(row.detalle)}</p></details></td></tr>`}).join("")}</tbody></table></div>`;
 }
+function renderPlanningEvolution(){
+  const data=state.planningEvolution;
+  const summary=$("#planningEvolutionSummary"),kpis=$("#planningEvolutionKpis"),matrix=$("#planningEvolutionMatrix"),chips=$("#planningEvolutionChips");
+  if(!summary||!kpis||!matrix||!chips)return;
+  if(!data?.people?.length){summary.textContent="Evolución no disponible; el tablero principal sigue funcionando.";kpis.innerHTML="";matrix.innerHTML="<div class='empty'><strong>Sin evolución</strong><p>No se pudo cargar data/planning_evolution.json.</p></div>";chips.innerHTML="";return}
+  const metrics=data.metrics||{};
+  const cards=[
+    ["Planes aprobados",metrics.approved_plans,"Total semanal demo aprobado", "green"],
+    ["Pendientes",metrics.pending_plans,"Planes que requieren revisión", "orange"],
+    ["Bloqueos",metrics.blockers,"Bloqueos declarados en la semana", "red"],
+    ["Interconsultas",metrics.consultations,"Cruces entre áreas", "blue"]
+  ];
+  summary.textContent=`${data.report?.window||"semana demo"} · ${data.report?.updated_at||"sin actualización"} · ${data.report?.summary||"datos sanitizados"}`;
+  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="planning-evolution-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value??0)}</strong><small>${esc(note)}</small></article>`).join("");
+  const days=data.days||[];
+  const cell=entry=>{const planned=Number(entry.planned)||0,closed=Number(entry.closed)||0,carry=Number(entry.carry_over)||0,approved=Number(entry.approved)||0,verified=Number(entry.verified)||0;const ratio=planned?Math.round(closed/planned*100):0;const tone=carry>0?"carry":approved<planned?"pending":"closed";return `<td class="planning-evolution-cell ${tone}"><strong>${esc(closed)} / ${esc(planned)}</strong><span>cerrado · ${esc(ratio)}%</span><small>${esc(verified)} verif. · ${esc(approved)} aprob. · ${esc(entry.in_progress||0)} curso · ${esc(carry)} arr.</small>${entry.inferred?"<i title='Dato inferido para demo'>inferido</i>":""}</td>`};
+  matrix.innerHTML=`<div class="planning-evolution-table-shell"><table class="planning-evolution-table"><thead><tr><th>Persona</th>${days.map(day=>`<th>${esc(day.label)}</th>`).join("")}</tr></thead><tbody>${data.people.map(person=>`<tr><td><strong>${esc(person.person)}</strong><small>${esc(person.area)}</small></td>${days.map(day=>cell((person.days||[]).find(item=>item.day===day.key)||{day:day.key})).join("")}</tr>`).join("")}</tbody></table></div><p class="planning-evolution-note">Cada celda muestra cerrado / planificado y señales demo: aprobados, en curso, arrastre e inferencias.</p>`;
+  chips.innerHTML=(data.inference_flags||[]).map(flag=>`<span class="planning-evolution-chip ${esc(flag.tone)}"><b>${esc(flag.label)}</b>${esc(flag.description)}</span>`).join("");
+}
+
 function renderOrganization(){
   const people=state.data.organization;
   const maximum=Math.max(...people.map(p=>p.activity_count));
