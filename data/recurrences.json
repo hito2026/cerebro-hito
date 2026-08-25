@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "24/08/2026 15:12 -03",
+    "updated_at": "24/08/2026 21:36 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 967 tickets recientes",
+    "corpus": "310 clusters históricos y 969 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -124,7 +124,7 @@
       "episodes": 7,
       "window": "2026-05-27 → 2026-08-24",
       "reason": "2 episodios históricos en la familia; 5 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 67 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 69 mensajes sanitizados de chatter",
       "module": "sale",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0068",
