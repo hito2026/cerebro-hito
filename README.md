@@ -39,7 +39,7 @@ Ale u otro operador puede preparar una daily aprobada como bloque `CEREBRO_DAILY
 }
 ```
 
-Regla de privacidad: no incluir nombres reales, teléfonos, correos, URLs internas, clientes ni cuerpos de conversaciones. Usar `persona_label` / `area_label` ya sanitizados; si sólo existe el dato privado, omitirlo o dejarlo en claves privadas fuera de la salida pública para que el script publique `Dato protegido`.
+Regla de privacidad: no incluir nombres reales, teléfonos, correos, URLs internas, clientes, repositorios privados ni cuerpos de conversaciones. Los JSON publicados son assets estáticos y pueden consultarse directamente; por eso el script exige `public_sanitized: true`. Usar `persona_label` / `area_label` ya sanitizados; si sólo existe el dato privado, omitirlo o dejarlo en claves privadas fuera de la salida pública para que el script publique `Dato protegido`.
 
 Flujo recomendado con inbox local:
 

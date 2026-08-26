@@ -68,6 +68,37 @@ def sanitize_list(record, key):
     return [sanitize_text(item) for item in values if sanitize_text(item, "")]
 
 
+def sanitize_item_evidence(record):
+    values = record.get("item_evidence", [])
+    if values is None:
+        return []
+    if not isinstance(values, list):
+        raise ValueError("item_evidence debe ser una lista")
+    output = []
+    allowed_states = {
+        "declarado_por_usuario",
+        "verificado_por_herramienta",
+        "mixto",
+        "requiere_verificación",
+        "sin_evidencia_declarada",
+    }
+    for item in values:
+        if not isinstance(item, dict):
+            raise ValueError("cada item_evidence debe ser un objeto")
+        state = sanitize_text(item.get("estado_evidencia"), "requiere_verificación")
+        if state not in allowed_states:
+            state = "requiere_verificación"
+        output.append({
+            "item": sanitize_text(item.get("item"), "Actividad protegida"),
+            "tipo": sanitize_text(item.get("tipo"), "other"),
+            "referencia": sanitize_text(item.get("referencia"), PUBLIC_FALLBACK),
+            "estado_evidencia": state,
+            "fuente": sanitize_text(item.get("fuente"), "usuario"),
+            "observacion": sanitize_text(item.get("observacion"), ""),
+        })
+    return output
+
+
 def parse_date(value):
     try:
         return dt.date.fromisoformat(str(value))
@@ -96,6 +127,8 @@ def validate_and_render_row(record):
         raise ValueError("objetivo_del_dia es obligatorio")
     if not tasks:
         raise ValueError("tickets_tareas debe tener al menos un elemento")
+    if record.get("public_sanitized") is not True:
+        raise ValueError("public_sanitized=true es obligatorio para escribir datasets públicos")
     status = parse_approved(record)
     persona = public_label(record, "persona_label", "persona")
     area = public_label(record, "area_label", "area")
@@ -130,6 +163,7 @@ def validate_and_render_row(record):
             "tipo": sanitize_text(evidence.get("tipo"), "registro aprobado"),
             "referencia": sanitize_text(evidence.get("referencia"), "Referencia protegida"),
         },
+        "item_evidence": sanitize_item_evidence(record),
         "detalle": sanitize_text(record.get("detalle"), "Registro aprobado por Ale; salida pública sanitizada."),
     }
 

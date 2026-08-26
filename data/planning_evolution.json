@@ -1,16 +1,16 @@
 {
   "report": {
-    "updated_at": "25/08/2026 16:29 -0300",
+    "updated_at": "26/08/2026 16:38 -0300",
     "mode": "operator-sanitized",
     "summary": "Evolución semanal demostrativa de planificación. Datos ficticios, sin clientes reales, enlaces privados ni identificadores internos.",
     "window": "2026-08-24 → 2026-08-30"
   },
   "schema_version": "1.0",
   "metrics": {
-    "approved_plans": 68,
+    "approved_plans": 72,
     "pending_plans": 11,
     "blockers": 9,
-    "consultations": 21
+    "consultations": 24
   },
   "inference_flags": [
     {
@@ -335,8 +335,8 @@
       ]
     },
     {
-      "person": "Persona Dirección",
-      "area": "Dirección / Hiperproductividad",
+      "person": "Persona protegida",
+      "area": "Dirección",
       "days": [
         {
           "day": "tue",

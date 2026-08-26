@@ -46,6 +46,25 @@
         "Preparar respuesta estándar sanitizada"
       ],
       "proximo_seguimiento": "Retomar estado de OPS-101 en la próxima daily"
-    }
+    },
+    "item_evidence": [
+      {
+        "item": "Ticket demo OPS-101 · clasificar impacto sin datos de cliente",
+        "tipo": "helpdesk_ticket",
+        "referencia": "OPS-101 demo",
+        "estado_evidencia": "declarado_por_usuario",
+        "fuente": "usuario",
+        "observacion": "Referencia ficticia para validar correspondencia"
+      },
+      {
+        "item": "Tarea demo OPS-102 · preparar respuesta estándar sanitizada",
+        "tipo": "project_task",
+        "referencia": "OPS-102 demo",
+        "estado_evidencia": "requiere_verificación",
+        "fuente": "odoo",
+        "observacion": "Debe verificarse contra herramienta autorizada"
+      }
+    ],
+    "public_sanitized": true
   }
 }

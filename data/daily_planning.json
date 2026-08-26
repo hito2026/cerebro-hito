@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-08-25",
-    "updated_at": "25/08/2026 16:29 -0300",
+    "updated_at": "26/08/2026 16:38 -0300",
     "mode": "operator-sanitized",
     "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
@@ -112,17 +112,54 @@
         "Coordinar criterio con Persona A"
       ],
       "estado_aprobacion": "Aprobado",
+      "estado_registro": "registrado_en_cerebro",
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Pendiente demo anterior sin datos privados"
+        ],
+        "tareas_completadas": [
+          "Avance demo confirmado por el usuario"
+        ],
+        "tareas_sin_hacer": [
+          "Tarea demo que requiere seguimiento"
+        ],
+        "motivo_sin_hacer": "Dependencia de tercero en ejemplo ficticio",
+        "bloqueo_actual": "Esperando validación de ambiente genérico",
+        "tareas_planificadas_hoy": [
+          "Clasificar impacto",
+          "Preparar respuesta estándar sanitizada"
+        ],
+        "proximo_seguimiento": "Retomar estado de OPS-101 en la próxima daily"
+      },
       "evidencia": {
         "tipo": "daily aprobada",
         "referencia": "Registro demo sanitizado; sin enlace privado"
       },
+      "item_evidence": [
+        {
+          "item": "Ticket demo OPS-101 · clasificar impacto sin datos de cliente",
+          "tipo": "helpdesk_ticket",
+          "referencia": "OPS-101 demo",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "usuario",
+          "observacion": "Referencia ficticia para validar correspondencia"
+        },
+        {
+          "item": "Tarea demo OPS-102 · preparar respuesta estándar sanitizada",
+          "tipo": "project_task",
+          "referencia": "OPS-102 demo",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "odoo",
+          "observacion": "Debe verificarse contra herramienta autorizada"
+        }
+      ],
       "detalle": "Ejemplo ficticio para validar el flujo local. No contiene nombres reales, teléfonos, clientes ni URLs internas."
     },
     {
-      "id": "daily-2026-08-25-persona-direccion-direccion-hiperproductividad",
+      "id": "daily-2026-08-25-persona-protegida-direccion",
       "date": "2026-08-25",
-      "persona": "Persona Dirección",
-      "area": "Dirección / Hiperproductividad",
+      "persona": "Persona protegida",
+      "area": "Dirección",
       "objetivo_del_dia": "Dar seguimiento a actividad de desarrollo, revisar dos frentes comerciales/operativos y continuar mejoras de IA para hiperproductividad aplicada a resolución de tickets.",
       "tickets_tareas": [
         "Seguimiento demo de tareas asignadas a equipo de desarrollo",
@@ -164,6 +201,40 @@
         "tipo": "declarado_por_usuario",
         "referencia": "Daily WhatsApp aprobada; sin verificación de herramientas en este turno"
       },
+      "item_evidence": [
+        {
+          "item": "Seguimiento demo de tareas asignadas a equipo de desarrollo",
+          "tipo": "project_task",
+          "referencia": "Tickets/tareas asignadas · referencia protegida",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "odoo",
+          "observacion": "El usuario pidió verificar tickets asignados; falta contraste por herramienta."
+        },
+        {
+          "item": "Gestión comercial sanitizada sobre deuda/estado de cuenta de cliente protegido",
+          "tipo": "crm_activity",
+          "referencia": "Cliente protegido · actividad comercial",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "usuario",
+          "observacion": "Debe verificarse en Odoo/CRM antes de tratar como hecho."
+        },
+        {
+          "item": "Revisión operativa sanitizada de reunión previa sobre carga automática de listas de precios",
+          "tipo": "meeting",
+          "referencia": "Reunión previa protegida",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "cerebro",
+          "observacion": "Pendiente contrastar con registro de reunión/tarea/proyecto."
+        },
+        {
+          "item": "Continuidad de mejoras de IA para hiperproductividad en resolución de tickets",
+          "tipo": "other",
+          "referencia": "Iniciativa interna protegida",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "usuario",
+          "observacion": "Plan declarado; requiere registrar hitos técnicos aparte."
+        }
+      ],
       "detalle": "Registro sanitizado de daily aprobada. Se protegieron nombres de clientes, enlaces internos, repositorios y datos privados; la actividad mencionada queda como declarada por usuario hasta verificación."
     }
   ]
