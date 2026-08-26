@@ -1,16 +1,16 @@
 {
   "report": {
-    "updated_at": "25/08/2026 09:00 -03",
-    "mode": "demo-sanitized",
+    "updated_at": "25/08/2026 16:29 -0300",
+    "mode": "operator-sanitized",
     "summary": "Evolución semanal demostrativa de planificación. Datos ficticios, sin clientes reales, enlaces privados ni identificadores internos.",
-    "window": "2026-08-17 → 2026-08-21"
+    "window": "2026-08-24 → 2026-08-30"
   },
   "schema_version": "1.0",
   "metrics": {
-    "approved_plans": 17,
-    "pending_plans": 3,
-    "blockers": 5,
-    "consultations": 9
+    "approved_plans": 68,
+    "pending_plans": 11,
+    "blockers": 9,
+    "consultations": 21
   },
   "inference_flags": [
     {
@@ -30,55 +30,326 @@
     }
   ],
   "days": [
-    {"key": "mon", "label": "Lun 17"},
-    {"key": "tue", "label": "Mar 18"},
-    {"key": "wed", "label": "Mié 19"},
-    {"key": "thu", "label": "Jue 20"},
-    {"key": "fri", "label": "Vie 21"}
+    {
+      "key": "mon",
+      "label": "Lun 24"
+    },
+    {
+      "key": "tue",
+      "label": "Mar 25"
+    },
+    {
+      "key": "wed",
+      "label": "Mié 26"
+    },
+    {
+      "key": "thu",
+      "label": "Jue 27"
+    },
+    {
+      "key": "fri",
+      "label": "Vie 28"
+    }
   ],
   "people": [
     {
       "person": "Persona A",
       "area": "Soporte",
       "days": [
-        {"day": "mon", "planned": 4, "verified": 3, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 1, "inferred": false},
-        {"day": "tue", "planned": 4, "verified": 4, "approved": 4, "in_progress": 1, "closed": 3, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "wed", "planned": 5, "verified": 4, "approved": 4, "in_progress": 2, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 2, "inferred": true},
-        {"day": "thu", "planned": 4, "verified": 4, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 0, "inferred": false},
-        {"day": "fri", "planned": 3, "verified": 3, "approved": 3, "in_progress": 0, "closed": 3, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false}
+        {
+          "day": "mon",
+          "planned": 4,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "tue",
+          "planned": 4,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 1,
+          "closed": 3,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "wed",
+          "planned": 5,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 2,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 2,
+          "inferred": true
+        },
+        {
+          "day": "thu",
+          "planned": 4,
+          "verified": 4,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 0,
+          "inferred": false
+        },
+        {
+          "day": "fri",
+          "planned": 3,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 0,
+          "closed": 3,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        }
       ]
     },
     {
       "person": "Persona B",
       "area": "Proyectos",
       "days": [
-        {"day": "mon", "planned": 3, "verified": 3, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "tue", "planned": 4, "verified": 3, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 1, "inferred": true},
-        {"day": "wed", "planned": 4, "verified": 4, "approved": 4, "in_progress": 1, "closed": 3, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "thu", "planned": 5, "verified": 4, "approved": 4, "in_progress": 2, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 2, "inferred": false},
-        {"day": "fri", "planned": 4, "verified": 4, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 1, "blockers": 0, "consultations": 1, "inferred": true}
+        {
+          "day": "mon",
+          "planned": 3,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "tue",
+          "planned": 4,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 1,
+          "inferred": true
+        },
+        {
+          "day": "wed",
+          "planned": 4,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 1,
+          "closed": 3,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "thu",
+          "planned": 5,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 2,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 2,
+          "inferred": false
+        },
+        {
+          "day": "fri",
+          "planned": 4,
+          "verified": 4,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": true
+        }
       ]
     },
     {
       "person": "Persona C",
       "area": "Comercial",
       "days": [
-        {"day": "mon", "planned": 2, "verified": 2, "approved": 1, "in_progress": 1, "closed": 1, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "tue", "planned": 3, "verified": 2, "approved": 2, "in_progress": 1, "closed": 1, "carry_over": 1, "blockers": 1, "consultations": 1, "inferred": false},
-        {"day": "wed", "planned": 3, "verified": 3, "approved": 2, "in_progress": 1, "closed": 2, "carry_over": 0, "blockers": 0, "consultations": 0, "inferred": true},
-        {"day": "thu", "planned": 3, "verified": 3, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "fri", "planned": 2, "verified": 2, "approved": 2, "in_progress": 0, "closed": 2, "carry_over": 0, "blockers": 0, "consultations": 0, "inferred": false}
+        {
+          "day": "mon",
+          "planned": 2,
+          "verified": 2,
+          "approved": 1,
+          "in_progress": 1,
+          "closed": 1,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "tue",
+          "planned": 3,
+          "verified": 2,
+          "approved": 2,
+          "in_progress": 1,
+          "closed": 1,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "wed",
+          "planned": 3,
+          "verified": 3,
+          "approved": 2,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 0,
+          "inferred": true
+        },
+        {
+          "day": "thu",
+          "planned": 3,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "fri",
+          "planned": 2,
+          "verified": 2,
+          "approved": 2,
+          "in_progress": 0,
+          "closed": 2,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 0,
+          "inferred": false
+        }
       ]
     },
     {
       "person": "Persona D",
       "area": "Desarrollo",
       "days": [
-        {"day": "mon", "planned": 4, "verified": 3, "approved": 3, "in_progress": 2, "closed": 1, "carry_over": 1, "blockers": 1, "consultations": 0, "inferred": true},
-        {"day": "tue", "planned": 4, "verified": 4, "approved": 4, "in_progress": 1, "closed": 3, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "wed", "planned": 5, "verified": 4, "approved": 4, "in_progress": 2, "closed": 2, "carry_over": 1, "blockers": 1, "consultations": 1, "inferred": false},
-        {"day": "thu", "planned": 4, "verified": 4, "approved": 4, "in_progress": 1, "closed": 3, "carry_over": 0, "blockers": 0, "consultations": 1, "inferred": false},
-        {"day": "fri", "planned": 3, "verified": 3, "approved": 3, "in_progress": 1, "closed": 2, "carry_over": 0, "blockers": 0, "consultations": 0, "inferred": false}
+        {
+          "day": "mon",
+          "planned": 4,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 2,
+          "closed": 1,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 0,
+          "inferred": true
+        },
+        {
+          "day": "tue",
+          "planned": 4,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 1,
+          "closed": 3,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "wed",
+          "planned": 5,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 2,
+          "closed": 2,
+          "carry_over": 1,
+          "blockers": 1,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "thu",
+          "planned": 4,
+          "verified": 4,
+          "approved": 4,
+          "in_progress": 1,
+          "closed": 3,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        },
+        {
+          "day": "fri",
+          "planned": 3,
+          "verified": 3,
+          "approved": 3,
+          "in_progress": 1,
+          "closed": 2,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 0,
+          "inferred": false
+        }
+      ]
+    },
+    {
+      "person": "Persona E",
+      "area": "Operaciones",
+      "days": [
+        {
+          "day": "fri",
+          "planned": 2,
+          "verified": 2,
+          "approved": 2,
+          "in_progress": 1,
+          "closed": 1,
+          "carry_over": 0,
+          "blockers": 1,
+          "consultations": 1,
+          "inferred": false
+        }
+      ]
+    },
+    {
+      "person": "Persona Dirección",
+      "area": "Dirección / Hiperproductividad",
+      "days": [
+        {
+          "day": "tue",
+          "planned": 4,
+          "verified": 0,
+          "approved": 4,
+          "in_progress": 4,
+          "closed": 0,
+          "carry_over": 1,
+          "blockers": 0,
+          "consultations": 3,
+          "inferred": false
+        }
       ]
     }
   ]

@@ -1,0 +1,51 @@
+{
+  "daily_record": {
+    "date": "2026-08-21",
+    "approved": true,
+    "persona_label": "Persona E",
+    "area_label": "Operaciones",
+    "objetivo_del_dia": "Ordenar prioridades del turno y dejar visibles los próximos pasos aprobados.",
+    "tickets_tareas": [
+      "Ticket demo OPS-101 · clasificar impacto sin datos de cliente",
+      "Tarea demo OPS-102 · preparar respuesta estándar sanitizada"
+    ],
+    "bloqueos": [
+      "Esperando validación de ambiente genérico"
+    ],
+    "interconsultas": [
+      "Coordinar criterio con Persona A"
+    ],
+    "estado_aprobacion": "Aprobado",
+    "evidencia": {
+      "tipo": "daily aprobada",
+      "referencia": "Registro demo sanitizado; sin enlace privado"
+    },
+    "detalle": "Ejemplo ficticio para validar el flujo local. No contiene nombres reales, teléfonos, clientes ni URLs internas.",
+    "metrics": {
+      "planned": 2,
+      "verified": 2,
+      "approved": 2,
+      "in_progress": 1,
+      "closed": 1,
+      "carry_over": 0
+    },
+    "registro_continuidad": {
+      "pendientes_anteriores": [
+        "Pendiente demo anterior sin datos privados"
+      ],
+      "tareas_completadas": [
+        "Avance demo confirmado por el usuario"
+      ],
+      "tareas_sin_hacer": [
+        "Tarea demo que requiere seguimiento"
+      ],
+      "motivo_sin_hacer": "Dependencia de tercero en ejemplo ficticio",
+      "bloqueo_actual": "Esperando validación de ambiente genérico",
+      "tareas_planificadas_hoy": [
+        "Clasificar impacto",
+        "Preparar respuesta estándar sanitizada"
+      ],
+      "proximo_seguimiento": "Retomar estado de OPS-101 en la próxima daily"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "report": {
-    "date": "2026-08-21",
-    "updated_at": "21/08/2026 08:30 -03",
-    "mode": "demo-sanitized",
-    "summary": "Matriz demostrativa aprobada para planificar el día sin exponer datos privados, clientes reales ni identificadores internos."
+    "date": "2026-08-25",
+    "updated_at": "25/08/2026 16:29 -0300",
+    "mode": "operator-sanitized",
+    "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
   "schema_version": "1.0",
   "rows": [
@@ -94,6 +94,77 @@
         "referencia": "Registro demo de validación local"
       },
       "detalle": "La evidencia describe actividades genéricas; no incluye repositorios privados, ramas, commits ni credenciales."
+    },
+    {
+      "id": "daily-2026-08-21-persona-e-operaciones",
+      "date": "2026-08-21",
+      "persona": "Persona E",
+      "area": "Operaciones",
+      "objetivo_del_dia": "Ordenar prioridades del turno y dejar visibles los próximos pasos aprobados.",
+      "tickets_tareas": [
+        "Ticket demo OPS-101 · clasificar impacto sin datos de cliente",
+        "Tarea demo OPS-102 · preparar respuesta estándar sanitizada"
+      ],
+      "bloqueos": [
+        "Esperando validación de ambiente genérico"
+      ],
+      "interconsultas": [
+        "Coordinar criterio con Persona A"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "evidencia": {
+        "tipo": "daily aprobada",
+        "referencia": "Registro demo sanitizado; sin enlace privado"
+      },
+      "detalle": "Ejemplo ficticio para validar el flujo local. No contiene nombres reales, teléfonos, clientes ni URLs internas."
+    },
+    {
+      "id": "daily-2026-08-25-persona-direccion-direccion-hiperproductividad",
+      "date": "2026-08-25",
+      "persona": "Persona Dirección",
+      "area": "Dirección / Hiperproductividad",
+      "objetivo_del_dia": "Dar seguimiento a actividad de desarrollo, revisar dos frentes comerciales/operativos y continuar mejoras de IA para hiperproductividad aplicada a resolución de tickets.",
+      "tickets_tareas": [
+        "Seguimiento demo de tareas asignadas a equipo de desarrollo",
+        "Gestión comercial sanitizada sobre deuda/estado de cuenta de cliente protegido",
+        "Revisión operativa sanitizada de reunión previa sobre carga automática de listas de precios",
+        "Continuidad de mejoras de IA para hiperproductividad en resolución de tickets"
+      ],
+      "bloqueos": [],
+      "interconsultas": [
+        "Validar actividad y tickets asignados con fuente operativa autorizada",
+        "Confirmar estado comercial con responsable correspondiente",
+        "Revisar antecedente de reunión operativa con fuente autorizada"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "estado_registro": "registrado_en_cerebro",
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Seguimiento a tareas del equipo de desarrollo asignado",
+          "Revisar actividad observada en canales/repositorios autorizados"
+        ],
+        "tareas_completadas": [
+          "Revisión declarada de actividad de dos integrantes del equipo en repositorio autorizado",
+          "Revisión declarada sin evidencia suficiente de actividad de otro integrante en canal de tareas"
+        ],
+        "tareas_sin_hacer": [
+          "Confirmar con evidencia operativa los tickets asignados y actividad completa del equipo de desarrollo"
+        ],
+        "motivo_sin_hacer": "Falta verificación con herramientas autorizadas al momento de la daily; datos basados en declaración del usuario.",
+        "bloqueo_actual": "Sin bloqueo declarado",
+        "tareas_planificadas_hoy": [
+          "Hablar con cliente comercial protegido por tema de deuda/estado de cuenta",
+          "Revisar situación de cliente operativo protegido sobre carga automática de listas de precios",
+          "Continuar mejoras de IA para hiperproductividad en resolución de tickets",
+          "Verificar tickets asignados y actividad del equipo de desarrollo con fuentes autorizadas"
+        ],
+        "proximo_seguimiento": "Retomar mañana verificando avance comercial, situación operativa del cliente protegido y evidencia de actividad/tickets del equipo de desarrollo."
+      },
+      "evidencia": {
+        "tipo": "declarado_por_usuario",
+        "referencia": "Daily WhatsApp aprobada; sin verificación de herramientas en este turno"
+      },
+      "detalle": "Registro sanitizado de daily aprobada. Se protegieron nombres de clientes, enlaces internos, repositorios y datos privados; la actividad mencionada queda como declarada por usuario hasta verificación."
     }
   ]
 }
