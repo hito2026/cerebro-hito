@@ -41,15 +41,41 @@ Ale u otro operador puede preparar una daily aprobada como bloque `CEREBRO_DAILY
 
 Regla de privacidad: no incluir nombres reales, teléfonos, correos, URLs internas, clientes ni cuerpos de conversaciones. Usar `persona_label` / `area_label` ya sanitizados; si sólo existe el dato privado, omitirlo o dejarlo en claves privadas fuera de la salida pública para que el script publique `Dato protegido`.
 
-Ejecutar desde el repositorio:
+Flujo recomendado con inbox local:
+
+1. Ale emite el bloque aprobado `CEREBRO_DAILY_RECORD`.
+2. Guardar cada JSON como archivo local en `inbox/daily/`. No commitear esos JSON.
+3. Validar sin escribir ni mover:
+
+   ```bash
+   python3 scripts/process_daily_inbox.py --dry-run
+   ```
+
+4. Procesar el inbox:
+
+   ```bash
+   python3 scripts/process_daily_inbox.py
+   ```
+
+   Cada registro correcto actualiza los datasets públicos sanitizados y mueve el JSON original a `archive/daily/YYYY-MM/`. Si un archivo falla, queda en `inbox/daily/` y el error se reporta por consola. El log local `logs/daily_inbox_processing.log` queda ignorado por Git porque puede contener nombres de archivos o contexto operativo.
+
+5. Validar las salidas sanitizadas y revisar qué se va a publicar:
+
+   ```bash
+   python3 -m json.tool data/daily_planning.json >/dev/null
+   python3 -m json.tool data/planning_evolution.json >/dev/null
+   git status --short
+   ```
+
+6. Commitear/publicar sólo los archivos intencionales: scripts, documentación, placeholders y datasets sanitizados. No publicar `inbox/`, `archive/` ni logs con datos privados.
+
+También se puede registrar un archivo individual de ejemplo:
 
 ```bash
 python3 scripts/record_daily.py data/examples/cerebro_daily_record.example.json
-python3 -m json.tool data/daily_planning.json >/dev/null
-python3 -m json.tool data/planning_evolution.json >/dev/null
 ```
 
-El script valida aprobación, fecha, objetivo y tareas; elimina de los textos públicos patrones básicos de emails, teléfonos y URLs; actualiza `data/daily_planning.json` por upsert, guarda `registro_continuidad` sanitizado para retomar el hilo, marca la fila como `registrado_en_cerebro` y refresca el agregado semanal mínimo en `data/planning_evolution.json`.
+Los scripts validan aprobación, fecha, objetivo y tareas; eliminan de los textos públicos patrones básicos de emails, teléfonos y URLs; actualizan `data/daily_planning.json` por upsert, guardan `registro_continuidad` sanitizado para retomar el hilo, marcan la fila como `registrado_en_cerebro` y refrescan el agregado semanal mínimo en `data/planning_evolution.json`.
 
 ## Fuentes
 
