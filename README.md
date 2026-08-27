@@ -28,18 +28,34 @@ Ale u otro operador puede preparar una daily aprobada como bloque `CEREBRO_DAILY
   "daily_record": {
     "date": "2026-08-21",
     "approved": true,
+    "public_sanitized": true,
     "persona_label": "Persona E",
     "area_label": "Operaciones",
+    "identity": {
+      "source": "whatsapp",
+      "verification_status": "empleado_provisional",
+      "declared_name": "Dato privado local; no se publica crudo"
+    },
     "objetivo_del_dia": "Objetivo público sanitizado del día.",
     "tickets_tareas": ["Tarea demo sin cliente ni identificadores privados"],
     "bloqueos": [],
     "interconsultas": [],
-    "estado_aprobacion": "Aprobado"
+    "estado_aprobacion": "Aprobado",
+    "item_evidence": [
+      {
+        "item": "Tarea demo sin cliente ni identificadores privados",
+        "tipo": "project_task",
+        "referencia": "Referencia sanitizada o Dato protegido",
+        "estado_evidencia": "declarado_por_usuario",
+        "fuente": "usuario",
+        "observacion": "Nota sanitizada"
+      }
+    ]
   }
 }
 ```
 
-Regla de privacidad: no incluir nombres reales, teléfonos, correos, URLs internas, clientes, repositorios privados ni cuerpos de conversaciones. Los JSON publicados son assets estáticos y pueden consultarse directamente; por eso el script exige `public_sanitized: true`. Usar `persona_label` / `area_label` ya sanitizados; si sólo existe el dato privado, omitirlo o dejarlo en claves privadas fuera de la salida pública para que el script publique `Dato protegido`.
+Regla de privacidad: no incluir nombres reales, teléfonos, correos, URLs internas, clientes, repositorios privados ni cuerpos de conversaciones en campos públicos. Los JSON publicados son assets estáticos y pueden consultarse directamente; por eso el script exige `public_sanitized: true`. Usar `persona_label` / `area_label` ya sanitizados. `identity.declared_name` puede existir en el payload privado local, pero el script no publica ese nombre crudo: publica la etiqueta pública sanitizada.
 
 Flujo recomendado con inbox local:
 

@@ -1,7 +1,7 @@
 {
   "report": {
-    "date": "2026-08-25",
-    "updated_at": "26/08/2026 16:38 -0300",
+    "date": "2026-08-21",
+    "updated_at": "27/08/2026 11:19 -0300",
     "mode": "operator-sanitized",
     "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
@@ -113,6 +113,11 @@
       ],
       "estado_aprobacion": "Aprobado",
       "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "empleado_provisional",
+        "declared_name": "Persona E"
+      },
       "registro_continuidad": {
         "pendientes_anteriores": [
           "Pendiente demo anterior sin datos privados"

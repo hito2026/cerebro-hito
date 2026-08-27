@@ -65,6 +65,11 @@
         "observacion": "Debe verificarse contra herramienta autorizada"
       }
     ],
-    "public_sanitized": true
+    "public_sanitized": true,
+    "identity": {
+      "source": "whatsapp",
+      "verification_status": "empleado_provisional",
+      "declared_name": "Persona E"
+    }
   }
 }

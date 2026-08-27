@@ -99,6 +99,24 @@ def sanitize_item_evidence(record):
     return output
 
 
+def sanitize_identity(record):
+    identity = record.get("identity") or {}
+    if identity and not isinstance(identity, dict):
+        raise ValueError("identity debe ser un objeto")
+    status = sanitize_text(identity.get("verification_status"), "empleado_provisional")
+    allowed = {"verificado", "pendiente_de_verificación", "no_encontrado_en_odoo", "empleado_provisional"}
+    if status not in allowed:
+        status = "empleado_provisional"
+    # Never publish a raw WhatsApp-declared name. Public datasets are static
+    # GitHub Pages assets, so only an operator-provided public label may leave
+    # the local/private inbox. Raw names can remain in the ignored input file.
+    return {
+        "source": sanitize_text(identity.get("source"), "whatsapp"),
+        "verification_status": status,
+        "declared_name": public_label(record, "persona_label", "persona"),
+    }
+
+
 def parse_date(value):
     try:
         return dt.date.fromisoformat(str(value))
@@ -150,6 +168,7 @@ def validate_and_render_row(record):
         "interconsultas": sanitize_list(record, "interconsultas"),
         "estado_aprobacion": status,
         "estado_registro": "registrado_en_cerebro",
+        "identity": sanitize_identity(record),
         "registro_continuidad": {
             "pendientes_anteriores": sanitize_list(continuity, "pendientes_anteriores"),
             "tareas_completadas": sanitize_list(continuity, "tareas_completadas"),

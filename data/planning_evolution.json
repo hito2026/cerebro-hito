@@ -1,16 +1,16 @@
 {
   "report": {
-    "updated_at": "26/08/2026 16:38 -0300",
+    "updated_at": "27/08/2026 11:19 -0300",
     "mode": "operator-sanitized",
     "summary": "Evolución semanal demostrativa de planificación. Datos ficticios, sin clientes reales, enlaces privados ni identificadores internos.",
-    "window": "2026-08-24 → 2026-08-30"
+    "window": "2026-08-17 → 2026-08-23"
   },
   "schema_version": "1.0",
   "metrics": {
-    "approved_plans": 72,
+    "approved_plans": 68,
     "pending_plans": 11,
     "blockers": 9,
-    "consultations": 24
+    "consultations": 21
   },
   "inference_flags": [
     {
@@ -32,23 +32,23 @@
   "days": [
     {
       "key": "mon",
-      "label": "Lun 24"
+      "label": "Lun 17"
     },
     {
       "key": "tue",
-      "label": "Mar 25"
+      "label": "Mar 18"
     },
     {
       "key": "wed",
-      "label": "Mié 26"
+      "label": "Mié 19"
     },
     {
       "key": "thu",
-      "label": "Jue 27"
+      "label": "Jue 20"
     },
     {
       "key": "fri",
-      "label": "Vie 28"
+      "label": "Vie 21"
     }
   ],
   "people": [
