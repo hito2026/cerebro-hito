@@ -1,7 +1,7 @@
 {
   "report": {
-    "date": "2026-08-21",
-    "updated_at": "27/08/2026 11:19 -0300",
+    "date": "2026-08-25",
+    "updated_at": "27/08/2026 12:19 -0300",
     "mode": "operator-sanitized",
     "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
@@ -147,7 +147,13 @@
           "referencia": "OPS-101 demo",
           "estado_evidencia": "declarado_por_usuario",
           "fuente": "usuario",
-          "observacion": "Referencia ficticia para validar correspondencia"
+          "observacion": "Referencia ficticia para validar correspondencia",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "link_requested",
+            "provided"
+          ]
         },
         {
           "item": "Tarea demo OPS-102 · preparar respuesta estándar sanitizada",
@@ -155,7 +161,14 @@
           "referencia": "OPS-102 demo",
           "estado_evidencia": "requiere_verificación",
           "fuente": "odoo",
-          "observacion": "Debe verificarse contra herramienta autorizada"
+          "observacion": "Debe verificarse contra herramienta autorizada",
+          "documentation_link_status": "missing_after_retry",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": [
+            "link_requested",
+            "retry_requested",
+            "missing_after_retry"
+          ]
         }
       ],
       "detalle": "Ejemplo ficticio para validar el flujo local. No contiene nombres reales, teléfonos, clientes ni URLs internas."
@@ -180,6 +193,11 @@
       ],
       "estado_aprobacion": "Aprobado",
       "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "empleado_provisional",
+        "declared_name": "Persona protegida"
+      },
       "registro_continuidad": {
         "pendientes_anteriores": [
           "Seguimiento a tareas del equipo de desarrollo asignado",
@@ -213,7 +231,10 @@
           "referencia": "Tickets/tareas asignadas · referencia protegida",
           "estado_evidencia": "requiere_verificación",
           "fuente": "odoo",
-          "observacion": "El usuario pidió verificar tickets asignados; falta contraste por herramienta."
+          "observacion": "El usuario pidió verificar tickets asignados; falta contraste por herramienta.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": []
         },
         {
           "item": "Gestión comercial sanitizada sobre deuda/estado de cuenta de cliente protegido",
@@ -221,7 +242,10 @@
           "referencia": "Cliente protegido · actividad comercial",
           "estado_evidencia": "declarado_por_usuario",
           "fuente": "usuario",
-          "observacion": "Debe verificarse en Odoo/CRM antes de tratar como hecho."
+          "observacion": "Debe verificarse en Odoo/CRM antes de tratar como hecho.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": []
         },
         {
           "item": "Revisión operativa sanitizada de reunión previa sobre carga automática de listas de precios",
@@ -229,7 +253,10 @@
           "referencia": "Reunión previa protegida",
           "estado_evidencia": "requiere_verificación",
           "fuente": "cerebro",
-          "observacion": "Pendiente contrastar con registro de reunión/tarea/proyecto."
+          "observacion": "Pendiente contrastar con registro de reunión/tarea/proyecto.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": []
         },
         {
           "item": "Continuidad de mejoras de IA para hiperproductividad en resolución de tickets",
@@ -237,7 +264,10 @@
           "referencia": "Iniciativa interna protegida",
           "estado_evidencia": "declarado_por_usuario",
           "fuente": "usuario",
-          "observacion": "Plan declarado; requiere registrar hitos técnicos aparte."
+          "observacion": "Plan declarado; requiere registrar hitos técnicos aparte.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": []
         }
       ],
       "detalle": "Registro sanitizado de daily aprobada. Se protegieron nombres de clientes, enlaces internos, repositorios y datos privados; la actividad mencionada queda como declarada por usuario hasta verificación."

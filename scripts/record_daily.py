@@ -82,12 +82,38 @@ def sanitize_item_evidence(record):
         "requiere_verificación",
         "sin_evidencia_declarada",
     }
+    allowed_link_statuses = {
+        "provided",
+        "requested_once",
+        "missing_after_retry",
+        "not_applicable",
+    }
     for item in values:
         if not isinstance(item, dict):
             raise ValueError("cada item_evidence debe ser un objeto")
         state = sanitize_text(item.get("estado_evidencia"), "requiere_verificación")
         if state not in allowed_states:
             state = "requiere_verificación"
+        link_status = sanitize_text(item.get("documentation_link_status"), "requested_once")
+        if link_status not in allowed_link_statuses:
+            link_status = "requested_once"
+        sequence = item.get("link_request_sequence", [])
+        if sequence is None:
+            sequence = []
+        if not isinstance(sequence, list):
+            raise ValueError("link_request_sequence debe ser una lista")
+        allowed_sequence_steps = {
+            "link_requested",
+            "retry_requested",
+            "provided",
+            "missing_after_retry",
+            "not_applicable",
+        }
+        safe_sequence = []
+        for step in sequence:
+            step = sanitize_text(step, "")
+            if step in allowed_sequence_steps:
+                safe_sequence.append(step)
         output.append({
             "item": sanitize_text(item.get("item"), "Actividad protegida"),
             "tipo": sanitize_text(item.get("tipo"), "other"),
@@ -95,6 +121,9 @@ def sanitize_item_evidence(record):
             "estado_evidencia": state,
             "fuente": sanitize_text(item.get("fuente"), "usuario"),
             "observacion": sanitize_text(item.get("observacion"), ""),
+            "documentation_link_status": link_status,
+            "documentation_reference": "[enlace protegido]" if link_status == "provided" else PUBLIC_FALLBACK,
+            "link_request_sequence": safe_sequence,
         })
     return output
 

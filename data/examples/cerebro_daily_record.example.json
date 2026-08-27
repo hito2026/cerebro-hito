@@ -54,7 +54,13 @@
         "referencia": "OPS-101 demo",
         "estado_evidencia": "declarado_por_usuario",
         "fuente": "usuario",
-        "observacion": "Referencia ficticia para validar correspondencia"
+        "observacion": "Referencia ficticia para validar correspondencia",
+        "documentation_link_status": "provided",
+        "documentation_reference": "[enlace protegido]",
+        "link_request_sequence": [
+          "link_requested",
+          "provided"
+        ]
       },
       {
         "item": "Tarea demo OPS-102 · preparar respuesta estándar sanitizada",
@@ -62,7 +68,14 @@
         "referencia": "OPS-102 demo",
         "estado_evidencia": "requiere_verificación",
         "fuente": "odoo",
-        "observacion": "Debe verificarse contra herramienta autorizada"
+        "observacion": "Debe verificarse contra herramienta autorizada",
+        "documentation_link_status": "missing_after_retry",
+        "documentation_reference": "Dato protegido",
+        "link_request_sequence": [
+          "link_requested",
+          "retry_requested",
+          "missing_after_retry"
+        ]
       }
     ],
     "public_sanitized": true,

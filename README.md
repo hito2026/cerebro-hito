@@ -96,7 +96,7 @@ Los scripts validan aprobación, fecha, objetivo y tareas; eliminan de los texto
 ## Fuentes
 
 - Odoo Helpdesk mediante el gateway de sólo lectura
-- Base histórica `jinzo-soporte/knowledge/patterns/index.json`
+- Base histórica privada de patrones operativos
 - Odoo Proyectos
 - GitHub
 
@@ -106,7 +106,7 @@ Para probar solamente el generador del radar:
 
 ```bash
 python3 scripts/generate_recurrences.py \
-  --kb /ruta/a/jinzo-soporte/knowledge/patterns/index.json \
+  --kb /ruta/a/base-historica-privada/patterns/index.json \
   --gateway http://127.0.0.1:18765 \
   --output /tmp/recurrences-preview.json
 ```
