@@ -12,3 +12,6 @@ logs/
 # Local scratch/private payloads and nested repository mirrors are never public artifacts.
 tmp/
 REPOS/
+
+# Private per-user continuity/history files; never publish raw WhatsApp/Odoo data.
+private/

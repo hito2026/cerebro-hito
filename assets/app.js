@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,recurrences:null,planning:null,planningEvolution:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -12,6 +12,7 @@ async function init(){
   state.recurrences=await fetch("data/recurrences.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   state.planning=await fetch("data/daily_planning.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},rows:[]}));
   state.planningEvolution=await fetch("data/planning_evolution.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
+  state.userTracking=await fetch("data/user_daily_tracking.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
@@ -48,7 +49,7 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode==="real-sanitized"?"live.sanitized":"demo.mode";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderDailyTracking();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderRecurrences(){
@@ -117,6 +118,25 @@ function renderPeople(){
   const midpoint=Math.ceil(people.length/2),table=rows=>`<div class="people-table-shell"><table class="people-table"><thead><tr><th>Persona</th><th>Backlog actual</th><th>Ayer</th><th>Hoy</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
   $("#peopleGrid").innerHTML=table(people.slice(0,midpoint))+table(people.slice(midpoint));
 }
+
+function renderDailyTracking(){
+  const data=state.userTracking,summary=$("#dailyTrackingSummary"),kpis=$("#dailyTrackingKpis"),table=$("#dailyTrackingTable");
+  if(!summary||!kpis||!table)return;
+  if(!data?.people?.length){summary.textContent="Sin seguimiento de dailies publicado todavía.";kpis.innerHTML="";table.innerHTML="<div class='empty'><strong>Sin dailies</strong><p>Cuando se procesen registros aprobados, aparecerán acá por persona sanitizada.</p></div>";return}
+  const metrics=data.metrics||{};
+  summary.textContent=`${esc(data.report?.updated_at||"sin actualización")} · ${esc(data.report?.summary||"datos públicos sanitizados")}`;
+  const cards=[
+    ["Personas",metrics.people_count||data.people.length,"Con seguimiento publicado","green"],
+    ["Dailies",metrics.total_dailies||0,"Registros aprobados/procesados","blue"],
+    ["Pendientes",metrics.open_pending||0,"Ítems abiertos declarados","orange"],
+    ["Evidencia faltante",metrics.missing_evidence||0,"Links/evidencias a completar","red"]
+  ];
+  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="daily-tracking-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`).join("");
+  const statusTone=status=>clean(status).includes("registrado")?"green":clean(status).includes("correccion")?"red":"yellow";
+  const list=items=>items?.length?`<ul>${items.slice(0,3).map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
+  table.innerHTML=`<div class="daily-tracking-table-shell"><table class="daily-tracking"><thead><tr><th>Persona</th><th>Última daily</th><th>Estado</th><th>Pendientes</th><th>Bloqueos</th><th>Evidencia/link</th><th>Próximo seguimiento</th></tr></thead><tbody>${data.people.map(person=>`<tr><td><strong>${esc(person.persona)}</strong><small>${esc(person.area)}</small><small>${esc(person.identity_status)}</small></td><td>${esc(person.last_daily||"—")}</td><td><span class="state-label ${statusTone(person.registration_status)}"><i></i>${esc(person.registration_status||"pendiente")}</span></td><td><b>${esc(person.open_pending||0)}</b>${list(person.pending_items)}</td><td><b>${esc(person.active_blockers||0)}</b>${list(person.blocker_items)}</td><td><b>${esc(person.missing_evidence||0)}</b><small>${esc(person.documentation_status||"sin estado")}</small></td><td>${esc(person.next_follow_up||"Retomar en la próxima daily")}</td></tr>`).join("")}</tbody></table></div><p class="daily-tracking-note">Vista pública sanitizada: no contiene teléfonos, JID, nombres privados, clientes, repositorios ni links crudos.</p>`;
+}
+
 function renderPlanning(){
   const plan=state.planning;
   if(!plan?.rows?.length){$("#planningMatrix").innerHTML="<div class='empty'><strong>Sin planificación</strong><p>No se pudo cargar la matriz diaria aprobada.</p></div>";return}

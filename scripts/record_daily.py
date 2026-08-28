@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DAILY_FILE = ROOT / "data" / "daily_planning.json"
 EVOLUTION_FILE = ROOT / "data" / "planning_evolution.json"
+USER_TRACKING_FILE = ROOT / "data" / "user_daily_tracking.json"
 PUBLIC_FALLBACK = "Dato protegido"
 APPROVED_MARKERS = ("aprobado", "aprobada", "approved")
 DAY_NAMES = ["Lun", "Mar", "Mié", "Jue", "Vie", "Sáb", "Dom"]
@@ -304,6 +305,64 @@ def recompute_metrics(evolution):
     evolution["metrics"] = totals
 
 
+
+
+def daily_sort_key(row):
+    return (row.get("date", ""), row.get("id", ""))
+
+
+def summarize_person_tracking(rows):
+    people = {}
+    for row in sorted(rows, key=daily_sort_key):
+        key = (row.get("persona") or PUBLIC_FALLBACK, row.get("area") or PUBLIC_FALLBACK)
+        continuity = row.get("registro_continuidad") or {}
+        pending_items = continuity.get("tareas_sin_hacer") or continuity.get("pendientes_anteriores") or []
+        blocker_text = continuity.get("bloqueo_actual") or "Sin bloqueo declarado"
+        blocker_items = [] if blocker_text in ("Sin bloqueo declarado", PUBLIC_FALLBACK) else [sanitize_text(blocker_text)]
+        evidence_items = row.get("item_evidence") or []
+        missing_evidence = sum(
+            1 for item in evidence_items
+            if item.get("estado_evidencia") in ("requiere_verificación", "sin_evidencia_declarada")
+            or item.get("documentation_link_status") in ("requested_once", "missing_after_retry")
+        )
+        identity = row.get("identity") or {}
+        people[key] = {
+            "persona": key[0],
+            "area": key[1],
+            "identity_status": sanitize_text(identity.get("verification_status"), "empleado_provisional"),
+            "last_daily": row.get("date"),
+            "registration_status": sanitize_text(row.get("estado_registro"), "pendiente_de_registro"),
+            "open_pending": len(pending_items),
+            "pending_items": [sanitize_text(item) for item in pending_items[:5]],
+            "active_blockers": len(blocker_items),
+            "blocker_items": blocker_items[:5],
+            "missing_evidence": missing_evidence,
+            "documentation_status": "links/evidencia pendientes" if missing_evidence else "sin faltantes declarados",
+            "next_follow_up": sanitize_text(continuity.get("proximo_seguimiento"), "Retomar en la próxima daily"),
+        }
+    return sorted(people.values(), key=lambda item: (item.get("last_daily") or "", item.get("persona") or ""), reverse=True)
+
+
+def update_user_tracking(rows):
+    people = summarize_person_tracking(rows)
+    metrics = {
+        "people_count": len(people),
+        "total_dailies": len(rows),
+        "open_pending": sum(to_int(person.get("open_pending")) for person in people),
+        "active_blockers": sum(to_int(person.get("active_blockers")) for person in people),
+        "missing_evidence": sum(to_int(person.get("missing_evidence")) for person in people),
+    }
+    payload = {
+        "report": {
+            "updated_at": dt.datetime.now().astimezone().strftime("%d/%m/%Y %H:%M %z"),
+            "mode": "operator-sanitized",
+            "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos.",
+        },
+        "metrics": metrics,
+        "people": people,
+    }
+    write_json(USER_TRACKING_FILE, payload)
+
 def register_daily(input_path):
     raw = read_json(input_path)
     source_record = raw.get("daily_record", raw) if isinstance(raw, dict) else raw
@@ -319,6 +378,7 @@ def register_daily(input_path):
     evolution = read_json(EVOLUTION_FILE)
     update_evolution(evolution, row, source_record)
     write_json(EVOLUTION_FILE, evolution)
+    update_user_tracking(daily["rows"])
     return action, row["id"]
 
 

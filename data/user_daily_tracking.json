@@ -1,0 +1,106 @@
+{
+  "report": {
+    "updated_at": "28/08/2026 14:34 -0300",
+    "mode": "operator-sanitized",
+    "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos."
+  },
+  "metrics": {
+    "people_count": 6,
+    "total_dailies": 6,
+    "open_pending": 2,
+    "active_blockers": 1,
+    "missing_evidence": 5
+  },
+  "people": [
+    {
+      "persona": "Persona protegida",
+      "area": "Dirección",
+      "identity_status": "empleado_provisional",
+      "last_daily": "2026-08-25",
+      "registration_status": "registrado_en_cerebro",
+      "open_pending": 1,
+      "pending_items": [
+        "Confirmar con evidencia operativa los tickets asignados y actividad completa del equipo de desarrollo"
+      ],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 4,
+      "documentation_status": "links/evidencia pendientes",
+      "next_follow_up": "Retomar mañana verificando avance comercial, situación operativa del cliente protegido y evidencia de actividad/tickets del equipo de desarrollo."
+    },
+    {
+      "persona": "Persona E",
+      "area": "Operaciones",
+      "identity_status": "empleado_provisional",
+      "last_daily": "2026-08-21",
+      "registration_status": "registrado_en_cerebro",
+      "open_pending": 1,
+      "pending_items": [
+        "Tarea demo que requiere seguimiento"
+      ],
+      "active_blockers": 1,
+      "blocker_items": [
+        "Esperando validación de ambiente genérico"
+      ],
+      "missing_evidence": 1,
+      "documentation_status": "links/evidencia pendientes",
+      "next_follow_up": "Retomar estado de OPS-101 en la próxima daily"
+    },
+    {
+      "persona": "Persona D",
+      "area": "Desarrollo",
+      "identity_status": "empleado_provisional",
+      "last_daily": null,
+      "registration_status": "pendiente_de_registro",
+      "open_pending": 0,
+      "pending_items": [],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 0,
+      "documentation_status": "sin faltantes declarados",
+      "next_follow_up": "Retomar en la próxima daily"
+    },
+    {
+      "persona": "Persona C",
+      "area": "Comercial",
+      "identity_status": "empleado_provisional",
+      "last_daily": null,
+      "registration_status": "pendiente_de_registro",
+      "open_pending": 0,
+      "pending_items": [],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 0,
+      "documentation_status": "sin faltantes declarados",
+      "next_follow_up": "Retomar en la próxima daily"
+    },
+    {
+      "persona": "Persona B",
+      "area": "Proyectos",
+      "identity_status": "empleado_provisional",
+      "last_daily": null,
+      "registration_status": "pendiente_de_registro",
+      "open_pending": 0,
+      "pending_items": [],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 0,
+      "documentation_status": "sin faltantes declarados",
+      "next_follow_up": "Retomar en la próxima daily"
+    },
+    {
+      "persona": "Persona A",
+      "area": "Soporte",
+      "identity_status": "empleado_provisional",
+      "last_daily": null,
+      "registration_status": "pendiente_de_registro",
+      "open_pending": 0,
+      "pending_items": [],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 0,
+      "documentation_status": "sin faltantes declarados",
+      "next_follow_up": "Retomar en la próxima daily"
+    }
+  ]
+}

@@ -93,6 +93,15 @@ python3 scripts/record_daily.py data/examples/cerebro_daily_record.example.json
 
 Los scripts validan aprobación, fecha, objetivo y tareas; eliminan de los textos públicos patrones básicos de emails, teléfonos y URLs; actualizan `data/daily_planning.json` por upsert, guardan `registro_continuidad` sanitizado para retomar el hilo, marcan la fila como `registrado_en_cerebro` y refrescan el agregado semanal mínimo en `data/planning_evolution.json`.
 
+
+## Seguimiento público de dailies por persona
+
+El tablero incluye una sección `Seguimiento de Dailies por Persona`, alimentada por `data/user_daily_tracking.json`.
+
+Ese dataset es público y sanitizado. Puede mostrar etiquetas como `Persona A`, área, última daily, estado de registro, pendientes abiertos, bloqueos declarados y cantidad de evidencias/links faltantes. No debe contener teléfonos, WhatsApp JID, nombres privados, clientes, repositorios, links crudos ni conversación completa.
+
+La información privada o cruda de continuidad por usuario debe quedar fuera de GitHub, por ejemplo en `private/`, `inbox/daily/` o `archive/daily/`, que son rutas locales/ignoradas.
+
 ## Fuentes
 
 - Odoo Helpdesk mediante el gateway de sólo lectura
