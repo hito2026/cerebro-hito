@@ -1,6 +1,6 @@
 {
   "report": {
-    "updated_at": "28/08/2026 14:34 -0300",
+    "updated_at": "28/08/2026 20:43 -0300",
     "mode": "operator-sanitized",
     "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos."
   },
@@ -16,6 +16,10 @@
       "persona": "Persona protegida",
       "area": "Dirección",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Per***",
+        "phone_hint": "Dato protegido"
+      },
       "last_daily": "2026-08-25",
       "registration_status": "registrado_en_cerebro",
       "open_pending": 1,
@@ -32,6 +36,10 @@
       "persona": "Persona E",
       "area": "Operaciones",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Per***",
+        "phone_hint": "***-0000"
+      },
       "last_daily": "2026-08-21",
       "registration_status": "registrado_en_cerebro",
       "open_pending": 1,
@@ -50,6 +58,10 @@
       "persona": "Persona D",
       "area": "Desarrollo",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Dato protegido",
+        "phone_hint": "Dato protegido"
+      },
       "last_daily": null,
       "registration_status": "pendiente_de_registro",
       "open_pending": 0,
@@ -64,6 +76,10 @@
       "persona": "Persona C",
       "area": "Comercial",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Dato protegido",
+        "phone_hint": "Dato protegido"
+      },
       "last_daily": null,
       "registration_status": "pendiente_de_registro",
       "open_pending": 0,
@@ -78,6 +94,10 @@
       "persona": "Persona B",
       "area": "Proyectos",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Dato protegido",
+        "phone_hint": "Dato protegido"
+      },
       "last_daily": null,
       "registration_status": "pendiente_de_registro",
       "open_pending": 0,
@@ -92,6 +112,10 @@
       "persona": "Persona A",
       "area": "Soporte",
       "identity_status": "empleado_provisional",
+      "contact_hint": {
+        "name_hint": "Dato protegido",
+        "phone_hint": "Dato protegido"
+      },
       "last_daily": null,
       "registration_status": "pendiente_de_registro",
       "open_pending": 0,

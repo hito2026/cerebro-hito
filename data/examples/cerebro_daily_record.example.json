@@ -83,6 +83,10 @@
       "source": "whatsapp",
       "verification_status": "empleado_provisional",
       "declared_name": "Persona E"
+    },
+    "public_contact_hint": {
+      "name_hint": "Per***",
+      "phone_hint": "***-0000"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "report": {
     "date": "2026-08-25",
-    "updated_at": "28/08/2026 14:34 -0300",
+    "updated_at": "28/08/2026 20:43 -0300",
     "mode": "operator-sanitized",
     "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
@@ -118,6 +118,10 @@
         "verification_status": "empleado_provisional",
         "declared_name": "Persona E"
       },
+      "public_contact_hint": {
+        "name_hint": "Per***",
+        "phone_hint": "***-0000"
+      },
       "registro_continuidad": {
         "pendientes_anteriores": [
           "Pendiente demo anterior sin datos privados"
@@ -197,6 +201,10 @@
         "source": "whatsapp",
         "verification_status": "empleado_provisional",
         "declared_name": "Persona protegida"
+      },
+      "public_contact_hint": {
+        "name_hint": "Per***",
+        "phone_hint": "Dato protegido"
       },
       "registro_continuidad": {
         "pendientes_anteriores": [

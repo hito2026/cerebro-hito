@@ -98,7 +98,7 @@ Los scripts validan aprobación, fecha, objetivo y tareas; eliminan de los texto
 
 El tablero incluye una sección `Seguimiento de Dailies por Persona`, alimentada por `data/user_daily_tracking.json`.
 
-Ese dataset es público y sanitizado. Puede mostrar etiquetas como `Persona A`, área, última daily, estado de registro, pendientes abiertos, bloqueos declarados y cantidad de evidencias/links faltantes. No debe contener teléfonos, WhatsApp JID, nombres privados, clientes, repositorios, links crudos ni conversación completa.
+Ese dataset es público y sanitizado. Puede mostrar etiquetas como `Persona A`, área, última daily, estado de registro, pendientes abiertos, bloqueos declarados y cantidad de evidencias/links faltantes. Para ayudar a localizar al usuario, puede mostrar sólo identificación parcial (`name_hint` como `Mat***` y `phone_hint` como `***-5577`). No debe contener teléfonos completos, WhatsApp JID, nombres completos, clientes, repositorios, links crudos ni conversación completa.
 
 La información privada o cruda de continuidad por usuario debe quedar fuera de GitHub, por ejemplo en `private/`, `inbox/daily/` o `archive/daily/`, que son rutas locales/ignoradas.
 

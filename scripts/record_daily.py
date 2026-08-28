@@ -147,6 +147,34 @@ def sanitize_identity(record):
     }
 
 
+def mask_name_hint(value):
+    text = sanitize_text(value, "")
+    if not text or text == PUBLIC_FALLBACK:
+        return PUBLIC_FALLBACK
+    first = text.split()[0]
+    visible = first[:3] if len(first) >= 3 else first[:1]
+    return f"{visible}***" if visible else PUBLIC_FALLBACK
+
+
+def mask_phone_hint(value):
+    digits = re.sub(r"\D+", "", str(value or ""))
+    if len(digits) < 4:
+        return PUBLIC_FALLBACK
+    return f"***-{digits[-4:]}"
+
+
+def sanitize_public_contact_hint(record):
+    hint = record.get("public_contact_hint") or {}
+    if hint and not isinstance(hint, dict):
+        raise ValueError("public_contact_hint debe ser un objeto")
+    name_source = hint.get("name_hint") or record.get("persona_label") or record.get("persona")
+    phone_source = hint.get("phone_hint") or record.get("phone") or record.get("telefono") or record.get("whatsapp_phone")
+    return {
+        "name_hint": mask_name_hint(name_source),
+        "phone_hint": mask_phone_hint(phone_source),
+    }
+
+
 def parse_date(value):
     try:
         return dt.date.fromisoformat(str(value))
@@ -199,6 +227,7 @@ def validate_and_render_row(record):
         "estado_aprobacion": status,
         "estado_registro": "registrado_en_cerebro",
         "identity": sanitize_identity(record),
+        "public_contact_hint": sanitize_public_contact_hint(record),
         "registro_continuidad": {
             "pendientes_anteriores": sanitize_list(continuity, "pendientes_anteriores"),
             "tareas_completadas": sanitize_list(continuity, "tareas_completadas"),
@@ -330,6 +359,7 @@ def summarize_person_tracking(rows):
             "persona": key[0],
             "area": key[1],
             "identity_status": sanitize_text(identity.get("verification_status"), "empleado_provisional"),
+            "contact_hint": row.get("public_contact_hint", {"name_hint": PUBLIC_FALLBACK, "phone_hint": PUBLIC_FALLBACK}),
             "last_daily": row.get("date"),
             "registration_status": sanitize_text(row.get("estado_registro"), "pendiente_de_registro"),
             "open_pending": len(pending_items),
