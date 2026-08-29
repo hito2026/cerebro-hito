@@ -1,10 +1,147 @@
 {
   "report": {
-    "date": "2026-08-29",
-    "updated_at": "29/08/2026 11:46 -0300",
+    "date": "2026-08-28",
+    "updated_at": "29/08/2026 13:59 -0300",
     "mode": "operator-sanitized",
-    "summary": "Sin dailies reales publicadas todavía. Los datos de muestra fueron retirados del dataset público."
+    "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
   "schema_version": "1.0",
-  "rows": []
+  "rows": [
+    {
+      "id": "daily-2026-08-28-mat-desarrollo",
+      "date": "2026-08-28",
+      "persona": "Mat***",
+      "area": "Desarrollo",
+      "objetivo_del_dia": "Continuar una tarea de desarrollo de pagos en un proyecto protegido y cerrar tareas relacionadas pendientes.",
+      "tickets_tareas": [
+        "Tarea de desarrollo de pago por línea en módulo protegido",
+        "Cuatro tareas relacionadas del mismo frente protegido"
+      ],
+      "bloqueos": [],
+      "interconsultas": [],
+      "estado_aprobacion": "Aprobado",
+      "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "pendiente_de_verificación",
+        "declared_name": "Mat***"
+      },
+      "public_contact_hint": {
+        "name_hint": "Mat***",
+        "phone_hint": "Dato protegido"
+      },
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Cuatro tareas relacionadas del frente protegido"
+        ],
+        "tareas_completadas": [
+          "Rearmado del módulo protegido tras pedidos de cambios en validación"
+        ],
+        "tareas_sin_hacer": [
+          "Cuatro tareas relacionadas siguen pendientes"
+        ],
+        "motivo_sin_hacer": "Quedaron pendientes por el rearmado del módulo tras cambios solicitados.",
+        "bloqueo_actual": "Sin bloqueo declarado",
+        "tareas_planificadas_hoy": [
+          "Continuar con las cuatro tareas relacionadas pendientes del frente protegido"
+        ],
+        "proximo_seguimiento": "Verificar avance sobre las cuatro tareas pendientes y completar evidencia/documentación asociada si aparece."
+      },
+      "evidencia": {
+        "tipo": "daily aprobada por WhatsApp",
+        "referencia": "Link de tarea principal provisto en el hilo; salida pública sanitizada"
+      },
+      "item_evidence": [
+        {
+          "item": "Tarea de desarrollo de pago por línea en módulo protegido",
+          "tipo": "project_task",
+          "referencia": "Tarea interna protegida",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró continuidad y aportó link interno de la tarea principal.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "link_requested",
+            "provided"
+          ]
+        },
+        {
+          "item": "Cuatro tareas relacionadas del mismo frente protegido",
+          "tipo": "project_task",
+          "referencia": "Dato protegido",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró pendientes relacionados, pero no quedaron individualizados ni verificados en herramienta.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": [
+            "link_requested"
+          ]
+        }
+      ],
+      "detalle": "Daily aprobada por WhatsApp. El registro público omite cliente, URL interna y nombre de módulo/repo."
+    },
+    {
+      "id": "daily-2026-08-28-nel-post-venta",
+      "date": "2026-08-28",
+      "persona": "Nel***",
+      "area": "Post-venta",
+      "objetivo_del_dia": "Testear un fix de ticket, subirlo a STG y revisarlo con un referente interno.",
+      "tickets_tareas": [
+        "Ticket #2026/04120 · testear fix, subir a STG y revisar resultado"
+      ],
+      "bloqueos": [],
+      "interconsultas": [
+        "Revisión con referente interno"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "pendiente_de_verificación",
+        "declared_name": "Nel***"
+      },
+      "public_contact_hint": {
+        "name_hint": "Nel***",
+        "phone_hint": "Dato protegido"
+      },
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Fix del ticket #2026/04120"
+        ],
+        "tareas_completadas": [],
+        "tareas_sin_hacer": [],
+        "motivo_sin_hacer": "Ninguna tarea sin hacer declarada.",
+        "bloqueo_actual": "Sin bloqueo declarado",
+        "tareas_planificadas_hoy": [
+          "Testear el cambio",
+          "Subir el fix a STG",
+          "Revisar el ticket #2026/04120 con referente interno"
+        ],
+        "proximo_seguimiento": "Confirmar resultado del test y del despliegue a STG."
+      },
+      "evidencia": {
+        "tipo": "daily aprobada por WhatsApp",
+        "referencia": "Link de ticket provisto en el hilo; salida pública sanitizada"
+      },
+      "item_evidence": [
+        {
+          "item": "Ticket #2026/04120 · testear fix, subir a STG y revisar resultado",
+          "tipo": "helpdesk_ticket",
+          "referencia": "#2026/04120",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró el trabajo y aportó link interno del ticket.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "link_requested",
+            "provided"
+          ]
+        }
+      ],
+      "detalle": "Daily aprobada por WhatsApp. El registro público omite URL interna y datos privados."
+    }
+  ]
 }

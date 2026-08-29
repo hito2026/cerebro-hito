@@ -1,15 +1,56 @@
 {
   "report": {
-    "updated_at": "29/08/2026 11:46 -0300",
+    "updated_at": "29/08/2026 13:59 -0300",
     "mode": "operator-sanitized",
-    "summary": "Sin seguimiento real publicado todavía. Los datos de muestra fueron retirados del dataset público."
+    "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos."
   },
   "metrics": {
-    "people_count": 0,
-    "total_dailies": 0,
-    "open_pending": 0,
+    "people_count": 2,
+    "total_dailies": 2,
+    "open_pending": 2,
     "active_blockers": 0,
-    "missing_evidence": 0
+    "missing_evidence": 1
   },
-  "people": []
+  "people": [
+    {
+      "persona": "Nel***",
+      "area": "Post-venta",
+      "identity_status": "pendiente_de_verificación",
+      "contact_hint": {
+        "name_hint": "Nel***",
+        "phone_hint": "Dato protegido"
+      },
+      "last_daily": "2026-08-28",
+      "registration_status": "registrado_en_cerebro",
+      "open_pending": 1,
+      "pending_items": [
+        "Fix del ticket #2026/04120"
+      ],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 0,
+      "documentation_status": "sin faltantes declarados",
+      "next_follow_up": "Confirmar resultado del test y del despliegue a STG."
+    },
+    {
+      "persona": "Mat***",
+      "area": "Desarrollo",
+      "identity_status": "pendiente_de_verificación",
+      "contact_hint": {
+        "name_hint": "Mat***",
+        "phone_hint": "Dato protegido"
+      },
+      "last_daily": "2026-08-28",
+      "registration_status": "registrado_en_cerebro",
+      "open_pending": 1,
+      "pending_items": [
+        "Cuatro tareas relacionadas siguen pendientes"
+      ],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 1,
+      "documentation_status": "links/evidencia pendientes",
+      "next_follow_up": "Verificar avance sobre las cuatro tareas pendientes y completar evidencia/documentación asociada si aparece."
+    }
+  ]
 }

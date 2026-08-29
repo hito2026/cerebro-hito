@@ -319,6 +319,7 @@ def update_evolution(evolution, row, source_record):
     recompute_metrics(evolution)
     evolution.setdefault("report", {})["updated_at"] = dt.datetime.now().astimezone().strftime("%d/%m/%Y %H:%M %z")
     evolution["report"]["mode"] = "operator-sanitized"
+    evolution["report"]["summary"] = "Evolución diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
 
 
 def recompute_metrics(evolution):

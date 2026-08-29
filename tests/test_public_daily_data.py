@@ -21,25 +21,45 @@ FORBIDDEN_PLACEHOLDERS = [
     "plan-demo",
     "ejemplos/demo",
 ]
+FORBIDDEN_PRIVATE_IDENTIFIERS = [
+    "Matías Marziali",
+    "Matias Marziali",
+    "Nelson.T",
+    "Nelson Tontarelli",
+    "Lafee",
+    "Mesopotamia",
+    "mesopotamia_payment_by_lines",
+    "Valentín",
+    "Valentin",
+]
 
 
 class PublicDailyDataTests(unittest.TestCase):
-    def test_public_daily_datasets_start_empty_until_real_records_are_processed(self):
+    def test_public_daily_datasets_publish_only_sanitized_real_records(self):
         daily = json.loads((ROOT / "data" / "daily_planning.json").read_text())
         evolution = json.loads((ROOT / "data" / "planning_evolution.json").read_text())
         tracking = json.loads((ROOT / "data" / "user_daily_tracking.json").read_text())
 
-        self.assertEqual(daily["rows"], [])
-        self.assertEqual(evolution["people"], [])
-        self.assertEqual(evolution["days"], [])
-        self.assertEqual(tracking["people"], [])
-        self.assertEqual(tracking["metrics"]["people_count"], 0)
-        self.assertEqual(tracking["metrics"]["total_dailies"], 0)
+        self.assertEqual(tracking["metrics"]["total_dailies"], len(daily["rows"]))
+        self.assertEqual(tracking["metrics"]["people_count"], len(tracking["people"]))
+        self.assertLessEqual(len(evolution["people"]), len(daily["rows"]))
+        approved_items = sum(
+            int(day.get("approved") or 0)
+            for person in evolution["people"]
+            for day in person.get("days", [])
+        )
+        self.assertEqual(evolution["metrics"]["approved_plans"], approved_items)
+        if daily["rows"]:
+            self.assertNotIn("Sin evolución real publicada todavía", evolution["report"]["summary"])
+        for row in daily["rows"]:
+            self.assertTrue(row["public_sanitized"] if "public_sanitized" in row else True)
+            self.assertNotRegex(json.dumps(row, ensure_ascii=False), r"https?://")
+            self.assertNotRegex(json.dumps(row, ensure_ascii=False), r"@s\.whatsapp\.net|@lid")
 
     def test_public_daily_datasets_do_not_publish_placeholder_rows(self):
         public_text = "\n".join(path.read_text() for path in PUBLIC_DAILY_FILES)
 
-        for forbidden in FORBIDDEN_PLACEHOLDERS:
+        for forbidden in FORBIDDEN_PLACEHOLDERS + FORBIDDEN_PRIVATE_IDENTIFIERS:
             with self.subTest(forbidden=forbidden):
                 self.assertNotIn(forbidden, public_text)
 

@@ -1,17 +1,75 @@
 {
   "report": {
-    "updated_at": "29/08/2026 11:46 -0300",
+    "updated_at": "29/08/2026 13:59 -0300",
     "mode": "operator-sanitized",
-    "window": "",
-    "summary": "Sin evolución real publicada todavía. Los datos de muestra fueron retirados del dataset público."
+    "window": "2026-08-24 → 2026-08-30",
+    "summary": "Evolución diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
   },
   "metrics": {
-    "approved_plans": 0,
+    "approved_plans": 3,
     "pending_plans": 0,
     "blockers": 0,
-    "consultations": 0
+    "consultations": 1
   },
-  "days": [],
-  "people": [],
+  "days": [
+    {
+      "key": "mon",
+      "label": "Lun 24"
+    },
+    {
+      "key": "tue",
+      "label": "Mar 25"
+    },
+    {
+      "key": "wed",
+      "label": "Mié 26"
+    },
+    {
+      "key": "thu",
+      "label": "Jue 27"
+    },
+    {
+      "key": "fri",
+      "label": "Vie 28"
+    }
+  ],
+  "people": [
+    {
+      "person": "Mat***",
+      "area": "Desarrollo",
+      "days": [
+        {
+          "day": "fri",
+          "planned": 2,
+          "verified": 1,
+          "approved": 2,
+          "in_progress": 2,
+          "closed": 0,
+          "carry_over": 1,
+          "blockers": 0,
+          "consultations": 0,
+          "inferred": false
+        }
+      ]
+    },
+    {
+      "person": "Nel***",
+      "area": "Post-venta",
+      "days": [
+        {
+          "day": "fri",
+          "planned": 1,
+          "verified": 1,
+          "approved": 1,
+          "in_progress": 1,
+          "closed": 0,
+          "carry_over": 0,
+          "blockers": 0,
+          "consultations": 1,
+          "inferred": false
+        }
+      ]
+    }
+  ],
   "inference_flags": []
 }
