@@ -24,14 +24,49 @@
       <span class="brand-mark">HF</span>
       <span><strong>cerebro</strong><small>company activity</small></span>
     </a>
-    <nav aria-label="Secciones">
-      <a href="#resumen">KPI</a><a href="#recurrencias">Recurrencias</a><a href="#actividad">Timeline</a><a href="#personas">Personal</a><a href="#seguimiento-dailies">Seguimiento daily</a><a href="#planificacion">Plan diario</a><a href="#evolucion-planificacion">Evolución plan</a><a href="#organigrama">Organigrama</a><a href="#semana">Semana</a><a href="#objetivos">Objetivos</a>
-    </nav>
+    <button id="sidebarToggle" class="sidebar-toggle-button" type="button" aria-controls="sidebarNav" aria-expanded="false">Menú</button>
     <span class="status"><i></i><span id="dataMode">demo.mode</span></span>
   </header>
 
-  <main id="inicio">
-    <section class="hero">
+
+  <aside id="sidebarNav" class="sidebar-nav" aria-label="Navegación principal">
+    <div class="sidebar-head">
+      <span class="brand-mark">HF</span>
+      <div><strong>Cerebro</strong><small>console navigation</small></div>
+    </div>
+    <nav class="nav-tree">
+      <details open>
+        <summary>Vista general</summary>
+        <a href="#resumen">KPI ejecutivo</a>
+        <a href="#actividad">Timeline</a>
+      </details>
+      <details open>
+        <summary>Daily Meetings</summary>
+        <a href="#seguimiento-dailies">Seguimiento daily</a>
+        <a href="#planificacion">Plan diario</a>
+        <a href="#evolucion-planificacion">Evolución plan</a>
+      </details>
+      <details>
+        <summary>Personas y organización</summary>
+        <a href="#personas">Personal</a>
+        <a href="#organigrama">Organigrama</a>
+      </details>
+      <details>
+        <summary>Operación</summary>
+        <a href="#recurrencias">Recurrencias</a>
+        <a href="#mapa">Mapa relacional</a>
+        <a href="#areas">Detalle por área</a>
+      </details>
+      <details>
+        <summary>Planificación</summary>
+        <a href="#semana">Meta semanal</a>
+        <a href="#objetivos">Objetivos</a>
+        <a href="#productividad">Productividad</a>
+      </details>
+    </nav>
+  </aside>
+
+  <main id="inicio">    <section class="hero">
       <div>
         <p class="eyebrow">workspace / activity</p>
         <h1><em>Cerebro Hito</em> en datos_</h1>

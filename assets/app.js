@@ -13,6 +13,7 @@ async function init(){
   state.planning=await fetch("data/daily_planning.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},rows:[]}));
   state.planningEvolution=await fetch("data/planning_evolution.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   state.userTracking=await fetch("data/user_daily_tracking.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
+  setupSidebar();
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
   Object.entries(AREA).forEach(([key,a])=>$("#areaFilter").insertAdjacentHTML("beforeend",`<option value="${key}">${a.label}</option>`));
@@ -27,6 +28,23 @@ async function init(){
   render();
 }
 
+
+function setupSidebar(){
+  const sidebar=$("#sidebarNav"),toggle=$("#sidebarToggle");
+  if(!sidebar||!toggle)return;
+  const setOpen=open=>{sidebar.classList.toggle("open",open);toggle.setAttribute("aria-expanded",String(open))};
+  toggle.addEventListener("click",()=>setOpen(!sidebar.classList.contains("open")));
+  document.addEventListener("keydown",event=>{if(event.key==="Escape")setOpen(false)});
+  document.querySelectorAll(".nav-tree a").forEach(link=>link.addEventListener("click",()=>setOpen(false)));
+  const observer=new IntersectionObserver(entries=>{
+    const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];
+    if(!visible)return;
+    document.querySelectorAll(".nav-tree a").forEach(link=>link.classList.toggle("active",link.getAttribute("href")==="#"+visible.target.id));
+  },{rootMargin:"-25% 0px -60% 0px",threshold:[0.05,0.2,0.5]});
+  document.querySelectorAll("main > section[id]").forEach(section=>observer.observe(section));
+}
+function closeSidebar(){const sidebar=$("#sidebarNav"),toggle=$("#sidebarToggle");if(sidebar&&toggle){sidebar.classList.remove("open");toggle.setAttribute("aria-expanded","false")}}
+
 function setupSectionAccordions(){
   document.querySelectorAll("main > section.section").forEach(section=>{
     const title=section.querySelector(":scope > .section-title");
@@ -39,7 +57,7 @@ function setupSectionAccordions(){
     const toggle=force=>{const expand=force??section.classList.contains("collapsed");section.classList.toggle("collapsed",!expand);title.setAttribute("aria-expanded",String(expand));title.querySelector(".section-toggle").textContent=expand?"−":"+"};
     title.addEventListener("click",()=>toggle());
     title.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle()}});
-    document.querySelectorAll(`.topbar a[href="#${section.id}"]`).forEach(link=>link.addEventListener("click",()=>toggle(true)));
+    document.querySelectorAll(`a[href="#${section.id}"]`).forEach(link=>link.addEventListener("click",()=>{toggle(true);closeSidebar()}));
   });
 }
 
