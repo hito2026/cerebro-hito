@@ -62,5 +62,28 @@ class UpdateDashboardDeduplicationTests(unittest.TestCase):
         self.assertEqual(MODULE.deduplicate_activities(rows), rows)
 
 
+class UpdateDashboardActivityContractTests(unittest.TestCase):
+    def test_write_date_only_odoo_rows_are_not_public_activity(self):
+        tickets = [{"id": 1, "write_date": "2026-08-29 10:00:00"}]
+        tasks = [{"id": 2, "write_date": "2026-08-29 10:05:00"}]
+
+        rows = MODULE.verified_odoo_activities_from_write_date(tickets, tasks, {}, set())
+
+        self.assertEqual(rows, [])
+
+    def test_organization_keeps_backlog_only_people_with_zero_activity(self):
+        people = ["Ana", "Bruno"]
+        totals = {"Ana": 3}
+        areas = {"Ana": ("Desarrollo", 3)}
+
+        organization = MODULE.build_organization(people, totals, areas)
+        by_name = {row["name"]: row for row in organization}
+
+        self.assertEqual(by_name["Ana"]["activity_count"], 3)
+        self.assertEqual(by_name["Bruno"]["activity_count"], 0)
+        self.assertEqual(by_name["Bruno"]["area"], "Sin área")
+        self.assertEqual(by_name["Bruno"]["id"], "person-bruno")
+
+
 if __name__ == "__main__":
     unittest.main()

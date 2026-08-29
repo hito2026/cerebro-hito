@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import subprocess
 import unicodedata
 import urllib.request
@@ -96,6 +97,10 @@ def search_all(model, domain, fields, page_size=100):
         offset += len(page)
 
 
+def slug(value):
+    return re.sub(r"[^a-z0-9]+", "-", normalized(value)).strip("-") or "dato-protegido"
+
+
 def relation_name(value, fallback):
     return value[1] if isinstance(value, list) and len(value) > 1 else fallback
 
@@ -151,6 +156,31 @@ def deduplicate_activities(activities):
     return unique
 
 
+def verified_odoo_activities_from_write_date(tickets, tasks, user_names, internal_names):
+    """write_date alone is not enough evidence for public activity rows."""
+    return []
+
+
+def build_organization(people_names, person_totals, person_areas):
+    raw_org = []
+    for index, name in enumerate(people_names, 1):
+        official = ROLE_DIRECTORY.get(normalized(name), {})
+        raw_org.append({
+            "id": official.get("id", f"person-{slug(name)}"),
+            "name": name,
+            "role": official.get("role", "Usuario interno Odoo · rol no publicado"),
+            "area": official.get("area", person_areas.get(name, ("Sin área", 0))[0]),
+            "manager": official.get("manager"),
+            "activity_count": person_totals.get(name, 0),
+            "role_source": "hitofusion.com/jobs" if official else "Odoo",
+        })
+    available = {person["id"] for person in raw_org}
+    for person in raw_org:
+        if person["manager"] not in available:
+            person["manager"] = None
+    return raw_org
+
+
 def github_events(since):
     try:
         raw = subprocess.run(["/home/asartorio/.local/bin/gh", "api", f"/orgs/{ORG}/events?per_page=100"], check=True, capture_output=True, text=True).stdout
@@ -182,16 +212,12 @@ def main(publish=False):
     activities = []
     people = Counter()
 
-    for item in tickets:
-        stamp=item["write_date"].replace(" ", "T")
-        candidate=relation_name(item.get("user_id"), "")
-        person=candidate if candidate in internal_names else "Sin usuario interno asignado"
-        activities.append({"id":f"odoo-ticket-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"soporte","source":"Odoo Helpdesk","person":person,"users":[person],"client":"Dato protegido","project":"Soporte","title":f"Ticket #{item['id']} actualizado","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')} · equipo: {relation_name(item.get('team_id'),'sin equipo')}."})
-    for item in tasks:
-        stamp=item["write_date"].replace(" ", "T")
-        users=[user_names[uid] for uid in item.get("user_ids",[]) if uid in user_names] or ["Sin usuario interno asignado"]
-        person=users[0]
-        activities.append({"id":f"odoo-task-{item['id']}","date":stamp[:10],"time":stamp[11:16],"area":"proyectos","source":"Odoo Proyectos","person":person,"users":users,"client":"Dato protegido","project":f"Proyecto #{item.get('project_id',[item['id']])[0] if item.get('project_id') else item['id']}","title":f"Tarea #{item['id']} actualizada","description":f"Estado: {relation_name(item.get('stage_id'),'sin etapa')}."})
+    # Do not publish Odoo tickets/tasks as public activity from write_date alone.
+    # write_date can be touched by automated metadata writes and does not prove a
+    # same-day status transition, human chatter message, or body/content change.
+    # Odoo rows are still used below for backlog and aggregate alerts. Public
+    # activity rows must come from explicit event evidence.
+    activities.extend(verified_odoo_activities_from_write_date(tickets, tasks, user_names, internal_names))
     for event in gh_events:
         stamp=event.get("created_at","")
         actor=event.get("actor",{}).get("login","")
@@ -214,18 +240,12 @@ def main(publish=False):
     data["activities"]=activities
     people_names=sorted(set(person_totals)|set(backlog), key=lambda name:(-backlog.get(name,{}).get("total",0), -person_totals.get(name,0), name))
     data["people"]=[{"name":name,"role":ROLE_DIRECTORY.get(normalized(name),{}).get("role","Usuario interno Odoo"),"area":ROLE_DIRECTORY.get(normalized(name),{}).get("area",person_areas.get(name,("Sin área",0))[0]),"status":"green" if person_totals.get(name,0)/maximum>=.7 else "yellow" if person_totals.get(name,0)/maximum>=.4 else "red","active_tasks":person_totals.get(name,0),"backlog":backlog.get(name,{"tickets":0,"tasks":0,"total":0}),"yesterday":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==recent)} actividades registradas.","today":f"{sum(1 for a in activities if name in a.get('users',[a['person']]) and a['date']==today.isoformat())} actividades registradas."} for name in people_names]
-    raw_org=[]
-    for i,(name,count) in enumerate(person_totals.most_common(),1):
-        official=ROLE_DIRECTORY.get(normalized(name),{})
-        raw_org.append({"id":official.get("id",f"person-{i}"),"name":name,"role":official.get("role","Usuario interno Odoo · rol no publicado"),"area":official.get("area",person_areas[name][0]),"manager":official.get("manager"),"activity_count":count,"role_source":"hitofusion.com/jobs" if official else "Odoo"})
-    available={person["id"] for person in raw_org}
-    for person in raw_org:
-        if person["manager"] not in available:person["manager"]=None
-    data["organization"]=raw_org
+    data["organization"] = build_organization(people_names, person_totals, person_areas)
     data["organization_meta"]={"roles_source":"https://www.hitofusion.com/jobs","structure_note":"Agrupación inferida por área y cargo; la fuente publica roles, no líneas formales de reporte."}
-    data["report"]={"date":today.isoformat(),"updated_at":now.strftime("%d/%m/%Y %H:%M %Z"),"summary":f"Datos reales sanitizados: {len(tickets)} movimientos de soporte, {len(tasks)} tareas de proyecto y {len(gh_events)} eventos de GitHub en los últimos 30 días. Backlog actual: {sum(item['tickets'] for item in backlog.values())} tickets y {sum(item['tasks'] for item in backlog.values())} tareas asignadas sin finalizar.","mode":"real-sanitized"}
+    public_github_events = sum(1 for activity in activities if activity.get("source") == "GitHub")
+    data["report"]={"date":today.isoformat(),"updated_at":now.strftime("%d/%m/%Y %H:%M %Z"),"summary":f"Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: {public_github_events} eventos de GitHub en los últimos 30 días. Backlog actual: {sum(item['tickets'] for item in backlog.values())} tickets y {sum(item['tasks'] for item in backlog.values())} tareas asignadas sin finalizar.","mode":"real-sanitized"}
     data["source_status"]={"odoo_helpdesk":"online","odoo_projects":"online","github":"online" if gh_events else "sin eventos o no disponible","odoo_crm":"pendiente de habilitación","privacy":"datos reales sanitizados para publicación pública"}
-    data["alerts"]=[{"level":"high" if sum(1 for x in tickets if x.get("priority") in ("2","3")) else "low","title":f"{sum(1 for x in tickets if x.get('priority') in ('2','3'))} tickets prioritarios","detail":"Calculado desde Odoo Helpdesk."},{"level":"medium","title":f"{sum(1 for x in tasks if x.get('date_deadline') and x['date_deadline'] < today.isoformat())} tareas vencidas","detail":"Calculado desde Odoo Proyectos."},{"level":"low","title":f"{len(gh_events)} eventos de desarrollo","detail":"Actividad observada en GitHub durante los últimos 30 días."}]
+    data["alerts"]=[{"level":"high" if sum(1 for x in tickets if x.get("priority") in ("2","3")) else "low","title":f"{sum(1 for x in tickets if x.get('priority') in ('2','3'))} tickets prioritarios","detail":"Calculado desde Odoo Helpdesk."},{"level":"medium","title":f"{sum(1 for x in tasks if x.get('date_deadline') and x['date_deadline'] < today.isoformat())} tareas vencidas","detail":"Calculado desde Odoo Proyectos."},{"level":"low","title":f"{public_github_events} eventos de desarrollo","detail":"Actividad observada en GitHub durante los últimos 30 días."}]
     week_start=today-dt.timedelta(days=today.weekday());week_end=week_start+dt.timedelta(days=6)
     data["weekly_plan"]["from"]=week_start.isoformat();data["weekly_plan"]["to"]=week_end.isoformat()
     for indicator in data["weekly_plan"]["indicators"]:
