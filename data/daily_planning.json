@@ -10,7 +10,7 @@
     {
       "id": "daily-2026-08-28-mat-desarrollo",
       "date": "2026-08-28",
-      "persona": "Mat***",
+      "persona": "Matías M.",
       "area": "Desarrollo",
       "objetivo_del_dia": "Continuar una tarea de desarrollo de pagos en un proyecto protegido y cerrar tareas relacionadas pendientes.",
       "tickets_tareas": [
@@ -24,10 +24,10 @@
       "identity": {
         "source": "whatsapp",
         "verification_status": "pendiente_de_verificación",
-        "declared_name": "Mat***"
+        "declared_name": "Matías M."
       },
       "public_contact_hint": {
-        "name_hint": "Mat***",
+        "name_hint": "Matías M.",
         "phone_hint": "Dato protegido"
       },
       "registro_continuidad": {
@@ -85,7 +85,7 @@
     {
       "id": "daily-2026-08-28-nel-post-venta",
       "date": "2026-08-28",
-      "persona": "Nel***",
+      "persona": "Nelson T.",
       "area": "Post-venta",
       "objetivo_del_dia": "Testear un fix de ticket, subirlo a STG y revisarlo con un referente interno.",
       "tickets_tareas": [
@@ -100,10 +100,10 @@
       "identity": {
         "source": "whatsapp",
         "verification_status": "pendiente_de_verificación",
-        "declared_name": "Nel***"
+        "declared_name": "Nelson T."
       },
       "public_contact_hint": {
-        "name_hint": "Nel***",
+        "name_hint": "Nelson T.",
         "phone_hint": "Dato protegido"
       },
       "registro_continuidad": {
@@ -146,7 +146,7 @@
     {
       "id": "daily-2026-08-28-laf-dato-protegido",
       "date": "2026-08-28",
-      "persona": "Laf***",
+      "persona": "Lafee",
       "area": "Dato protegido",
       "objetivo_del_dia": "Continuar revisión de documentación funcional y coordinar reuniones sobre un sistema protegido.",
       "tickets_tareas": [
@@ -164,10 +164,10 @@
       "identity": {
         "source": "whatsapp",
         "verification_status": "pendiente_de_verificación",
-        "declared_name": "Laf***"
+        "declared_name": "Lafee"
       },
       "public_contact_hint": {
-        "name_hint": "Laf***",
+        "name_hint": "Lafee",
         "phone_hint": "***-5577"
       },
       "registro_continuidad": {

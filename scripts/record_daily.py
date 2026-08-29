@@ -167,10 +167,11 @@ def sanitize_public_contact_hint(record):
     hint = record.get("public_contact_hint") or {}
     if hint and not isinstance(hint, dict):
         raise ValueError("public_contact_hint debe ser un objeto")
-    name_source = hint.get("name_hint") or record.get("persona_label") or record.get("persona")
+    public_name_hint = hint.get("name_hint") or record.get("persona_label")
+    raw_name_source = record.get("persona")
     phone_source = hint.get("phone_hint") or record.get("phone") or record.get("telefono") or record.get("whatsapp_phone")
     return {
-        "name_hint": mask_name_hint(name_source),
+        "name_hint": sanitize_text(public_name_hint) if public_name_hint else mask_name_hint(raw_name_source),
         "phone_hint": mask_phone_hint(phone_source),
     }
 

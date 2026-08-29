@@ -26,7 +26,7 @@ FORBIDDEN_PRIVATE_IDENTIFIERS = [
     "Matias Marziali",
     "Nelson.T",
     "Nelson Tontarelli",
-    "Lafee",
+    "Lafee✌️",
     "Mesopotamia",
     "mesopotamia_payment_by_lines",
     "Valentín",

@@ -13,6 +13,16 @@ SPEC.loader.exec_module(MODULE)
 
 
 class RecordDailyPendingStateTests(unittest.TestCase):
+    def test_public_contact_hint_preserves_operator_sanitized_alias(self):
+        hint = MODULE.sanitize_public_contact_hint({
+            "persona": "Private Full Name",
+            "persona_label": "Persona P.",
+            "public_contact_hint": {"name_hint": "Persona P.", "phone_hint": "+54 9 2473 455577"},
+        })
+
+        self.assertEqual(hint["name_hint"], "Persona P.")
+        self.assertEqual(hint["phone_hint"], "***-5577")
+
     def test_negative_approval_wording_is_not_counted_as_approved(self):
         self.assertFalse(MODULE.approval_status_is_approved("No aprobado"))
         self.assertFalse(MODULE.approval_status_is_approved("Pendiente de aprobación"))
