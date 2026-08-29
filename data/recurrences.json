@@ -1,6 +1,6 @@
 {
   "report": {
-    "updated_at": "29/08/2026 13:01 -03",
+    "updated_at": "29/08/2026 19:00 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
     "corpus": "310 clusters históricos y 1036 tickets recientes",
@@ -214,7 +214,7 @@
       "episodes": 4,
       "window": "2026-06-01 → 2026-06-05",
       "reason": "3 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 7 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 3 mensajes sanitizados de chatter",
       "module": "sale",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0084",
