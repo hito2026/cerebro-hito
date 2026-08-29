@@ -1,130 +1,15 @@
 {
   "report": {
-    "updated_at": "28/08/2026 20:43 -0300",
+    "updated_at": "29/08/2026 11:46 -0300",
     "mode": "operator-sanitized",
-    "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos."
+    "summary": "Sin seguimiento real publicado todavía. Los datos de muestra fueron retirados del dataset público."
   },
   "metrics": {
-    "people_count": 6,
-    "total_dailies": 6,
-    "open_pending": 2,
-    "active_blockers": 1,
-    "missing_evidence": 5
+    "people_count": 0,
+    "total_dailies": 0,
+    "open_pending": 0,
+    "active_blockers": 0,
+    "missing_evidence": 0
   },
-  "people": [
-    {
-      "persona": "Persona protegida",
-      "area": "Dirección",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Per***",
-        "phone_hint": "Dato protegido"
-      },
-      "last_daily": "2026-08-25",
-      "registration_status": "registrado_en_cerebro",
-      "open_pending": 1,
-      "pending_items": [
-        "Confirmar con evidencia operativa los tickets asignados y actividad completa del equipo de desarrollo"
-      ],
-      "active_blockers": 0,
-      "blocker_items": [],
-      "missing_evidence": 4,
-      "documentation_status": "links/evidencia pendientes",
-      "next_follow_up": "Retomar mañana verificando avance comercial, situación operativa del cliente protegido y evidencia de actividad/tickets del equipo de desarrollo."
-    },
-    {
-      "persona": "Persona E",
-      "area": "Operaciones",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Per***",
-        "phone_hint": "***-0000"
-      },
-      "last_daily": "2026-08-21",
-      "registration_status": "registrado_en_cerebro",
-      "open_pending": 1,
-      "pending_items": [
-        "Tarea demo que requiere seguimiento"
-      ],
-      "active_blockers": 1,
-      "blocker_items": [
-        "Esperando validación de ambiente genérico"
-      ],
-      "missing_evidence": 1,
-      "documentation_status": "links/evidencia pendientes",
-      "next_follow_up": "Retomar estado de OPS-101 en la próxima daily"
-    },
-    {
-      "persona": "Persona D",
-      "area": "Desarrollo",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Dato protegido",
-        "phone_hint": "Dato protegido"
-      },
-      "last_daily": null,
-      "registration_status": "pendiente_de_registro",
-      "open_pending": 0,
-      "pending_items": [],
-      "active_blockers": 0,
-      "blocker_items": [],
-      "missing_evidence": 0,
-      "documentation_status": "sin faltantes declarados",
-      "next_follow_up": "Retomar en la próxima daily"
-    },
-    {
-      "persona": "Persona C",
-      "area": "Comercial",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Dato protegido",
-        "phone_hint": "Dato protegido"
-      },
-      "last_daily": null,
-      "registration_status": "pendiente_de_registro",
-      "open_pending": 0,
-      "pending_items": [],
-      "active_blockers": 0,
-      "blocker_items": [],
-      "missing_evidence": 0,
-      "documentation_status": "sin faltantes declarados",
-      "next_follow_up": "Retomar en la próxima daily"
-    },
-    {
-      "persona": "Persona B",
-      "area": "Proyectos",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Dato protegido",
-        "phone_hint": "Dato protegido"
-      },
-      "last_daily": null,
-      "registration_status": "pendiente_de_registro",
-      "open_pending": 0,
-      "pending_items": [],
-      "active_blockers": 0,
-      "blocker_items": [],
-      "missing_evidence": 0,
-      "documentation_status": "sin faltantes declarados",
-      "next_follow_up": "Retomar en la próxima daily"
-    },
-    {
-      "persona": "Persona A",
-      "area": "Soporte",
-      "identity_status": "empleado_provisional",
-      "contact_hint": {
-        "name_hint": "Dato protegido",
-        "phone_hint": "Dato protegido"
-      },
-      "last_daily": null,
-      "registration_status": "pendiente_de_registro",
-      "open_pending": 0,
-      "pending_items": [],
-      "active_blockers": 0,
-      "blocker_items": [],
-      "missing_evidence": 0,
-      "documentation_status": "sin faltantes declarados",
-      "next_follow_up": "Retomar en la próxima daily"
-    }
-  ]
+  "people": []
 }
