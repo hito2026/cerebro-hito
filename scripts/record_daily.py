@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Registra una daily aprobada de Ale en los datasets públicos sanitizados."""
+"""Registra una daily de Ale en los datasets públicos sanitizados."""
 import argparse
 import datetime as dt
 import json
@@ -182,13 +182,24 @@ def parse_date(value):
         raise ValueError("date debe tener formato YYYY-MM-DD") from exc
 
 
-def parse_approved(record):
+def approval_status_is_approved(status):
+    text = normalized(status)
+    if not text:
+        return False
+    negative_markers = ("no aprobado", "pendiente", "requiere", "correccion", "reparacion")
+    if any(marker in text for marker in negative_markers):
+        return False
+    return any(marker in text for marker in APPROVED_MARKERS)
+
+
+def parse_approval_status(record):
     status = sanitize_text(record.get("estado_aprobacion"), "")
     explicit = record.get("approved")
-    approved = explicit is True or any(marker in normalized(status) for marker in APPROVED_MARKERS)
-    if not approved:
-        raise ValueError("el registro debe estar aprobado antes de publicarse (approved=true o estado_aprobacion aprobado)")
-    return status or "Aprobado"
+    if explicit is True and not status:
+        return "Aprobado"
+    if explicit is False and not status:
+        return "Pendiente de aprobación"
+    return status or "Pendiente de aprobación"
 
 
 def validate_and_render_row(record):
@@ -205,7 +216,7 @@ def validate_and_render_row(record):
         raise ValueError("tickets_tareas debe tener al menos un elemento")
     if record.get("public_sanitized") is not True:
         raise ValueError("public_sanitized=true es obligatorio para escribir datasets públicos")
-    status = parse_approved(record)
+    status = parse_approval_status(record)
     persona = public_label(record, "persona_label", "persona")
     area = public_label(record, "area_label", "area")
     evidence = record.get("evidencia") or {}
@@ -225,7 +236,7 @@ def validate_and_render_row(record):
         "bloqueos": sanitize_list(record, "bloqueos"),
         "interconsultas": sanitize_list(record, "interconsultas"),
         "estado_aprobacion": status,
-        "estado_registro": "registrado_en_cerebro",
+        "estado_registro": sanitize_text(record.get("estado_registro"), "registrado_en_cerebro"),
         "identity": sanitize_identity(record),
         "public_contact_hint": sanitize_public_contact_hint(record),
         "registro_continuidad": {
@@ -287,6 +298,7 @@ def update_evolution(evolution, row, source_record):
     if not isinstance(metrics, dict):
         metrics = {}
     planned = to_int(metrics.get("planned"), len(row["tickets_tareas"]))
+    default_approved = planned if approval_status_is_approved(row.get("estado_aprobacion", "")) else 0
     closed = to_int(metrics.get("closed"), 0)
     blockers = len(row["bloqueos"]) or (0 if row.get("registro_continuidad", {}).get("bloqueo_actual") in ("Sin bloqueo declarado", "Dato protegido") else 1)
     consultations = len(row["interconsultas"])
@@ -294,7 +306,7 @@ def update_evolution(evolution, row, source_record):
         "day": DAY_KEYS[day.weekday()],
         "planned": planned,
         "verified": to_int(metrics.get("verified"), planned),
-        "approved": to_int(metrics.get("approved"), planned),
+        "approved": to_int(metrics.get("approved"), default_approved),
         "in_progress": to_int(metrics.get("in_progress"), max(planned - closed, 0)),
         "closed": closed,
         "carry_over": to_int(metrics.get("carry_over"), 0),
@@ -319,7 +331,7 @@ def update_evolution(evolution, row, source_record):
     recompute_metrics(evolution)
     evolution.setdefault("report", {})["updated_at"] = dt.datetime.now().astimezone().strftime("%d/%m/%Y %H:%M %z")
     evolution["report"]["mode"] = "operator-sanitized"
-    evolution["report"]["summary"] = "Evolución diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
+    evolution["report"]["summary"] = "Evolución diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
 
 
 def recompute_metrics(evolution):
@@ -363,6 +375,7 @@ def summarize_person_tracking(rows):
             "contact_hint": row.get("public_contact_hint", {"name_hint": PUBLIC_FALLBACK, "phone_hint": PUBLIC_FALLBACK}),
             "last_daily": row.get("date"),
             "registration_status": sanitize_text(row.get("estado_registro"), "pendiente_de_registro"),
+            "approval_status": sanitize_text(row.get("estado_aprobacion"), "Pendiente de aprobación"),
             "open_pending": len(pending_items),
             "pending_items": [sanitize_text(item) for item in pending_items[:5]],
             "active_blockers": len(blocker_items),
@@ -404,7 +417,7 @@ def register_daily(input_path):
     daily.setdefault("report", {})["date"] = row["date"]
     daily["report"]["updated_at"] = dt.datetime.now().astimezone().strftime("%d/%m/%Y %H:%M %z")
     daily["report"]["mode"] = "operator-sanitized"
-    daily["report"]["summary"] = "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
+    daily["report"]["summary"] = "Planificación diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
     write_json(DAILY_FILE, daily)
     evolution = read_json(EVOLUTION_FILE)
     update_evolution(evolution, row, source_record)
@@ -414,8 +427,8 @@ def register_daily(input_path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Registra una daily aprobada en data/daily_planning.json y data/planning_evolution.json")
-    parser.add_argument("input", type=Path, help="JSON con un CEREBRO_DAILY_RECORD aprobado y sanitizado")
+    parser = argparse.ArgumentParser(description="Registra una daily en data/daily_planning.json y data/planning_evolution.json")
+    parser.add_argument("input", type=Path, help="JSON con un CEREBRO_DAILY_RECORD sanitizado")
     args = parser.parse_args()
     action, row_id = register_daily(args.input)
     print(f"{action}: {row_id}")

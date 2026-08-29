@@ -67,7 +67,7 @@ class PublicDailyDataTests(unittest.TestCase):
         app = (ROOT / "assets" / "app.js").read_text()
 
         self.assertIn("Sin planificación publicada", app)
-        self.assertIn("Todavía no hay dailies reales aprobadas", app)
+        self.assertIn("Todavía no hay dailies reales procesadas", app)
         self.assertIn("Sin evolución publicada", app)
         self.assertIn("Sin seguimiento de dailies publicado todavía", app)
         self.assertNotIn("No se pudo cargar data/planning_evolution.json", app)

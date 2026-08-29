@@ -1,15 +1,15 @@
 {
   "report": {
-    "updated_at": "29/08/2026 13:59 -0300",
+    "updated_at": "29/08/2026 14:16 -0300",
     "mode": "operator-sanitized",
     "summary": "Seguimiento público sanitizado por persona; no incluye teléfonos, JID, nombres privados ni links crudos."
   },
   "metrics": {
-    "people_count": 2,
-    "total_dailies": 2,
-    "open_pending": 2,
+    "people_count": 3,
+    "total_dailies": 3,
+    "open_pending": 4,
     "active_blockers": 0,
-    "missing_evidence": 1
+    "missing_evidence": 2
   },
   "people": [
     {
@@ -22,6 +22,7 @@
       },
       "last_daily": "2026-08-28",
       "registration_status": "registrado_en_cerebro",
+      "approval_status": "Aprobado",
       "open_pending": 1,
       "pending_items": [
         "Fix del ticket #2026/04120"
@@ -42,6 +43,7 @@
       },
       "last_daily": "2026-08-28",
       "registration_status": "registrado_en_cerebro",
+      "approval_status": "Aprobado",
       "open_pending": 1,
       "pending_items": [
         "Cuatro tareas relacionadas siguen pendientes"
@@ -51,6 +53,28 @@
       "missing_evidence": 1,
       "documentation_status": "links/evidencia pendientes",
       "next_follow_up": "Verificar avance sobre las cuatro tareas pendientes y completar evidencia/documentación asociada si aparece."
+    },
+    {
+      "persona": "Laf***",
+      "area": "Dato protegido",
+      "identity_status": "pendiente_de_verificación",
+      "contact_hint": {
+        "name_hint": "Laf***",
+        "phone_hint": "***-5577"
+      },
+      "last_daily": "2026-08-28",
+      "registration_status": "registrado_en_cerebro",
+      "approval_status": "Pendiente de aprobación / requiere reparación",
+      "open_pending": 2,
+      "pending_items": [
+        "Aprobación final de la ficha diaria",
+        "Verificación operativa de los avances declarados"
+      ],
+      "active_blockers": 0,
+      "blocker_items": [],
+      "missing_evidence": 1,
+      "documentation_status": "links/evidencia pendientes",
+      "next_follow_up": "Reparar la ficha, confirmar aprobación explícita y verificar evidencia operativa del documento y avances declarados."
     }
   ]
 }

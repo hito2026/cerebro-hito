@@ -1,15 +1,15 @@
 {
   "report": {
-    "updated_at": "29/08/2026 13:59 -0300",
+    "updated_at": "29/08/2026 14:16 -0300",
     "mode": "operator-sanitized",
     "window": "2026-08-24 → 2026-08-30",
-    "summary": "Evolución diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
+    "summary": "Evolución diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
   },
   "metrics": {
     "approved_plans": 3,
-    "pending_plans": 0,
+    "pending_plans": 3,
     "blockers": 0,
-    "consultations": 1
+    "consultations": 3
   },
   "days": [
     {
@@ -66,6 +66,24 @@
           "carry_over": 0,
           "blockers": 0,
           "consultations": 1,
+          "inferred": false
+        }
+      ]
+    },
+    {
+      "person": "Laf***",
+      "area": "Dato protegido",
+      "days": [
+        {
+          "day": "fri",
+          "planned": 3,
+          "verified": 1,
+          "approved": 0,
+          "in_progress": 3,
+          "closed": 0,
+          "carry_over": 1,
+          "blockers": 0,
+          "consultations": 2,
           "inferred": false
         }
       ]

@@ -1,9 +1,9 @@
 {
   "report": {
     "date": "2026-08-28",
-    "updated_at": "29/08/2026 13:59 -0300",
+    "updated_at": "29/08/2026 14:16 -0300",
     "mode": "operator-sanitized",
-    "summary": "Planificación diaria aprobada y sanitizada para publicación; no incluye datos privados por defecto."
+    "summary": "Planificación diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
   },
   "schema_version": "1.0",
   "rows": [
@@ -142,6 +142,99 @@
         }
       ],
       "detalle": "Daily aprobada por WhatsApp. El registro público omite URL interna y datos privados."
+    },
+    {
+      "id": "daily-2026-08-28-laf-dato-protegido",
+      "date": "2026-08-28",
+      "persona": "Laf***",
+      "area": "Dato protegido",
+      "objetivo_del_dia": "Continuar revisión de documentación funcional y coordinar reuniones sobre un sistema protegido.",
+      "tickets_tareas": [
+        "Revisión de documento funcional protegido",
+        "Avances declarados sobre funciones de un sistema protegido",
+        "Reuniones planificadas con referentes internos"
+      ],
+      "bloqueos": [],
+      "interconsultas": [
+        "Reunión con referente interno sobre sistema protegido",
+        "Reunión con segundo referente interno"
+      ],
+      "estado_aprobacion": "Pendiente de aprobación / requiere reparación",
+      "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "pendiente_de_verificación",
+        "declared_name": "Laf***"
+      },
+      "public_contact_hint": {
+        "name_hint": "Laf***",
+        "phone_hint": "***-5577"
+      },
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Revisión de documento funcional protegido enviado previamente"
+        ],
+        "tareas_completadas": [
+          "Avances declarados sobre creación de funciones de gestión de herramientas, categorías, préstamo y devolución"
+        ],
+        "tareas_sin_hacer": [
+          "Aprobación final de la ficha diaria",
+          "Verificación operativa de los avances declarados"
+        ],
+        "motivo_sin_hacer": "La conversación no tuvo aprobación final explícita y debe repararse por posible contaminación de contexto.",
+        "bloqueo_actual": "Sin bloqueo declarado",
+        "tareas_planificadas_hoy": [
+          "Reunión con referente interno sobre sistema protegido",
+          "Reunión con segundo referente interno"
+        ],
+        "proximo_seguimiento": "Reparar la ficha, confirmar aprobación explícita y verificar evidencia operativa del documento y avances declarados."
+      },
+      "evidencia": {
+        "tipo": "daily recibida por WhatsApp sin aprobación final",
+        "referencia": "Documento interno provisto en el hilo; salida pública sanitizada"
+      },
+      "item_evidence": [
+        {
+          "item": "Revisión de documento funcional protegido",
+          "tipo": "document",
+          "referencia": "Documento interno protegido",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario aportó un link de documento en el hilo y pidió revisión posterior.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "provided"
+          ]
+        },
+        {
+          "item": "Avances declarados sobre funciones de un sistema protegido",
+          "tipo": "project_update",
+          "referencia": "Dato protegido",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "whatsapp",
+          "observacion": "Avances declarados por usuario; falta contrastar con herramienta autorizada.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": [
+            "link_requested"
+          ]
+        },
+        {
+          "item": "Reuniones planificadas con referentes internos",
+          "tipo": "meeting",
+          "referencia": "Dato protegido",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "Reuniones declaradas para el día, con nombres de referentes omitidos en público.",
+          "documentation_link_status": "not_applicable",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": [
+            "not_applicable"
+          ]
+        }
+      ],
+      "detalle": "Daily recibida por WhatsApp sin aprobación final explícita. Se publica como estado pendiente para completar la visión del tablero, con datos privados sanitizados."
     }
   ]
 }
