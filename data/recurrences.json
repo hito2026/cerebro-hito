@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "29/08/2026 19:00 -03",
+    "updated_at": "30/08/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1036 tickets recientes",
+    "corpus": "310 clusters históricos y 1034 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -207,17 +207,17 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Ventas y precios · Plantillas cotización países no-ARG: PDF encabezado/pie no se visualiza",
+      "family": "Contabilidad y facturación · Tipo de cambio USD · API levanta valores incorrectos desde esta semana",
       "status": "señal débil",
-      "score": 66,
+      "score": 64,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 4,
-      "window": "2026-06-01 → 2026-06-05",
-      "reason": "3 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 3 mensajes sanitizados de chatter",
-      "module": "sale",
-      "issue_type": "CONFIG",
-      "cluster_id": "CLUSTER-0084",
+      "episodes": 6,
+      "window": "2026-06-19 → 2026-06-30",
+      "reason": "5 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 32 mensajes sanitizados de chatter",
+      "module": "account",
+      "issue_type": "INTEGRATION",
+      "cluster_id": "CLUSTER-0178",
       "recent_matches": 1
     }
   ]
