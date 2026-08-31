@@ -1,19 +1,19 @@
 {
   "report": {
     "date": "2026-08-31",
-    "updated_at": "31/08/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 96 eventos de GitHub en los últimos 30 días. Backlog actual: 75 tickets y 728 tareas asignadas sin finalizar.",
+    "updated_at": "31/08/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 96 eventos de GitHub en los últimos 30 días. Backlog actual: 74 tickets y 723 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "32 tickets prioritarios",
+      "title": "33 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "0 tareas vencidas",
+      "title": "1 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
@@ -45,8 +45,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 124,
-        "total": 124
+        "tasks": 127,
+        "total": 127
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -59,22 +59,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 88,
-        "total": 88
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 69,
-        "total": 69
+        "tasks": 89,
+        "total": 89
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -87,8 +73,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 69,
-        "total": 69
+        "tasks": 68,
+        "total": 68
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -108,15 +94,29 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 65,
+        "total": 65
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
       "area": "Soporte",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 16,
-        "tasks": 44,
-        "total": 60
+        "tickets": 15,
+        "tasks": 43,
+        "total": 58
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -157,8 +157,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 23,
-        "total": 23
+        "tasks": 22,
+        "total": 22
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -170,23 +170,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 19,
+        "tickets": 20,
         "tasks": 0,
-        "total": 19
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 4,
-        "tasks": 15,
-        "total": 19
+        "total": 20
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -200,6 +186,20 @@
       "backlog": {
         "tickets": 1,
         "tasks": 16,
+        "total": 17
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 4,
+        "tasks": 13,
         "total": 17
       },
       "yesterday": "0 actividades registradas.",
@@ -254,9 +254,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 8,
+        "tickets": 7,
         "tasks": 3,
-        "total": 11
+        "total": 10
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -361,15 +361,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "ezequiel-montes",
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "nahiara-delgado",
       "name": "Nahiara Aylen Delgado",
       "role": "Analista Funcional",
@@ -386,6 +377,15 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
+    },
+    {
+      "id": "ezequiel-montes",
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "ignacio-lera",
@@ -433,15 +433,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "nelson-tontarelli",
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "manager": "matias-banega",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "person-matias-marziali",
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo · rol no publicado",
@@ -449,6 +440,15 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
+    },
+    {
+      "id": "nelson-tontarelli",
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "manager": "matias-banega",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "alejandro-sartorio",
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 6,
+        "current": 13,
         "unit": "tickets"
       },
       {

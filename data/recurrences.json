@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "31/08/2026 13:00 -03",
+    "updated_at": "31/08/2026 19:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1039 tickets recientes",
+    "corpus": "310 clusters históricos y 1045 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -137,9 +137,9 @@
       "score": 70,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 6,
-      "window": "2026-06-09 → 2026-08-28",
+      "window": "2026-06-09 → 2026-08-31",
       "reason": "2 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 93 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 96 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0127",
@@ -214,7 +214,7 @@
       "episodes": 6,
       "window": "2026-05-13 → 2026-08-31",
       "reason": "2 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 71 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 72 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0020",
