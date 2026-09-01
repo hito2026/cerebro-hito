@@ -1,16 +1,16 @@
 {
   "report": {
-    "updated_at": "01/09/2026 14:10 -0300",
+    "updated_at": "01/09/2026 14:32 -0300",
     "mode": "operator-sanitized",
     "summary": "Seguimiento público sanitizado de contactos WhatsApp; no incluye JID, teléfonos completos, links crudos ni nombres privados."
   },
   "metrics": {
-    "people_count": 4,
-    "onboarding_incomplete": 4,
-    "daily_or_weekly_active": 2,
+    "people_count": 5,
+    "onboarding_incomplete": 5,
+    "daily_or_weekly_active": 3,
     "technical_frictions": 1,
-    "missing_evidence": 5,
-    "requires_action": 3
+    "missing_evidence": 7,
+    "requires_action": 4
   },
   "people": [
     {
@@ -44,6 +44,40 @@
         "Estado de cierre del pendiente fiscal"
       ],
       "next_action": "Samuel debe pasar referencia/link de Odoo y estado del pendiente fiscal para cliente protegido.",
+      "publication_status": "publicado_sanitizado"
+    },
+    {
+      "id": "followup-ariadna-h-operaciones-celula-odoo-2",
+      "persona": "Ariadna H.",
+      "area": "Operaciones · Célula Odoo #2",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "presentacion_recibida",
+      "conversation_state": "daily_aprobada",
+      "cadence": "daily",
+      "last_interaction": "2026-09-01",
+      "last_report_type": "daily_aprobada",
+      "contact_hint": {
+        "name_hint": "Ariadna H.",
+        "phone_hint": "no_disponible"
+      },
+      "topics_with_alejandro": [
+        "Configuraciones operativas en clientes protegidos",
+        "Pruebas de costos",
+        "Bloqueo funcional de contactos y cuentas corrientes"
+      ],
+      "current_focus": [
+        "Avanzar con maestros de productos",
+        "Avanzar con costos por proveedor, reposición y destino",
+        "Resolver criterio funcional de contactos y cuentas corrientes"
+      ],
+      "blockers": [
+        "Falta resolver criterio funcional sobre contactos con identificador fiscal compartido y cuentas corrientes separadas o consolidadas"
+      ],
+      "missing_evidence": [
+        "Verificación operativa en Odoo de avances declarados",
+        "Decisión funcional sobre bloqueo de contactos"
+      ],
+      "next_action": "Confirmar avance en maestros/costos y destrabar criterio funcional de contactos y cuentas corrientes en cliente protegido B.",
       "publication_status": "publicado_sanitizado"
     },
     {

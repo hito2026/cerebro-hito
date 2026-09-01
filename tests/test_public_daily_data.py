@@ -37,6 +37,11 @@ FORBIDDEN_PRIVATE_IDENTIFIERS = [
     "Intektoy",
     "realdecatorce",
     "skepsis-consulting",
+    "Ariadna Hitofusion",
+    "Encometal",
+    "Codimat",
+    "CUIT",
+    "constructora",
 ]
 
 

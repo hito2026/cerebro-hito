@@ -1,36 +1,36 @@
 {
   "report": {
-    "updated_at": "29/08/2026 14:16 -0300",
+    "updated_at": "01/09/2026 14:32 -0300",
     "mode": "operator-sanitized",
-    "window": "2026-08-24 → 2026-08-30",
+    "window": "2026-08-31 → 2026-09-06",
     "summary": "Evolución diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
   },
   "metrics": {
-    "approved_plans": 3,
+    "approved_plans": 10,
     "pending_plans": 3,
-    "blockers": 0,
-    "consultations": 3
+    "blockers": 1,
+    "consultations": 4
   },
   "days": [
     {
       "key": "mon",
-      "label": "Lun 24"
+      "label": "Lun 31"
     },
     {
       "key": "tue",
-      "label": "Mar 25"
+      "label": "Mar 01"
     },
     {
       "key": "wed",
-      "label": "Mié 26"
+      "label": "Mié 02"
     },
     {
       "key": "thu",
-      "label": "Jue 27"
+      "label": "Jue 03"
     },
     {
       "key": "fri",
-      "label": "Vie 28"
+      "label": "Vie 04"
     }
   ],
   "people": [
@@ -84,6 +84,24 @@
           "carry_over": 1,
           "blockers": 0,
           "consultations": 2,
+          "inferred": false
+        }
+      ]
+    },
+    {
+      "person": "Ariadna H.",
+      "area": "Operaciones · Célula Odoo #2",
+      "days": [
+        {
+          "day": "tue",
+          "planned": 7,
+          "verified": 4,
+          "approved": 7,
+          "in_progress": 7,
+          "closed": 0,
+          "carry_over": 4,
+          "blockers": 1,
+          "consultations": 1,
           "inferred": false
         }
       ]

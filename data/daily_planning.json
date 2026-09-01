@@ -1,7 +1,7 @@
 {
   "report": {
-    "date": "2026-08-28",
-    "updated_at": "29/08/2026 14:16 -0300",
+    "date": "2026-09-01",
+    "updated_at": "01/09/2026 14:32 -0300",
     "mode": "operator-sanitized",
     "summary": "Planificación diaria sanitizada por estado; incluye dailies aprobadas, pendientes o a reparar sin datos privados por defecto."
   },
@@ -235,6 +235,123 @@
         }
       ],
       "detalle": "Daily recibida por WhatsApp sin aprobación final explícita. Se publica como estado pendiente para completar la visión del tablero, con datos privados sanitizados."
+    },
+    {
+      "id": "daily-2026-09-01-ariadna-h-operaciones-celula-odoo-2",
+      "date": "2026-09-01",
+      "persona": "Ariadna H.",
+      "area": "Operaciones · Célula Odoo #2",
+      "objetivo_del_dia": "Avanzar con configuraciones y pruebas operativas en instancias protegidas, dejando visible un bloqueo funcional sobre contactos y cuentas corrientes.",
+      "tickets_tareas": [
+        "Configuraciones de maestros en cliente protegido A",
+        "Configuraciones y pruebas de costos en clientes protegidos",
+        "Retiro extra cash en cliente protegido A",
+        "Configuración de contactos en cliente protegido B",
+        "Maestro de productos de venta en cliente protegido A",
+        "Maestro de productos de administración en cliente protegido A",
+        "Costos por proveedor, reposición y destino"
+      ],
+      "bloqueos": [
+        "Replicar esquema de contactos con identificador fiscal compartido y cuentas corrientes separadas o consolidadas en cliente protegido B"
+      ],
+      "interconsultas": [
+        "Consulta funcional con Ale sobre bloqueo de contactos y cuentas corrientes"
+      ],
+      "estado_aprobacion": "Aprobado",
+      "estado_registro": "registrado_en_cerebro",
+      "identity": {
+        "source": "whatsapp",
+        "verification_status": "pendiente_de_verificación",
+        "declared_name": "Ariadna H."
+      },
+      "public_contact_hint": {
+        "name_hint": "Ariadna H.",
+        "phone_hint": "Dato protegido"
+      },
+      "registro_continuidad": {
+        "pendientes_anteriores": [
+          "Configuraciones de maestros en cliente protegido A",
+          "Pruebas de costos en clientes protegidos",
+          "Retiro extra cash en cliente protegido A",
+          "Configuración de contactos en cliente protegido B"
+        ],
+        "tareas_completadas": [
+          "Planificación del día ordenada y aprobada"
+        ],
+        "tareas_sin_hacer": [
+          "Verificación operativa en Odoo de las tareas declaradas",
+          "Resolución del bloqueo funcional de contactos y cuentas corrientes"
+        ],
+        "motivo_sin_hacer": "Queda pendiente verificación operativa y definición funcional del esquema de contactos/cuentas corrientes.",
+        "bloqueo_actual": "Replicar esquema de contactos con identificador fiscal compartido y cuentas corrientes separadas o consolidadas en cliente protegido B",
+        "tareas_planificadas_hoy": [
+          "Maestro de productos de venta en cliente protegido A",
+          "Maestro de productos de administración en cliente protegido A",
+          "Costos por proveedor",
+          "Costo de reposición",
+          "Costo en destino"
+        ],
+        "proximo_seguimiento": "Confirmar avance en maestros/costos y destrabar criterio funcional de contactos y cuentas corrientes en cliente protegido B."
+      },
+      "evidencia": {
+        "tipo": "daily aprobada por WhatsApp",
+        "referencia": "Links internos de tareas e instancias provistos en el hilo; salida pública sanitizada"
+      },
+      "item_evidence": [
+        {
+          "item": "Configuraciones de maestros en cliente protegido A",
+          "tipo": "project_task",
+          "referencia": "Tarea interna protegida",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró la tarea y aportó link interno de respaldo.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "provided"
+          ]
+        },
+        {
+          "item": "Configuraciones y pruebas de costos en clientes protegidos",
+          "tipo": "project_task",
+          "referencia": "Tareas internas protegidas",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró el frente de costos y aportó links internos de respaldo para parte de los ítems.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "provided"
+          ]
+        },
+        {
+          "item": "Configuración de contactos en cliente protegido B",
+          "tipo": "project_task",
+          "referencia": "Tarea interna protegida",
+          "estado_evidencia": "declarado_por_usuario",
+          "fuente": "whatsapp",
+          "observacion": "El usuario declaró bloqueo funcional y aportó link interno de respaldo.",
+          "documentation_link_status": "provided",
+          "documentation_reference": "[enlace protegido]",
+          "link_request_sequence": [
+            "provided"
+          ]
+        },
+        {
+          "item": "Bloqueo funcional sobre contactos y cuentas corrientes",
+          "tipo": "blocker",
+          "referencia": "Dato protegido",
+          "estado_evidencia": "requiere_verificación",
+          "fuente": "whatsapp",
+          "observacion": "Bloqueo declarado por usuario; falta decisión/verificación funcional autorizada.",
+          "documentation_link_status": "requested_once",
+          "documentation_reference": "Dato protegido",
+          "link_request_sequence": [
+            "link_requested"
+          ]
+        }
+      ],
+      "detalle": "Daily aprobada por WhatsApp. El registro público omite clientes, URLs internas, instancias y datos privados."
     }
   ]
 }
