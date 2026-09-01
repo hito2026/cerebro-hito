@@ -42,10 +42,8 @@
       </details>
       <details open>
         <summary>Daily Meetings</summary>
-        <a href="#seguimiento-contactos">Seguimiento usuarios WA</a>
-        <a href="#seguimiento-dailies">Seguimiento daily</a>
-        <a href="#planificacion">Plan diario</a>
-        <a href="#evolucion-planificacion">Evolución plan</a>
+        <a href="#daily-meetings">Estado actual</a>
+        <a href="#daily-history">Historial</a>
       </details>
       <details>
         <summary>Personas y organización</summary>
@@ -129,28 +127,18 @@
     </section>
 
 
-        <section id="seguimiento-contactos" class="section daily-tracking-section">
-          <div class="section-title"><div><p class="eyebrow">whatsapp followup / public sanitized</p><h2>Seguimiento de usuarios WhatsApp</h2></div><p id="employeeFollowupSummary">Estado vivo de contactos que reportan por WhatsApp, sin JID, teléfonos completos ni links crudos.</p></div>
-          <div id="employeeFollowupKpis" class="daily-tracking-kpis" aria-live="polite"></div>
-          <div id="employeeFollowupTable" class="daily-tracking-table" aria-live="polite"></div>
-        </section>
-
-        <section id="seguimiento-dailies" class="section daily-tracking-section">
-      <div class="section-title"><div><p class="eyebrow">daily tracking / public sanitized</p><h2>Seguimiento de Dailies por Persona</h2></div><p id="dailyTrackingSummary">Resumen público sanitizado, sin teléfonos, nombres privados ni links crudos.</p></div>
-      <div id="dailyTrackingKpis" class="daily-tracking-kpis" aria-live="polite"></div>
-      <div id="dailyTrackingTable" class="daily-tracking-table" aria-live="polite"></div>
-    </section>
-
-    <section id="planificacion" class="section">
-      <div class="section-title"><div><p class="eyebrow">approved daily plan / sanitized demo</p><h2>Planificación diaria aprobada</h2></div><p id="planningSummary">Matriz demo sanitizada, sin datos privados.</p></div>
-      <div id="planningMatrix" class="planning-matrix" aria-live="polite"></div>
-    </section>
-
-    <section id="evolucion-planificacion" class="section planning-evolution-section">
-      <div class="section-title"><div><p class="eyebrow">weekly planning / sanitized demo</p><h2>Evolución de planificación</h2></div><p id="planningEvolutionSummary">Comparativa semanal demo, sin datos privados.</p></div>
-      <div id="planningEvolutionKpis" class="planning-evolution-kpis" aria-live="polite"></div>
-      <div id="planningEvolutionMatrix" class="planning-evolution-matrix" aria-live="polite"></div>
-      <div id="planningEvolutionChips" class="planning-evolution-chips" aria-live="polite"></div>
+    <section id="daily-meetings" class="section daily-meetings-section">
+      <div class="section-title"><div><p class="eyebrow">daily meetings / public sanitized</p><h2>Daily Meetings</h2></div><p id="dailyMeetingsSummary">Estado actual e historial unificados por persona y fecha, sin JID, teléfonos completos, links crudos ni datos privados.</p></div>
+      <div id="dailyMeetingsKpis" class="daily-meetings-kpis" aria-live="polite"></div>
+      <article class="daily-meetings-panel">
+        <div class="panel-head"><div><p class="eyebrow">estado actual / persona</p><h3>Estado actual</h3></div><span id="dailyCurrentCount">—</span></div>
+        <div id="dailyCurrentTable" class="daily-meetings-table" aria-live="polite"></div>
+      </article>
+      <article id="daily-history" class="daily-meetings-panel">
+        <div class="panel-head"><div><p class="eyebrow">historial / análisis</p><h3>Historial</h3></div><span id="dailyHistoryCount">—</span></div>
+        <div id="dailyHistoryTable" class="daily-meetings-table" aria-live="polite"></div>
+      </article>
+      <p class="daily-meetings-note">Unidad canónica: persona + fecha + daily_id + estado + pendientes + evidencia + próximo seguimiento. La vista reutiliza sólo datasets públicos sanitizados.</p>
     </section>
 
     <section id="organigrama" class="section">

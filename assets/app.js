@@ -58,7 +58,8 @@ function setupSectionAccordions(){
     const toggle=force=>{const expand=force??section.classList.contains("collapsed");section.classList.toggle("collapsed",!expand);title.setAttribute("aria-expanded",String(expand));title.querySelector(".section-toggle").textContent=expand?"−":"+"};
     title.addEventListener("click",()=>toggle());
     title.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle()}});
-    document.querySelectorAll(`a[href="#${section.id}"]`).forEach(link=>link.addEventListener("click",()=>{toggle(true);closeSidebar()}));
+    const sectionTargets=[section.id,...[...section.querySelectorAll("[id]")].map(child=>child.id)];
+    sectionTargets.forEach(id=>document.querySelectorAll(`a[href="#${id}"]`).forEach(link=>link.addEventListener("click",()=>{toggle(true);closeSidebar()})));
   });
 }
 
@@ -68,7 +69,7 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode?.includes("sanitized")?"live.sanitized":"sin.datos";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderEmployeeFollowups();renderDailyTracking();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderDailyMeetings();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderRecurrences(){
@@ -138,69 +139,36 @@ function renderPeople(){
   $("#peopleGrid").innerHTML=table(people.slice(0,midpoint))+table(people.slice(midpoint));
 }
 
-function renderEmployeeFollowups(){
-  const data=state.employeeFollowups,summary=$("#employeeFollowupSummary"),kpis=$("#employeeFollowupKpis"),table=$("#employeeFollowupTable");
-  if(!summary||!kpis||!table)return;
-  if(!data?.people?.length){summary.textContent="Sin contactos WhatsApp publicados todavía.";kpis.innerHTML="";table.innerHTML="<div class='empty'><strong>Sin usuarios en seguimiento</strong><p>Cuando Ale procese presentaciones, dailies o fricciones, aparecerán acá por contacto sanitizado.</p></div>";return}
-  const metrics=data.metrics||{};
-  summary.textContent=`${esc(data.report?.updated_at||"sin actualización")} · ${esc(data.report?.summary||"seguimiento público sanitizado")}`;
-  const cards=[
-    ["Contactos",metrics.people_count||data.people.length,"Usuarios WA en seguimiento","green"],
-    ["Onboarding",metrics.onboarding_incomplete||0,"Presentaciones incompletas","orange"],
-    ["Fricciones",metrics.technical_frictions||0,"Pedidos técnicos encuadrados","red"],
-    ["Acción",metrics.requires_action||0,"Contactos con próximo paso","blue"]
-  ];
-  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="daily-tracking-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`).join("");
-  const list=items=>items?.length?`<ul>${items.slice(0,3).map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
-  const stateTone=value=>clean(value).includes("friccion")||clean(value).includes("reparacion")?"red":clean(value).includes("aprobada")||clean(value).includes("weekly")?"green":"yellow";
-  table.innerHTML=`<div class="daily-tracking-table-shell"><table class="daily-tracking"><thead><tr><th>Persona</th><th>Estado contacto</th><th>Cadencia</th><th>Último contacto</th><th>Temas con Alejandro</th><th>Foco actual</th><th>Faltantes/bloqueos</th><th>Próxima acción</th></tr></thead><tbody>${data.people.map(person=>{const missing=[...(person.blockers||[]),...(person.missing_evidence||[])];return `<tr><td><strong>${esc(person.persona)}</strong><small>${esc(person.area)}</small><small>${esc(person.identity_status)}</small></td><td><span class="state-label ${stateTone(person.conversation_state)}"><i></i>${esc(person.conversation_state)}</span><small>${esc(person.onboarding_status)}</small></td><td>${esc(person.cadence||"indefinida")}</td><td>${esc(person.last_interaction||"—")}</td><td>${list(person.topics_with_alejandro)}</td><td>${list(person.current_focus)}</td><td><b>${esc(missing.length)}</b>${list(missing)}</td><td>${esc(person.next_action||"Retomar en el próximo contacto")}</td></tr>`}).join("")}</tbody></table></div><p class="daily-tracking-note">Vista pública sanitizada: no contiene JID, teléfonos completos, URLs internas, clientes privados ni conversaciones crudas.</p>`;
-}
-
-function renderDailyTracking(){
-  const data=state.userTracking,summary=$("#dailyTrackingSummary"),kpis=$("#dailyTrackingKpis"),table=$("#dailyTrackingTable");
-  if(!summary||!kpis||!table)return;
-  if(!data?.people?.length){summary.textContent="Sin seguimiento de dailies publicado todavía.";kpis.innerHTML="";table.innerHTML="<div class='empty'><strong>Sin dailies</strong><p>Cuando se procesen registros aprobados, aparecerán acá por persona sanitizada.</p></div>";return}
-  const metrics=data.metrics||{};
-  summary.textContent=`${esc(data.report?.updated_at||"sin actualización")} · ${esc(data.report?.summary||"datos públicos sanitizados")}`;
-  const cards=[
-    ["Personas",metrics.people_count||data.people.length,"Con seguimiento publicado","green"],
-    ["Dailies",metrics.total_dailies||0,"Registros aprobados/procesados","blue"],
-    ["Pendientes",metrics.open_pending||0,"Ítems abiertos declarados","orange"],
-    ["Evidencia faltante",metrics.missing_evidence||0,"Links/evidencias a completar","red"]
-  ];
-  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="daily-tracking-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`).join("");
-  const statusTone=status=>clean(status).includes("registrado")?"green":clean(status).includes("correccion")?"red":"yellow";
-  const list=items=>items?.length?`<ul>${items.slice(0,3).map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
-  table.innerHTML=`<div class="daily-tracking-table-shell"><table class="daily-tracking"><thead><tr><th>Persona</th><th>Identificación parcial</th><th>Última daily</th><th>Estado</th><th>Pendientes</th><th>Bloqueos</th><th>Evidencia/link</th><th>Próximo seguimiento</th></tr></thead><tbody>${data.people.map(person=>{const hint=person.contact_hint||{};return `<tr><td><strong>${esc(person.persona)}</strong><small>${esc(person.area)}</small><small>${esc(person.identity_status)}</small></td><td><strong>${esc(hint.name_hint||"Dato protegido")}</strong><small>${esc(hint.phone_hint||"Dato protegido")}</small></td><td>${esc(person.last_daily||"—")}</td><td><span class="state-label ${statusTone(person.registration_status)}"><i></i>${esc(person.registration_status||"pendiente")}</span><small>${esc(person.approval_status||"Pendiente de aprobación")}</small></td><td><b>${esc(person.open_pending||0)}</b>${list(person.pending_items)}</td><td><b>${esc(person.active_blockers||0)}</b>${list(person.blocker_items)}</td><td><b>${esc(person.missing_evidence||0)}</b><small>${esc(person.documentation_status||"sin estado")}</small></td><td>${esc(person.next_follow_up||"Retomar en la próxima daily")}</td></tr>`}).join("")}</tbody></table></div><p class="daily-tracking-note">Vista pública sanitizada: sólo muestra nombre y teléfono parciales; no contiene JID, nombres completos, clientes, repositorios ni links crudos.</p>`;
-}
-
-function renderPlanning(){
-  const plan=state.planning;
-  if(!plan?.rows?.length){$("#planningSummary").textContent=`${plan?.report?.updated_at||"sin actualización"} · ${plan?.report?.summary||"Sin dailies reales publicadas todavía."}`;$("#planningMatrix").innerHTML="<div class='empty'><strong>Sin planificación publicada</strong><p>Todavía no hay dailies reales procesadas para mostrar.</p></div>";return}
-  const rows=plan.rows;
-  const approved=rows.filter(x=>clean(x.estado_aprobacion).includes("aprobado")).length;
-  $("#planningSummary").textContent=`${rows.length} registros · ${approved} con aprobación · ${plan.report?.updated_at||"sin actualización"}`;
-  const list=items=>items?.length?`<ul>${items.map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
-  $("#planningMatrix").innerHTML=`<div class="planning-table-shell"><table class="planning-table"><thead><tr><th>Persona</th><th>Objetivo del día</th><th>Tickets/Tareas</th><th>Bloqueos</th><th>Interconsultas</th><th>Estado aprobación</th><th>Evidencia</th></tr></thead><tbody>${rows.map(row=>{const status=clean(row.estado_aprobacion).includes("pendiente")?"pending":clean(row.estado_aprobacion).includes("seguimiento")?"watch":"approved";return `<tr><td><strong>${esc(row.persona)}</strong><small>${esc(row.area)}</small></td><td>${esc(row.objetivo_del_dia)}</td><td>${list(row.tickets_tareas)}</td><td>${list(row.bloqueos)}</td><td>${list(row.interconsultas)}</td><td><span class="approval ${status}"><i></i>${esc(row.estado_aprobacion)}</span></td><td><details class="planning-detail"><summary>${esc(row.evidencia?.tipo||"evidencia")}</summary><p>${esc(row.evidencia?.referencia)}</p><p>${esc(row.detalle)}</p></details></td></tr>`}).join("")}</tbody></table></div>`;
-}
-function renderPlanningEvolution(){
-  const data=state.planningEvolution;
-  const summary=$("#planningEvolutionSummary"),kpis=$("#planningEvolutionKpis"),matrix=$("#planningEvolutionMatrix"),chips=$("#planningEvolutionChips");
-  if(!summary||!kpis||!matrix||!chips)return;
-  if(!data?.people?.length){summary.textContent=`${data?.report?.updated_at||"sin actualización"} · ${data?.report?.summary||"Sin evolución real publicada todavía."}`;kpis.innerHTML="";matrix.innerHTML="<div class='empty'><strong>Sin evolución publicada</strong><p>Todavía no hay dailies reales procesadas para mostrar evolución.</p></div>";chips.innerHTML="";return}
-  const metrics=data.metrics||{};
-  const cards=[
-    ["Planes aprobados",metrics.approved_plans,"Total semanal aprobado", "green"],
-    ["Pendientes",metrics.pending_plans,"Planes que requieren revisión", "orange"],
-    ["Bloqueos",metrics.blockers,"Bloqueos declarados en la semana", "red"],
-    ["Interconsultas",metrics.consultations,"Cruces entre áreas", "blue"]
-  ];
-  summary.textContent=`${data.report?.window||"semana sin datos"} · ${data.report?.updated_at||"sin actualización"} · ${data.report?.summary||"datos sanitizados"}`;
-  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="planning-evolution-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value??0)}</strong><small>${esc(note)}</small></article>`).join("");
-  const days=data.days||[];
-  const cell=entry=>{const planned=Number(entry.planned)||0,closed=Number(entry.closed)||0,carry=Number(entry.carry_over)||0,approved=Number(entry.approved)||0,verified=Number(entry.verified)||0;const ratio=planned?Math.round(closed/planned*100):0;const tone=carry>0?"carry":approved<planned?"pending":"closed";return `<td class="planning-evolution-cell ${tone}"><strong>${esc(closed)} / ${esc(planned)}</strong><span>cerrado · ${esc(ratio)}%</span><small>${esc(verified)} verif. · ${esc(approved)} aprob. · ${esc(entry.in_progress||0)} curso · ${esc(carry)} arr.</small>${entry.inferred?"<i title='Dato inferido'>inferido</i>":""}</td>`};
-  matrix.innerHTML=`<div class="planning-evolution-table-shell"><table class="planning-evolution-table"><thead><tr><th>Persona</th>${days.map(day=>`<th>${esc(day.label)}</th>`).join("")}</tr></thead><tbody>${data.people.map(person=>`<tr><td><strong>${esc(person.person)}</strong><small>${esc(person.area)}</small></td>${days.map(day=>cell((person.days||[]).find(item=>item.day===day.key)||{day:day.key})).join("")}</tr>`).join("")}</tbody></table></div><p class="planning-evolution-note">Cada celda muestra cerrado / planificado: aprobados, en curso, arrastre e inferencias.</p>`;
-  chips.innerHTML=(data.inference_flags||[]).map(flag=>`<span class="planning-evolution-chip ${esc(flag.tone)}"><b>${esc(flag.label)}</b>${esc(flag.description)}</span>`).join("");
+function renderDailyMeetings(){
+  const summary=$("#dailyMeetingsSummary"),kpis=$("#dailyMeetingsKpis"),currentCount=$("#dailyCurrentCount"),historyCount=$("#dailyHistoryCount"),currentTable=$("#dailyCurrentTable"),historyTable=$("#dailyHistoryTable");
+  if(!summary||!kpis||!currentCount||!historyCount||!currentTable||!historyTable)return;
+  const planRows=state.planning?.rows||[],trackingPeople=state.userTracking?.people||[],followupPeople=state.employeeFollowups?.people||[];
+  const byPersona=new Map();
+  const latestPlan=new Map();
+  const addPersona=person=>{if(!person?.persona)return;const current=byPersona.get(person.persona)||{};byPersona.set(person.persona,{...current,...person,persona:person.persona,area:person.area||current.area})};
+  planRows.forEach(row=>{addPersona({persona:row.persona,area:row.area});const current=latestPlan.get(row.persona);if(!current||String(row.date||"").localeCompare(String(current.date||""))>=0)latestPlan.set(row.persona,row)});
+  trackingPeople.forEach(addPersona);followupPeople.forEach(addPersona);
+  if(!byPersona.size){summary.textContent="Sin Daily Meetings publicados todavía.";kpis.innerHTML="";currentCount.textContent="0 personas";historyCount.textContent="0 registros";currentTable.innerHTML=historyTable.innerHTML="<div class='empty'><strong>Sin datos publicados</strong><p>Cuando se procesen dailies sanitizadas, aparecerán acá.</p></div>";return}
+  const list=items=>items?.length?`<ul>${items.slice(0,4).map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
+  const tone=value=>{const normalized=clean(value);return normalized.includes("aprob")||normalized.includes("registrado")||normalized.includes("weekly")?"green":normalized.includes("repar")||normalized.includes("friccion")||normalized.includes("bloque")?"red":"yellow"};
+  const evidenceSummary=(plan,tracking,followup)=>plan?.evidencia?.tipo||tracking?.documentation_status||((followup?.missing_evidence||[]).length?"evidencia pendiente":"sin faltantes declarados");
+  const current=[...byPersona.values()].map(person=>{
+    const plan=latestPlan.get(person.persona),tracking=trackingPeople.find(item=>item.persona===person.persona),followup=followupPeople.find(item=>item.persona===person.persona);
+    const pending=[...(tracking?.pending_items||[]),...(tracking?.blocker_items||[]),...(followup?.blockers||[]),...(followup?.missing_evidence||[]),...(plan?.registro_continuidad?.tareas_sin_hacer||[])];
+    const date=tracking?.last_daily||followup?.last_interaction||plan?.date||"—";
+    const estado=tracking?.approval_status||followup?.conversation_state||plan?.estado_aprobacion||"pendiente";
+    return {persona:person.persona,area:person.area||tracking?.area||followup?.area||plan?.area||"Dato protegido",date,daily_id:plan?.id||`seguimiento-${clean(person.persona).replace(/[^a-z0-9]+/g,"-")}-${date}`,estado,pending:[...new Set(pending)].filter(Boolean),evidencia:evidenceSummary(plan,tracking,followup),next:tracking?.next_follow_up||followup?.next_action||plan?.registro_continuidad?.proximo_seguimiento||"Retomar en la próxima daily"};
+  }).sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.persona.localeCompare(b.persona));
+  const history=planRows.map(row=>{const pending=[...(row.registro_continuidad?.pendientes_anteriores||[]),...(row.registro_continuidad?.tareas_sin_hacer||[]),...(row.bloqueos||[])];const evidence=[row.evidencia?.tipo,row.evidencia?.referencia,...(row.item_evidence||[]).map(item=>item.estado_evidencia)].filter(Boolean);return {persona:row.persona,area:row.area,date:row.date,daily_id:row.id,estado:row.estado_aprobacion,pending:[...new Set(pending)].filter(Boolean),evidencia:evidence.join(" · ")||"Sin evidencia publicada",next:row.registro_continuidad?.proximo_seguimiento||"Retomar en la próxima daily",objetivo:row.objetivo_del_dia}}).sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.persona.localeCompare(b.persona));
+  const approved=current.filter(row=>clean(row.estado).includes("aprob")).length,attention=current.filter(row=>row.pending.length||tone(row.estado)!=="green").length,missingEvidence=current.filter(row=>clean(row.evidencia).includes("pendiente")||clean(row.evidencia).includes("requiere")).length;
+  const updates=[state.userTracking?.report?.updated_at,state.employeeFollowups?.report?.updated_at,state.planning?.report?.updated_at,state.planningEvolution?.report?.updated_at].filter(Boolean).sort();
+  const updated=updates[updates.length-1]||"sin actualización";
+  summary.textContent=`${current.length} personas · ${history.length} registros históricos · última actualización ${updated}. Vista pública sanitizada.`;
+  kpis.innerHTML=[["Personas",current.length,"Estado actual consolidado","blue"],["Aprobadas",approved,"Último estado por persona","green"],["Con atención",attention,"Pendientes, bloqueos o reparación","orange"],["Evidencia pendiente",missingEvidence,"A completar o verificar","red"]].map(([label,value,note,color])=>`<article class="daily-meetings-kpi ${color}"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`).join("");
+  currentCount.textContent=`${current.length} personas`;
+  historyCount.textContent=`${history.length} registros`;
+  currentTable.innerHTML=`<div class="daily-meetings-table-shell"><table class="daily-meetings"><thead><tr><th>Persona</th><th>Fecha</th><th>Daily ID</th><th>Estado</th><th>Pendientes</th><th>Evidencia</th><th>Próximo seguimiento</th></tr></thead><tbody>${current.map(row=>`<tr><td><strong>${esc(row.persona)}</strong><small>${esc(row.area)}</small></td><td>${esc(row.date)}</td><td><code>${esc(row.daily_id)}</code></td><td><span class="state-label ${tone(row.estado)}"><i></i>${esc(row.estado)}</span></td><td><b>${esc(row.pending.length)}</b>${list(row.pending)}</td><td>${esc(row.evidencia)}</td><td>${esc(row.next)}</td></tr>`).join("")}</tbody></table></div>`;
+  historyTable.innerHTML=history.length?`<div class="daily-meetings-table-shell"><table class="daily-meetings"><thead><tr><th>Fecha</th><th>Persona</th><th>Daily ID</th><th>Estado</th><th>Objetivo / análisis</th><th>Pendientes</th><th>Evidencia</th><th>Próximo seguimiento</th></tr></thead><tbody>${history.map(row=>`<tr><td>${esc(row.date)}</td><td><strong>${esc(row.persona)}</strong><small>${esc(row.area)}</small></td><td><code>${esc(row.daily_id)}</code></td><td><span class="state-label ${tone(row.estado)}"><i></i>${esc(row.estado)}</span></td><td>${esc(row.objetivo)}</td><td>${list(row.pending)}</td><td>${esc(row.evidencia)}</td><td>${esc(row.next)}</td></tr>`).join("")}</tbody></table></div>`:"<div class='empty'><strong>Sin historial</strong><p>Todavía no hay dailies con unidad canónica publicada.</p></div>";
 }
 
 function renderOrganization(){

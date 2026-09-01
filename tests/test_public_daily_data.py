@@ -77,10 +77,10 @@ class PublicDailyDataTests(unittest.TestCase):
     def test_app_empty_states_describe_valid_empty_data_not_load_failure(self):
         app = (ROOT / "assets" / "app.js").read_text()
 
-        self.assertIn("Sin planificación publicada", app)
-        self.assertIn("Todavía no hay dailies reales procesadas", app)
-        self.assertIn("Sin evolución publicada", app)
-        self.assertIn("Sin seguimiento de dailies publicado todavía", app)
+        self.assertIn("Sin Daily Meetings publicados todavía", app)
+        self.assertIn("Sin datos publicados", app)
+        self.assertIn("Cuando se procesen dailies sanitizadas", app)
+        self.assertIn("Sin historial", app)
         self.assertNotIn("No se pudo cargar data/planning_evolution.json", app)
         self.assertNotIn("filas demo", app)
         self.assertNotIn("demo.mode", app)
