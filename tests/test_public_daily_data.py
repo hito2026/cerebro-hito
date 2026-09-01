@@ -8,6 +8,7 @@ PUBLIC_DAILY_FILES = [
     ROOT / "data" / "daily_planning.json",
     ROOT / "data" / "planning_evolution.json",
     ROOT / "data" / "user_daily_tracking.json",
+    ROOT / "data" / "employee_followups.json",
 ]
 FORBIDDEN_PLACEHOLDERS = [
     "Persona protegida",
@@ -31,6 +32,11 @@ FORBIDDEN_PRIVATE_IDENTIFIERS = [
     "mesopotamia_payment_by_lines",
     "Valentín",
     "Valentin",
+    "Samuel Marcano",
+    "Inketoy",
+    "Intektoy",
+    "realdecatorce",
+    "skepsis-consulting",
 ]
 
 
@@ -73,6 +79,19 @@ class PublicDailyDataTests(unittest.TestCase):
         self.assertNotIn("No se pudo cargar data/planning_evolution.json", app)
         self.assertNotIn("filas demo", app)
         self.assertNotIn("demo.mode", app)
+
+    def test_employee_followups_publish_contact_state(self):
+        followups = json.loads((ROOT / "data" / "employee_followups.json").read_text())
+        people = followups["people"]
+        by_name = {person["persona"]: person for person in people}
+
+        self.assertEqual(followups["metrics"]["people_count"], len(people))
+        self.assertIn("Samuel M.", by_name)
+        self.assertEqual(by_name["Samuel M."]["conversation_state"], "friccion_tecnica_en_curso")
+        self.assertIn("Falta referencia de Odoo/ticket/tarea", by_name["Samuel M."]["blockers"])
+        public_text = json.dumps(followups, ensure_ascii=False)
+        self.assertNotRegex(public_text, r"https?://")
+        self.assertNotRegex(public_text, r"@s\.whatsapp\.net|@lid")
 
 
 if __name__ == "__main__":

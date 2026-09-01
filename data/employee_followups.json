@@ -1,0 +1,136 @@
+{
+  "report": {
+    "updated_at": "01/09/2026 14:10 -0300",
+    "mode": "operator-sanitized",
+    "summary": "Seguimiento público sanitizado de contactos WhatsApp; no incluye JID, teléfonos completos, links crudos ni nombres privados."
+  },
+  "metrics": {
+    "people_count": 4,
+    "onboarding_incomplete": 4,
+    "daily_or_weekly_active": 2,
+    "technical_frictions": 1,
+    "missing_evidence": 5,
+    "requires_action": 3
+  },
+  "people": [
+    {
+      "id": "followup-samuel-m-dato-protegido",
+      "persona": "Samuel M.",
+      "area": "Dato protegido",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "incompleto",
+      "conversation_state": "friccion_tecnica_en_curso",
+      "cadence": "indefinida",
+      "last_interaction": "2026-09-01",
+      "last_report_type": "pedido_tecnico_reencuadrado",
+      "contact_hint": {
+        "name_hint": "Samuel M.",
+        "phone_hint": "no_disponible"
+      },
+      "topics_with_alejandro": [
+        "Cierre de pendiente fiscal para cliente protegido",
+        "Fricción técnica de acceso a base protegida"
+      ],
+      "current_focus": [
+        "Convertir pedido técnico en ficha de seguimiento",
+        "Pedir link de Odoo/ticket/tarea",
+        "Confirmar cierre del pendiente fiscal"
+      ],
+      "blockers": [
+        "Falta referencia de Odoo/ticket/tarea"
+      ],
+      "missing_evidence": [
+        "Link de Odoo",
+        "Estado de cierre del pendiente fiscal"
+      ],
+      "next_action": "Samuel debe pasar referencia/link de Odoo y estado del pendiente fiscal para cliente protegido.",
+      "publication_status": "publicado_sanitizado"
+    },
+    {
+      "id": "followup-nelson-t-post-venta",
+      "persona": "Nelson T.",
+      "area": "Post-venta",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "presentacion_recibida",
+      "conversation_state": "daily_aprobada",
+      "cadence": "daily",
+      "last_interaction": "2026-08-28",
+      "last_report_type": "daily_aprobada",
+      "contact_hint": {
+        "name_hint": "Nelson T.",
+        "phone_hint": "Dato protegido"
+      },
+      "topics_with_alejandro": [
+        "Ticket de soporte con fix en revisión"
+      ],
+      "current_focus": [
+        "Confirmar resultado de pruebas",
+        "Confirmar despliegue a STG"
+      ],
+      "blockers": [],
+      "missing_evidence": [],
+      "next_action": "Confirmar resultado del test y del despliegue a STG.",
+      "publication_status": "publicado_sanitizado"
+    },
+    {
+      "id": "followup-matias-m-desarrollo",
+      "persona": "Matías M.",
+      "area": "Desarrollo",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "presentacion_recibida",
+      "conversation_state": "daily_aprobada",
+      "cadence": "daily",
+      "last_interaction": "2026-08-28",
+      "last_report_type": "daily_aprobada",
+      "contact_hint": {
+        "name_hint": "Matías M.",
+        "phone_hint": "Dato protegido"
+      },
+      "topics_with_alejandro": [
+        "Frente de desarrollo protegido",
+        "Tareas relacionadas pendientes"
+      ],
+      "current_focus": [
+        "Continuar tareas pendientes del frente protegido",
+        "Completar evidencia/documentación si aparece"
+      ],
+      "blockers": [],
+      "missing_evidence": [
+        "Verificación operativa de tareas relacionadas"
+      ],
+      "next_action": "Verificar avance sobre tareas pendientes y completar evidencia/documentación asociada.",
+      "publication_status": "publicado_sanitizado"
+    },
+    {
+      "id": "followup-lafee-dato-protegido",
+      "persona": "Lafee",
+      "area": "Dato protegido",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "incompleto",
+      "conversation_state": "requiere_reparación",
+      "cadence": "weekly",
+      "last_interaction": "2026-08-28",
+      "last_report_type": "daily_pendiente_aprobacion",
+      "contact_hint": {
+        "name_hint": "Lafee",
+        "phone_hint": "***-5577"
+      },
+      "topics_with_alejandro": [
+        "Documento funcional protegido",
+        "Avances sobre sistema protegido"
+      ],
+      "current_focus": [
+        "Reparar ficha",
+        "Confirmar aprobación explícita",
+        "Verificar evidencia operativa"
+      ],
+      "blockers": [],
+      "missing_evidence": [
+        "Aprobación final",
+        "Verificación operativa de avances declarados"
+      ],
+      "next_action": "Reparar la ficha, confirmar aprobación explícita y verificar evidencia operativa del documento y avances declarados.",
+      "publication_status": "publicado_sanitizado"
+    }
+  ]
+}

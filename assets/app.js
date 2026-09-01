@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,employeeFollowups:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -13,6 +13,7 @@ async function init(){
   state.planning=await fetch("data/daily_planning.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},rows:[]}));
   state.planningEvolution=await fetch("data/planning_evolution.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   state.userTracking=await fetch("data/user_daily_tracking.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
+  state.employeeFollowups=await fetch("data/employee_followups.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
   setupSidebar();
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
@@ -67,7 +68,7 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode?.includes("sanitized")?"live.sanitized":"sin.datos";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderDailyTracking();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderEmployeeFollowups();renderDailyTracking();renderPlanning();renderPlanningEvolution();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
 }
 
 function renderRecurrences(){
@@ -135,6 +136,24 @@ function renderPeople(){
   const people=state.data.people.map(p=>`<tr><td><span class="table-person"><i>${p.name.split(" ").map(x=>x[0]).slice(0,2).join("")}</i><span><strong>${p.name}</strong><small>${p.area}</small></span></span></td><td>${backlog(p)}</td><td>${cell(p.name,yesterday)}</td><td>${cell(p.name,today)}</td></tr>`);
   const midpoint=Math.ceil(people.length/2),table=rows=>`<div class="people-table-shell"><table class="people-table"><thead><tr><th>Persona</th><th>Backlog actual</th><th>Ayer</th><th>Hoy</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
   $("#peopleGrid").innerHTML=table(people.slice(0,midpoint))+table(people.slice(midpoint));
+}
+
+function renderEmployeeFollowups(){
+  const data=state.employeeFollowups,summary=$("#employeeFollowupSummary"),kpis=$("#employeeFollowupKpis"),table=$("#employeeFollowupTable");
+  if(!summary||!kpis||!table)return;
+  if(!data?.people?.length){summary.textContent="Sin contactos WhatsApp publicados todavía.";kpis.innerHTML="";table.innerHTML="<div class='empty'><strong>Sin usuarios en seguimiento</strong><p>Cuando Ale procese presentaciones, dailies o fricciones, aparecerán acá por contacto sanitizado.</p></div>";return}
+  const metrics=data.metrics||{};
+  summary.textContent=`${esc(data.report?.updated_at||"sin actualización")} · ${esc(data.report?.summary||"seguimiento público sanitizado")}`;
+  const cards=[
+    ["Contactos",metrics.people_count||data.people.length,"Usuarios WA en seguimiento","green"],
+    ["Onboarding",metrics.onboarding_incomplete||0,"Presentaciones incompletas","orange"],
+    ["Fricciones",metrics.technical_frictions||0,"Pedidos técnicos encuadrados","red"],
+    ["Acción",metrics.requires_action||0,"Contactos con próximo paso","blue"]
+  ];
+  kpis.innerHTML=cards.map(([label,value,note,tone])=>`<article class="daily-tracking-kpi ${tone}"><span>${esc(label)}</span><strong>${esc(value)}</strong><small>${esc(note)}</small></article>`).join("");
+  const list=items=>items?.length?`<ul>${items.slice(0,3).map(item=>`<li>${esc(item)}</li>`).join("")}</ul>`:"<span class='planning-muted'>Sin registros</span>";
+  const stateTone=value=>clean(value).includes("friccion")||clean(value).includes("reparacion")?"red":clean(value).includes("aprobada")||clean(value).includes("weekly")?"green":"yellow";
+  table.innerHTML=`<div class="daily-tracking-table-shell"><table class="daily-tracking"><thead><tr><th>Persona</th><th>Estado contacto</th><th>Cadencia</th><th>Último contacto</th><th>Temas con Alejandro</th><th>Foco actual</th><th>Faltantes/bloqueos</th><th>Próxima acción</th></tr></thead><tbody>${data.people.map(person=>{const missing=[...(person.blockers||[]),...(person.missing_evidence||[])];return `<tr><td><strong>${esc(person.persona)}</strong><small>${esc(person.area)}</small><small>${esc(person.identity_status)}</small></td><td><span class="state-label ${stateTone(person.conversation_state)}"><i></i>${esc(person.conversation_state)}</span><small>${esc(person.onboarding_status)}</small></td><td>${esc(person.cadence||"indefinida")}</td><td>${esc(person.last_interaction||"—")}</td><td>${list(person.topics_with_alejandro)}</td><td>${list(person.current_focus)}</td><td><b>${esc(missing.length)}</b>${list(missing)}</td><td>${esc(person.next_action||"Retomar en el próximo contacto")}</td></tr>`}).join("")}</tbody></table></div><p class="daily-tracking-note">Vista pública sanitizada: no contiene JID, teléfonos completos, URLs internas, clientes privados ni conversaciones crudas.</p>`;
 }
 
 function renderDailyTracking(){
