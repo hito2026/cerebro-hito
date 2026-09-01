@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "01/09/2026 13:01 -03",
+    "updated_at": "01/09/2026 19:00 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1051 tickets recientes",
+    "corpus": "310 clusters históricos y 1054 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
