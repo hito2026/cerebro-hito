@@ -1,16 +1,16 @@
 {
   "report": {
-    "updated_at": "02/09/2026 11:57 -0300",
+    "updated_at": "02/09/2026 13:34 -0300",
     "mode": "operator-sanitized",
     "summary": "Seguimiento público sanitizado de contactos WhatsApp; no incluye JID, teléfonos completos, links crudos ni nombres privados."
   },
   "metrics": {
-    "people_count": 6,
-    "onboarding_incomplete": 6,
-    "daily_or_weekly_active": 4,
+    "people_count": 7,
+    "onboarding_incomplete": 7,
+    "daily_or_weekly_active": 5,
     "technical_frictions": 1,
-    "missing_evidence": 9,
-    "requires_action": 5
+    "missing_evidence": 12,
+    "requires_action": 6
   },
   "people": [
     {
@@ -42,6 +42,39 @@
         "Primer status de daily pendiente"
       ],
       "next_action": "Incluir a Maxi en la próxima iteración de Daily Meeting y pedirle status breve: pendientes, terminado, plan de hoy y bloqueos/fricciones.",
+      "publication_status": "publicado_sanitizado"
+    },
+    {
+      "id": "followup-ezequiel-m-proyectos-odoo",
+      "persona": "Ezequiel M.",
+      "area": "Proyectos · Odoo",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "presentacion_recibida",
+      "conversation_state": "daily_en_curso",
+      "cadence": "daily",
+      "last_interaction": "2026-09-02",
+      "last_report_type": "presentacion",
+      "contact_hint": {
+        "name_hint": "Ezequiel M.",
+        "phone_hint": "no_disponible"
+      },
+      "topics_with_alejandro": [
+        "Liderazgo de proyectos de implementación Odoo",
+        "Seguimiento de células Odoo",
+        "Avance de proyectos protegidos"
+      ],
+      "current_focus": [
+        "Cerrar pendientes de proyecto protegido A",
+        "Avanzar proyectos protegidos B y C",
+        "Apoyar al equipo en sus proyectos"
+      ],
+      "blockers": [],
+      "missing_evidence": [
+        "Pendientes de daily anterior por confirmar",
+        "Bloqueos o fricciones por confirmar",
+        "Links de tareas/proyectos por confirmar si corresponde"
+      ],
+      "next_action": "Continuar ceremonia de Daily Meeting: confirmar pendientes anteriores, avances, bloqueos/fricciones y plan concreto del día.",
       "publication_status": "publicado_sanitizado"
     },
     {
