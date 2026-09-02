@@ -1,18 +1,49 @@
 {
   "report": {
-    "updated_at": "01/09/2026 14:32 -0300",
+    "updated_at": "02/09/2026 11:57 -0300",
     "mode": "operator-sanitized",
     "summary": "Seguimiento público sanitizado de contactos WhatsApp; no incluye JID, teléfonos completos, links crudos ni nombres privados."
   },
   "metrics": {
-    "people_count": 5,
-    "onboarding_incomplete": 5,
-    "daily_or_weekly_active": 3,
+    "people_count": 6,
+    "onboarding_incomplete": 6,
+    "daily_or_weekly_active": 4,
     "technical_frictions": 1,
-    "missing_evidence": 7,
-    "requires_action": 4
+    "missing_evidence": 9,
+    "requires_action": 5
   },
   "people": [
+    {
+      "id": "followup-maxi-dato-protegido",
+      "persona": "Maxi",
+      "area": "Dato protegido",
+      "identity_status": "pendiente_de_verificación",
+      "onboarding_status": "presentacion_recibida",
+      "conversation_state": "daily_en_curso",
+      "cadence": "daily",
+      "last_interaction": "2026-09-02",
+      "last_report_type": "presentacion",
+      "contact_hint": {
+        "name_hint": "Maxi",
+        "phone_hint": "no_disponible"
+      },
+      "topics_with_alejandro": [
+        "Curso de hiperproductividad con IA",
+        "Conversación inicial con Ale",
+        "Seguimiento por ceremonias de Daily Meeting"
+      ],
+      "current_focus": [
+        "Incorporarlo a las iteraciones de status diario",
+        "Pedir primer status cuando corresponda"
+      ],
+      "blockers": [],
+      "missing_evidence": [
+        "Área/equipo pendiente de confirmación",
+        "Primer status de daily pendiente"
+      ],
+      "next_action": "Incluir a Maxi en la próxima iteración de Daily Meeting y pedirle status breve: pendientes, terminado, plan de hoy y bloqueos/fricciones.",
+      "publication_status": "publicado_sanitizado"
+    },
     {
       "id": "followup-samuel-m-dato-protegido",
       "persona": "Samuel M.",
