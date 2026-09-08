@@ -1,19 +1,19 @@
 {
   "report": {
-    "date": "2026-09-07",
-    "updated_at": "07/09/2026 19:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 58 tickets y 622 tareas asignadas sin finalizar.",
+    "date": "2026-09-08",
+    "updated_at": "08/09/2026 13:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 51 tickets y 675 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "15 tickets prioritarios",
+      "title": "16 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "15 tareas vencidas",
+      "title": "0 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
@@ -31,8 +31,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 129,
-        "total": 129
+        "tasks": 133,
+        "total": 133
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -59,22 +59,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 61,
-        "total": 61
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ariadna Estebenet",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 56,
-        "total": 56
+        "tasks": 68,
+        "total": 68
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -87,8 +73,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 52,
-        "total": 52
+        "tasks": 65,
+        "total": 65
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 57,
+        "total": 57
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -108,15 +108,29 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 48,
+        "total": 48
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
       "area": "Soporte",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 8,
+        "tickets": 3,
         "tasks": 32,
-        "total": 40
+        "total": 35
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -129,8 +143,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 3,
-        "tasks": 25,
-        "total": 28
+        "tasks": 26,
+        "total": 29
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -143,22 +157,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 26,
-        "total": 26
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Maximiliano Alarcon",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 25,
-        "total": 25
+        "tasks": 28,
+        "total": 28
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -171,8 +171,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 9,
-        "tasks": 15,
-        "total": 24
+        "tasks": 16,
+        "total": 25
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 25,
+        "total": 25
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -192,20 +206,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Jinzo",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 21,
-        "total": 21
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
@@ -213,21 +213,7 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 2,
-        "tasks": 15,
-        "total": 17
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 15,
-        "tasks": 0,
+        "tasks": 13,
         "total": 15
       },
       "yesterday": "0 actividades registradas.",
@@ -240,8 +226,8 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 3,
-        "tasks": 12,
+        "tickets": 4,
+        "tasks": 11,
         "total": 15
       },
       "yesterday": "0 actividades registradas.",
@@ -249,6 +235,20 @@
     },
     {
       "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 13,
+        "tasks": 0,
+        "total": 13
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
       "area": "Soporte",
       "status": "red",
@@ -268,8 +268,8 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 4,
-        "tasks": 2,
+        "tickets": 3,
+        "tasks": 3,
         "total": 6
       },
       "yesterday": "0 actividades registradas.",
@@ -297,8 +297,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 3,
-        "total": 3
+        "tasks": 2,
+        "total": 2
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -361,15 +361,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "ariadna-estebenet",
-      "name": "Ariadna Estebenet",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "ezequiel-montes",
       "name": "Ezequiel Montes",
       "role": "Líder de Proyectos",
@@ -379,8 +370,26 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "ariadna-estebenet",
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "person-samuel-marcano",
       "name": "Samuel Marcano",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "Odoo"
+    },
+    {
+      "id": "person-maximiliano-alarcon",
+      "name": "Maximiliano Alarcon",
       "role": "Usuario interno Odoo · rol no publicado",
       "area": "Sin área",
       "manager": null,
@@ -415,28 +424,10 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-maximiliano-alarcon",
-      "name": "Maximiliano Alarcon",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "alejandro-sartorio",
       "name": "Alejandro Sartorio",
       "role": "Director Técnico & I+D",
       "area": "Tecnología e I+D",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "matias-banega",
-      "name": "Matias Banega",
-      "role": "Director de Proyectos",
-      "area": "Proyectos",
       "manager": null,
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
@@ -451,6 +442,15 @@
       "role_source": "Odoo"
     },
     {
+      "id": "matias-banega",
+      "name": "Matias Banega",
+      "role": "Director de Proyectos",
+      "area": "Proyectos",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "person-matias-marziali",
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo · rol no publicado",
@@ -458,15 +458,6 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
-    },
-    {
-      "id": "mateo-scozzina",
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "nelson-tontarelli",
@@ -480,6 +471,15 @@
     {
       "id": "valentin-markov",
       "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "mateo-scozzina",
+      "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 20,
+        "current": 29,
         "unit": "tickets"
       },
       {
