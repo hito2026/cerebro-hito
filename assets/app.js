@@ -4,6 +4,7 @@ let hyperTimer=null;
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
+const compactPerson=name=>{const parts=(name||"").trim().split(/\s+/);return parts.length<2?name:`${parts[0]} ${parts.at(-1)[0]}.`};
 const dateLabel=d=>new Intl.DateTimeFormat("es-AR",{weekday:"long",day:"numeric",month:"long",year:"numeric",timeZone:"America/Argentina/Cordoba"}).format(new Date(`${d}T12:00:00`));
 const shiftDate=(date,days)=>{const value=new Date(`${date}T12:00:00`);value.setDate(value.getDate()+days);return value.toISOString().slice(0,10)};
 const filtered=()=>state.data.activities.filter(a=>(state.area==="all"||a.area===state.area)&&(!state.dateFrom||a.date>=state.dateFrom)&&(!state.dateTo||a.date<=state.dateTo)&&(!state.search||clean([a.title,a.description,a.person,a.client,a.project,a.source].join(" ")).includes(clean(state.search))));
@@ -112,8 +113,8 @@ function renderHyperrelations(){
   const byPair=new Map();events.forEach(event=>{const key=`${event.actor}\u0000${event.counterpart}`;(byPair.get(key)||byPair.set(key,[]).get(key)).push(event)});
   $("#hyperCoverage").textContent=report.report?.coverage||"Matriz dirigida de interacciones verificables.";
   $("#hyperStats").innerHTML=`<span><b>${events.length}</b> eventos</span><span><b>${byPair.size}</b> pares</span><span><b>${relatedPeople.size}</b> personas conectadas</span>`;
-  const head=`<thead><tr><th>Actor ↓<br>Contraparte →</th>${people.map(person=>`<th title="${esc(person)}"><span>${esc(person)}</span></th>`).join("")}</tr></thead>`;
-  const body=people.map(actor=>`<tr><th>${esc(actor)}</th>${people.map(counterpart=>{
+  const head=`<thead><tr><th>Actor ↓<br>Contraparte →</th>${people.map(person=>`<th title="${esc(person)}"><span>${esc(compactPerson(person))}</span></th>`).join("")}</tr></thead>`;
+  const body=people.map(actor=>`<tr><th title="${esc(actor)}">${esc(compactPerson(actor))}</th>${people.map(counterpart=>{
     if(actor===counterpart)return "<td class='hyper-diagonal'>—</td>";
     const pair=byPair.get(`${actor}\u0000${counterpart}`)||[];
     if(!pair.length)return "<td class='hyper-empty'>—</td>";
