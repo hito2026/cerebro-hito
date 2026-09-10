@@ -1,5 +1,5 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
-const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,employeeFollowups:null,search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,employeeFollowups:null,hyperrelations:null,hyperDay:"all",hyperPerson:"",search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -14,6 +14,7 @@ async function init(){
   state.planningEvolution=await fetch("data/planning_evolution.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>null);
   state.userTracking=await fetch("data/user_daily_tracking.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
   state.employeeFollowups=await fetch("data/employee_followups.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{updated_at:"sin actualización"},people:[],metrics:{}}));
+  state.hyperrelations=await fetch("data/hyperrelations.json").then(response=>response.ok?response.json():Promise.reject()).catch(()=>({report:{coverage:"Datos no disponibles"},people:[],events:[]}));
   setupSidebar();
   setupSectionAccordions();
   state.dateTo=state.data.report.date;state.dateFrom=shiftDate(state.dateTo,-5);$("#dateFrom").value=state.dateFrom;$("#dateTo").value=state.dateTo;
@@ -26,6 +27,9 @@ async function init(){
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
   document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
   $("#printRecurrenceReport").addEventListener("click",()=>window.print());
+  $("#hyperDay").addEventListener("change",event=>{state.hyperDay=event.target.value;renderHyperrelations()});
+  $("#hyperPerson").addEventListener("input",event=>{state.hyperPerson=event.target.value;renderHyperrelations()});
+  $("#hyperClear").addEventListener("click",()=>{state.hyperDay="all";state.hyperPerson="";$("#hyperDay").value="all";$("#hyperPerson").value="";renderHyperrelations()});
   render();
 }
 
@@ -69,7 +73,33 @@ function render(){
   $("#lastUpdate").textContent=`Última consolidación · ${state.data.report.updated_at}`;
   $("#dataMode").textContent=state.data.report.mode?.includes("sanitized")?"live.sanitized":"sin.datos";
   $("#summaryText").textContent=state.data.report.summary;
-  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderDailyMeetings();renderOrganization();renderRelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+  renderCompanyState(rows);renderKpis(rows);renderBars(rows);renderAlerts();renderRecurrences();renderTimeline(rows);renderPeople();renderDailyMeetings();renderOrganization();renderRelations();renderHyperrelations();renderWeeklyTargets();renderGoals();renderProductivity();renderAccordions(rows);
+}
+
+function renderHyperrelations(){
+  const report=state.hyperrelations||{people:[],events:[],report:{}};
+  const query=clean(state.hyperPerson);
+  const events=(report.events||[]).filter(event=>(state.hyperDay==="all"||event.day===state.hyperDay)&&(!query||clean(`${event.actor} ${event.counterpart}`).includes(query)));
+  const relatedPeople=new Set(events.flatMap(event=>[event.actor,event.counterpart]));
+  const people=(report.people||[]).filter(person=>!query||clean(person).includes(query)||relatedPeople.has(person));
+  const byPair=new Map();events.forEach(event=>{const key=`${event.actor}\u0000${event.counterpart}`;(byPair.get(key)||byPair.set(key,[]).get(key)).push(event)});
+  $("#hyperCoverage").textContent=report.report?.coverage||"Matriz dirigida de interacciones verificables.";
+  $("#hyperStats").innerHTML=`<span><b>${events.length}</b> eventos</span><span><b>${byPair.size}</b> pares</span><span><b>${relatedPeople.size}</b> personas conectadas</span>`;
+  const head=`<thead><tr><th>Actor ↓<br>Contraparte →</th>${people.map(person=>`<th title="${esc(person)}"><span>${esc(person)}</span></th>`).join("")}</tr></thead>`;
+  const body=people.map(actor=>`<tr><th>${esc(actor)}</th>${people.map(counterpart=>{
+    if(actor===counterpart)return "<td class='hyper-diagonal'>—</td>";
+    const pair=byPair.get(`${actor}\u0000${counterpart}`)||[];
+    if(!pair.length)return "<td class='hyper-empty'>—</td>";
+    const refs=[...new Set(pair.map(event=>event.reference))].join(" · ");
+    return `<td><button type="button" class="hyper-hit" data-actor="${esc(actor)}" data-counterpart="${esc(counterpart)}"><b>${pair.length}</b><span>${esc(refs)}</span></button></td>`
+  }).join("")}</tr>`).join("");
+  $("#hyperMatrix").innerHTML=head+`<tbody>${body}</tbody>`;
+  $("#hyperMatrix").querySelectorAll(".hyper-hit").forEach(button=>button.addEventListener("click",()=>renderHyperDetail(button.dataset.actor,button.dataset.counterpart,byPair.get(`${button.dataset.actor}\u0000${button.dataset.counterpart}`)||[])));
+  if(!events.length)$("#hyperDetail").innerHTML="<p class='eyebrow'>evidence / detail</p><h3>Sin vínculos</h3><p>No hay interacciones comprobadas para este filtro.</p>";
+}
+
+function renderHyperDetail(actor,counterpart,events){
+  $("#hyperDetail").innerHTML=`<p class="eyebrow">evidence / detail</p><h3>${esc(actor)} → ${esc(counterpart)}</h3><div class="hyper-event-list">${events.map(event=>`<article><div><time>${esc(event.day.split("-").reverse().join("/"))} · ${esc(event.time)}</time><span>${esc(event.type)}</span></div><strong>${esc(event.reference)} · ${esc(event.title)}</strong><p>${esc(event.evidence)}</p><small>Fuente: ${esc(event.source)}</small></article>`).join("")}</div>`;
 }
 
 function renderRecurrences(){
