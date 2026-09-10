@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "09/09/2026 19:00 -03",
+    "updated_at": "10/09/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 945 tickets recientes",
+    "corpus": "310 clusters históricos y 942 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -122,9 +122,9 @@
       "score": 70,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 8,
-      "window": "2026-05-27 → 2026-09-09",
+      "window": "2026-05-27 → 2026-09-10",
       "reason": "2 episodios históricos en la familia; 6 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 156 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 153 mensajes sanitizados de chatter",
       "module": "sale",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0068",
@@ -139,7 +139,7 @@
       "episodes": 5,
       "window": "2026-05-13 → 2026-08-04",
       "reason": "3 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 46 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 44 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0019",
@@ -192,21 +192,6 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Contabilidad y facturación · Cotización horas: Configuración diarios tarjetas de crédito",
-      "status": "señal débil",
-      "score": 66,
-      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 6,
-      "window": "2026-05-13 → 2026-09-09",
-      "reason": "2 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 76 mensajes sanitizados de chatter",
-      "module": "account",
-      "issue_type": "CONFIG",
-      "cluster_id": "CLUSTER-0020",
-      "recent_matches": 4
-    },
-    {
-      "client": "Varios clientes",
       "family": "Contabilidad y facturación · Error validación pago (conversión USD/ARS)",
       "status": "señal débil",
       "score": 66,
@@ -219,6 +204,21 @@
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0127",
       "recent_matches": 3
+    },
+    {
+      "client": "Varios clientes",
+      "family": "Ventas y precios · Plantillas cotización países no-ARG: PDF encabezado/pie no se visualiza",
+      "status": "señal débil",
+      "score": 66,
+      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
+      "episodes": 4,
+      "window": "2026-06-01 → 2026-06-05",
+      "reason": "3 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 0 mensajes sanitizados de chatter",
+      "module": "sale",
+      "issue_type": "CONFIG",
+      "cluster_id": "CLUSTER-0084",
+      "recent_matches": 1
     }
   ]
 }
