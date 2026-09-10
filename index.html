@@ -166,15 +166,15 @@
       <div class="hyper-controls" aria-label="Filtros de HiperNrelaciones">
         <label><span>Día</span><select id="hyperDay"><option value="all">9 y 10/09</option><option value="2026-09-09">9/09 completo</option><option value="2026-09-10">10/09 hasta el corte</option></select></label>
         <label><span>Persona</span><input id="hyperPerson" type="search" placeholder="Buscar actor o contraparte…"></label>
+        <button id="hyperPlay" type="button" aria-pressed="false">▶ Reproducir evolución</button>
         <button id="hyperClear" type="button">Limpiar</button>
         <div id="hyperStats" class="hyper-stats" aria-live="polite"></div>
       </div>
       <div class="hyper-layout">
         <article class="panel hyper-matrix-panel">
-          <div class="panel-head"><div><p class="eyebrow">actor → contraparte</p><h3>Matriz de vínculos</h3></div><span>Seleccioná una celda</span></div>
+          <div class="panel-head"><div><p class="eyebrow">actor → contraparte</p><h3>Matriz de vínculos</h3></div><span>Pasá sobre una celda para ver su evidencia</span></div>
           <div class="hyper-scroll"><table id="hyperMatrix" class="hyper-matrix" aria-label="Matriz dirigida de interrelaciones"></table></div>
         </article>
-        <aside id="hyperDetail" class="panel hyper-detail" aria-live="polite"><p class="eyebrow">evidence / detail</p><h3>Detalle</h3><p>Seleccioná una celda con actividad para ver la evidencia.</p></aside>
       </div>
       <p class="hyper-note"><strong>Lectura:</strong> la fila es quien actúa y la columna es la contraparte. Una asignación prueba quién cambió responsables, no quién ejecutó el trabajo. No se crean vínculos por compartir tarea, proyecto, commit o reunión.</p>
     </section>

@@ -1,5 +1,6 @@
 const AREA={soporte:{label:"Soporte",color:"#e9763b",icon:"S"},proyectos:{label:"Proyectos",color:"#3978d4",icon:"P"},comercial:{label:"Comercial",color:"#7759b4",icon:"C"},desarrollo:{label:"Desarrollo",color:"#1e6048",icon:"D"}};
 const state={data:null,recurrences:null,planning:null,planningEvolution:null,userTracking:null,employeeFollowups:null,hyperrelations:null,hyperDay:"all",hyperPerson:"",search:"",area:"all",dateFrom:"",dateTo:"",timelineView:"day",goalView:"current"};
+let hyperTimer=null;
 const $=s=>document.querySelector(s);
 const clean=s=>(s||"").toString().normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 const esc=value=>(value??"").toString().replace(/[&<>"']/g,char=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -27,10 +28,36 @@ async function init(){
   document.querySelectorAll("[data-timeline-view]").forEach(button=>button.addEventListener("click",()=>{state.timelineView=button.dataset.timelineView;document.querySelectorAll("[data-timeline-view]").forEach(x=>x.classList.toggle("active",x===button));renderTimeline(filtered())}));
   document.querySelectorAll("[data-goal-view]").forEach(button=>button.addEventListener("click",()=>{state.goalView=button.dataset.goalView;document.querySelectorAll("[data-goal-view]").forEach(x=>x.classList.toggle("active",x===button));renderWeeklyTargets()}));
   $("#printRecurrenceReport").addEventListener("click",()=>window.print());
-  $("#hyperDay").addEventListener("change",event=>{state.hyperDay=event.target.value;renderHyperrelations()});
+  $("#hyperDay").addEventListener("change",event=>{stopHyperAnimation();state.hyperDay=event.target.value;renderHyperrelations()});
   $("#hyperPerson").addEventListener("input",event=>{state.hyperPerson=event.target.value;renderHyperrelations()});
-  $("#hyperClear").addEventListener("click",()=>{state.hyperDay="all";state.hyperPerson="";$("#hyperDay").value="all";$("#hyperPerson").value="";renderHyperrelations()});
+  $("#hyperPlay").addEventListener("click",toggleHyperAnimation);
+  $("#hyperClear").addEventListener("click",()=>{stopHyperAnimation();state.hyperDay="all";state.hyperPerson="";$("#hyperDay").value="all";$("#hyperPerson").value="";renderHyperrelations()});
   render();
+}
+
+function stopHyperAnimation(){
+  if(hyperTimer)clearInterval(hyperTimer);
+  hyperTimer=null;
+  const button=$("#hyperPlay");
+  if(button){button.textContent="▶ Reproducir evolución";button.setAttribute("aria-pressed","false")}
+}
+
+function toggleHyperAnimation(){
+  if(hyperTimer){stopHyperAnimation();return}
+  const days=[...new Set((state.hyperrelations?.events||[]).map(event=>event.day))].sort();
+  if(!days.length)return;
+  let index=0;
+  const advance=()=>{
+    state.hyperDay=days[index];
+    $("#hyperDay").value=state.hyperDay;
+    renderHyperrelations();
+    index+=1;
+    if(index>=days.length)stopHyperAnimation();
+  };
+  $("#hyperPlay").textContent="■ Detener";
+  $("#hyperPlay").setAttribute("aria-pressed","true");
+  advance();
+  if(index<days.length)hyperTimer=setInterval(advance,1600);
 }
 
 
@@ -91,15 +118,10 @@ function renderHyperrelations(){
     const pair=byPair.get(`${actor}\u0000${counterpart}`)||[];
     if(!pair.length)return "<td class='hyper-empty'>—</td>";
     const refs=[...new Set(pair.map(event=>event.reference))].join(" · ");
-    return `<td><button type="button" class="hyper-hit" data-actor="${esc(actor)}" data-counterpart="${esc(counterpart)}"><b>${pair.length}</b><span>${esc(refs)}</span></button></td>`
+    const evidence=pair.map(event=>`${event.time} · ${event.type} · ${event.reference}: ${event.evidence}`).join("\n");
+    return `<td><span class="hyper-hit" title="${esc(evidence)}"><b>${pair.length}</b><span>${esc(refs)}</span></span></td>`
   }).join("")}</tr>`).join("");
   $("#hyperMatrix").innerHTML=head+`<tbody>${body}</tbody>`;
-  $("#hyperMatrix").querySelectorAll(".hyper-hit").forEach(button=>button.addEventListener("click",()=>renderHyperDetail(button.dataset.actor,button.dataset.counterpart,byPair.get(`${button.dataset.actor}\u0000${button.dataset.counterpart}`)||[])));
-  if(!events.length)$("#hyperDetail").innerHTML="<p class='eyebrow'>evidence / detail</p><h3>Sin vínculos</h3><p>No hay interacciones comprobadas para este filtro.</p>";
-}
-
-function renderHyperDetail(actor,counterpart,events){
-  $("#hyperDetail").innerHTML=`<p class="eyebrow">evidence / detail</p><h3>${esc(actor)} → ${esc(counterpart)}</h3><div class="hyper-event-list">${events.map(event=>`<article><div><time>${esc(event.day.split("-").reverse().join("/"))} · ${esc(event.time)}</time><span>${esc(event.type)}</span></div><strong>${esc(event.reference)} · ${esc(event.title)}</strong><p>${esc(event.evidence)}</p><small>Fuente: ${esc(event.source)}</small></article>`).join("")}</div>`;
 }
 
 function renderRecurrences(){
