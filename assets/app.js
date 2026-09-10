@@ -33,6 +33,8 @@ async function init(){
   $("#hyperPerson").addEventListener("input",event=>{state.hyperPerson=event.target.value;renderHyperrelations()});
   $("#hyperPlay").addEventListener("click",toggleHyperAnimation);
   $("#hyperClear").addEventListener("click",()=>{stopHyperAnimation();state.hyperDay="all";state.hyperPerson="";$("#hyperDay").value="all";$("#hyperPerson").value="";renderHyperrelations()});
+  $("#hyperDialogClose").addEventListener("click",()=>$("#hyperDialog").close());
+  $("#hyperDialog").addEventListener("click",event=>{if(event.target===$("#hyperDialog"))$("#hyperDialog").close()});
   render();
 }
 
@@ -120,9 +122,16 @@ function renderHyperrelations(){
     if(!pair.length)return "<td class='hyper-empty'>—</td>";
     const refs=[...new Set(pair.map(event=>event.reference))].join(" · ");
     const evidence=pair.map(event=>`${event.time} · ${event.type} · ${event.reference}: ${event.evidence}`).join("\n");
-    return `<td><span class="hyper-hit" title="${esc(evidence)}"><b>${pair.length}</b><span>${esc(refs)}</span></span></td>`
+    return `<td><button type="button" class="hyper-hit" data-actor="${esc(actor)}" data-counterpart="${esc(counterpart)}" title="${esc(evidence)}" aria-label="Ver ${pair.length} interacciones de ${esc(actor)} con ${esc(counterpart)}"><b>${pair.length}</b><span>${esc(refs)}</span></button></td>`
   }).join("")}</tr>`).join("");
   $("#hyperMatrix").innerHTML=head+`<tbody>${body}</tbody>`;
+  $("#hyperMatrix").querySelectorAll(".hyper-hit").forEach(button=>button.addEventListener("click",()=>openHyperDialog(button.dataset.actor,button.dataset.counterpart,byPair.get(`${button.dataset.actor}\u0000${button.dataset.counterpart}`)||[])));
+}
+
+function openHyperDialog(actor,counterpart,events){
+  $("#hyperDialogTitle").textContent=`${actor} → ${counterpart}`;
+  $("#hyperDialogBody").innerHTML=events.map(event=>`<article><header><time>${esc(event.day.split("-").reverse().join("/"))} · ${esc(event.time)}</time><span>${esc(event.type)}</span></header><h3>${esc(event.reference)} · ${esc(event.title)}</h3><p>${esc(event.evidence)}</p><footer>Fuente: ${esc(event.source)}${event.message_id?` · mensaje ${esc(event.message_id)}`:""}</footer></article>`).join("");
+  $("#hyperDialog").showModal();
 }
 
 function renderRecurrences(){

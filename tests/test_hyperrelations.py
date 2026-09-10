@@ -48,6 +48,14 @@ class HyperrelationsTests(unittest.TestCase):
         self.assertEqual(daily[0]["actor"], "Matias Marziali")
         self.assertEqual(daily[0]["counterpart"], "Samuel Marcano")
 
+    def test_matrix_cells_open_an_accessible_detail_dialog(self):
+        html = (ROOT / "index.html").read_text()
+        script = (ROOT / "assets" / "app.js").read_text()
+        self.assertIn('id="hyperDialog"', html)
+        self.assertIn('aria-labelledby="hyperDialogTitle"', html)
+        self.assertIn('openHyperDialog(', script)
+        self.assertIn('.showModal()', script)
+
 
 if __name__ == "__main__":
     unittest.main()
