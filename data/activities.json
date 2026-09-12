@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-12",
-    "updated_at": "12/09/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 90 eventos de GitHub en los últimos 30 días. Backlog actual: 47 tickets y 639 tareas asignadas sin finalizar.",
+    "updated_at": "12/09/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 91 eventos de GitHub en los últimos 30 días. Backlog actual: 47 tickets y 639 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "90 eventos de desarrollo",
+      "title": "91 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -976,6 +976,21 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
+      "id": "github-20948340439",
+      "date": "2026-09-10",
+      "time": "23:45",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "hiperrelaciones",
+      "title": "PushEvent en hiperrelaciones",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-20764585763",
       "date": "2026-09-10",
       "time": "23:07",
@@ -1069,6 +1084,21 @@
       "id": "github-20754898545",
       "date": "2026-09-10",
       "time": "20:53",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-20938361710",
+      "date": "2026-09-10",
+      "time": "20:52",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
@@ -2164,21 +2194,6 @@
       "id": "github-19918075680",
       "date": "2026-09-02",
       "time": "15:49",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-19770996219",
-      "date": "2026-09-01",
-      "time": "22:17",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
