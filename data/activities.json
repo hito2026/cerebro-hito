@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-13",
-    "updated_at": "13/09/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 92 eventos de GitHub en los últimos 30 días. Backlog actual: 47 tickets y 639 tareas asignadas sin finalizar.",
+    "updated_at": "13/09/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 93 eventos de GitHub en los últimos 30 días. Backlog actual: 47 tickets y 639 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "92 eventos de desarrollo",
+      "title": "93 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -889,6 +889,21 @@
       "id": "github-20810891299",
       "date": "2026-09-11",
       "time": "14:49",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "hiperrelaciones",
+      "title": "PushEvent en hiperrelaciones",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-21002580601",
+      "date": "2026-09-11",
+      "time": "14:08",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
