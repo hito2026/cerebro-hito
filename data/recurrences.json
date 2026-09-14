@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "13/09/2026 19:00 -03",
+    "updated_at": "14/09/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 922 tickets recientes",
+    "corpus": "310 clusters históricos y 926 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -62,9 +62,9 @@
       "score": 79,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 11,
-      "window": "2026-06-29 → 2026-09-11",
+      "window": "2026-06-29 → 2026-09-14",
       "reason": "4 episodios históricos en la familia; 7 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 105 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 106 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0210",
@@ -154,7 +154,7 @@
       "episodes": 7,
       "window": "2026-06-09 → 2026-08-12",
       "reason": "5 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 13 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 9 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0134",
@@ -192,21 +192,6 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Contabilidad y facturación · Error validación pago (conversión USD/ARS)",
-      "status": "señal débil",
-      "score": 66,
-      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 5,
-      "window": "2026-06-09 → 2026-08-28",
-      "reason": "2 episodios históricos en la familia; 3 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 29 mensajes sanitizados de chatter",
-      "module": "account",
-      "issue_type": "BUG",
-      "cluster_id": "CLUSTER-0127",
-      "recent_matches": 3
-    },
-    {
-      "client": "Varios clientes",
       "family": "Ventas y precios · Plantillas cotización países no-ARG: PDF encabezado/pie no se visualiza",
       "status": "señal débil",
       "score": 66,
@@ -218,6 +203,21 @@
       "module": "sale",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0084",
+      "recent_matches": 1
+    },
+    {
+      "client": "Varios clientes",
+      "family": "Contabilidad y facturación · Tipo de cambio USD · API levanta valores incorrectos desde esta semana",
+      "status": "señal débil",
+      "score": 64,
+      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
+      "episodes": 6,
+      "window": "2026-06-19 → 2026-06-30",
+      "reason": "5 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 32 mensajes sanitizados de chatter",
+      "module": "account",
+      "issue_type": "INTEGRATION",
+      "cluster_id": "CLUSTER-0178",
       "recent_matches": 1
     }
   ]
