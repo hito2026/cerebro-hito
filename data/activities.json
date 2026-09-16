@@ -1,19 +1,19 @@
 {
   "report": {
     "date": "2026-09-16",
-    "updated_at": "16/09/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 94 eventos de GitHub en los últimos 30 días. Backlog actual: 59 tickets y 669 tareas asignadas sin finalizar.",
+    "updated_at": "16/09/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 94 eventos de GitHub en los últimos 30 días. Backlog actual: 61 tickets y 680 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "12 tickets prioritarios",
+      "title": "10 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "0 tareas vencidas",
+      "title": "17 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
@@ -31,8 +31,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 127,
-        "total": 127
+        "tasks": 133,
+        "total": 133
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -73,8 +73,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 64,
-        "total": 64
+        "tasks": 60,
+        "total": 60
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -101,8 +101,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 50,
-        "total": 50
+        "tasks": 53,
+        "total": 53
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -143,8 +143,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 3,
-        "tasks": 26,
-        "total": 29
+        "tasks": 28,
+        "total": 31
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 28,
+        "total": 28
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -159,20 +173,6 @@
         "tickets": 0,
         "tasks": 27,
         "total": 27
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Jinzo",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 25,
-        "total": 25
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -199,21 +199,21 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 2,
-        "tasks": 22,
-        "total": 24
+        "tasks": 21,
+        "total": 23
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
     },
     {
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 2,
-        "tasks": 15,
+        "tickets": 4,
+        "tasks": 13,
         "total": 17
       },
       "yesterday": "0 actividades registradas.",
@@ -226,9 +226,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 16,
+        "tickets": 17,
         "tasks": 0,
-        "total": 16
+        "total": 17
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -248,15 +248,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
+      "name": "Matias Marziali",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 3,
-        "tasks": 9,
-        "total": 12
+        "tickets": 2,
+        "tasks": 13,
+        "total": 15
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -415,15 +415,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "lucas-burgos",
-      "name": "Lucas Burgos",
-      "role": "Director Comercial",
-      "area": "Comercial",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "person-jinzo",
       "name": "Jinzo",
       "role": "Usuario interno Odoo · rol no publicado",
@@ -431,6 +422,15 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
+    },
+    {
+      "id": "lucas-burgos",
+      "name": "Lucas Burgos",
+      "role": "Director Comercial",
+      "area": "Comercial",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "alejandro-sartorio",
@@ -451,13 +451,13 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-matias-marziali",
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
+      "id": "nelson-tontarelli",
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "manager": "matias-banega",
       "activity_count": 0,
-      "role_source": "Odoo"
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "valentin-markov",
@@ -478,13 +478,13 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "nelson-tontarelli",
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "manager": "matias-banega",
+      "id": "person-matias-marziali",
+      "name": "Matias Marziali",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
       "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
+      "role_source": "Odoo"
     },
     {
       "id": "genaro-garcia",
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 18,
+        "current": 19,
         "unit": "tickets"
       },
       {
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-21320203933",
+      "date": "2026-09-16",
+      "time": "16:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-21234473334",
       "date": "2026-09-15",
@@ -2203,21 +2218,6 @@
       "client": "Interno",
       "project": "documentation",
       "title": "DeleteEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-19922430299",
-      "date": "2026-09-02",
-      "time": "22:33",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PushEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
