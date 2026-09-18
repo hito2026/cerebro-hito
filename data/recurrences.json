@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "17/09/2026 19:00 -03",
+    "updated_at": "18/09/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 983 tickets recientes",
+    "corpus": "310 clusters históricos y 975 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -77,9 +77,9 @@
       "score": 75,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 7,
-      "window": "2026-05-12 → 2026-09-16",
+      "window": "2026-05-12 → 2026-09-18",
       "reason": "4 episodios históricos en la familia; 3 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 39 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 40 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0017",
