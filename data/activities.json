@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-19",
-    "updated_at": "19/09/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 98 eventos de GitHub en los últimos 30 días. Backlog actual: 54 tickets y 666 tareas asignadas sin finalizar.",
+    "updated_at": "19/09/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 99 eventos de GitHub en los últimos 30 días. Backlog actual: 54 tickets y 666 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -18,7 +18,7 @@
     },
     {
       "level": "low",
-      "title": "98 eventos de desarrollo",
+      "title": "99 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-21593372725",
+      "date": "2026-09-19",
+      "time": "16:02",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-21583805967",
       "date": "2026-09-19",
