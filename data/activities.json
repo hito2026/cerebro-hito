@@ -1,8 +1,8 @@
 {
   "report": {
-    "date": "2026-09-18",
-    "updated_at": "18/09/2026 19:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 98 eventos de GitHub en los últimos 30 días. Backlog actual: 55 tickets y 666 tareas asignadas sin finalizar.",
+    "date": "2026-09-19",
+    "updated_at": "19/09/2026 13:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 98 eventos de GitHub en los últimos 30 días. Backlog actual: 54 tickets y 666 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -254,9 +254,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 11,
+        "tickets": 10,
         "tasks": 0,
-        "total": 11
+        "total": 10
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 29,
+        "current": 30,
         "unit": "tickets"
       },
       {
@@ -840,6 +840,51 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-21583805967",
+      "date": "2026-09-19",
+      "time": "13:05",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "hiperrelaciones",
+      "title": "PushEvent en hiperrelaciones",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-21580401340",
+      "date": "2026-09-19",
+      "time": "11:59",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "hiperrelaciones",
+      "title": "PushEvent en hiperrelaciones",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-21584931919",
+      "date": "2026-09-18",
+      "time": "22:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-21516339290",
       "date": "2026-09-18",
@@ -1936,21 +1981,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-14397178114",
-      "date": "2026-09-03",
-      "time": "23:01",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-20219841478",
       "date": "2026-09-03",
       "time": "22:57",
@@ -2176,21 +2206,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-19940459881",
-      "date": "2026-09-03",
-      "time": "03:05",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PushEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-19995770170",
       "date": "2026-09-03",
       "time": "01:42",
@@ -2203,21 +2218,6 @@
       "client": "Interno",
       "project": "documentation",
       "title": "DeleteEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-19935066666",
-      "date": "2026-09-03",
-      "time": "01:42",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PushEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
