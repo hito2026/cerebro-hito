@@ -1,7 +1,7 @@
 {
   "report": {
-    "date": "2026-09-19",
-    "updated_at": "19/09/2026 19:00 -03",
+    "date": "2026-09-20",
+    "updated_at": "20/09/2026 13:00 -03",
     "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 99 eventos de GitHub en los últimos 30 días. Backlog actual: 54 tickets y 666 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-21612678147",
+      "date": "2026-09-19",
+      "time": "22:02",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-21593372725",
       "date": "2026-09-19",
@@ -1948,21 +1963,6 @@
       "client": "Interno",
       "project": "documentation",
       "title": "CreateEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14404537552",
-      "date": "2026-09-04",
-      "time": "02:35",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
