@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-09-24",
-    "updated_at": "24/09/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 95 eventos de GitHub en los últimos 30 días. Backlog actual: 58 tickets y 672 tareas asignadas sin finalizar.",
+    "updated_at": "24/09/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 94 eventos de GitHub en los últimos 30 días. Backlog actual: 63 tickets y 674 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -13,12 +13,12 @@
     },
     {
       "level": "medium",
-      "title": "1 tareas vencidas",
+      "title": "37 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "95 eventos de desarrollo",
+      "title": "94 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -59,8 +59,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 64,
-        "total": 64
+        "tasks": 63,
+        "total": 63
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -73,8 +73,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 60,
-        "total": 60
+        "tasks": 59,
+        "total": 59
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -87,8 +87,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 58,
-        "total": 58
+        "tasks": 59,
+        "total": 59
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -101,8 +101,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 54,
-        "total": 54
+        "tasks": 57,
+        "total": 57
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -128,9 +128,23 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 8,
-        "tasks": 37,
-        "total": 45
+        "tickets": 9,
+        "tasks": 34,
+        "total": 43
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 4,
+        "tasks": 24,
+        "total": 28
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -164,20 +178,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Francisco Fiorentino",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 2,
-        "tasks": 24,
-        "total": 26
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Alejandro Sartorio",
       "role": "Director Técnico & I+D",
       "area": "Tecnología e I+D",
@@ -199,8 +199,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 1,
-        "tasks": 21,
-        "total": 22
+        "tasks": 22,
+        "total": 23
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -212,9 +212,23 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 19,
+        "tickets": 20,
         "tasks": 0,
-        "total": 19
+        "total": 20
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 6,
+        "tasks": 12,
+        "total": 18
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -234,15 +248,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 6,
-        "tasks": 11,
-        "total": 17
+        "tickets": 10,
+        "tasks": 0,
+        "total": 10
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -254,22 +268,8 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 3,
+        "tickets": 2,
         "tasks": 6,
-        "total": 9
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 8,
-        "tasks": 0,
         "total": 8
       },
       "yesterday": "0 actividades registradas.",
@@ -297,8 +297,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 2,
-        "total": 2
+        "tasks": 3,
+        "total": 3
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -406,6 +406,15 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "francisco-fiorentino",
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "person-jinzo",
       "name": "Jinzo",
       "role": "Usuario interno Odoo · rol no publicado",
@@ -420,15 +429,6 @@
       "role": "Director Comercial",
       "area": "Comercial",
       "manager": null,
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "francisco-fiorentino",
-      "name": "Francisco Fiorentino",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "manager": "alejandro-sartorio",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -460,15 +460,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-matias-marziali",
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "nelson-tontarelli",
       "name": "Nelson Tontarelli",
       "role": "Líder de Post-venta",
@@ -478,13 +469,13 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "pablo-marchionno",
-      "name": "Pablo Marchionno",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "manager": "alejandro-sartorio",
+      "id": "person-matias-marziali",
+      "name": "Matias Marziali",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
       "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
+      "role_source": "Odoo"
     },
     {
       "id": "mateo-scozzina",
@@ -492,6 +483,15 @@
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "pablo-marchionno",
+      "name": "Pablo Marchionno",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 37,
+        "current": 38,
         "unit": "tickets"
       },
       {
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-22072838628",
+      "date": "2026-09-24",
+      "time": "16:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-21983509915",
       "date": "2026-09-23",
@@ -2071,36 +2086,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-20180872119",
-      "date": "2026-09-05",
-      "time": "22:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-20190392065",
-      "date": "2026-09-05",
-      "time": "16:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-14404537552",
       "date": "2026-09-04",
       "time": "02:35",
@@ -2113,21 +2098,6 @@
       "client": "Interno",
       "project": "documentation",
       "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-20190667431",
-      "date": "2026-09-03",
-      "time": "23:01",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "CreateEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -2158,21 +2128,6 @@
       "client": "Interno",
       "project": "documentation",
       "title": "CreateEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-20179808484",
-      "date": "2026-09-03",
-      "time": "22:57",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PushEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -2221,7 +2176,7 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-20197185536",
+      "id": "github-14392474224",
       "date": "2026-09-03",
       "time": "21:12",
       "area": "desarrollo",
@@ -2232,13 +2187,13 @@
       ],
       "client": "Interno",
       "project": "documentation",
-      "title": "PushEvent en documentation",
+      "title": "PullRequestEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-20175240400",
+      "id": "github-14370874698",
       "date": "2026-09-03",
-      "time": "21:11",
+      "time": "15:07",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
@@ -2247,13 +2202,13 @@
       ],
       "client": "Interno",
       "project": "documentation",
-      "title": "CreateEvent en documentation",
+      "title": "PullRequestEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-20176833507",
+      "id": "github-14370861414",
       "date": "2026-09-03",
-      "time": "16:03",
+      "time": "15:06",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
@@ -2261,8 +2216,38 @@
         "Sin usuario interno vinculado"
       ],
       "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
+      "project": "documentation",
+      "title": "PullRequestEvent en documentation",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-14370425529",
+      "date": "2026-09-03",
+      "time": "15:00",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "documentation",
+      "title": "PullRequestEvent en documentation",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-14370399053",
+      "date": "2026-09-03",
+      "time": "14:59",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "documentation",
+      "title": "PullRequestEvent en documentation",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     }
   ],
