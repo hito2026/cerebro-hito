@@ -1,8 +1,8 @@
 {
   "report": {
-    "date": "2026-10-01",
-    "updated_at": "01/10/2026 19:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 93 eventos de GitHub en los últimos 30 días. Backlog actual: 73 tickets y 736 tareas asignadas sin finalizar.",
+    "date": "2026-10-02",
+    "updated_at": "02/10/2026 13:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 89 eventos de GitHub en los últimos 30 días. Backlog actual: 74 tickets y 736 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -13,12 +13,12 @@
     },
     {
       "level": "medium",
-      "title": "29 tareas vencidas",
+      "title": "0 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "93 eventos de desarrollo",
+      "title": "89 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -31,8 +31,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 183,
-        "total": 183
+        "tasks": 184,
+        "total": 184
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -45,8 +45,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 70,
-        "total": 70
+        "tasks": 71,
+        "total": 71
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -66,20 +66,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 61,
-        "total": 61
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Ezequiel Montes",
       "role": "Líder de Proyectos",
       "area": "Proyectos",
@@ -87,8 +73,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 55,
-        "total": 55
+        "tasks": 60,
+        "total": 60
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 60,
+        "total": 60
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -101,8 +101,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 1,
-        "tasks": 53,
-        "total": 54
+        "tasks": 54,
+        "total": 55
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -115,8 +115,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 48,
-        "total": 48
+        "tasks": 50,
+        "total": 50
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -128,9 +128,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 14,
+        "tickets": 10,
         "tasks": 23,
-        "total": 37
+        "total": 33
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -143,8 +143,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 33,
-        "total": 33
+        "tasks": 29,
+        "total": 29
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -157,8 +157,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 30,
-        "total": 30
+        "tasks": 29,
+        "total": 29
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -171,8 +171,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 10,
-        "tasks": 19,
-        "total": 29
+        "tasks": 17,
+        "total": 27
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -199,8 +199,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 4,
-        "tasks": 23,
-        "total": 27
+        "tasks": 21,
+        "total": 25
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -212,9 +212,23 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 7,
+        "tickets": 6,
         "tasks": 12,
-        "total": 19
+        "total": 18
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 17,
+        "tasks": 0,
+        "total": 17
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -248,29 +262,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Valentin Markov",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 15,
-        "tasks": 0,
-        "total": 15
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Pablo Marchionno",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 2,
+        "tickets": 3,
         "tasks": 7,
-        "total": 9
+        "total": 10
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -282,9 +282,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 0,
+        "tickets": 3,
         "tasks": 6,
-        "total": 6
+        "total": 9
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -361,18 +361,18 @@
       "role_source": "Odoo"
     },
     {
-      "id": "nahiara-delgado",
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
+      "id": "ezequiel-montes",
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
       "area": "Proyectos",
       "manager": "matias-banega",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "ezequiel-montes",
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
+      "id": "nahiara-delgado",
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
       "area": "Proyectos",
       "manager": "matias-banega",
       "activity_count": 0,
@@ -460,6 +460,15 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "valentin-markov",
+      "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "mateo-scozzina",
       "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
@@ -476,15 +485,6 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
-    },
-    {
-      "id": "valentin-markov",
-      "name": "Valentin Markov",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "pablo-marchionno",
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 37,
+        "current": 38,
         "unit": "tickets"
       },
       {
@@ -840,6 +840,171 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-16290016831",
+      "date": "2026-10-02",
+      "time": "15:57",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PullRequestEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22805041727",
+      "date": "2026-10-02",
+      "time": "15:56",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "CreateEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-16289367461",
+      "date": "2026-10-02",
+      "time": "15:47",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PullRequestEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-16287158858",
+      "date": "2026-10-02",
+      "time": "15:16",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PullRequestEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22801960053",
+      "date": "2026-10-02",
+      "time": "15:16",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "CreateEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-16286201672",
+      "date": "2026-10-02",
+      "time": "15:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PullRequestEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-16284730785",
+      "date": "2026-10-02",
+      "time": "14:44",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PullRequestEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22799424367",
+      "date": "2026-10-02",
+      "time": "14:43",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "CreateEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-16284106957",
+      "date": "2026-10-02",
+      "time": "14:35",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "IssuesEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22733143265",
+      "date": "2026-10-01",
+      "time": "22:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22749169330",
+      "date": "2026-10-01",
+      "time": "16:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-22642832219",
       "date": "2026-10-01",
@@ -1876,81 +2041,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-21234473334",
-      "date": "2026-09-15",
-      "time": "22:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21208877048",
-      "date": "2026-09-15",
-      "time": "16:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21137830739",
-      "date": "2026-09-14",
-      "time": "22:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21242690871",
-      "date": "2026-09-14",
-      "time": "18:05",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hiperrelaciones",
-      "title": "PushEvent en hiperrelaciones",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21135380999",
-      "date": "2026-09-14",
-      "time": "17:54",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hiperrelaciones",
-      "title": "PushEvent en hiperrelaciones",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-21281447526",
       "date": "2026-09-14",
       "time": "17:49",
@@ -1993,36 +2083,6 @@
       "client": "Interno",
       "project": "hiperrelaciones",
       "title": "PushEvent en hiperrelaciones",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21161091646",
-      "date": "2026-09-13",
-      "time": "22:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21141102961",
-      "date": "2026-09-13",
-      "time": "16:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -2104,126 +2164,6 @@
       "id": "github-14392474224",
       "date": "2026-09-03",
       "time": "21:12",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14370874698",
-      "date": "2026-09-03",
-      "time": "15:07",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14370861414",
-      "date": "2026-09-03",
-      "time": "15:06",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14370425529",
-      "date": "2026-09-03",
-      "time": "15:00",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14370399053",
-      "date": "2026-09-03",
-      "time": "14:59",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14368887402",
-      "date": "2026-09-03",
-      "time": "14:36",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14368866222",
-      "date": "2026-09-03",
-      "time": "14:35",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14330383304",
-      "date": "2026-09-03",
-      "time": "03:05",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "documentation",
-      "title": "PullRequestEvent en documentation",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-14327041210",
-      "date": "2026-09-03",
-      "time": "01:42",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
