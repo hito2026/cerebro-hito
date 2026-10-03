@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-10-03",
-    "updated_at": "03/10/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 68 tickets y 740 tareas asignadas sin finalizar.",
+    "updated_at": "03/10/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 69 tickets y 740 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -128,9 +128,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 10,
+        "tickets": 11,
         "tasks": 23,
-        "total": 33
+        "total": 34
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-22894347737",
+      "date": "2026-10-03",
+      "time": "16:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-16338791375",
       "date": "2026-10-03",
@@ -2128,21 +2143,6 @@
       "client": "Interno",
       "project": "cerebro-hito",
       "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21760604636",
-      "date": "2026-09-21",
-      "time": "16:29",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "odoo_tienda_nube",
-      "title": "PushEvent en odoo_tienda_nube",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
