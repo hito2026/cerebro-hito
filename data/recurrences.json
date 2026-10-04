@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "03/10/2026 19:01 -03",
+    "updated_at": "04/10/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1008 tickets recientes",
+    "corpus": "310 clusters históricos y 1002 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -16,7 +16,7 @@
     {
       "label": "Candidatos publicados",
       "value": 12,
-      "note": "3 módulos representados",
+      "note": "4 módulos representados",
       "tone": "blue"
     },
     {
@@ -61,14 +61,14 @@
       "status": "candidato automático",
       "score": 79,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 9,
+      "episodes": 10,
       "window": "2026-06-30 → 2026-09-14",
-      "reason": "4 episodios históricos en la familia; 5 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 85 mensajes sanitizados de chatter",
+      "reason": "4 episodios históricos en la familia; 6 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 94 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0210",
-      "recent_matches": 5
+      "recent_matches": 6
     },
     {
       "client": "Varios clientes",
@@ -139,7 +139,7 @@
       "episodes": 4,
       "window": "2026-07-03 → 2026-07-29",
       "reason": "2 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 36 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 37 mensajes sanitizados de chatter",
       "module": "sale",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0230",
@@ -192,21 +192,6 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Ventas y precios · Plantillas cotización países no-ARG: PDF encabezado/pie no se visualiza",
-      "status": "señal débil",
-      "score": 66,
-      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 4,
-      "window": "2026-06-01 → 2026-06-05",
-      "reason": "3 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 0 mensajes sanitizados de chatter",
-      "module": "sale",
-      "issue_type": "CONFIG",
-      "cluster_id": "CLUSTER-0084",
-      "recent_matches": 1
-    },
-    {
-      "client": "Varios clientes",
       "family": "Contabilidad y facturación · Error al generar Libro Diario · modulo Aeroo incompatible con Python 3",
       "status": "señal débil",
       "score": 64,
@@ -218,6 +203,21 @@
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0236",
+      "recent_matches": 1
+    },
+    {
+      "client": "Varios clientes",
+      "family": "Compras · Problema con envío de campañas de email marketing · bloqueos por límite de 30 correos/minuto",
+      "status": "señal débil",
+      "score": 64,
+      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
+      "episodes": 3,
+      "window": "2026-07-14 → 2026-07-17",
+      "reason": "2 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 7 mensajes sanitizados de chatter",
+      "module": "purchase",
+      "issue_type": "CONFIG",
+      "cluster_id": "CLUSTER-0257",
       "recent_matches": 1
     }
   ]

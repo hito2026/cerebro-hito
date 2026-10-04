@@ -1,7 +1,7 @@
 {
   "report": {
-    "date": "2026-10-03",
-    "updated_at": "03/10/2026 19:00 -03",
+    "date": "2026-10-04",
+    "updated_at": "04/10/2026 13:00 -03",
     "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 69 tickets y 740 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
@@ -841,6 +841,21 @@
   },
   "activities": [
     {
+      "id": "github-22943704640",
+      "date": "2026-10-03",
+      "time": "22:02",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-22894347737",
       "date": "2026-10-03",
       "time": "16:03",
@@ -874,6 +889,21 @@
       "id": "github-22878440216",
       "date": "2026-10-03",
       "time": "11:47",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PushEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22920929861",
+      "date": "2026-10-03",
+      "time": "11:43",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
@@ -958,6 +988,21 @@
       "client": "Interno",
       "project": "easypark-prototype",
       "title": "PushEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22918670714",
+      "date": "2026-10-03",
+      "time": "11:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "CreateEvent en easypark-prototype",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -1228,6 +1273,21 @@
       "client": "Interno",
       "project": "easypark-prototype",
       "title": "CreateEvent en easypark-prototype",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-22957571176",
+      "date": "2026-10-02",
+      "time": "15:47",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "easypark-prototype",
+      "title": "PushEvent en easypark-prototype",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -2089,66 +2149,6 @@
       "id": "github-21890694007",
       "date": "2026-09-22",
       "time": "16:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21844985455",
-      "date": "2026-09-22",
-      "time": "14:25",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hiperrelaciones",
-      "title": "PushEvent en hiperrelaciones",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21831512089",
-      "date": "2026-09-22",
-      "time": "11:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "hiperrelaciones",
-      "title": "PushEvent en hiperrelaciones",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21823500383",
-      "date": "2026-09-21",
-      "time": "22:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21763258561",
-      "date": "2026-09-21",
-      "time": "16:02",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",
