@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "05/10/2026 13:01 -03",
+    "updated_at": "05/10/2026 19:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1005 tickets recientes",
+    "corpus": "310 clusters históricos y 1007 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -21,7 +21,7 @@
     },
     {
       "label": "Sobre el umbral",
-      "value": 5,
+      "value": 6,
       "note": "requieren revisión humana",
       "tone": "green"
     },
@@ -61,14 +61,14 @@
       "status": "candidato automático",
       "score": 79,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 10,
+      "episodes": 9,
       "window": "2026-06-30 → 2026-09-14",
-      "reason": "4 episodios históricos en la familia; 6 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 93 mensajes sanitizados de chatter",
+      "reason": "4 episodios históricos en la familia; 5 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 85 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0210",
-      "recent_matches": 6
+      "recent_matches": 5
     },
     {
       "client": "Varios clientes",
@@ -87,14 +87,29 @@
     },
     {
       "client": "Varios clientes",
+      "family": "Ventas y precios · Error al devolver recepción de compra · módulo solo soporta ventas",
+      "status": "candidato automático",
+      "score": 72,
+      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
+      "episodes": 5,
+      "window": "2026-07-03 → 2026-10-05",
+      "reason": "2 episodios históricos en la familia; 3 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 41 mensajes sanitizados de chatter",
+      "module": "sale",
+      "issue_type": "BUG",
+      "cluster_id": "CLUSTER-0230",
+      "recent_matches": 3
+    },
+    {
+      "client": "Varios clientes",
       "family": "Contabilidad y facturación · Patrón operativo recurrente",
       "status": "candidato automático",
       "score": 70,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 11,
-      "window": "2026-05-29 → 2026-09-28",
+      "window": "2026-05-29 → 2026-10-05",
       "reason": "2 episodios históricos en la familia; 9 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 128 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 129 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0076",
@@ -128,21 +143,6 @@
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0134",
-      "recent_matches": 2
-    },
-    {
-      "client": "Varios clientes",
-      "family": "Ventas y precios · Error al devolver recepción de compra · módulo solo soporta ventas",
-      "status": "señal débil",
-      "score": 68,
-      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 4,
-      "window": "2026-07-03 → 2026-07-29",
-      "reason": "2 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 36 mensajes sanitizados de chatter",
-      "module": "sale",
-      "issue_type": "BUG",
-      "cluster_id": "CLUSTER-0230",
       "recent_matches": 2
     },
     {
