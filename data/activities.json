@@ -1,19 +1,19 @@
 {
   "report": {
     "date": "2026-10-07",
-    "updated_at": "07/10/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 63 tickets y 735 tareas asignadas sin finalizar.",
+    "updated_at": "07/10/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 88 eventos de GitHub en los últimos 30 días. Backlog actual: 60 tickets y 728 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "15 tickets prioritarios",
+      "title": "16 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "9 tareas vencidas",
+      "title": "17 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
@@ -38,20 +38,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 74,
-        "total": 74
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Ariadna Estebenet",
       "role": "Analista Funcional",
       "area": "Proyectos",
@@ -59,8 +45,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 70,
-        "total": 70
+        "tasks": 69,
+        "total": 69
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -75,6 +61,20 @@
         "tickets": 0,
         "tasks": 69,
         "total": 69
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 68,
+        "total": 68
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -122,15 +122,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Jinzo",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 0,
-        "tasks": 32,
-        "total": 32
+        "tickets": 10,
+        "tasks": 21,
+        "total": 31
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -150,14 +150,14 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Alejandro Sartorio",
-      "role": "Director Técnico & I+D",
-      "area": "Tecnología e I+D",
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 10,
-        "tasks": 20,
+        "tickets": 0,
+        "tasks": 30,
         "total": 30
       },
       "yesterday": "0 actividades registradas.",
@@ -178,20 +178,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Francisco Fiorentino",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 3,
-        "tasks": 25,
-        "total": 28
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Matias Banega",
       "role": "Director de Proyectos",
       "area": "Proyectos",
@@ -206,14 +192,28 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 1,
+        "tasks": 25,
+        "total": 26
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Nelson Tontarelli",
       "role": "Líder de Post-venta",
       "area": "Post-venta",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 7,
-        "tasks": 15,
+        "tickets": 6,
+        "tasks": 16,
         "total": 22
       },
       "yesterday": "0 actividades registradas.",
@@ -227,8 +227,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 2,
-        "tasks": 17,
-        "total": 19
+        "tasks": 16,
+        "total": 18
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -248,29 +248,29 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 11,
-        "tasks": 0,
-        "total": 11
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Pablo Marchionno",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 3,
-        "tasks": 6,
-        "total": 9
+        "tickets": 4,
+        "tasks": 7,
+        "total": 11
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 10,
+        "tasks": 0,
+        "total": 10
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -343,15 +343,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "nahiara-delgado",
-      "name": "Nahiara Aylen Delgado",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "manager": "matias-banega",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "ariadna-estebenet",
       "name": "Ariadna Estebenet",
       "role": "Analista Funcional",
@@ -368,6 +359,15 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
+    },
+    {
+      "id": "nahiara-delgado",
+      "name": "Nahiara Aylen Delgado",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "manager": "matias-banega",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "ezequiel-montes",
@@ -397,13 +397,13 @@
       "role_source": "Odoo"
     },
     {
-      "id": "person-jinzo",
-      "name": "Jinzo",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
+      "id": "alejandro-sartorio",
+      "name": "Alejandro Sartorio",
+      "role": "Director Técnico & I+D",
+      "area": "Tecnología e I+D",
       "manager": null,
       "activity_count": 0,
-      "role_source": "Odoo"
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "ignacio-lera",
@@ -415,13 +415,13 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "alejandro-sartorio",
-      "name": "Alejandro Sartorio",
-      "role": "Director Técnico & I+D",
-      "area": "Tecnología e I+D",
+      "id": "person-jinzo",
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
       "manager": null,
       "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
+      "role_source": "Odoo"
     },
     {
       "id": "lucas-burgos",
@@ -433,20 +433,20 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "francisco-fiorentino",
-      "name": "Francisco Fiorentino",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "manager": "alejandro-sartorio",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "matias-banega",
       "name": "Matias Banega",
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "manager": null,
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "francisco-fiorentino",
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -478,20 +478,20 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "mateo-scozzina",
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "pablo-marchionno",
       "name": "Pablo Marchionno",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "manager": "alejandro-sartorio",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "mateo-scozzina",
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 12,
+        "current": 17,
         "unit": "tickets"
       },
       {
@@ -840,6 +840,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-23284985265",
+      "date": "2026-10-06",
+      "time": "22:02",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-23179618090",
       "date": "2026-10-06",
@@ -2134,21 +2149,6 @@
       "id": "github-22072838628",
       "date": "2026-09-24",
       "time": "16:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-21983509915",
-      "date": "2026-09-23",
-      "time": "22:03",
       "area": "desarrollo",
       "source": "GitHub",
       "person": "Sin usuario interno vinculado",

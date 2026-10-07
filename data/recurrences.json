@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "07/10/2026 13:00 -03",
+    "updated_at": "07/10/2026 19:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1044 tickets recientes",
+    "corpus": "310 clusters históricos y 1046 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -107,7 +107,7 @@
       "score": 70,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 8,
-      "window": "2026-05-27 → 2026-10-05",
+      "window": "2026-05-27 → 2026-10-07",
       "reason": "2 episodios históricos en la familia; 6 coincidencias en Helpdesk reciente.",
       "evidence": "KB histórica + Helpdesk + 161 mensajes sanitizados de chatter",
       "module": "sale",
@@ -137,9 +137,9 @@
       "score": 68,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 4,
-      "window": "2026-07-03 → 2026-10-06",
+      "window": "2026-07-03 → 2026-10-07",
       "reason": "2 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 23 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 26 mensajes sanitizados de chatter",
       "module": "sale",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0230",
@@ -214,7 +214,7 @@
       "episodes": 6,
       "window": "2026-06-16 → 2026-10-07",
       "reason": "4 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 40 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 41 mensajes sanitizados de chatter",
       "module": "unknown",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0164",
