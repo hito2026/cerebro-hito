@@ -1,6 +1,6 @@
 {
   "report": {
-    "updated_at": "06/10/2026 19:00 -03",
+    "updated_at": "07/10/2026 13:00 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
     "corpus": "310 clusters históricos y 1044 tickets recientes",
@@ -16,7 +16,7 @@
     {
       "label": "Candidatos publicados",
       "value": 12,
-      "note": "4 módulos representados",
+      "note": "5 módulos representados",
       "tone": "blue"
     },
     {
@@ -79,7 +79,7 @@
       "episodes": 10,
       "window": "2026-06-17 → 2026-08-07",
       "reason": "8 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 15 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 24 mensajes sanitizados de chatter",
       "module": "crm",
       "issue_type": "CONFIG",
       "cluster_id": "CLUSTER-0165",
@@ -207,18 +207,18 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Contabilidad y facturación · Cotización horas: Configuración diarios tarjetas de crédito",
+      "family": "Flujos transversales · Error para generar reabastecimiento de depositos",
       "status": "señal débil",
-      "score": 62,
+      "score": 63,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 5,
-      "window": "2026-05-13 → 2026-10-05",
-      "reason": "2 episodios históricos en la familia; 3 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 72 mensajes sanitizados de chatter",
-      "module": "account",
-      "issue_type": "CONFIG",
-      "cluster_id": "CLUSTER-0020",
-      "recent_matches": 3
+      "episodes": 6,
+      "window": "2026-06-16 → 2026-10-07",
+      "reason": "4 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 40 mensajes sanitizados de chatter",
+      "module": "unknown",
+      "issue_type": "BUG",
+      "cluster_id": "CLUSTER-0164",
+      "recent_matches": 2
     }
   ]
 }
