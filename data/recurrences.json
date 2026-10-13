@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "13/10/2026 13:00 -03",
+    "updated_at": "13/10/2026 19:00 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1033 tickets recientes",
+    "corpus": "310 clusters históricos y 1035 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -49,7 +49,7 @@
       "episodes": 8,
       "window": "2026-07-06 → 2026-07-21",
       "reason": "4 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 27 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 26 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0237",
@@ -61,14 +61,14 @@
       "status": "candidato automático",
       "score": 79,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 9,
+      "episodes": 8,
       "window": "2026-06-30 → 2026-09-14",
-      "reason": "4 episodios históricos en la familia; 5 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 84 mensajes sanitizados de chatter",
+      "reason": "4 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 73 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0210",
-      "recent_matches": 5
+      "recent_matches": 4
     },
     {
       "client": "Varios clientes",
@@ -152,7 +152,7 @@
       "score": 67,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
       "episodes": 5,
-      "window": "2026-05-12 → 2026-09-18",
+      "window": "2026-05-12 → 2026-10-13",
       "reason": "4 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
       "evidence": "KB histórica + Helpdesk + 26 mensajes sanitizados de chatter",
       "module": "account",
@@ -214,7 +214,7 @@
       "episodes": 6,
       "window": "2026-06-16 → 2026-10-13",
       "reason": "4 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 44 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 46 mensajes sanitizados de chatter",
       "module": "unknown",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0164",
