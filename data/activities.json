@@ -1,24 +1,24 @@
 {
   "report": {
     "date": "2026-10-14",
-    "updated_at": "14/10/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 62 eventos de GitHub en los últimos 30 días. Backlog actual: 53 tickets y 746 tareas asignadas sin finalizar.",
+    "updated_at": "14/10/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 63 eventos de GitHub en los últimos 30 días. Backlog actual: 54 tickets y 775 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "31 tickets prioritarios",
+      "title": "32 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "5 tareas vencidas",
+      "title": "12 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "62 eventos de desarrollo",
+      "title": "63 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -31,8 +31,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 180,
-        "total": 180
+        "tasks": 182,
+        "total": 182
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -45,8 +45,36 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 87,
-        "total": 87
+        "tasks": 88,
+        "total": 88
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 70,
+        "total": 70
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 69,
+        "total": 69
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -66,20 +94,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Ariadna Estebenet",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 66,
-        "total": 66
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Maximiliano Alarcon",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
@@ -89,20 +103,6 @@
         "tickets": 0,
         "tasks": 48,
         "total": 48
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 47,
-        "total": 47
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -128,9 +128,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 5,
+        "tickets": 7,
         "tasks": 35,
-        "total": 40
+        "total": 42
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -157,8 +157,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 29,
-        "total": 29
+        "tasks": 30,
+        "total": 30
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -184,8 +184,8 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 6,
-        "tasks": 20,
+        "tickets": 5,
+        "tasks": 21,
         "total": 26
       },
       "yesterday": "0 actividades registradas.",
@@ -199,8 +199,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 4,
-        "tasks": 21,
-        "total": 25
+        "tasks": 20,
+        "total": 24
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -254,9 +254,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 11,
+        "tickets": 12,
         "tasks": 0,
-        "total": 11
+        "total": 12
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -268,9 +268,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 10,
+        "tickets": 9,
         "tasks": 0,
-        "total": 10
+        "total": 9
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -316,20 +316,6 @@
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
-    },
-    {
-      "name": "Lanser Jose Ignacio",
-      "role": "Comercial",
-      "area": "Comercial",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 1,
-        "total": 1
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
     }
   ],
   "organization": [
@@ -352,15 +338,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-julian-morabito",
-      "name": "Julian Morabito",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "ariadna-estebenet",
       "name": "Ariadna Estebenet",
       "role": "Analista Funcional",
@@ -370,15 +347,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-maximiliano-alarcon",
-      "name": "Maximiliano Alarcon",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "ezequiel-montes",
       "name": "Ezequiel Montes",
       "role": "Líder de Proyectos",
@@ -386,6 +354,24 @@
       "manager": "matias-banega",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "person-julian-morabito",
+      "name": "Julian Morabito",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "Odoo"
+    },
+    {
+      "id": "person-maximiliano-alarcon",
+      "name": "Maximiliano Alarcon",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "Odoo"
     },
     {
       "id": "person-samuel-marcano",
@@ -521,15 +507,6 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "jose-ignacio-lanser",
-      "name": "Lanser Jose Ignacio",
-      "role": "Comercial",
-      "area": "Comercial",
-      "manager": "lucas-burgos",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
     }
   ],
   "relations": {
@@ -622,7 +599,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 12,
+        "current": 10,
         "unit": "tickets"
       },
       {
@@ -840,6 +817,21 @@
     ]
   },
   "activities": [
+    {
+      "id": "github-23994186206",
+      "date": "2026-10-14",
+      "time": "16:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
     {
       "id": "github-23982026115",
       "date": "2026-10-14",
