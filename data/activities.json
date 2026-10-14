@@ -1,24 +1,24 @@
 {
   "report": {
-    "date": "2026-10-13",
-    "updated_at": "13/10/2026 19:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 64 eventos de GitHub en los últimos 30 días. Backlog actual: 58 tickets y 738 tareas asignadas sin finalizar.",
+    "date": "2026-10-14",
+    "updated_at": "14/10/2026 13:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 62 eventos de GitHub en los últimos 30 días. Backlog actual: 53 tickets y 746 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
     {
       "level": "high",
-      "title": "11 tickets prioritarios",
+      "title": "31 tickets prioritarios",
       "detail": "Calculado desde Odoo Helpdesk."
     },
     {
       "level": "medium",
-      "title": "2 tareas vencidas",
+      "title": "5 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "64 eventos de desarrollo",
+      "title": "62 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -45,22 +45,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 89,
-        "total": 89
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ariadna Estebenet",
-      "role": "Analista Funcional",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 69,
-        "total": 69
+        "tasks": 87,
+        "total": 87
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -80,15 +66,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Ezequiel Montes",
-      "role": "Líder de Proyectos",
+      "name": "Ariadna Estebenet",
+      "role": "Analista Funcional",
       "area": "Proyectos",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 56,
-        "total": 56
+        "tasks": 66,
+        "total": 66
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -108,6 +94,20 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Ezequiel Montes",
+      "role": "Líder de Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 0,
+        "tasks": 47,
+        "total": 47
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Samuel Marcano",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
@@ -115,8 +115,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 1,
-        "tasks": 44,
-        "total": 45
+        "tasks": 43,
+        "total": 44
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Ignacio Lera",
+      "role": "Líder de Soporte",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 5,
+        "tasks": 35,
+        "total": 40
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -136,15 +150,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Ignacio Lera",
-      "role": "Líder de Soporte",
-      "area": "Soporte",
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo",
+      "area": "Sin área",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 7,
-        "tasks": 25,
-        "total": 32
+        "tickets": 0,
+        "tasks": 29,
+        "total": 29
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -192,34 +206,6 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Jinzo",
-      "role": "Usuario interno Odoo",
-      "area": "Sin área",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 0,
-        "tasks": 24,
-        "total": 24
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Pablo Marchionno",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 2,
-        "tasks": 15,
-        "total": 17
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
@@ -234,43 +220,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 12,
-        "tasks": 0,
-        "total": 12
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Valentin Markov",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 12,
-        "tasks": 0,
-        "total": 12
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Genaro García",
+      "name": "Pablo Marchionno",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 1,
-        "tasks": 5,
-        "total": 6
+        "tickets": 2,
+        "tasks": 13,
+        "total": 15
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -283,8 +241,50 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 1,
-        "tasks": 3,
-        "total": 4
+        "tasks": 12,
+        "total": 13
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Valentin Markov",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 11,
+        "tasks": 0,
+        "total": 11
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 10,
+        "tasks": 0,
+        "total": 10
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Genaro García",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 1,
+        "tasks": 7,
+        "total": 8
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -297,8 +297,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 3,
-        "total": 3
+        "tasks": 2,
+        "total": 2
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -352,6 +352,15 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "person-julian-morabito",
+      "name": "Julian Morabito",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "Odoo"
+    },
+    {
       "id": "ariadna-estebenet",
       "name": "Ariadna Estebenet",
       "role": "Analista Funcional",
@@ -361,8 +370,8 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-julian-morabito",
-      "name": "Julian Morabito",
+      "id": "person-maximiliano-alarcon",
+      "name": "Maximiliano Alarcon",
       "role": "Usuario interno Odoo · rol no publicado",
       "area": "Sin área",
       "manager": null,
@@ -379,15 +388,6 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-maximiliano-alarcon",
-      "name": "Maximiliano Alarcon",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "person-samuel-marcano",
       "name": "Samuel Marcano",
       "role": "Usuario interno Odoo · rol no publicado",
@@ -395,6 +395,15 @@
       "manager": null,
       "activity_count": 0,
       "role_source": "Odoo"
+    },
+    {
+      "id": "ignacio-lera",
+      "name": "Ignacio Lera",
+      "role": "Líder de Soporte",
+      "area": "Soporte",
+      "manager": "matias-banega",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
     },
     {
       "id": "alejandro-sartorio",
@@ -406,13 +415,13 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "ignacio-lera",
-      "name": "Ignacio Lera",
-      "role": "Líder de Soporte",
-      "area": "Soporte",
-      "manager": "matias-banega",
+      "id": "person-jinzo",
+      "name": "Jinzo",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
       "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
+      "role_source": "Odoo"
     },
     {
       "id": "lucas-burgos",
@@ -442,8 +451,8 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-jinzo",
-      "name": "Jinzo",
+      "id": "person-matias-marziali",
+      "name": "Matias Marziali",
       "role": "Usuario interno Odoo · rol no publicado",
       "area": "Sin área",
       "manager": null,
@@ -460,20 +469,11 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "person-matias-marziali",
-      "name": "Matias Marziali",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
-      "id": "mateo-scozzina",
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
+      "id": "francisco-fiorentino",
+      "name": "Francisco Fiorentino",
+      "role": "Desarrollador IA",
+      "area": "Tecnología e I+D",
+      "manager": "alejandro-sartorio",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -487,17 +487,17 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "genaro-garcia",
-      "name": "Genaro García",
-      "role": "Desarrollador IA",
-      "area": "Tecnología e I+D",
-      "manager": "alejandro-sartorio",
+      "id": "mateo-scozzina",
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "francisco-fiorentino",
-      "name": "Francisco Fiorentino",
+      "id": "genaro-garcia",
+      "name": "Genaro García",
       "role": "Desarrollador IA",
       "area": "Tecnología e I+D",
       "manager": "alejandro-sartorio",
@@ -622,7 +622,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 13,
+        "current": 12,
         "unit": "tickets"
       },
       {
@@ -841,6 +841,36 @@
   },
   "activities": [
     {
+      "id": "github-23982026115",
+      "date": "2026-10-14",
+      "time": "14:08",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "hiperrelaciones",
+      "title": "PushEvent en hiperrelaciones",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-23916486245",
+      "date": "2026-10-13",
+      "time": "22:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
       "id": "github-23909619205",
       "date": "2026-10-13",
       "time": "20:23",
@@ -898,6 +928,21 @@
       "client": "Interno",
       "project": "hito-migrations",
       "title": "CreateEvent en hito-migrations",
+      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
+    },
+    {
+      "id": "github-23921144783",
+      "date": "2026-10-12",
+      "time": "22:03",
+      "area": "desarrollo",
+      "source": "GitHub",
+      "person": "Sin usuario interno vinculado",
+      "users": [
+        "Sin usuario interno vinculado"
+      ],
+      "client": "Interno",
+      "project": "cerebro-hito",
+      "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -1711,66 +1756,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-22642832219",
-      "date": "2026-10-01",
-      "time": "00:49",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "PushEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22642507348",
-      "date": "2026-10-01",
-      "time": "00:45",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "PushEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22658651899",
-      "date": "2026-09-30",
-      "time": "22:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22609935817",
-      "date": "2026-09-30",
-      "time": "16:02",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-16114406583",
       "date": "2026-09-30",
       "time": "15:41",
@@ -1783,21 +1768,6 @@
       "client": "Interno",
       "project": "odoo_tienda_nube",
       "title": "PullRequestEvent en odoo_tienda_nube",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22603744316",
-      "date": "2026-09-29",
-      "time": "16:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     }
   ],

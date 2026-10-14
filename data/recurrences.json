@@ -1,9 +1,9 @@
 {
   "report": {
-    "updated_at": "13/10/2026 19:00 -03",
+    "updated_at": "14/10/2026 13:01 -03",
     "mode": "automatic-sanitized",
     "status": "Detector automático · requiere validación humana",
-    "corpus": "310 clusters históricos y 1035 tickets recientes",
+    "corpus": "310 clusters históricos y 1037 tickets recientes",
     "chatter": "5000 mensajes sanitizados (límite operativo alcanzado)"
   },
   "metrics": [
@@ -21,7 +21,7 @@
     },
     {
       "label": "Sobre el umbral",
-      "value": 5,
+      "value": 6,
       "note": "requieren revisión humana",
       "tone": "green"
     },
@@ -49,7 +49,7 @@
       "episodes": 8,
       "window": "2026-07-06 → 2026-07-21",
       "reason": "4 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 26 mensajes sanitizados de chatter",
+      "evidence": "KB histórica + Helpdesk + 24 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0237",
@@ -61,14 +61,14 @@
       "status": "candidato automático",
       "score": 79,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 8,
+      "episodes": 9,
       "window": "2026-06-30 → 2026-09-14",
-      "reason": "4 episodios históricos en la familia; 4 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 73 mensajes sanitizados de chatter",
+      "reason": "4 episodios históricos en la familia; 5 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 84 mensajes sanitizados de chatter",
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0210",
-      "recent_matches": 4
+      "recent_matches": 5
     },
     {
       "client": "Varios clientes",
@@ -117,6 +117,21 @@
     },
     {
       "client": "Varios clientes",
+      "family": "Contabilidad y facturación · Error permisos devolución y nota crédito marca pendiente",
+      "status": "candidato automático",
+      "score": 70,
+      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
+      "episodes": 5,
+      "window": "2026-05-13 → 2026-08-04",
+      "reason": "3 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 36 mensajes sanitizados de chatter",
+      "module": "account",
+      "issue_type": "BUG",
+      "cluster_id": "CLUSTER-0019",
+      "recent_matches": 2
+    },
+    {
+      "client": "Varios clientes",
       "family": "Contabilidad y facturación · Error en conciliación bancaria · Write-off de cheque con factura generó saldo incorrecto",
       "status": "señal débil",
       "score": 68,
@@ -128,21 +143,6 @@
       "module": "account",
       "issue_type": "BUG",
       "cluster_id": "CLUSTER-0134",
-      "recent_matches": 2
-    },
-    {
-      "client": "Varios clientes",
-      "family": "Ventas y precios · Error al devolver recepción de compra · módulo solo soporta ventas",
-      "status": "señal débil",
-      "score": 68,
-      "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 4,
-      "window": "2026-07-03 → 2026-10-13",
-      "reason": "2 episodios históricos en la familia; 2 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 31 mensajes sanitizados de chatter",
-      "module": "sale",
-      "issue_type": "BUG",
-      "cluster_id": "CLUSTER-0230",
       "recent_matches": 2
     },
     {
@@ -162,17 +162,17 @@
     },
     {
       "client": "Varios clientes",
-      "family": "Contabilidad y facturación · Error permisos devolución y nota crédito marca pendiente",
+      "family": "Ventas y precios · Error al devolver recepción de compra · módulo solo soporta ventas",
       "status": "señal débil",
-      "score": 66,
+      "score": 64,
       "score_basis": "Heurística explicable: frecuencia, reutilización, alcance y coincidencias recientes",
-      "episodes": 4,
-      "window": "2026-05-13 → 2026-08-04",
-      "reason": "3 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
-      "evidence": "KB histórica + Helpdesk + 28 mensajes sanitizados de chatter",
-      "module": "account",
+      "episodes": 3,
+      "window": "2026-07-03 → 2026-10-13",
+      "reason": "2 episodios históricos en la familia; 1 coincidencias en Helpdesk reciente.",
+      "evidence": "KB histórica + Helpdesk + 14 mensajes sanitizados de chatter",
+      "module": "sale",
       "issue_type": "BUG",
-      "cluster_id": "CLUSTER-0019",
+      "cluster_id": "CLUSTER-0230",
       "recent_matches": 1
     },
     {
