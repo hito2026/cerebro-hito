@@ -1,8 +1,8 @@
 {
   "report": {
     "date": "2026-10-15",
-    "updated_at": "15/10/2026 13:00 -03",
-    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 46 eventos de GitHub en los últimos 30 días. Backlog actual: 58 tickets y 781 tareas asignadas sin finalizar.",
+    "updated_at": "15/10/2026 19:00 -03",
+    "summary": "Datos reales sanitizados: Odoo se usa para backlog y alertas; las actividades Odoo se publican sólo con evidencia verificable. Actividad pública actual: 41 eventos de GitHub en los últimos 30 días. Backlog actual: 62 tickets y 785 tareas asignadas sin finalizar.",
     "mode": "real-sanitized"
   },
   "alerts": [
@@ -13,12 +13,12 @@
     },
     {
       "level": "medium",
-      "title": "1 tareas vencidas",
+      "title": "0 tareas vencidas",
       "detail": "Calculado desde Odoo Proyectos."
     },
     {
       "level": "low",
-      "title": "46 eventos de desarrollo",
+      "title": "41 eventos de desarrollo",
       "detail": "Actividad observada en GitHub durante los últimos 30 días."
     }
   ],
@@ -31,8 +31,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 180,
-        "total": 180
+        "tasks": 175,
+        "total": 175
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -45,8 +45,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 83,
-        "total": 83
+        "tasks": 87,
+        "total": 87
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -59,8 +59,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 76,
-        "total": 76
+        "tasks": 75,
+        "total": 75
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -73,8 +73,8 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 71,
-        "total": 71
+        "tasks": 73,
+        "total": 73
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -108,6 +108,20 @@
       "today": "0 actividades registradas."
     },
     {
+      "name": "Ignacio Lera",
+      "role": "Líder de Soporte",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 8,
+        "tasks": 36,
+        "total": 44
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
       "name": "Samuel Marcano",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
@@ -117,20 +131,6 @@
         "tickets": 1,
         "tasks": 43,
         "total": 44
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Ignacio Lera",
-      "role": "Líder de Soporte",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 8,
-        "tasks": 35,
-        "total": 43
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -171,8 +171,22 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 0,
-        "tasks": 27,
-        "total": 27
+        "tasks": 28,
+        "total": 28
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Matias Banega",
+      "role": "Director de Proyectos",
+      "area": "Proyectos",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 4,
+        "tasks": 21,
+        "total": 25
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -192,29 +206,15 @@
       "today": "0 actividades registradas."
     },
     {
-      "name": "Matias Banega",
-      "role": "Director de Proyectos",
-      "area": "Proyectos",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 4,
-        "tasks": 20,
-        "total": 24
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
       "name": "Matias Marziali",
       "role": "Usuario interno Odoo",
       "area": "Sin área",
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 2,
+        "tickets": 1,
         "tasks": 16,
-        "total": 18
+        "total": 17
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -227,7 +227,21 @@
       "active_tasks": 0,
       "backlog": {
         "tickets": 2,
-        "tasks": 13,
+        "tasks": 14,
+        "total": 16
+      },
+      "yesterday": "0 actividades registradas.",
+      "today": "0 actividades registradas."
+    },
+    {
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "status": "red",
+      "active_tasks": 0,
+      "backlog": {
+        "tickets": 15,
+        "tasks": 0,
         "total": 15
       },
       "yesterday": "0 actividades registradas.",
@@ -254,23 +268,9 @@
       "status": "red",
       "active_tasks": 0,
       "backlog": {
-        "tickets": 13,
+        "tickets": 14,
         "tasks": 0,
-        "total": 13
-      },
-      "yesterday": "0 actividades registradas.",
-      "today": "0 actividades registradas."
-    },
-    {
-      "name": "Mateo Scozzina",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "status": "red",
-      "active_tasks": 0,
-      "backlog": {
-        "tickets": 11,
-        "tasks": 0,
-        "total": 11
+        "total": 14
       },
       "yesterday": "0 actividades registradas.",
       "today": "0 actividades registradas."
@@ -374,15 +374,6 @@
       "role_source": "Odoo"
     },
     {
-      "id": "person-samuel-marcano",
-      "name": "Samuel Marcano",
-      "role": "Usuario interno Odoo · rol no publicado",
-      "area": "Sin área",
-      "manager": null,
-      "activity_count": 0,
-      "role_source": "Odoo"
-    },
-    {
       "id": "ignacio-lera",
       "name": "Ignacio Lera",
       "role": "Líder de Soporte",
@@ -390,6 +381,15 @@
       "manager": "matias-banega",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "person-samuel-marcano",
+      "name": "Samuel Marcano",
+      "role": "Usuario interno Odoo · rol no publicado",
+      "area": "Sin área",
+      "manager": null,
+      "activity_count": 0,
+      "role_source": "Odoo"
     },
     {
       "id": "alejandro-sartorio",
@@ -419,20 +419,20 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
-      "id": "nelson-tontarelli",
-      "name": "Nelson Tontarelli",
-      "role": "Líder de Post-venta",
-      "area": "Post-venta",
-      "manager": "matias-banega",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
       "id": "matias-banega",
       "name": "Matias Banega",
       "role": "Director de Proyectos",
       "area": "Proyectos",
       "manager": null,
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
+      "id": "nelson-tontarelli",
+      "name": "Nelson Tontarelli",
+      "role": "Líder de Post-venta",
+      "area": "Post-venta",
+      "manager": "matias-banega",
       "activity_count": 0,
       "role_source": "hitofusion.com/jobs"
     },
@@ -455,6 +455,15 @@
       "role_source": "hitofusion.com/jobs"
     },
     {
+      "id": "mateo-scozzina",
+      "name": "Mateo Scozzina",
+      "role": "Soporte Funcional",
+      "area": "Soporte",
+      "manager": "ignacio-lera",
+      "activity_count": 0,
+      "role_source": "hitofusion.com/jobs"
+    },
+    {
       "id": "francisco-fiorentino",
       "name": "Francisco Fiorentino",
       "role": "Desarrollador IA",
@@ -466,15 +475,6 @@
     {
       "id": "valentin-markov",
       "name": "Valentin Markov",
-      "role": "Soporte Funcional",
-      "area": "Soporte",
-      "manager": "ignacio-lera",
-      "activity_count": 0,
-      "role_source": "hitofusion.com/jobs"
-    },
-    {
-      "id": "mateo-scozzina",
-      "name": "Mateo Scozzina",
       "role": "Soporte Funcional",
       "area": "Soporte",
       "manager": "ignacio-lera",
@@ -599,7 +599,7 @@
         "name": "Tickets resueltos",
         "area": "Soporte",
         "target": 35,
-        "current": 5,
+        "current": 3,
         "unit": "tickets"
       },
       {
@@ -1178,21 +1178,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-22894347737",
-      "date": "2026-10-03",
-      "time": "16:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "cerebro-hito",
-      "title": "PushEvent en cerebro-hito",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-16338791375",
       "date": "2026-10-03",
       "time": "11:47",
@@ -1205,21 +1190,6 @@
       "client": "Interno",
       "project": "easypark-prototype",
       "title": "PullRequestEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22920929861",
-      "date": "2026-10-03",
-      "time": "11:43",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "PushEvent en easypark-prototype",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
@@ -1253,21 +1223,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-22918670714",
-      "date": "2026-10-03",
-      "time": "11:03",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "CreateEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-16337433741",
       "date": "2026-10-03",
       "time": "11:03",
@@ -1298,21 +1253,6 @@
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
-      "id": "github-22882159690",
-      "date": "2026-10-02",
-      "time": "23:04",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "PushEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
       "id": "github-16314966650",
       "date": "2026-10-02",
       "time": "22:54",
@@ -1325,21 +1265,6 @@
       "client": "Interno",
       "project": "easypark-prototype",
       "title": "PullRequestEvent en easypark-prototype",
-      "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
-    },
-    {
-      "id": "github-22887049245",
-      "date": "2026-10-02",
-      "time": "22:53",
-      "area": "desarrollo",
-      "source": "GitHub",
-      "person": "Sin usuario interno vinculado",
-      "users": [
-        "Sin usuario interno vinculado"
-      ],
-      "client": "Interno",
-      "project": "easypark-prototype",
-      "title": "CreateEvent en easypark-prototype",
       "description": "Actividad técnica registrada en GitHub; contenido omitido en la vista pública."
     },
     {
